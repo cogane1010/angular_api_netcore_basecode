@@ -1,0 +1,1644 @@
+2022-10-12 09:43:56.473 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] Started timer
+2022-10-12 09:44:56.475 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 09:44:57.951 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"NonRefundedFee"' on entity type '"Booking"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 09:44:57.954 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalEstimateFee"' on entity type '"Booking"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 09:44:57.955 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"BuggyFee"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 09:44:57.955 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"EstimatedPrice"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 09:44:57.955 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"NonRefundedFee"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 09:44:57.955 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"SeagolfPrice"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 09:44:57.955 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalMoney"' on entity type '"BookingTransactionPayment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 09:44:57.955 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalMoneyAcc"' on entity type '"BookingTransactionPayment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 09:44:57.955 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Charge_Amt"' on entity type '"InTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 09:44:57.956 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Total_Amt"' on entity type '"InTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 09:44:57.956 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Trans_Amt"' on entity type '"InTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 09:44:57.956 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Charge_Amt"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 09:44:57.956 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalMoneyAcc"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 09:44:57.956 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Total_Amt"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 09:44:57.956 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Trans_Amt"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 09:45:03.344 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 09:45:56.481 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 09:45:56.506 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 09:46:15.296 +07:00 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2022-10-12 09:46:56.473 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 09:46:56.489 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 09:47:56.469 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 09:47:56.477 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 09:48:48.728 +07:00 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2022-10-12 09:49:09.598 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 09:49:09.602 +07:00 [Error] (App.BookingOnline.Data.Repositories.Common.AppUserRepository.MoveNext) Object reference not set to an instance of an object.
+2022-10-12 09:49:09.612 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 09:49:09.673 +07:00 [Error] (App.BookingOnline.Data.Repositories.Common.AppUserRepository.MoveNext)    at App.BookingOnline.Data.Repositories.Common.AppUserRepository.RegisterMemberCard(MemberRequest model) in E:\project\Booking\BE\App.BookingOnline.Data\Repositories\Common\AppUserRepository.cs:line 420
+2022-10-12 09:49:11.651 +07:00 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2022-10-12 09:49:18.066 +07:00 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2022-10-12 09:49:56.484 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 09:49:56.490 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 09:50:21.185 +07:00 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2022-10-12 09:50:37.749 +07:00 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2022-10-12 09:51:58.628 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] Started timer
+2022-10-12 09:52:56.103 +07:00 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2022-10-12 09:52:57.103 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"NonRefundedFee"' on entity type '"Booking"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 09:52:57.105 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalEstimateFee"' on entity type '"Booking"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 09:52:57.105 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"BuggyFee"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 09:52:57.105 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"EstimatedPrice"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 09:52:57.105 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"NonRefundedFee"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 09:52:57.105 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"SeagolfPrice"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 09:52:57.106 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalMoney"' on entity type '"BookingTransactionPayment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 09:52:57.106 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalMoneyAcc"' on entity type '"BookingTransactionPayment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 09:52:57.106 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Charge_Amt"' on entity type '"InTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 09:52:57.106 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Total_Amt"' on entity type '"InTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 09:52:57.106 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Trans_Amt"' on entity type '"InTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 09:52:57.106 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Charge_Amt"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 09:52:57.106 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalMoneyAcc"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 09:52:57.106 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Total_Amt"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 09:52:57.106 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Trans_Amt"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 09:52:59.125 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 09:53:14.016 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 09:54:29.130 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 09:54:29.161 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 09:54:29.191 +07:00 [Error] (App.BookingOnline.Data.MailService.MailService.MoveNext) Gọi send email
+2022-10-12 09:54:29.192 +07:00 [Error] (App.BookingOnline.Data.MailService.MailService.MoveNext) Kết thúc send email
+2022-10-12 09:54:50.253 +07:00 [Error] (App.BookingOnline.Data.MailService.MailService.SendCompletedCallback) Failure sending mail.
+2022-10-12 09:54:50.254 +07:00 [Error] (App.BookingOnline.Data.MailService.MailService.SendCompletedCallback) A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. [::ffff:192.168.200.190]:465
+2022-10-12 09:54:58.562 +07:00 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2022-10-12 09:55:00.864 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 09:55:01.484 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 09:55:54.245 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] Started timer
+2022-10-12 09:56:09.057 +07:00 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2022-10-12 09:56:10.110 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"NonRefundedFee"' on entity type '"Booking"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 09:56:10.112 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalEstimateFee"' on entity type '"Booking"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 09:56:10.112 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"BuggyFee"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 09:56:10.112 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"EstimatedPrice"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 09:56:10.112 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"NonRefundedFee"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 09:56:10.113 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"SeagolfPrice"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 09:56:10.113 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalMoney"' on entity type '"BookingTransactionPayment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 09:56:10.113 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalMoneyAcc"' on entity type '"BookingTransactionPayment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 09:56:10.113 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Charge_Amt"' on entity type '"InTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 09:56:10.113 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Total_Amt"' on entity type '"InTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 09:56:10.113 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Trans_Amt"' on entity type '"InTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 09:56:10.113 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Charge_Amt"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 09:56:10.113 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalMoneyAcc"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 09:56:10.113 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Total_Amt"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 09:56:10.113 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Trans_Amt"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 09:56:29.866 +07:00 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2022-10-12 09:56:54.234 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 09:56:54.257 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 09:57:11.971 +07:00 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2022-10-12 09:57:30.640 +07:00 [Error] (App.BookingOnline.Data.MailService.MailService.MoveNext) Gọi send email
+2022-10-12 09:57:30.640 +07:00 [Error] (App.BookingOnline.Data.MailService.MailService.MoveNext) Kết thúc send email
+2022-10-12 09:57:51.697 +07:00 [Error] (App.BookingOnline.Data.MailService.MailService.SendCompletedCallback) Failure sending mail.
+2022-10-12 09:57:51.698 +07:00 [Error] (App.BookingOnline.Data.MailService.MailService.SendCompletedCallback) A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. [::ffff:192.168.200.190]:465
+2022-10-12 09:57:54.234 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 09:57:54.301 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 09:58:54.238 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 09:58:54.273 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 09:59:54.232 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 09:59:54.241 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 10:00:54.240 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 10:00:54.259 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 10:01:54.232 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 10:01:54.243 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 10:02:54.235 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 10:04:00.337 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 10:04:00.360 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 10:04:01.640 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 10:04:54.231 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 10:04:59.315 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 10:05:54.240 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 11:29:42.721 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] Started timer
+2022-10-12 11:30:42.719 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 11:30:43.817 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"NonRefundedFee"' on entity type '"Booking"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 11:30:43.819 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalEstimateFee"' on entity type '"Booking"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 11:30:43.819 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"BuggyFee"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 11:30:43.819 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"EstimatedPrice"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 11:30:43.819 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"NonRefundedFee"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 11:30:43.819 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"SeagolfPrice"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 11:30:43.820 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalMoney"' on entity type '"BookingTransactionPayment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 11:30:43.820 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalMoneyAcc"' on entity type '"BookingTransactionPayment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 11:30:43.820 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Charge_Amt"' on entity type '"InTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 11:30:43.820 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Total_Amt"' on entity type '"InTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 11:30:43.820 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Trans_Amt"' on entity type '"InTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 11:30:43.820 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Charge_Amt"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 11:30:43.820 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalMoneyAcc"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 11:30:43.820 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Total_Amt"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 11:30:43.820 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Trans_Amt"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 11:30:56.391 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 11:31:42.728 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 11:31:42.757 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 11:32:42.720 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 11:32:42.740 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 11:33:42.716 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 11:33:42.722 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 11:34:42.738 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 11:34:42.750 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 11:35:42.736 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 11:35:42.749 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 11:36:42.739 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 11:36:42.748 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 11:37:42.740 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 11:37:42.748 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 11:38:42.743 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 11:38:42.752 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 11:39:42.754 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 11:39:42.764 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 11:40:42.758 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 11:40:42.766 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 11:41:42.757 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 11:41:42.763 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 11:42:42.744 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 11:42:42.779 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 11:43:42.757 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 11:43:42.766 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 11:44:42.756 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 11:44:42.761 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 11:45:42.739 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 11:45:42.747 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 11:46:42.742 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 11:46:42.749 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 11:47:42.741 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 11:47:42.746 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 11:48:42.747 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 11:48:42.753 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 11:49:42.767 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 11:49:42.780 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 11:50:42.770 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 11:50:42.781 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 11:51:42.763 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 11:51:42.769 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 11:52:42.772 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 11:52:42.784 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 11:53:42.771 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 11:53:42.776 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 11:54:42.771 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 11:54:42.777 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 11:55:42.774 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 11:55:42.781 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 11:56:42.760 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 11:56:42.764 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 11:57:42.769 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 11:57:42.779 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 11:58:42.780 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 11:58:42.787 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 11:59:42.762 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 11:59:42.767 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:00:42.764 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:00:42.797 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:01:42.774 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:01:42.779 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:02:42.783 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:02:42.788 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:03:42.764 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:03:42.768 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:04:42.782 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:04:42.790 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:05:42.770 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:05:42.779 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:06:42.783 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:06:42.788 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:07:42.784 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:07:42.789 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:08:42.806 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:08:42.812 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:09:42.791 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:09:42.795 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:10:42.811 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:10:42.818 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:11:42.805 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:11:42.809 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:12:42.793 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:12:42.802 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:13:42.793 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:13:42.827 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:14:42.789 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:14:42.793 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:15:42.797 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:15:42.806 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:16:42.796 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:16:42.801 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:17:42.793 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:17:42.828 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:18:42.793 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:18:42.800 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:19:42.789 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:19:42.793 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:20:42.803 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:20:42.807 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:21:42.811 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:21:42.816 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:22:42.798 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:22:42.804 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:23:42.799 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:23:42.804 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:24:42.797 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:24:42.803 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:25:42.801 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:25:42.806 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:26:42.802 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:26:42.811 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:27:42.803 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:27:42.828 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:28:42.809 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:28:42.814 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:29:42.804 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:29:42.809 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:30:42.815 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:30:42.821 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:31:42.802 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:31:42.806 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:32:42.807 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:32:42.812 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:33:42.807 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:33:42.814 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:34:42.817 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:34:42.823 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:35:42.800 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:35:42.807 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:36:42.800 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:36:42.806 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:37:42.802 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:37:42.844 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:38:42.799 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:38:42.803 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:39:42.806 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:39:42.814 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:40:42.822 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:40:42.856 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:41:42.811 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:41:42.818 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:42:42.819 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:42:42.825 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:43:42.833 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:43:42.836 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:44:42.828 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:44:42.835 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:45:42.832 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:45:42.837 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:46:42.835 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:46:42.845 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:47:42.829 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:47:42.833 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:48:42.839 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:48:42.844 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:49:42.835 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:49:42.839 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:50:42.852 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:50:42.864 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:51:42.846 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:51:42.850 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:52:42.838 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:52:42.843 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:53:42.846 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:53:42.853 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:54:42.847 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:54:42.856 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:55:42.860 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:55:42.865 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:56:42.848 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:56:42.852 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:57:42.856 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:57:42.865 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:58:42.846 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:58:42.850 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 12:59:42.854 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 12:59:42.858 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:00:42.854 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:00:42.858 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:01:42.865 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:01:42.872 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:02:42.862 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:02:42.869 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:03:42.848 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:03:42.853 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:04:42.856 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:04:42.874 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:05:42.857 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:05:42.863 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:06:42.870 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:06:42.879 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:07:42.858 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:07:42.862 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:08:42.866 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:08:42.872 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:09:42.846 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:09:42.849 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:10:42.858 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:10:42.863 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:11:42.871 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:11:42.878 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:12:42.853 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:12:42.857 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:13:42.865 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:13:42.898 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:14:42.875 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:14:42.879 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:15:42.864 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:15:42.869 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:16:42.869 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:16:42.874 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:17:42.867 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:17:42.880 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:18:42.864 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:18:42.872 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:19:42.883 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:19:42.887 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:20:42.878 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:20:42.882 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:21:42.877 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:21:42.883 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:22:42.881 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:22:42.887 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:23:42.885 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:23:42.890 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:24:42.894 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:24:42.899 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:25:42.885 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:25:42.889 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:26:42.885 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:26:42.896 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:27:42.890 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:27:42.900 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:28:42.888 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:28:42.895 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:29:42.909 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:29:42.917 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:30:42.907 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:30:42.912 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:31:42.893 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:31:42.897 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:32:42.903 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:32:42.909 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:33:42.890 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:33:42.904 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:34:42.904 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:34:42.910 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:35:42.918 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:35:42.924 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:36:42.912 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:36:42.918 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:37:42.896 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:37:42.905 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:38:42.908 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:38:42.914 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:39:42.920 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:39:42.925 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:40:42.913 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:40:42.917 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:41:42.903 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:41:42.907 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:42:42.915 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:42:42.921 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:43:42.916 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:43:42.922 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:44:42.909 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:44:42.924 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:45:42.915 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:45:42.923 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:46:42.908 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:46:42.914 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:47:42.920 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:47:42.959 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:48:42.907 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:48:42.911 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:49:42.919 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:49:42.923 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:50:42.938 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:50:42.943 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:51:42.935 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:51:42.939 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:52:42.921 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:52:42.927 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:53:11.414 +07:00 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2022-10-12 13:53:11.636 +07:00 [Information] (App.BookingOnline.AppApi.Controllers.BookingController.MoveNext) {
+  "GF_Booking_Session_Id": "791c9248-0455-4b99-926c-9d0254a45431",
+  "IsActive": false,
+  "BookingCode": null,
+  "Device_Id": null,
+  "UserId": "38b1c9dc-a019-48dd-9ee1-80cf6d3ba394",
+  "CustomerId": "00000000-0000-0000-0000-000000000000",
+  "DateId": "2022-10-13T13:51:05.5391035+07:00",
+  "DateDisplay": null,
+  "CourseName": null,
+  "Status": null,
+  "StatusName": null,
+  "M_Promotion_Id": "4cc5157e-d343-4bbc-a369-5466cac389a4",
+  "PromotionName": null,
+  "Confirm_User": null,
+  "PaymentSbType": null,
+  "PaymentSbId": null,
+  "Payment_Time": null,
+  "PaymentTypeId": null,
+  "PaymentTypeName": null,
+  "Cancel_Time": null,
+  "Cancel_User": null,
+  "Cancel_UserName": null,
+  "Cancel_Reason_Id": null,
+  "CancelReasonName": null,
+  "Cancel_Description": null,
+  "ButtonType": "PersonInfoStep",
+  "Golfers": 0,
+  "language": null,
+  "BookingDates": [
+    "2022-10-13T13:51:05.5391035+07:00",
+    "2022-10-14T13:51:05.5391676+07:00",
+    "2022-10-15T13:51:05.539169+07:00",
+    "2022-10-16T13:51:05.5391693+07:00",
+    "2022-10-17T13:51:05.5391696+07:00",
+    "2022-10-18T13:51:05.5391777+07:00",
+    "2022-10-19T13:51:05.5391781+07:00"
+  ],
+  "TotalEstimateFee": null,
+  "NonRefundedFee": null,
+  "CountPlayers": null,
+  "OrgName": null,
+  "Traceid": null,
+  "Ftid": null,
+  "LinkCardAcctId": null,
+  "DebitAccount": null,
+  "IsPaymentSuccess": false,
+  "SbOrgCode": null,
+  "IsRefundMoney": false,
+  "IsConnectSdk": false,
+  "CardFullName": "chung chang seong",
+  "CardEmail": null,
+  "CardMobilePhone": null,
+  "GolfCardNo": null,
+  "CardCourseName": null,
+  "CardMemberType": 5,
+  "CardMemberName": null,
+  "TotalTeetimeDisplay": null,
+  "SpecialNameServices": null,
+  "NotificationType": null,
+  "Id": "00000000-0000-0000-0000-000000000000",
+  "CreatedUser": null,
+  "CreatedDate": "0001-01-01T00:00:00",
+  "Courses": {
+    "Id": "10c165d8-36b7-4296-9d22-0d8760a7525c",
+    "C_Org_Id": "b29b3bcc-f615-4ef0-ade7-b983f4e3ecf8",
+    "OrgCode": "KI",
+    "OrganizationName": "BRG Kings Island Golf Resort",
+    "Code": "LS",
+    "Name": "LakeSide",
+    "IconUrl": "Assets\\Course\\Kings_Course.png",
+    "Full_IconUrl": null,
+    "IconData": null,
+    "ImageUrl": "Assets\\Course\\KIGR.jpg",
+    "Full_Image_Url": null,
+    "ImageData": null,
+    "IsActive": true,
+    "OrderValue": 1,
+    "CodeInt": 0,
+    "CreatedUser": null,
+    "CreatedDate": "0001-01-01T00:00:00",
+    "Selected": false
+  },
+  "SeletedPromotion": null,
+  "Promotions": [
+    {
+      "C_Org_Id": null,
+      "IsActive": true,
+      "IsDeleted": false,
+      "Name": "SeAGolf_Member",
+      "NotificationType": null,
+      "NameEn": null,
+      "Description": null,
+      "DescriptionEn": null,
+      "PromotionCode": "SeA_MB",
+      "Img_Url": "Assets\\Images\\PromotionImages\\03-06-2022-09-23-59-090.jpeg",
+      "Full_Image_Url": null,
+      "ImageData": null,
+      "Start_Date": "2022-06-02T00:00:00",
+      "End_Date": "2022-12-31T00:00:00",
+      "DOW": "0,1,2,3,4,5,6,7",
+      "ApplyTime_From": "",
+      "ApplyTime_To": "",
+      "Promotion_Type": "seagolf",
+      "Priotity": 0,
+      "IsHotPromotion": false,
+      "Promotion_Formula": "price",
+      "Promotion_Value": 500000,
+      "PublicPrice_Percent": 10,
+      "PromotionPrice_Percent": 10,
+      "Id": "4cc5157e-d343-4bbc-a369-5466cac389a4",
+      "CustomerGroupNames": null,
+      "CustomerGroupList": null,
+      "CourseNames": null,
+      "CreatedUser": "admin",
+      "CreatedDate": "2022-06-02T17:00:28.9754596",
+      "AppliedDate0": false,
+      "AppliedDate1": false,
+      "AppliedDate2": false,
+      "AppliedDate3": false,
+      "AppliedDate4": false,
+      "AppliedDate5": false,
+      "AppliedDate6": false,
+      "AppliedDate7": false,
+      "Course": null,
+      "CustomerGroups": null,
+      "PromotionCourses": [
+        {
+          "IsActive": false,
+          "M_Promotion_Id": "4cc5157e-d343-4bbc-a369-5466cac389a4",
+          "C_Course_Id": "35226145-f866-42bb-8ef0-8d7583251d0f",
+          "CourseName": "Nicklaus",
+          "CourseCode": "NI",
+          "Id": "00000000-0000-0000-0000-000000000000",
+          "CreatedUser": null,
+          "CreatedDate": "0001-01-01T00:00:00"
+        },
+        {
+          "IsActive": false,
+          "M_Promotion_Id": "4cc5157e-d343-4bbc-a369-5466cac389a4",
+          "C_Course_Id": "ded89641-1208-4c81-b1c8-95b53a0b0ccb",
+          "CourseName": "Norman",
+          "CourseCode": "NO",
+          "Id": "00000000-0000-0000-0000-000000000000",
+          "CreatedUser": null,
+          "CreatedDate": "0001-01-01T00:00:00"
+        },
+        {
+          "IsActive": false,
+          "M_Promotion_Id": "4cc5157e-d343-4bbc-a369-5466cac389a4",
+          "C_Course_Id": "3764a86f-b77e-4aad-aab1-eb84466dd448",
+          "CourseName": "Kings Course",
+          "CourseCode": "KC",
+          "Id": "00000000-0000-0000-0000-000000000000",
+          "CreatedUser": null,
+          "CreatedDate": "0001-01-01T00:00:00"
+        },
+        {
+          "IsActive": false,
+          "M_Promotion_Id": "4cc5157e-d343-4bbc-a369-5466cac389a4",
+          "C_Course_Id": "86495eb0-3ac8-4cef-9fb1-aa2dae97c06b",
+          "CourseName": "Mountain View",
+          "CourseCode": "MV",
+          "Id": "00000000-0000-0000-0000-000000000000",
+          "CreatedUser": null,
+          "CreatedDate": "0001-01-01T00:00:00"
+        },
+        {
+          "IsActive": false,
+          "M_Promotion_Id": "4cc5157e-d343-4bbc-a369-5466cac389a4",
+          "C_Course_Id": "10c165d8-36b7-4296-9d22-0d8760a7525c",
+          "CourseName": "LakeSide",
+          "CourseCode": "LS",
+          "Id": "00000000-0000-0000-0000-000000000000",
+          "CreatedUser": null,
+          "CreatedDate": "0001-01-01T00:00:00"
+        },
+        {
+          "IsActive": false,
+          "M_Promotion_Id": "4cc5157e-d343-4bbc-a369-5466cac389a4",
+          "C_Course_Id": "6f590500-0754-47ae-b7df-388a222857fd",
+          "CourseName": "Legend Hill",
+          "CourseCode": "LGH",
+          "Id": "00000000-0000-0000-0000-000000000000",
+          "CreatedUser": null,
+          "CreatedDate": "0001-01-01T00:00:00"
+        },
+        {
+          "IsActive": false,
+          "M_Promotion_Id": "4cc5157e-d343-4bbc-a369-5466cac389a4",
+          "C_Course_Id": "33f78009-241f-4898-85a2-e2f7b89ed6aa",
+          "CourseName": "Ruby Tree",
+          "CourseCode": "RT",
+          "Id": "00000000-0000-0000-0000-000000000000",
+          "CreatedUser": null,
+          "CreatedDate": "0001-01-01T00:00:00"
+        }
+      ],
+      "PromotionCustomerGroup": null
+    },
+    {
+      "C_Org_Id": null,
+      "IsActive": true,
+      "IsDeleted": false,
+      "Name": "SeAGolf Visitor",
+      "NotificationType": null,
+      "NameEn": null,
+      "Description": null,
+      "DescriptionEn": null,
+      "PromotionCode": "SeA_VT",
+      "Img_Url": "Assets\\Images\\PromotionImages\\03-06-2022-09-24-08-773.jpeg",
+      "Full_Image_Url": null,
+      "ImageData": null,
+      "Start_Date": "2022-06-02T00:00:00",
+      "End_Date": "2022-12-31T00:00:00",
+      "DOW": "0,1,2,3,4,5,6,7",
+      "ApplyTime_From": "",
+      "ApplyTime_To": "",
+      "Promotion_Type": "seagolf",
+      "Priotity": 0,
+      "IsHotPromotion": false,
+      "Promotion_Formula": "percent",
+      "Promotion_Value": 1500000,
+      "PublicPrice_Percent": 30,
+      "PromotionPrice_Percent": 10,
+      "Id": "f1543af4-0fe3-44fb-974d-8b3c70e0c082",
+      "CustomerGroupNames": null,
+      "CustomerGroupList": null,
+      "CourseNames": null,
+      "CreatedUser": "admin",
+      "CreatedDate": "2022-06-02T17:01:10.8843618",
+      "AppliedDate0": false,
+      "AppliedDate1": false,
+      "AppliedDate2": false,
+      "AppliedDate3": false,
+      "AppliedDate4": false,
+      "AppliedDate5": false,
+      "AppliedDate6": false,
+      "AppliedDate7": false,
+      "Course": null,
+      "CustomerGroups": null,
+      "PromotionCourses": [
+        {
+          "IsActive": false,
+          "M_Promotion_Id": "f1543af4-0fe3-44fb-974d-8b3c70e0c082",
+          "C_Course_Id": "86495eb0-3ac8-4cef-9fb1-aa2dae97c06b",
+          "CourseName": "Mountain View",
+          "CourseCode": "MV",
+          "Id": "00000000-0000-0000-0000-000000000000",
+          "CreatedUser": null,
+          "CreatedDate": "0001-01-01T00:00:00"
+        },
+        {
+          "IsActive": false,
+          "M_Promotion_Id": "f1543af4-0fe3-44fb-974d-8b3c70e0c082",
+          "C_Course_Id": "35226145-f866-42bb-8ef0-8d7583251d0f",
+          "CourseName": "Nicklaus",
+          "CourseCode": "NI",
+          "Id": "00000000-0000-0000-0000-000000000000",
+          "CreatedUser": null,
+          "CreatedDate": "0001-01-01T00:00:00"
+        },
+        {
+          "IsActive": false,
+          "M_Promotion_Id": "f1543af4-0fe3-44fb-974d-8b3c70e0c082",
+          "C_Course_Id": "ded89641-1208-4c81-b1c8-95b53a0b0ccb",
+          "CourseName": "Norman",
+          "CourseCode": "NO",
+          "Id": "00000000-0000-0000-0000-000000000000",
+          "CreatedUser": null,
+          "CreatedDate": "0001-01-01T00:00:00"
+        },
+        {
+          "IsActive": false,
+          "M_Promotion_Id": "f1543af4-0fe3-44fb-974d-8b3c70e0c082",
+          "C_Course_Id": "3764a86f-b77e-4aad-aab1-eb84466dd448",
+          "CourseName": "Kings Course",
+          "CourseCode": "KC",
+          "Id": "00000000-0000-0000-0000-000000000000",
+          "CreatedUser": null,
+          "CreatedDate": "0001-01-01T00:00:00"
+        },
+        {
+          "IsActive": false,
+          "M_Promotion_Id": "f1543af4-0fe3-44fb-974d-8b3c70e0c082",
+          "C_Course_Id": "10c165d8-36b7-4296-9d22-0d8760a7525c",
+          "CourseName": "LakeSide",
+          "CourseCode": "LS",
+          "Id": "00000000-0000-0000-0000-000000000000",
+          "CreatedUser": null,
+          "CreatedDate": "0001-01-01T00:00:00"
+        },
+        {
+          "IsActive": false,
+          "M_Promotion_Id": "f1543af4-0fe3-44fb-974d-8b3c70e0c082",
+          "C_Course_Id": "33f78009-241f-4898-85a2-e2f7b89ed6aa",
+          "CourseName": "Ruby Tree",
+          "CourseCode": "RT",
+          "Id": "00000000-0000-0000-0000-000000000000",
+          "CreatedUser": null,
+          "CreatedDate": "0001-01-01T00:00:00"
+        },
+        {
+          "IsActive": false,
+          "M_Promotion_Id": "f1543af4-0fe3-44fb-974d-8b3c70e0c082",
+          "C_Course_Id": "6f590500-0754-47ae-b7df-388a222857fd",
+          "CourseName": "Legend Hill",
+          "CourseCode": "LGH",
+          "Id": "00000000-0000-0000-0000-000000000000",
+          "CreatedUser": null,
+          "CreatedDate": "0001-01-01T00:00:00"
+        }
+      ],
+      "PromotionCustomerGroup": null
+    }
+  ],
+  "BookingTeetime": [
+    {
+      "C_Org_Id": "00000000-0000-0000-0000-000000000000",
+      "GF_Booking_Id": "00000000-0000-0000-0000-000000000000",
+      "IsActive": false,
+      "CardNo": null,
+      "BookingCode": null,
+      "MB_CustomerGroup_Id": null,
+      "CustomerGroupName": "Visitor",
+      "CustomerGroupCode": "5",
+      "NumberPlayers": 0,
+      "Notes": null,
+      "Telephone": null,
+      "DateId": "0001-01-01T00:00:00",
+      "StartTee": 1,
+      "Tee_Time": "2022-10-13T06:00:00",
+      "TeeTimeEnd": "2022-10-13T06:08:00",
+      "Hole": 0,
+      "FlightSeq": 0,
+      "Caddie_No": null,
+      "CustomerFullName": "chung chang seong",
+      "CustomerOrderName": null,
+      "MobilePhone": null,
+      "Email": null,
+      "Description": null,
+      "BookingStatus": null,
+      "Public_Price": null,
+      "BuggyFee": null,
+      "Promotion_Price": null,
+      "EstimatedPrice": null,
+      "SeagolfPrice": null,
+      "Net_Ammount": null,
+      "Discount_Value": null,
+      "Discount_Amount": null,
+      "Total_Amount": null,
+      "Deposit_Amount": null,
+      "Golf_Price_Description": null,
+      "Golf_Promotion_Id": null,
+      "Golf_Promotion_Name": null,
+      "Golf_CusGroupCode": "5",
+      "TimeOnCoursePlayer": null,
+      "CashierName": null,
+      "GolfBag": null,
+      "Id": "00000000-0000-0000-0000-000000000000",
+      "CreatedUser": null,
+      "CreatedDate": "0001-01-01T00:00:00",
+      "Is_NoShow": false,
+      "UpdateNoShow_Time": null,
+      "UpdateNoShow_UserName": null,
+      "Part": "1",
+      "TurnLength": null,
+      "IsUpdateNoShow": null,
+      "Cancel_Time": null,
+      "Cancel_User": null,
+      "Cancel_Reason_Id": null,
+      "CancelReasonName": null,
+      "Cancel_Description": null,
+      "DurationPlay": null,
+      "NonRefundedFee": null,
+      "IsSelected": true,
+      "IsBooked": false,
+      "TimeDisplay": "06:00",
+      "IsPromotion": true,
+      "AvailableFlightSeq": 2,
+      "Booking": null
+    }
+  ],
+  "BookingSpecialRequests": [
+    {
+      "C_Org_Id": "00000000-0000-0000-0000-000000000000",
+      "GF_Booking_Id": "00000000-0000-0000-0000-000000000000",
+      "IsActive": false,
+      "C_Booking_OtherType_Id": "e74e21cb-1154-4716-a61f-905637ac7165",
+      "BookingOtherTypeName": null,
+      "Description": "",
+      "IsSelected": false,
+      "Code": null,
+      "Name": "ThuĂª xe riĂªng",
+      "NameEn": "Individual Cart",
+      "Id": "00000000-0000-0000-0000-000000000000",
+      "CreatedUser": null,
+      "CreatedDate": "0001-01-01T00:00:00"
+    },
+    {
+      "C_Org_Id": "00000000-0000-0000-0000-000000000000",
+      "GF_Booking_Id": "00000000-0000-0000-0000-000000000000",
+      "IsActive": false,
+      "C_Booking_OtherType_Id": "b31726fc-4885-4e84-810b-b2fcd6c2416a",
+      "BookingOtherTypeName": null,
+      "Description": "",
+      "IsSelected": false,
+      "Code": null,
+      "Name": "ThĂªm há»‘",
+      "NameEn": "Extra Holes",
+      "Id": "00000000-0000-0000-0000-000000000000",
+      "CreatedUser": null,
+      "CreatedDate": "0001-01-01T00:00:00"
+    },
+    {
+      "C_Org_Id": "00000000-0000-0000-0000-000000000000",
+      "GF_Booking_Id": "00000000-0000-0000-0000-000000000000",
+      "IsActive": false,
+      "C_Booking_OtherType_Id": "711fac50-9021-4139-b5b9-bbd57a11304b",
+      "BookingOtherTypeName": null,
+      "Description": "",
+      "IsSelected": false,
+      "Code": null,
+      "Name": "ThuĂª giĂ y",
+      "NameEn": "Shoes Rental",
+      "Id": "00000000-0000-0000-0000-000000000000",
+      "CreatedUser": null,
+      "CreatedDate": "0001-01-01T00:00:00"
+    },
+    {
+      "C_Org_Id": "00000000-0000-0000-0000-000000000000",
+      "GF_Booking_Id": "00000000-0000-0000-0000-000000000000",
+      "IsActive": false,
+      "C_Booking_OtherType_Id": "b26ce6af-f874-44ee-942f-cf520d65b319",
+      "BookingOtherTypeName": null,
+      "Description": "",
+      "IsSelected": false,
+      "Code": null,
+      "Name": "KhĂ¡c",
+      "NameEn": "Other(s)",
+      "Id": "00000000-0000-0000-0000-000000000000",
+      "CreatedUser": null,
+      "CreatedDate": "0001-01-01T00:00:00"
+    },
+    {
+      "C_Org_Id": "00000000-0000-0000-0000-000000000000",
+      "GF_Booking_Id": "00000000-0000-0000-0000-000000000000",
+      "IsActive": false,
+      "C_Booking_OtherType_Id": "01aa7936-6550-47d9-a3e0-d6a01258e10d",
+      "BookingOtherTypeName": null,
+      "Description": "",
+      "IsSelected": false,
+      "Code": null,
+      "Name": "ThuĂª gáº­y",
+      "NameEn": "Club Rental",
+      "Id": "00000000-0000-0000-0000-000000000000",
+      "CreatedUser": null,
+      "CreatedDate": "0001-01-01T00:00:00"
+    },
+    {
+      "C_Org_Id": "00000000-0000-0000-0000-000000000000",
+      "GF_Booking_Id": "00000000-0000-0000-0000-000000000000",
+      "IsActive": false,
+      "C_Booking_OtherType_Id": "531065c6-7252-439a-aef7-f75f4fbd39d9",
+      "BookingOtherTypeName": null,
+      "Description": "",
+      "IsSelected": false,
+      "Code": null,
+      "Name": "Äáº·t Caddie",
+      "NameEn": "Book Caddie",
+      "Id": "00000000-0000-0000-0000-000000000000",
+      "CreatedUser": null,
+      "CreatedDate": "0001-01-01T00:00:00"
+    }
+  ],
+  "MemberCardTypes": [
+    {
+      "Id": "630e7368-0044-46f4-b197-193bbc10108d",
+      "C_Org_Id": "b29b3bcc-f615-4ef0-ade7-b983f4e3ecf8",
+      "OrganizationName": null,
+      "Code": "22",
+      "Name": "Member Brg",
+      "NameEn": "Member Brg",
+      "OrderValue": 2,
+      "IsActive": true,
+      "CreatedUser": null,
+      "CreatedDate": "0001-01-01T00:00:00"
+    },
+    {
+      "Id": "8c9d4f88-4280-4d7e-aeef-6d24ff3c4581",
+      "C_Org_Id": "b29b3bcc-f615-4ef0-ade7-b983f4e3ecf8",
+      "OrganizationName": null,
+      "Code": "5",
+      "Name": "Visitor",
+      "NameEn": "Visitor",
+      "OrderValue": 3,
+      "IsActive": true,
+      "CreatedUser": null,
+      "CreatedDate": "0001-01-01T00:00:00"
+    },
+    {
+      "Id": "8c9d4f88-4280-4d7e-aeef-6d24ff3c4582",
+      "C_Org_Id": "b29b3bcc-f615-4ef0-ade7-b983f4e3ecf8",
+      "OrganizationName": null,
+      "Code": "2",
+      "Name": "Member Guest",
+      "NameEn": "Member Guest",
+      "OrderValue": 4,
+      "IsActive": true,
+      "CreatedUser": null,
+      "CreatedDate": "0001-01-01T00:00:00"
+    },
+    {
+      "Id": "8c9d4f88-4280-4d7e-aeef-6e24ff3c4582",
+      "C_Org_Id": "b29b3bcc-f615-4ef0-ade7-b983f4e3ecf8",
+      "OrganizationName": null,
+      "Code": "1",
+      "Name": "Member",
+      "NameEn": "Member",
+      "OrderValue": 1,
+      "IsActive": true,
+      "CreatedUser": null,
+      "CreatedDate": "0001-01-01T00:00:00"
+    }
+  ],
+  "OrgId": null
+}
+2022-10-12 13:53:36.666 +07:00 [Information] (App.BookingOnline.Data.Repositories.BookingRepository.) [Golf Api Error] -CheckPriceBooking-input-{"CourseId":null,"OrgId":null,"PromotionId":null,"BookingDate":null,"UserId":null,"CourseCode":"LS","OrgCode":"KI","Golf_CusGroupCode":"5","BK_CusGroupCode":"5","CustomerFullName":"chung chang seong","CardNo":null,"BookingTime":"2022-10-13T06:00:00","Hole":0}
+2022-10-12 13:53:42.933 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:53:42.939 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:54:26.383 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Query.) Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'
+2022-10-12 13:54:44.532 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:54:44.578 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 13:54:45.643 +07:00 [Error] (App.BookingOnline.Data.Repositories.BookingRepository.GetPriceGolfPlayer) Nullable object must have a value.
+2022-10-12 13:54:46.110 +07:00 [Error] (App.BookingOnline.Data.Repositories.BookingRepository.GetPriceGolfPlayer)    at System.Nullable`1.get_Value()
+   at App.BookingOnline.Service.BookingService.GetPriceGolfPlayer(BookingDTO& model) in E:\project\Booking\BE\App.BookingOnline.Service\Service\Booking\BookingService.cs:line 864
+2022-10-12 13:54:52.036 +07:00 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2022-10-12 13:54:52.041 +07:00 [Information] (App.BookingOnline.AppApi.Controllers.BookingController.MoveNext) {
+  "GF_Booking_Session_Id": "791c9248-0455-4b99-926c-9d0254a45431",
+  "IsActive": false,
+  "BookingCode": null,
+  "Device_Id": null,
+  "UserId": "38b1c9dc-a019-48dd-9ee1-80cf6d3ba394",
+  "CustomerId": "00000000-0000-0000-0000-000000000000",
+  "DateId": "2022-10-13T13:51:05.5391035+07:00",
+  "DateDisplay": null,
+  "CourseName": null,
+  "Status": null,
+  "StatusName": null,
+  "M_Promotion_Id": "4cc5157e-d343-4bbc-a369-5466cac389a4",
+  "PromotionName": null,
+  "Confirm_User": null,
+  "PaymentSbType": null,
+  "PaymentSbId": null,
+  "Payment_Time": null,
+  "PaymentTypeId": null,
+  "PaymentTypeName": null,
+  "Cancel_Time": null,
+  "Cancel_User": null,
+  "Cancel_UserName": null,
+  "Cancel_Reason_Id": null,
+  "CancelReasonName": null,
+  "Cancel_Description": null,
+  "ButtonType": "PersonInfoStep",
+  "Golfers": 0,
+  "language": null,
+  "BookingDates": [
+    "2022-10-13T13:51:05.5391035+07:00",
+    "2022-10-14T13:51:05.5391676+07:00",
+    "2022-10-15T13:51:05.539169+07:00",
+    "2022-10-16T13:51:05.5391693+07:00",
+    "2022-10-17T13:51:05.5391696+07:00",
+    "2022-10-18T13:51:05.5391777+07:00",
+    "2022-10-19T13:51:05.5391781+07:00"
+  ],
+  "TotalEstimateFee": null,
+  "NonRefundedFee": null,
+  "CountPlayers": null,
+  "OrgName": null,
+  "Traceid": null,
+  "Ftid": null,
+  "LinkCardAcctId": null,
+  "DebitAccount": null,
+  "IsPaymentSuccess": false,
+  "SbOrgCode": null,
+  "IsRefundMoney": false,
+  "IsConnectSdk": false,
+  "CardFullName": "chung chang seong",
+  "CardEmail": null,
+  "CardMobilePhone": null,
+  "GolfCardNo": null,
+  "CardCourseName": null,
+  "CardMemberType": 5,
+  "CardMemberName": null,
+  "TotalTeetimeDisplay": null,
+  "SpecialNameServices": null,
+  "NotificationType": null,
+  "Id": "00000000-0000-0000-0000-000000000000",
+  "CreatedUser": null,
+  "CreatedDate": "0001-01-01T00:00:00",
+  "Courses": {
+    "Id": "10c165d8-36b7-4296-9d22-0d8760a7525c",
+    "C_Org_Id": "b29b3bcc-f615-4ef0-ade7-b983f4e3ecf8",
+    "OrgCode": "KI",
+    "OrganizationName": "BRG Kings Island Golf Resort",
+    "Code": "LS",
+    "Name": "LakeSide",
+    "IconUrl": "Assets\\Course\\Kings_Course.png",
+    "Full_IconUrl": null,
+    "IconData": null,
+    "ImageUrl": "Assets\\Course\\KIGR.jpg",
+    "Full_Image_Url": null,
+    "ImageData": null,
+    "IsActive": true,
+    "OrderValue": 1,
+    "CodeInt": 0,
+    "CreatedUser": null,
+    "CreatedDate": "0001-01-01T00:00:00",
+    "Selected": false
+  },
+  "SeletedPromotion": null,
+  "Promotions": [
+    {
+      "C_Org_Id": null,
+      "IsActive": true,
+      "IsDeleted": false,
+      "Name": "SeAGolf_Member",
+      "NotificationType": null,
+      "NameEn": null,
+      "Description": null,
+      "DescriptionEn": null,
+      "PromotionCode": "SeA_MB",
+      "Img_Url": "Assets\\Images\\PromotionImages\\03-06-2022-09-23-59-090.jpeg",
+      "Full_Image_Url": null,
+      "ImageData": null,
+      "Start_Date": "2022-06-02T00:00:00",
+      "End_Date": "2022-12-31T00:00:00",
+      "DOW": "0,1,2,3,4,5,6,7",
+      "ApplyTime_From": "",
+      "ApplyTime_To": "",
+      "Promotion_Type": "seagolf",
+      "Priotity": 0,
+      "IsHotPromotion": false,
+      "Promotion_Formula": "price",
+      "Promotion_Value": 500000,
+      "PublicPrice_Percent": 10,
+      "PromotionPrice_Percent": 10,
+      "Id": "4cc5157e-d343-4bbc-a369-5466cac389a4",
+      "CustomerGroupNames": null,
+      "CustomerGroupList": null,
+      "CourseNames": null,
+      "CreatedUser": "admin",
+      "CreatedDate": "2022-06-02T17:00:28.9754596",
+      "AppliedDate0": false,
+      "AppliedDate1": false,
+      "AppliedDate2": false,
+      "AppliedDate3": false,
+      "AppliedDate4": false,
+      "AppliedDate5": false,
+      "AppliedDate6": false,
+      "AppliedDate7": false,
+      "Course": null,
+      "CustomerGroups": null,
+      "PromotionCourses": [
+        {
+          "IsActive": false,
+          "M_Promotion_Id": "4cc5157e-d343-4bbc-a369-5466cac389a4",
+          "C_Course_Id": "35226145-f866-42bb-8ef0-8d7583251d0f",
+          "CourseName": "Nicklaus",
+          "CourseCode": "NI",
+          "Id": "00000000-0000-0000-0000-000000000000",
+          "CreatedUser": null,
+          "CreatedDate": "0001-01-01T00:00:00"
+        },
+        {
+          "IsActive": false,
+          "M_Promotion_Id": "4cc5157e-d343-4bbc-a369-5466cac389a4",
+          "C_Course_Id": "ded89641-1208-4c81-b1c8-95b53a0b0ccb",
+          "CourseName": "Norman",
+          "CourseCode": "NO",
+          "Id": "00000000-0000-0000-0000-000000000000",
+          "CreatedUser": null,
+          "CreatedDate": "0001-01-01T00:00:00"
+        },
+        {
+          "IsActive": false,
+          "M_Promotion_Id": "4cc5157e-d343-4bbc-a369-5466cac389a4",
+          "C_Course_Id": "3764a86f-b77e-4aad-aab1-eb84466dd448",
+          "CourseName": "Kings Course",
+          "CourseCode": "KC",
+          "Id": "00000000-0000-0000-0000-000000000000",
+          "CreatedUser": null,
+          "CreatedDate": "0001-01-01T00:00:00"
+        },
+        {
+          "IsActive": false,
+          "M_Promotion_Id": "4cc5157e-d343-4bbc-a369-5466cac389a4",
+          "C_Course_Id": "86495eb0-3ac8-4cef-9fb1-aa2dae97c06b",
+          "CourseName": "Mountain View",
+          "CourseCode": "MV",
+          "Id": "00000000-0000-0000-0000-000000000000",
+          "CreatedUser": null,
+          "CreatedDate": "0001-01-01T00:00:00"
+        },
+        {
+          "IsActive": false,
+          "M_Promotion_Id": "4cc5157e-d343-4bbc-a369-5466cac389a4",
+          "C_Course_Id": "10c165d8-36b7-4296-9d22-0d8760a7525c",
+          "CourseName": "LakeSide",
+          "CourseCode": "LS",
+          "Id": "00000000-0000-0000-0000-000000000000",
+          "CreatedUser": null,
+          "CreatedDate": "0001-01-01T00:00:00"
+        },
+        {
+          "IsActive": false,
+          "M_Promotion_Id": "4cc5157e-d343-4bbc-a369-5466cac389a4",
+          "C_Course_Id": "6f590500-0754-47ae-b7df-388a222857fd",
+          "CourseName": "Legend Hill",
+          "CourseCode": "LGH",
+          "Id": "00000000-0000-0000-0000-000000000000",
+          "CreatedUser": null,
+          "CreatedDate": "0001-01-01T00:00:00"
+        },
+        {
+          "IsActive": false,
+          "M_Promotion_Id": "4cc5157e-d343-4bbc-a369-5466cac389a4",
+          "C_Course_Id": "33f78009-241f-4898-85a2-e2f7b89ed6aa",
+          "CourseName": "Ruby Tree",
+          "CourseCode": "RT",
+          "Id": "00000000-0000-0000-0000-000000000000",
+          "CreatedUser": null,
+          "CreatedDate": "0001-01-01T00:00:00"
+        }
+      ],
+      "PromotionCustomerGroup": null
+    },
+    {
+      "C_Org_Id": null,
+      "IsActive": true,
+      "IsDeleted": false,
+      "Name": "SeAGolf Visitor",
+      "NotificationType": null,
+      "NameEn": null,
+      "Description": null,
+      "DescriptionEn": null,
+      "PromotionCode": "SeA_VT",
+      "Img_Url": "Assets\\Images\\PromotionImages\\03-06-2022-09-24-08-773.jpeg",
+      "Full_Image_Url": null,
+      "ImageData": null,
+      "Start_Date": "2022-06-02T00:00:00",
+      "End_Date": "2022-12-31T00:00:00",
+      "DOW": "0,1,2,3,4,5,6,7",
+      "ApplyTime_From": "",
+      "ApplyTime_To": "",
+      "Promotion_Type": "seagolf",
+      "Priotity": 0,
+      "IsHotPromotion": false,
+      "Promotion_Formula": "percent",
+      "Promotion_Value": 1500000,
+      "PublicPrice_Percent": 30,
+      "PromotionPrice_Percent": 10,
+      "Id": "f1543af4-0fe3-44fb-974d-8b3c70e0c082",
+      "CustomerGroupNames": null,
+      "CustomerGroupList": null,
+      "CourseNames": null,
+      "CreatedUser": "admin",
+      "CreatedDate": "2022-06-02T17:01:10.8843618",
+      "AppliedDate0": false,
+      "AppliedDate1": false,
+      "AppliedDate2": false,
+      "AppliedDate3": false,
+      "AppliedDate4": false,
+      "AppliedDate5": false,
+      "AppliedDate6": false,
+      "AppliedDate7": false,
+      "Course": null,
+      "CustomerGroups": null,
+      "PromotionCourses": [
+        {
+          "IsActive": false,
+          "M_Promotion_Id": "f1543af4-0fe3-44fb-974d-8b3c70e0c082",
+          "C_Course_Id": "86495eb0-3ac8-4cef-9fb1-aa2dae97c06b",
+          "CourseName": "Mountain View",
+          "CourseCode": "MV",
+          "Id": "00000000-0000-0000-0000-000000000000",
+          "CreatedUser": null,
+          "CreatedDate": "0001-01-01T00:00:00"
+        },
+        {
+          "IsActive": false,
+          "M_Promotion_Id": "f1543af4-0fe3-44fb-974d-8b3c70e0c082",
+          "C_Course_Id": "35226145-f866-42bb-8ef0-8d7583251d0f",
+          "CourseName": "Nicklaus",
+          "CourseCode": "NI",
+          "Id": "00000000-0000-0000-0000-000000000000",
+          "CreatedUser": null,
+          "CreatedDate": "0001-01-01T00:00:00"
+        },
+        {
+          "IsActive": false,
+          "M_Promotion_Id": "f1543af4-0fe3-44fb-974d-8b3c70e0c082",
+          "C_Course_Id": "ded89641-1208-4c81-b1c8-95b53a0b0ccb",
+          "CourseName": "Norman",
+          "CourseCode": "NO",
+          "Id": "00000000-0000-0000-0000-000000000000",
+          "CreatedUser": null,
+          "CreatedDate": "0001-01-01T00:00:00"
+        },
+        {
+          "IsActive": false,
+          "M_Promotion_Id": "f1543af4-0fe3-44fb-974d-8b3c70e0c082",
+          "C_Course_Id": "3764a86f-b77e-4aad-aab1-eb84466dd448",
+          "CourseName": "Kings Course",
+          "CourseCode": "KC",
+          "Id": "00000000-0000-0000-0000-000000000000",
+          "CreatedUser": null,
+          "CreatedDate": "0001-01-01T00:00:00"
+        },
+        {
+          "IsActive": false,
+          "M_Promotion_Id": "f1543af4-0fe3-44fb-974d-8b3c70e0c082",
+          "C_Course_Id": "10c165d8-36b7-4296-9d22-0d8760a7525c",
+          "CourseName": "LakeSide",
+          "CourseCode": "LS",
+          "Id": "00000000-0000-0000-0000-000000000000",
+          "CreatedUser": null,
+          "CreatedDate": "0001-01-01T00:00:00"
+        },
+        {
+          "IsActive": false,
+          "M_Promotion_Id": "f1543af4-0fe3-44fb-974d-8b3c70e0c082",
+          "C_Course_Id": "33f78009-241f-4898-85a2-e2f7b89ed6aa",
+          "CourseName": "Ruby Tree",
+          "CourseCode": "RT",
+          "Id": "00000000-0000-0000-0000-000000000000",
+          "CreatedUser": null,
+          "CreatedDate": "0001-01-01T00:00:00"
+        },
+        {
+          "IsActive": false,
+          "M_Promotion_Id": "f1543af4-0fe3-44fb-974d-8b3c70e0c082",
+          "C_Course_Id": "6f590500-0754-47ae-b7df-388a222857fd",
+          "CourseName": "Legend Hill",
+          "CourseCode": "LGH",
+          "Id": "00000000-0000-0000-0000-000000000000",
+          "CreatedUser": null,
+          "CreatedDate": "0001-01-01T00:00:00"
+        }
+      ],
+      "PromotionCustomerGroup": null
+    }
+  ],
+  "BookingTeetime": [
+    {
+      "C_Org_Id": "00000000-0000-0000-0000-000000000000",
+      "GF_Booking_Id": "00000000-0000-0000-0000-000000000000",
+      "IsActive": false,
+      "CardNo": null,
+      "BookingCode": null,
+      "MB_CustomerGroup_Id": null,
+      "CustomerGroupName": "Visitor",
+      "CustomerGroupCode": "5",
+      "NumberPlayers": 0,
+      "Notes": null,
+      "Telephone": null,
+      "DateId": "0001-01-01T00:00:00",
+      "StartTee": 1,
+      "Tee_Time": "2022-10-13T06:00:00",
+      "TeeTimeEnd": "2022-10-13T06:08:00",
+      "Hole": 0,
+      "FlightSeq": 0,
+      "Caddie_No": null,
+      "CustomerFullName": "chung chang seong",
+      "CustomerOrderName": null,
+      "MobilePhone": null,
+      "Email": null,
+      "Description": null,
+      "BookingStatus": null,
+      "Public_Price": null,
+      "BuggyFee": null,
+      "Promotion_Price": null,
+      "EstimatedPrice": null,
+      "SeagolfPrice": null,
+      "Net_Ammount": null,
+      "Discount_Value": null,
+      "Discount_Amount": null,
+      "Total_Amount": null,
+      "Deposit_Amount": null,
+      "Golf_Price_Description": null,
+      "Golf_Promotion_Id": null,
+      "Golf_Promotion_Name": null,
+      "Golf_CusGroupCode": "5",
+      "TimeOnCoursePlayer": null,
+      "CashierName": null,
+      "GolfBag": null,
+      "Id": "00000000-0000-0000-0000-000000000000",
+      "CreatedUser": null,
+      "CreatedDate": "0001-01-01T00:00:00",
+      "Is_NoShow": false,
+      "UpdateNoShow_Time": null,
+      "UpdateNoShow_UserName": null,
+      "Part": "1",
+      "TurnLength": null,
+      "IsUpdateNoShow": null,
+      "Cancel_Time": null,
+      "Cancel_User": null,
+      "Cancel_Reason_Id": null,
+      "CancelReasonName": null,
+      "Cancel_Description": null,
+      "DurationPlay": null,
+      "NonRefundedFee": null,
+      "IsSelected": true,
+      "IsBooked": false,
+      "TimeDisplay": "06:00",
+      "IsPromotion": true,
+      "AvailableFlightSeq": 2,
+      "Booking": null
+    }
+  ],
+  "BookingSpecialRequests": [
+    {
+      "C_Org_Id": "00000000-0000-0000-0000-000000000000",
+      "GF_Booking_Id": "00000000-0000-0000-0000-000000000000",
+      "IsActive": false,
+      "C_Booking_OtherType_Id": "e74e21cb-1154-4716-a61f-905637ac7165",
+      "BookingOtherTypeName": null,
+      "Description": "",
+      "IsSelected": false,
+      "Code": null,
+      "Name": "ThuĂª xe riĂªng",
+      "NameEn": "Individual Cart",
+      "Id": "00000000-0000-0000-0000-000000000000",
+      "CreatedUser": null,
+      "CreatedDate": "0001-01-01T00:00:00"
+    },
+    {
+      "C_Org_Id": "00000000-0000-0000-0000-000000000000",
+      "GF_Booking_Id": "00000000-0000-0000-0000-000000000000",
+      "IsActive": false,
+      "C_Booking_OtherType_Id": "b31726fc-4885-4e84-810b-b2fcd6c2416a",
+      "BookingOtherTypeName": null,
+      "Description": "",
+      "IsSelected": false,
+      "Code": null,
+      "Name": "ThĂªm há»‘",
+      "NameEn": "Extra Holes",
+      "Id": "00000000-0000-0000-0000-000000000000",
+      "CreatedUser": null,
+      "CreatedDate": "0001-01-01T00:00:00"
+    },
+    {
+      "C_Org_Id": "00000000-0000-0000-0000-000000000000",
+      "GF_Booking_Id": "00000000-0000-0000-0000-000000000000",
+      "IsActive": false,
+      "C_Booking_OtherType_Id": "711fac50-9021-4139-b5b9-bbd57a11304b",
+      "BookingOtherTypeName": null,
+      "Description": "",
+      "IsSelected": false,
+      "Code": null,
+      "Name": "ThuĂª giĂ y",
+      "NameEn": "Shoes Rental",
+      "Id": "00000000-0000-0000-0000-000000000000",
+      "CreatedUser": null,
+      "CreatedDate": "0001-01-01T00:00:00"
+    },
+    {
+      "C_Org_Id": "00000000-0000-0000-0000-000000000000",
+      "GF_Booking_Id": "00000000-0000-0000-0000-000000000000",
+      "IsActive": false,
+      "C_Booking_OtherType_Id": "b26ce6af-f874-44ee-942f-cf520d65b319",
+      "BookingOtherTypeName": null,
+      "Description": "",
+      "IsSelected": false,
+      "Code": null,
+      "Name": "KhĂ¡c",
+      "NameEn": "Other(s)",
+      "Id": "00000000-0000-0000-0000-000000000000",
+      "CreatedUser": null,
+      "CreatedDate": "0001-01-01T00:00:00"
+    },
+    {
+      "C_Org_Id": "00000000-0000-0000-0000-000000000000",
+      "GF_Booking_Id": "00000000-0000-0000-0000-000000000000",
+      "IsActive": false,
+      "C_Booking_OtherType_Id": "01aa7936-6550-47d9-a3e0-d6a01258e10d",
+      "BookingOtherTypeName": null,
+      "Description": "",
+      "IsSelected": false,
+      "Code": null,
+      "Name": "ThuĂª gáº­y",
+      "NameEn": "Club Rental",
+      "Id": "00000000-0000-0000-0000-000000000000",
+      "CreatedUser": null,
+      "CreatedDate": "0001-01-01T00:00:00"
+    },
+    {
+      "C_Org_Id": "00000000-0000-0000-0000-000000000000",
+      "GF_Booking_Id": "00000000-0000-0000-0000-000000000000",
+      "IsActive": false,
+      "C_Booking_OtherType_Id": "531065c6-7252-439a-aef7-f75f4fbd39d9",
+      "BookingOtherTypeName": null,
+      "Description": "",
+      "IsSelected": false,
+      "Code": null,
+      "Name": "Äáº·t Caddie",
+      "NameEn": "Book Caddie",
+      "Id": "00000000-0000-0000-0000-000000000000",
+      "CreatedUser": null,
+      "CreatedDate": "0001-01-01T00:00:00"
+    }
+  ],
+  "MemberCardTypes": [
+    {
+      "Id": "630e7368-0044-46f4-b197-193bbc10108d",
+      "C_Org_Id": "b29b3bcc-f615-4ef0-ade7-b983f4e3ecf8",
+      "OrganizationName": null,
+      "Code": "22",
+      "Name": "Member Brg",
+      "NameEn": "Member Brg",
+      "OrderValue": 2,
+      "IsActive": true,
+      "CreatedUser": null,
+      "CreatedDate": "0001-01-01T00:00:00"
+    },
+    {
+      "Id": "8c9d4f88-4280-4d7e-aeef-6d24ff3c4581",
+      "C_Org_Id": "b29b3bcc-f615-4ef0-ade7-b983f4e3ecf8",
+      "OrganizationName": null,
+      "Code": "5",
+      "Name": "Visitor",
+      "NameEn": "Visitor",
+      "OrderValue": 3,
+      "IsActive": true,
+      "CreatedUser": null,
+      "CreatedDate": "0001-01-01T00:00:00"
+    },
+    {
+      "Id": "8c9d4f88-4280-4d7e-aeef-6d24ff3c4582",
+      "C_Org_Id": "b29b3bcc-f615-4ef0-ade7-b983f4e3ecf8",
+      "OrganizationName": null,
+      "Code": "2",
+      "Name": "Member Guest",
+      "NameEn": "Member Guest",
+      "OrderValue": 4,
+      "IsActive": true,
+      "CreatedUser": null,
+      "CreatedDate": "0001-01-01T00:00:00"
+    },
+    {
+      "Id": "8c9d4f88-4280-4d7e-aeef-6e24ff3c4582",
+      "C_Org_Id": "b29b3bcc-f615-4ef0-ade7-b983f4e3ecf8",
+      "OrganizationName": null,
+      "Code": "1",
+      "Name": "Member",
+      "NameEn": "Member",
+      "OrderValue": 1,
+      "IsActive": true,
+      "CreatedUser": null,
+      "CreatedDate": "0001-01-01T00:00:00"
+    }
+  ],
+  "OrgId": null
+}
+2022-10-12 13:55:04.113 +07:00 [Information] (App.BookingOnline.Data.Repositories.BookingRepository.) [Golf Api Error] -CheckPriceBooking-input-{"CourseId":null,"OrgId":null,"PromotionId":null,"BookingDate":null,"UserId":null,"CourseCode":"LS","OrgCode":"KI","Golf_CusGroupCode":"5","BK_CusGroupCode":"5","CustomerFullName":"chung chang seong","CardNo":null,"BookingTime":"2022-10-13T06:00:00","Hole":0}
+2022-10-12 13:55:57.699 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:56:44.248 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 13:56:44.321 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 14:30:28.470 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] Started timer
+2022-10-12 14:31:28.463 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 14:31:29.724 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"NonRefundedFee"' on entity type '"Booking"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 14:31:29.726 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalEstimateFee"' on entity type '"Booking"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 14:31:29.726 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"BuggyFee"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 14:31:29.726 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"EstimatedPrice"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 14:31:29.726 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"NonRefundedFee"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 14:31:29.727 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"SeagolfPrice"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 14:31:29.727 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalMoney"' on entity type '"BookingTransactionPayment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 14:31:29.727 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalMoneyAcc"' on entity type '"BookingTransactionPayment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 14:31:29.727 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Charge_Amt"' on entity type '"InTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 14:31:29.727 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Total_Amt"' on entity type '"InTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 14:31:29.727 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Trans_Amt"' on entity type '"InTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 14:31:29.727 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Charge_Amt"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 14:31:29.727 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalMoneyAcc"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 14:31:29.727 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Total_Amt"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 14:31:29.727 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Trans_Amt"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-10-12 14:31:38.709 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 14:31:57.263 +07:00 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/12/2022 03:48:04', Current time: '10/12/2022 07:31:57'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2022-10-12 14:31:57.301 +07:00 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/12/2022 03:48:04', Current time: '10/12/2022 07:31:57'."
+2022-10-12 14:31:57.338 +07:00 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) AuthenticationScheme: "Bearer" was challenged.
+2022-10-12 14:32:10.776 +07:00 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2022-10-12 14:32:45.423 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 14:32:45.452 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 14:33:28.474 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 14:33:33.301 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 14:34:28.457 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 14:34:28.466 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 14:35:28.471 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 14:35:28.486 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 14:36:28.456 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 14:36:28.462 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 14:37:28.461 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 14:37:28.474 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 14:38:28.460 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 14:38:28.471 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 14:39:28.459 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 14:39:28.467 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 14:40:28.469 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 14:40:28.506 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 14:41:28.471 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 14:41:28.510 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 14:42:28.470 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 14:42:28.476 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 14:43:28.466 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 14:43:28.474 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 14:44:28.478 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 14:44:28.485 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 14:45:28.471 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 14:45:28.520 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] Execute job with Id: f90fc70d-5122-4dea-a177-181b50ae4b57 Delay: 10
+2022-10-12 14:45:28.520 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] Job execution finished (Id: f90fc70d-5122-4dea-a177-181b50ae4b57)
+2022-10-12 14:45:53.642 +07:00 [Error] (App.BookingOnline.Data.MailService.MailService.MoveNext) Gọi send email
+2022-10-12 14:45:53.643 +07:00 [Error] (App.BookingOnline.Data.MailService.MailService.MoveNext) Kết thúc send email
+2022-10-12 14:45:58.218 +07:00 [Error] (App.BookingOnline.Data.MailService.MailService.MoveNext) Gọi send email
+2022-10-12 14:45:58.218 +07:00 [Error] (App.BookingOnline.Data.MailService.MailService.MoveNext) Kết thúc send email
+2022-10-12 14:45:58.230 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] Execute job with Id: 5f70ab14-1617-41ec-89f5-e5349afef80f Delay: 10
+2022-10-12 14:45:58.231 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] Job execution finished (Id: 5f70ab14-1617-41ec-89f5-e5349afef80f)
+2022-10-12 14:46:14.693 +07:00 [Error] (App.BookingOnline.Data.MailService.MailService.SendCompletedCallback) Failure sending mail.
+2022-10-12 14:46:14.694 +07:00 [Error] (App.BookingOnline.Data.MailService.MailService.SendCompletedCallback) A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. [::ffff:192.168.200.190]:465
+2022-10-12 14:46:19.267 +07:00 [Error] (App.BookingOnline.Data.MailService.MailService.SendCompletedCallback) Failure sending mail.
+2022-10-12 14:46:19.267 +07:00 [Error] (App.BookingOnline.Data.MailService.MailService.SendCompletedCallback) A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. [::ffff:192.168.200.190]:465
+2022-10-12 14:46:28.477 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 14:46:28.482 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 14:47:28.460 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 14:47:28.465 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 14:48:28.466 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 14:48:28.472 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 14:49:28.483 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 14:49:28.491 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 14:50:28.468 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 14:50:28.476 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 14:51:28.472 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 14:51:28.480 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 14:52:28.471 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 14:52:28.476 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 14:53:28.480 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 14:53:28.487 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 14:54:28.479 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 14:54:28.484 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 14:55:28.461 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 14:55:28.467 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 14:56:28.477 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 14:56:28.481 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 14:57:28.480 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 14:57:28.519 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 14:58:28.482 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 14:58:28.488 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 14:59:28.492 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 14:59:28.497 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 15:00:28.508 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 15:00:28.516 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 15:01:28.506 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 15:01:28.510 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 15:02:28.508 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 15:02:28.514 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 15:03:28.525 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 15:03:28.529 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 15:04:28.522 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 15:04:28.529 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 15:05:28.534 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 15:05:28.555 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 15:06:28.545 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 15:06:28.551 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 15:07:28.534 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 15:07:28.541 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 15:08:28.542 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 15:08:28.548 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 15:09:28.540 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 15:09:28.545 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 15:10:28.537 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 15:10:28.544 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 15:11:28.555 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 15:11:28.564 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 15:12:28.552 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 15:12:28.560 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 15:13:28.539 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 15:13:28.544 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 15:14:28.553 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 15:14:28.558 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 15:15:28.566 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 15:15:28.590 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 15:16:28.561 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 15:16:28.565 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 15:17:28.554 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 15:17:28.561 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 15:18:28.565 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 15:18:28.570 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 15:19:28.561 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 15:19:28.565 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 15:20:28.563 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 15:20:28.568 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 15:21:28.566 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 15:21:28.572 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 15:22:28.562 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 15:22:28.567 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 15:23:28.580 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 15:23:28.587 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 15:24:28.562 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 15:24:28.568 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 15:25:28.567 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 15:25:28.571 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 15:26:28.567 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 15:26:28.573 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 15:27:28.576 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 15:27:28.582 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 15:28:28.576 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 15:28:28.583 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 15:29:28.576 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 15:29:28.583 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 15:30:28.580 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 15:30:28.587 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 15:31:28.565 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 15:31:28.569 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 15:32:28.575 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 15:32:28.580 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 15:33:28.585 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 15:33:28.590 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 15:34:28.569 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 15:34:28.573 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-10-12 15:35:28.568 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-10-12 15:35:28.574 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle

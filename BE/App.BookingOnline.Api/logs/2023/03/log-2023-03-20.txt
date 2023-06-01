@@ -1,0 +1,990 @@
+2023-03-20 09:54:03 [Information] (Hangfire.SqlServer.SqlServerObjectsInstaller.) Start installing Hangfire SQL objects...
+2023-03-20 09:54:03 [Information] (Hangfire.SqlServer.SqlServerObjectsInstaller.) Hangfire SQL objects installed.
+2023-03-20 09:54:03 [Information] (Hangfire.BackgroundJobServer.) Starting Hangfire Server using job storage: 'SQL Server: 192.168.85.11@BO_GOLF'
+2023-03-20 09:54:03 [Information] (Hangfire.BackgroundJobServer.) Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+2023-03-20 09:54:03 [Information] (Hangfire.BackgroundJobServer.) Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-03-20 09:54:03 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop BackgroundServerProcess:9cec43aa has started in 12.0262 ms
+2023-03-20 09:54:03 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:6168:14c27f52 successfully announced in 41.3582 ms
+2023-03-20 09:54:03 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerHeartbeatProcess:67b9fed4 has started in 5.1745 ms
+2023-03-20 09:54:03 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:6168:14c27f52 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-03-20 09:54:03 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerWatchdog:48a2eb15 has started in 3.8002 ms
+2023-03-20 09:54:03 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerJobCancellationWatcher:5fe78af3 has started in 4.7409 ms
+2023-03-20 09:54:03 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ExpirationManager:5296fb5e has started in 5.3953 ms
+2023-03-20 09:54:03 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop SqlServerHeartbeatProcess:8ab60702 has started in 30.329 ms
+2023-03-20 09:54:03 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop CountersAggregator:53cb5825 has started in 34.0683 ms
+2023-03-20 09:54:03 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 09:54:03 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'AggregatedCounter' table...
+2023-03-20 09:54:03 [Information] (Hangfire.Server.ServerWatchdog.) 1 servers were removed due to timeout
+2023-03-20 09:54:03 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:b60f1765 has started in 44.9684 ms
+2023-03-20 09:54:03 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:e8031a66 has started in 44.9735 ms
+2023-03-20 09:54:03 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:38cedd68 has started in 49.616 ms
+2023-03-20 09:54:03 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:ec1f9abd has started in 52.1938 ms
+2023-03-20 09:54:03 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:465db30c has started in 54.6909 ms
+2023-03-20 09:54:03 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:de9d23e5 has started in 57.2437 ms
+2023-03-20 09:54:03 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:f0447e8a has started in 62.0253 ms
+2023-03-20 09:54:03 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:34cc113b has started in 90.3126 ms
+2023-03-20 09:54:03 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:25e1de3a has started in 90.318 ms
+2023-03-20 09:54:03 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:f4d240ef has started in 94.9849 ms
+2023-03-20 09:54:03 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:7a89f8e0 has started in 96.2823 ms
+2023-03-20 09:54:03 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:6c48b691 has started in 99.2641 ms
+2023-03-20 09:54:03 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:e655f10b has started in 102.1044 ms
+2023-03-20 09:54:03 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:f7fa283a has started in 105.0379 ms
+2023-03-20 09:54:03 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:444a73fe has started in 108.8663 ms
+2023-03-20 09:54:03 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:bcf1e668 has started in 110.528 ms
+2023-03-20 09:54:03 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:f783117d has started in 112.9735 ms
+2023-03-20 09:54:03 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:e36aba97 has started in 116.0022 ms
+2023-03-20 09:54:03 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:b0e9049a has started in 118.3984 ms
+2023-03-20 09:54:03 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:ce42e7cc has started in 121.3878 ms
+2023-03-20 09:54:03 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:6168:14c27f52 all the dispatchers started
+2023-03-20 09:54:03 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop DelayedJobScheduler:48655791 has started in 5.9877 ms
+2023-03-20 09:54:03 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop RecurringJobScheduler:7789a65a has started in 5.8997 ms
+2023-03-20 09:54:03 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Job' table...
+2023-03-20 09:54:03 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'List' table...
+2023-03-20 09:54:03 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Set' table...
+2023-03-20 09:54:03 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Hash' table...
+2023-03-20 09:54:04 [Debug] (Hangfire.Server.RecurringJobScheduler.) 3 recurring job(s) processed by scheduler.
+2023-03-20 09:54:13 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2023-03-20 09:54:13 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"NonRefundedFee"' on entity type '"Booking"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2023-03-20 09:54:13 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalEstimateFee"' on entity type '"Booking"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2023-03-20 09:54:13 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"BuggyFee"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2023-03-20 09:54:13 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"EstimatedPrice"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2023-03-20 09:54:13 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"NonRefundedFee"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2023-03-20 09:54:13 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"SeagolfPrice"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2023-03-20 09:54:13 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"OutMoneyAcc"' on entity type '"BookingTransactionPayment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2023-03-20 09:54:13 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"SdkRefundMoney"' on entity type '"BookingTransactionPayment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2023-03-20 09:54:13 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalMoney"' on entity type '"BookingTransactionPayment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2023-03-20 09:54:13 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalMoneyAcc"' on entity type '"BookingTransactionPayment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2023-03-20 09:54:13 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Charge_Amt"' on entity type '"InTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2023-03-20 09:54:13 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Tien_hoan"' on entity type '"InTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2023-03-20 09:54:13 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Total_Amt"' on entity type '"InTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2023-03-20 09:54:13 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Trans_Amt"' on entity type '"InTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2023-03-20 09:54:13 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Charge_Amt"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2023-03-20 09:54:13 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Tien_hoan"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2023-03-20 09:54:13 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalMoneyAcc"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2023-03-20 09:54:13 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Total_Amt"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2023-03-20 09:54:13 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Trans_Amt"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2023-03-20 09:54:13 [Information] (App.BookingOnline.WebApi.Jobs.GetFileInSeabankJobs.MoveNext) GetFileInFromSbAsync
+2023-03-20 09:54:14 [Information] (App.BookingOnline.Service.TransactionService.App.BookingOnline.Service.TransactionService+<SendFileOutToSeabank>d__48) Email out: ***>> 1.Update trạng thái log
+2023-03-20 09:54:14 [Information] (App.BookingOnline.Service.TransactionService.App.BookingOnline.Service.TransactionService+<SendFileOutToSeabank>d__48) [{"Date":"2023-03-17T00:00:00","Status":"sent","FileType":"Out","Id":"e5ec78b1-8ca3-43ea-b39e-ecc82fcde337"}]
+2023-03-20 09:54:14 [Information] (App.BookingOnline.Data.Repositories.BookingRepository.LockAccountCustomerDueNoShow) LockAccount: chung chang seong-Date:3/20/2023 9:54:14 AM
+2023-03-20 09:54:14 [Information] (App.BookingOnline.Data.Repositories.BookingRepository.LockAccountCustomerDueNoShow) LockAccount: hoang thi ngoc lan-Date:3/20/2023 9:54:14 AM
+2023-03-20 09:54:14 [Information] (App.BookingOnline.Data.Repositories.BookingRepository.LockAccountCustomerDueNoShow) LockAccount: nguyễn tấn vạn-Date:3/20/2023 9:54:14 AM
+2023-03-20 09:54:14 [Warning] (Microsoft.EntityFrameworkCore.Database.Transaction.) Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(RelationalEventId.SavepointsDisabledBecauseOfMARS))'.
+2023-03-20 09:54:14 [Information] (App.BookingOnline.Service.TransactionService.App.BookingOnline.Service.TransactionService+<SendFileOutToSeabank>d__48) Email out:  2.Update trạng thái log <<***
+2023-03-20 09:54:14 [Information] (App.BookingOnline.Data.Repositories.BookingRepository.LockAccountCustomerDueNoShow) LockAccount: Sawa Yukinori-Date:3/20/2023 9:54:14 AM
+2023-03-20 09:54:14 [Error] (App.BookingOnline.WebApi.Jobs.SendFileOutJobs.MoveNext) HangfireSendEmailJobs
+2023-03-20 09:54:14 [Information] (App.BookingOnline.Data.Repositories.BookingRepository.LockAccountCustomerDueNoShow) LockAccount: Nguyễn Thế Phương-Date:3/20/2023 9:54:14 AM
+2023-03-20 09:54:17 [Warning] (Microsoft.EntityFrameworkCore.Database.Transaction.) Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(RelationalEventId.SavepointsDisabledBecauseOfMARS))'.
+2023-03-20 09:54:17 [Warning] (Microsoft.EntityFrameworkCore.Database.Transaction.) Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(RelationalEventId.SavepointsDisabledBecauseOfMARS))'.
+2023-03-20 09:54:33 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 09:55:03 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 09:55:33 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 09:56:03 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 09:56:33 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 09:57:03 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 09:57:33 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 09:58:03 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 09:58:33 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 09:59:03 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 09:59:03 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 09:59:33 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:00:04 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:00:34 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:01:04 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:01:34 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:02:04 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:02:34 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:03:04 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:03:34 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:04:03 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 10:04:04 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:04:34 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:05:04 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:05:34 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:06:04 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:06:34 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:07:04 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:07:34 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:08:04 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:08:31 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2023-03-20 10:08:34 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:09:03 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 10:09:04 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:09:34 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:10:04 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:10:34 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:11:04 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:11:34 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:12:04 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:12:34 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:13:04 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:13:34 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:14:03 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 10:14:04 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:14:34 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:15:04 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:15:34 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:16:04 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:16:34 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:17:04 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:17:34 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:18:04 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:18:34 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:19:03 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 10:19:04 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:19:34 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:20:04 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:20:34 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:21:04 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:21:35 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:22:05 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:22:35 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:23:05 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:23:35 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:24:03 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 10:24:04 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'AggregatedCounter' table...
+2023-03-20 10:24:04 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Job' table...
+2023-03-20 10:24:04 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'List' table...
+2023-03-20 10:24:04 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Set' table...
+2023-03-20 10:24:04 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Hash' table...
+2023-03-20 10:24:05 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:24:35 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:25:05 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:25:35 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:26:05 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:26:35 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:27:05 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:27:35 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:28:05 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:28:35 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:28:41 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2023-03-20 10:28:41 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2023-03-20 10:28:50 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2023-03-20 10:28:52 [Warning] (Microsoft.EntityFrameworkCore.Query.) Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'
+2023-03-20 10:29:03 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 10:29:05 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:29:35 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:30:05 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:30:35 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:31:05 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:31:35 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:32:05 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:32:35 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:33:05 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:33:35 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:34:03 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 10:34:05 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:34:35 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:35:05 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:35:35 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:36:05 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:36:35 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:37:05 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:37:35 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:38:05 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:38:35 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:39:03 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 10:39:05 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:39:35 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:40:05 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:40:35 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:41:05 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:41:36 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:42:06 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:42:36 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:43:06 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:43:36 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:44:04 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 10:44:06 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:44:36 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:45:06 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:45:36 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:46:06 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:46:36 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:47:06 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:47:36 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:48:06 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:48:36 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:49:04 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 10:49:06 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:49:36 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:50:06 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:50:36 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:51:06 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:51:36 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:52:06 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:52:36 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:53:06 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:53:36 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:54:04 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 10:54:04 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'AggregatedCounter' table...
+2023-03-20 10:54:04 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Job' table...
+2023-03-20 10:54:04 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'List' table...
+2023-03-20 10:54:04 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Set' table...
+2023-03-20 10:54:04 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Hash' table...
+2023-03-20 10:54:06 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:54:36 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:55:06 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:55:36 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:56:06 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:56:36 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:57:06 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:57:36 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:58:06 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:58:36 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:59:04 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 10:59:06 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 10:59:36 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:00:06 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:00:36 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:01:06 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:01:36 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:02:06 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:02:37 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:03:07 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:03:37 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:04:04 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 11:04:07 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:04:37 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:05:07 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:05:37 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:06:07 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:06:37 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:07:07 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:07:37 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:08:07 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:08:37 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:09:04 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 11:09:07 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:09:37 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:10:07 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:10:37 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:11:07 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:11:37 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:12:07 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:12:37 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:13:07 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:13:37 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:14:04 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 11:14:07 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:14:37 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:15:07 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:15:37 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:16:07 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:16:37 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:17:07 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:17:37 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:18:07 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:18:37 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:19:04 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 11:19:07 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:19:38 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:20:08 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:20:38 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:21:08 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:21:38 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:22:08 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:22:38 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:23:08 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:23:38 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:24:04 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'AggregatedCounter' table...
+2023-03-20 11:24:04 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Job' table...
+2023-03-20 11:24:04 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'List' table...
+2023-03-20 11:24:04 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 11:24:04 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Set' table...
+2023-03-20 11:24:04 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Hash' table...
+2023-03-20 11:24:08 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:24:38 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:25:08 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:25:38 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:26:08 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:26:38 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:27:08 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:27:38 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:28:08 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:28:38 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:29:04 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 11:29:08 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:29:38 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:30:08 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:30:38 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:31:08 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:31:38 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:32:08 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:32:38 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:33:08 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:33:38 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:34:04 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 11:34:08 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:34:38 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:35:08 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:35:38 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:36:08 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:36:38 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:37:08 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:37:38 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:38:08 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:38:38 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:39:04 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 11:39:09 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:39:39 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:40:09 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:40:39 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:41:09 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:41:39 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:42:09 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:42:39 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:43:09 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:43:39 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:44:04 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 11:44:09 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:44:39 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:45:09 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:45:39 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:46:09 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:46:39 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:47:09 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:47:39 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:48:09 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:48:39 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:49:04 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 11:49:09 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:49:39 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:50:09 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:50:39 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:51:09 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:51:39 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:52:09 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:52:39 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:53:09 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:53:39 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:54:04 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'AggregatedCounter' table...
+2023-03-20 11:54:04 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Job' table...
+2023-03-20 11:54:04 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'List' table...
+2023-03-20 11:54:04 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Set' table...
+2023-03-20 11:54:04 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Hash' table...
+2023-03-20 11:54:04 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 11:54:09 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:54:39 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:55:09 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:55:39 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:56:09 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:56:39 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:57:09 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:57:39 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:58:09 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:58:40 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:59:04 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 11:59:10 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 11:59:40 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:00:10 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:00:40 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:01:10 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:01:40 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:02:10 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:02:40 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:03:10 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:03:40 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:04:04 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 12:04:10 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:04:40 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:05:10 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:05:40 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:06:10 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:06:40 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:07:10 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:07:40 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:08:10 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:08:41 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:09:04 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 12:09:11 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:09:41 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:10:11 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:10:41 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:11:11 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:11:41 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:12:11 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:12:41 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:13:11 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:13:41 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:14:04 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 12:14:11 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:14:41 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:15:11 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:15:41 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:16:11 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:16:41 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:17:11 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:17:41 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:18:11 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:18:41 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:19:04 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 12:19:11 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:19:41 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:20:11 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:20:41 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:21:11 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:21:41 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:22:11 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:22:41 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:23:11 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:23:41 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:24:04 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'AggregatedCounter' table...
+2023-03-20 12:24:04 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Job' table...
+2023-03-20 12:24:04 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'List' table...
+2023-03-20 12:24:04 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Set' table...
+2023-03-20 12:24:04 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Hash' table...
+2023-03-20 12:24:04 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 12:24:11 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:24:41 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:25:11 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:25:41 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:26:11 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:26:41 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:27:11 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:27:41 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:28:11 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:28:41 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:29:04 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 12:29:12 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:29:42 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:30:12 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:30:42 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:31:12 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:31:42 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:32:12 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:32:42 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:33:12 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:33:42 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:34:04 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 12:34:12 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:34:42 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:35:12 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:35:42 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:36:12 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:36:42 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:37:12 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:37:42 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:38:12 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:38:42 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:39:04 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 12:39:12 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:39:42 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:40:12 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:40:42 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:41:12 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:41:42 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:42:12 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:42:42 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:43:12 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:43:42 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:44:04 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 12:44:12 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:44:42 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:45:12 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:45:42 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:46:12 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:46:42 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:47:12 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:47:42 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:48:13 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:48:43 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:49:05 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 12:49:13 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:49:43 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:50:13 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:50:43 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:51:13 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:51:43 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:52:13 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:52:43 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:53:13 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:53:43 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:54:04 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'AggregatedCounter' table...
+2023-03-20 12:54:04 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Job' table...
+2023-03-20 12:54:04 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'List' table...
+2023-03-20 12:54:04 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Set' table...
+2023-03-20 12:54:04 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Hash' table...
+2023-03-20 12:54:05 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 12:54:13 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:54:43 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:55:13 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:55:43 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:56:13 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:56:43 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:57:13 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:57:43 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:58:13 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:58:43 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:59:05 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 12:59:13 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 12:59:43 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:00:13 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:00:43 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:01:13 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:01:43 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:02:13 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:02:43 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:03:13 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:03:43 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:04:05 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 13:04:13 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:04:43 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:05:13 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:05:43 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:06:13 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:06:43 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:07:13 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:07:43 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:08:13 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:08:44 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:09:05 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 13:09:14 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:09:44 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:10:14 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:10:44 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:11:14 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:11:44 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:12:14 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:12:44 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:13:14 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:13:44 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:14:05 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 13:14:14 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:14:44 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:15:14 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:15:44 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:16:14 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:16:44 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:17:14 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:17:44 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:18:14 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:18:44 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:19:05 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 13:19:14 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:19:44 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:20:14 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:20:44 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:21:17 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:21:47 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:22:17 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:22:47 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:23:17 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:23:47 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:24:05 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'AggregatedCounter' table...
+2023-03-20 13:24:05 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Job' table...
+2023-03-20 13:24:05 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'List' table...
+2023-03-20 13:24:05 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Set' table...
+2023-03-20 13:24:05 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Hash' table...
+2023-03-20 13:24:05 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 13:24:17 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:24:47 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:25:17 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:25:47 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:26:17 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:26:47 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:27:17 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:27:47 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:28:17 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:28:47 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:29:05 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 13:29:17 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:29:47 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:30:17 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:30:47 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:31:17 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:31:47 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:32:17 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:32:47 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:33:17 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:33:47 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:34:05 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 13:34:17 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:34:47 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:35:17 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:35:47 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:36:22 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:36:52 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:37:22 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:37:52 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:38:22 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:38:52 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:39:05 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 13:39:22 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:39:52 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:40:22 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:40:52 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:41:22 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:41:52 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:42:22 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:42:52 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:43:22 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:43:52 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:44:05 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 13:44:22 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:44:52 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:45:22 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:45:52 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:46:22 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:46:52 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:47:22 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:47:52 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:48:22 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:48:52 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:49:05 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 13:49:22 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:49:52 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:50:22 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:50:52 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:51:22 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:51:52 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:52:22 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:52:52 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:53:22 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:53:53 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:54:05 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'AggregatedCounter' table...
+2023-03-20 13:54:05 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Job' table...
+2023-03-20 13:54:05 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'List' table...
+2023-03-20 13:54:05 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Set' table...
+2023-03-20 13:54:05 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Hash' table...
+2023-03-20 13:54:05 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 13:54:23 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:54:53 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:55:23 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:55:53 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:56:23 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:56:53 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:57:23 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:57:53 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:58:23 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:58:53 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:59:05 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 13:59:23 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 13:59:53 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:00:23 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:00:53 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:01:23 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:01:53 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:02:23 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:02:54 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:03:24 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:03:54 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:04:05 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 14:04:24 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:04:54 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:05:24 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:05:54 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:06:24 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:06:54 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:07:24 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:07:54 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:08:24 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:08:54 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:09:05 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 14:09:24 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:09:54 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:10:24 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:10:54 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:11:24 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:11:54 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:12:24 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:12:54 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:13:24 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:13:54 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:14:05 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 14:14:24 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:14:54 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:15:24 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:15:54 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:16:24 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:16:54 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:17:24 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:17:54 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:18:24 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:18:54 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:19:05 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 14:19:24 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:19:54 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:20:25 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:20:55 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:21:25 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:21:57 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:22:27 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:22:57 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:23:27 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:23:57 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:24:05 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'AggregatedCounter' table...
+2023-03-20 14:24:05 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Job' table...
+2023-03-20 14:24:05 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'List' table...
+2023-03-20 14:24:05 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Set' table...
+2023-03-20 14:24:05 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Hash' table...
+2023-03-20 14:24:05 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 14:24:28 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:24:58 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:25:28 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:25:58 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:26:28 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:26:58 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:27:28 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:27:58 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:28:28 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:28:58 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:29:05 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 14:29:28 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:29:58 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:30:28 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:30:58 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:31:28 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:31:58 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:32:28 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:32:58 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:33:28 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:33:58 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:34:05 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 14:34:28 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:34:58 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:35:28 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:35:58 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:36:28 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:36:58 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:37:28 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:37:58 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:38:28 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:38:58 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:39:05 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 14:39:28 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:39:58 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:40:28 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:40:58 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:41:28 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:41:58 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:42:28 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:42:58 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:43:28 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:43:58 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:44:05 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 14:44:28 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:44:59 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:45:29 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:45:59 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:46:29 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:46:59 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:47:29 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:47:59 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:48:29 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:48:59 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:49:05 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 14:49:29 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:49:59 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:50:29 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:50:59 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:51:29 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:51:59 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:52:29 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:52:59 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:53:29 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:53:59 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:54:05 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'AggregatedCounter' table...
+2023-03-20 14:54:05 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Job' table...
+2023-03-20 14:54:05 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'List' table...
+2023-03-20 14:54:05 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Set' table...
+2023-03-20 14:54:05 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Hash' table...
+2023-03-20 14:54:05 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 14:54:29 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:54:59 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:55:29 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:55:59 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:56:29 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:56:59 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:57:29 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:57:59 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:58:29 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:58:59 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:59:05 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 14:59:29 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 14:59:59 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:00:14 [Debug] (Hangfire.Server.RecurringJobScheduler.) 1 recurring job(s) processed by scheduler.
+2023-03-20 15:00:15 [Information] (App.BookingOnline.Service.TransactionService.App.BookingOnline.Service.TransactionService+<SendFileOutToSeabank>d__48) Email out: ***>> 1.Update trạng thái log
+2023-03-20 15:00:15 [Information] (App.BookingOnline.Service.TransactionService.App.BookingOnline.Service.TransactionService+<SendFileOutToSeabank>d__48) [{"Date":"2023-03-19T00:00:00","Status":"sent","FileType":"Out","Id":"e980c8de-b10b-420c-b360-fba4e807e1bc"}]
+2023-03-20 15:00:15 [Warning] (Microsoft.EntityFrameworkCore.Database.Transaction.) Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(RelationalEventId.SavepointsDisabledBecauseOfMARS))'.
+2023-03-20 15:00:15 [Information] (App.BookingOnline.Service.TransactionService.App.BookingOnline.Service.TransactionService+<SendFileOutToSeabank>d__48) Email out:  2.Update trạng thái log <<***
+2023-03-20 15:00:15 [Error] (App.BookingOnline.WebApi.Jobs.SendFileOutJobs.MoveNext) HangfireSendEmailJobs
+2023-03-20 15:00:29 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:00:59 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:01:29 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:01:59 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:02:29 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:02:59 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:03:29 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:04:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:04:06 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 15:04:30 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:05:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:05:30 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:06:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:06:30 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:07:30 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:08:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:08:30 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:09:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:09:06 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 15:09:30 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:10:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:10:30 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:11:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:11:30 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:12:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:12:30 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:13:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:13:30 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:14:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:14:06 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 15:14:30 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:15:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:15:31 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:16:01 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:16:31 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:17:01 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:17:31 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:18:05 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:18:35 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:19:05 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:19:06 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 15:19:35 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:20:05 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:20:35 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:21:05 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:21:35 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:22:05 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:22:35 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:23:05 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:23:35 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:24:05 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:24:05 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'AggregatedCounter' table...
+2023-03-20 15:24:05 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Job' table...
+2023-03-20 15:24:05 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'List' table...
+2023-03-20 15:24:05 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Set' table...
+2023-03-20 15:24:05 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Hash' table...
+2023-03-20 15:24:06 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 15:24:35 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:25:05 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:25:35 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:26:05 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:26:35 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:27:05 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:27:35 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:28:05 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:28:35 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:29:05 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:29:06 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 15:29:35 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:30:05 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:30:35 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:31:05 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:31:35 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:32:05 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:32:35 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:33:05 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:33:35 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:34:05 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:34:06 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 15:34:35 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:35:05 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:35:35 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:36:05 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:36:35 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:37:05 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:37:35 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:38:06 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:38:36 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:39:06 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:39:06 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 15:39:36 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:40:06 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:40:36 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:41:06 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:41:36 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:42:06 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:42:36 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:43:06 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:43:36 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:44:06 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:44:06 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 15:44:36 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:45:06 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:45:36 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:46:06 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:46:36 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:47:06 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:47:36 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:48:07 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:48:37 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:49:06 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 15:49:07 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:49:37 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:50:07 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:50:37 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:51:07 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:51:37 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:52:07 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:52:37 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:53:07 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:53:37 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:54:05 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'AggregatedCounter' table...
+2023-03-20 15:54:05 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Job' table...
+2023-03-20 15:54:05 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'List' table...
+2023-03-20 15:54:05 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Set' table...
+2023-03-20 15:54:05 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Hash' table...
+2023-03-20 15:54:06 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 15:54:07 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:54:37 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:55:07 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:55:37 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:56:07 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:56:37 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:57:07 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:57:37 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:58:07 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:58:37 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:59:06 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 15:59:07 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 15:59:37 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 16:00:07 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 16:00:37 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 16:01:07 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 16:01:37 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 16:02:07 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 16:02:37 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 16:03:10 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 16:03:40 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 16:04:06 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 16:04:11 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 16:04:41 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 16:05:11 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 16:05:41 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 16:06:11 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 16:06:41 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 16:07:11 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 16:07:41 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 16:08:11 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 16:08:45 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 16:09:06 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 16:09:15 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 16:09:45 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 16:10:15 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 16:10:48 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 16:11:18 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 16:11:48 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 16:12:18 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 16:12:48 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 16:13:18 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 16:13:48 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 16:14:06 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-03-20 16:14:18 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 16:14:48 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent
+2023-03-20 16:15:18 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6168:14c27f52 heartbeat successfully sent

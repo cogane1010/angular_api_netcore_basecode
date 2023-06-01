@@ -1,0 +1,129 @@
+2023-04-24 08:55:25 [Information] (Hangfire.SqlServer.SqlServerObjectsInstaller.) Start installing Hangfire SQL objects...
+2023-04-24 08:55:25 [Information] (Hangfire.SqlServer.SqlServerObjectsInstaller.) Hangfire SQL objects installed.
+2023-04-24 08:55:25 [Information] (Hangfire.BackgroundJobServer.) Starting Hangfire Server using job storage: 'SQL Server: 192.168.85.11@BO_GOLF'
+2023-04-24 08:55:25 [Information] (Hangfire.BackgroundJobServer.) Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+2023-04-24 08:55:25 [Information] (Hangfire.BackgroundJobServer.) Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-04-24 08:55:25 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop BackgroundServerProcess:94b315e7 has started in 20.6952 ms
+2023-04-24 08:55:25 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:10844:a68a2d6f successfully announced in 42.2792 ms
+2023-04-24 08:55:25 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:10844:a68a2d6f is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-04-24 08:55:25 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerHeartbeatProcess:a03c7265 has started in 45.6564 ms
+2023-04-24 08:55:25 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerWatchdog:b16c2b5b has started in 63.2644 ms
+2023-04-24 08:55:25 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerJobCancellationWatcher:19e96145 has started in 22.0358 ms
+2023-04-24 08:55:25 [Information] (Hangfire.Server.ServerWatchdog.) 3 servers were removed due to timeout
+2023-04-24 08:55:25 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ExpirationManager:0809e353 has started in 28.9645 ms
+2023-04-24 08:55:25 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'AggregatedCounter' table...
+2023-04-24 08:55:25 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop CountersAggregator:464ee1e8 has started in 34.8666 ms
+2023-04-24 08:55:25 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-04-24 08:55:25 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop SqlServerHeartbeatProcess:97fb826a has started in 20.9213 ms
+2023-04-24 08:55:25 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Job' table...
+2023-04-24 08:55:25 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'List' table...
+2023-04-24 08:55:25 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:c05cb1a7 has started in 149.7803 ms
+2023-04-24 08:55:25 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Set' table...
+2023-04-24 08:55:25 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:5ecb79c1 has started in 160.882 ms
+2023-04-24 08:55:25 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:89cf3999 has started in 161.0375 ms
+2023-04-24 08:55:25 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:50f8a30a has started in 219.4638 ms
+2023-04-24 08:55:25 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:0715e489 has started in 220.0183 ms
+2023-04-24 08:55:25 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Hash' table...
+2023-04-24 08:55:25 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:696e7178 has started in 236.9457 ms
+2023-04-24 08:55:25 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:1cf2532b has started in 249.7973 ms
+2023-04-24 08:55:25 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:964ea00b has started in 255.944 ms
+2023-04-24 08:55:25 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:ee1aec90 has started in 265.8777 ms
+2023-04-24 08:55:25 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:0ddcbc5f has started in 269.1209 ms
+2023-04-24 08:55:25 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:efccb964 has started in 274.6297 ms
+2023-04-24 08:55:25 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:700e8551 has started in 286.0542 ms
+2023-04-24 08:55:25 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:c2b42c23 has started in 296.481 ms
+2023-04-24 08:55:25 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:099b6544 has started in 306.8657 ms
+2023-04-24 08:55:25 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:d39ef478 has started in 339.6786 ms
+2023-04-24 08:55:25 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:0098c7a6 has started in 348.0224 ms
+2023-04-24 08:55:25 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:8e931860 has started in 372.9581 ms
+2023-04-24 08:55:25 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:2832891b has started in 417.7822 ms
+2023-04-24 08:55:25 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:48093b25 has started in 417.97 ms
+2023-04-24 08:55:25 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:7557e7f3 has started in 435.8971 ms
+2023-04-24 08:55:25 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop DelayedJobScheduler:88080ee9 has started in 13.0282 ms
+2023-04-24 08:55:25 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:10844:a68a2d6f all the dispatchers started
+2023-04-24 08:55:25 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop RecurringJobScheduler:3a8a8717 has started in 14.5777 ms
+2023-04-24 08:55:26 [Debug] (Hangfire.Server.RecurringJobScheduler.) 3 recurring job(s) processed by scheduler.
+2023-04-24 08:55:28 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2023-04-24 08:55:28 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"NonRefundedFee"' on entity type '"Booking"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2023-04-24 08:55:28 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalEstimateFee"' on entity type '"Booking"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2023-04-24 08:55:28 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"BuggyFee"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2023-04-24 08:55:28 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"EstimatedPrice"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2023-04-24 08:55:28 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"NonRefundedFee"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2023-04-24 08:55:28 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"SeagolfPrice"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2023-04-24 08:55:28 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"OutMoneyAcc"' on entity type '"BookingTransactionPayment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2023-04-24 08:55:28 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"SdkRefundMoney"' on entity type '"BookingTransactionPayment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2023-04-24 08:55:28 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalMoney"' on entity type '"BookingTransactionPayment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2023-04-24 08:55:28 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalMoneyAcc"' on entity type '"BookingTransactionPayment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2023-04-24 08:55:28 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Charge_Amt"' on entity type '"InTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2023-04-24 08:55:28 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Tien_hoan"' on entity type '"InTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2023-04-24 08:55:28 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Total_Amt"' on entity type '"InTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2023-04-24 08:55:28 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Trans_Amt"' on entity type '"InTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2023-04-24 08:55:28 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Charge_Amt"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2023-04-24 08:55:28 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Tien_hoan"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2023-04-24 08:55:28 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalMoneyAcc"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2023-04-24 08:55:28 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Total_Amt"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2023-04-24 08:55:28 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Trans_Amt"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2023-04-24 08:55:29 [Information] (App.BookingOnline.WebApi.Jobs.GetFileInSeabankJobs.GetFileInFromSbAsync) GetFileInFromSbAsync
+2023-04-24 08:55:30 [Information] (App.BookingOnline.Data.Repositories.BookingRepository.LockAccountCustomerDueNoShow) LockAccount: chung chang seong-Date:4/24/2023 8:55:30 AM
+2023-04-24 08:55:30 [Information] (App.BookingOnline.Data.Repositories.BookingRepository.LockAccountCustomerDueNoShow) LockAccount: hoang thi ngoc lan-Date:4/24/2023 8:55:30 AM
+2023-04-24 08:55:30 [Information] (App.BookingOnline.Data.Repositories.BookingRepository.LockAccountCustomerDueNoShow) LockAccount: nguyễn tấn vạn-Date:4/24/2023 8:55:30 AM
+2023-04-24 08:55:30 [Information] (App.BookingOnline.Service.TransactionService.SendFileOutToSeabank) Email out: ***>> 1.Update trạng thái log
+2023-04-24 08:55:30 [Information] (App.BookingOnline.Service.TransactionService.SendFileOutToSeabank) [{"Date":"2023-03-22T00:00:00","Status":"sent","FileType":"Out","Id":"59b03d5c-970e-42a3-9c32-85ca5850101a"},{"Date":"2023-04-22T00:00:00","Status":"sent","FileType":"Out","Id":"efbebbfe-2d18-44e2-8d54-877fa47cfa08"}]
+2023-04-24 08:55:30 [Warning] (Microsoft.EntityFrameworkCore.Database.Transaction.) Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(RelationalEventId.SavepointsDisabledBecauseOfMARS))'.
+2023-04-24 08:55:30 [Warning] (Microsoft.EntityFrameworkCore.Database.Transaction.) Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(RelationalEventId.SavepointsDisabledBecauseOfMARS))'.
+2023-04-24 08:55:30 [Information] (App.BookingOnline.Service.TransactionService.SendFileOutToSeabank) Email out:  2.Update trạng thái log <<***
+2023-04-24 08:55:30 [Information] (App.BookingOnline.Data.Repositories.BookingRepository.LockAccountCustomerDueNoShow) LockAccount: Sawa Yukinori-Date:4/24/2023 8:55:30 AM
+2023-04-24 08:55:30 [Error] (App.BookingOnline.WebApi.Jobs.SendFileOutJobs.MoveNext) HangfireSendEmailJobs
+2023-04-24 08:55:30 [Information] (App.BookingOnline.Data.Repositories.BookingRepository.LockAccountCustomerDueNoShow) LockAccount: Nguyễn Thế Phương-Date:4/24/2023 8:55:30 AM
+2023-04-24 08:55:31 [Error] (SftpService.) Failed in downloading file [E:\project\Booking\BE\App.BookingOnline.Api\Doi_xoat\Files\In\2023\04\INC_SB_BRG_20230423.xlsx] from seabank/ [INC_SB_BRG_20230423.xlsx]
+Renci.SshNet.Common.SshAuthenticationException: Permission denied (publickey).
+   at Renci.SshNet.ClientAuthentication.Authenticate(IConnectionInfoInternal connectionInfo, ISession session)
+   at Renci.SshNet.ConnectionInfo.Authenticate(ISession session, IServiceFactory serviceFactory)
+   at Renci.SshNet.Session.Connect()
+   at Renci.SshNet.BaseClient.CreateAndConnectSession()
+   at Renci.SshNet.BaseClient.Connect()
+   at SftpService.DownloadFileTransc(String remoteFilePath, String localFilePath, String filename, String userId, DateTime dateTrans) in E:\project\Booking\BE\App.BookingOnline.Service\Service\Common\SftpService.cs:line 136
+2023-04-24 08:55:55 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:10844:a68a2d6f heartbeat successfully sent
+2023-04-24 08:56:25 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:10844:a68a2d6f heartbeat successfully sent
+2023-04-24 08:56:55 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:10844:a68a2d6f heartbeat successfully sent
+2023-04-24 08:57:25 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:10844:a68a2d6f heartbeat successfully sent
+2023-04-24 08:57:55 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:10844:a68a2d6f heartbeat successfully sent
+2023-04-24 08:58:25 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:10844:a68a2d6f heartbeat successfully sent
+2023-04-24 08:58:55 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:10844:a68a2d6f heartbeat successfully sent
+2023-04-24 08:59:19 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2023-04-24 08:59:22 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2023-04-24 08:59:22 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2023-04-24 08:59:23 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2023-04-24 08:59:25 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:10844:a68a2d6f heartbeat successfully sent
+2023-04-24 08:59:30 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2023-04-24 08:59:31 [Warning] (Microsoft.EntityFrameworkCore.Query.) Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'
+2023-04-24 08:59:40 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2023-04-24 08:59:55 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:10844:a68a2d6f heartbeat successfully sent
+2023-04-24 09:00:25 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:10844:a68a2d6f heartbeat successfully sent
+2023-04-24 09:00:25 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2023-04-24 09:00:55 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:10844:a68a2d6f heartbeat successfully sent
+2023-04-24 09:01:25 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:10844:a68a2d6f heartbeat successfully sent
+2023-04-24 09:01:55 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:10844:a68a2d6f heartbeat successfully sent
+2023-04-24 09:02:07 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2023-04-24 09:02:07 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2023-04-24 09:02:07 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2023-04-24 09:02:07 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2023-04-24 09:02:11 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2023-04-24 09:02:14 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2023-04-24 09:02:22 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2023-04-24 09:02:25 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:10844:a68a2d6f heartbeat successfully sent
+2023-04-24 09:02:47 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2023-04-24 09:02:47 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2023-04-24 09:02:47 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2023-04-24 09:02:47 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2023-04-24 09:02:51 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2023-04-24 09:02:55 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:10844:a68a2d6f heartbeat successfully sent
+2023-04-24 09:03:15 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2023-04-24 09:03:19 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2023-04-24 09:03:22 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2023-04-24 09:03:25 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:10844:a68a2d6f heartbeat successfully sent
+2023-04-24 09:03:55 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:10844:a68a2d6f heartbeat successfully sent

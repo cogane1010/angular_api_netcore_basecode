@@ -1,0 +1,204 @@
+2022-09-24 09:02:22.430 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] Started timer
+2022-09-24 09:02:23.853 +07:00 [Error] (Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.) An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - App.BookingOnline.MobileApi.Controllers.User.AccountController.RemoveWhitespace (App.BookingOnline.MobileApi). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-09-24 09:03:22.441 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:03:23.733 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"NonRefundedFee"' on entity type '"Booking"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-24 09:03:23.735 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalEstimateFee"' on entity type '"Booking"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-24 09:03:23.736 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"BuggyFee"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-24 09:03:23.736 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"EstimatedPrice"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-24 09:03:23.736 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"NonRefundedFee"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-24 09:03:23.736 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"SeagolfPrice"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-24 09:03:23.736 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalMoney"' on entity type '"BookingTransactionPayment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-24 09:03:23.736 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalMoneyAcc"' on entity type '"BookingTransactionPayment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-24 09:03:23.736 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Charge_Amt"' on entity type '"InTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-24 09:03:23.736 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Total_Amt"' on entity type '"InTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-24 09:03:23.736 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Trans_Amt"' on entity type '"InTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-24 09:03:23.736 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Charge_Amt"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-24 09:03:23.736 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalMoneyAcc"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-24 09:03:23.736 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Total_Amt"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-24 09:03:23.736 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Trans_Amt"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-24 09:03:32.686 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:04:22.435 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:04:22.460 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:05:22.465 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:05:22.622 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:06:22.460 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:06:22.467 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:07:22.449 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:07:22.456 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:08:22.453 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:08:22.466 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:09:22.448 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:09:22.456 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:10:22.456 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:10:22.467 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:11:22.453 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:11:22.458 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:12:22.452 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:12:22.527 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:13:22.457 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:13:22.464 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:14:22.445 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:14:22.454 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:15:22.460 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:15:22.470 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:16:22.458 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:16:22.463 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:17:22.465 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:17:22.473 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:18:22.466 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:18:22.477 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:19:22.450 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:19:22.455 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:20:22.480 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:20:22.487 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:21:22.456 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:21:22.461 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:22:22.473 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:22:22.481 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:23:22.466 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:23:22.471 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:24:22.468 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:24:22.477 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:25:22.483 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:25:22.517 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:26:22.482 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:26:22.486 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:27:22.488 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:27:22.496 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:28:22.491 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:28:22.500 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:29:22.472 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:29:22.477 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:30:22.491 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:30:22.499 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:31:22.477 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:31:22.482 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:32:22.479 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:32:22.488 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:33:22.483 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:33:22.505 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:34:22.486 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:34:22.493 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:35:22.476 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:35:22.480 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:36:22.489 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:36:22.533 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:37:22.484 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:37:22.490 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:38:22.494 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:38:22.504 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:39:22.488 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:39:22.503 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:40:22.515 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:40:22.522 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:41:22.487 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:41:22.491 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:42:22.498 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:42:22.541 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:43:22.505 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:43:22.522 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:44:22.490 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:44:22.494 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:45:22.502 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:45:22.519 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:46:22.508 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:46:22.518 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:47:22.495 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:47:22.499 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:48:22.510 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:48:22.517 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:49:22.501 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:49:22.506 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:50:22.504 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:50:22.509 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:51:22.519 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:51:22.547 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:52:22.514 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:52:22.521 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:53:22.513 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:53:22.545 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:54:22.521 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:54:22.531 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:55:22.525 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:55:22.564 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:56:22.527 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:56:22.532 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:57:22.527 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:57:22.531 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:58:22.535 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:58:22.540 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 09:59:22.527 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 09:59:22.531 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 10:00:22.540 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 10:00:22.548 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 10:01:22.542 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 10:01:22.577 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 10:02:22.554 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 10:02:22.560 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 10:03:22.538 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 10:03:22.541 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 10:04:22.542 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 10:04:22.552 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 10:05:22.536 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 10:05:22.543 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 10:06:29.644 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 10:06:29.654 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 10:07:22.543 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 10:07:22.546 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 10:08:22.541 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 10:08:22.548 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 10:09:22.533 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 10:09:22.538 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 10:10:22.558 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 10:10:22.565 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 10:11:22.556 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 10:11:22.560 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 10:12:22.548 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 10:12:22.554 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 10:13:22.558 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 10:13:22.562 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 10:14:22.546 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 10:14:22.549 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 10:15:22.554 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 10:15:22.590 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 10:16:22.555 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 10:16:22.572 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 10:17:22.560 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 10:17:22.565 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 10:18:22.574 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 10:18:22.585 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 10:19:22.562 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 10:19:22.567 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 10:20:22.558 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 10:20:22.564 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 10:21:22.574 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 10:21:22.581 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 10:22:22.564 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 10:22:22.567 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 10:23:22.574 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 10:23:22.619 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 10:24:22.573 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 10:24:22.579 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 10:25:22.563 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 10:25:22.572 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 10:26:22.580 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 10:26:22.619 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 10:27:22.569 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 10:27:22.572 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 10:28:22.575 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 10:28:22.580 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 10:29:22.583 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 10:29:22.594 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 10:30:22.593 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 10:30:22.597 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-09-24 10:31:22.600 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-09-24 10:31:22.619 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle

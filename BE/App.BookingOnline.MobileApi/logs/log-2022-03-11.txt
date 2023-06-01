@@ -1,0 +1,38 @@
+2022-03-11 15:07:14.187 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] Started timer
+2022-03-11 15:07:48.715 +07:00 [Error] (App.BookingOnline.Data.Repositories.Common.AppUserRepository.) Sequence contains more than one element.
+2022-03-11 15:08:14.189 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-03-11 15:08:14.340 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-03-11 15:14:48.347 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] Started timer
+2022-03-11 15:15:16.375 +07:00 [Error] (App.BookingOnline.Data.Repositories.Common.AppUserRepository.) Sequence contains more than one element.
+2022-03-11 15:17:10.105 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] Started timer
+2022-03-11 15:18:10.094 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-03-11 15:18:12.699 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-03-11 15:19:16.382 +07:00 [Error] (App.BookingOnline.Data.Repositories.Common.AppUserRepository.) Sequence contains more than one element.
+2022-03-11 15:24:53.106 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] Started timer
+2022-03-11 15:25:53.106 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-03-11 15:25:56.393 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-03-11 15:26:45.550 +07:00 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '03/11/2022 02:41:24', Current time: '03/11/2022 08:26:45'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2022-03-11 15:26:45.598 +07:00 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo: '03/11/2022 02:41:24', Current time: '03/11/2022 08:26:45'."
+2022-03-11 15:26:49.766 +07:00 [Information] (App.BookingOnline.MobileApi.Controllers.User.AccountController.) {"Id":"00000000-0000-0000-0000-000000000000","CustomerCode":null,"FirstName":null,"LastName":null,"FullName":"LÊ MINH TRUNG11","LowerFullName":null,"Email":"lian11@gmail.com","MobilePhone":"023422342342","DOB":"2022-02-24T00:00:00","Gender":1,"IsMember":false,"IsActive":false,"UserId":null,"RegisterCourse":null,"AvatarFileId":"00000000-0000-0000-0000-000000000000","Img_Url":null,"ImageData":null,"Password":null,"ConfirmPassword":null,"Golf_CardNo":null,"MemberCards":null}
+2022-03-11 15:26:51.756 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Database.Transaction.) Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(RelationalEventId.SavepointsDisabledBecauseOfMARS))'.
+2022-03-11 15:26:52.384 +07:00 [Error] (App.BookingOnline.Data.Repositories.Common.AppUserRepository.) Value cannot be null. (Parameter 'password')
+2022-03-11 15:49:49.133 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] Started timer
+2022-03-11 15:50:50.900 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-03-11 15:50:57.533 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-03-11 15:52:55.160 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] Started timer
+2022-03-11 15:53:55.104 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-03-11 15:53:55.208 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-03-11 16:41:14.495 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] Started timer
+2022-03-11 16:42:14.485 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-03-11 16:42:17.006 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-03-11 16:42:41.321 +07:00 [Error] (App.BookingOnline.Data.Repositories.Common.AppUserRepository.MoveNext) Sequence contains more than one element.
+2022-03-11 16:44:30.042 +07:00 [Error] (App.BookingOnline.Data.Repositories.Common.AppUserRepository.MoveNext) Sequence contains more than one element.
+2022-03-11 16:49:31.691 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] Started timer
+2022-03-11 16:50:31.647 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-03-11 16:50:35.636 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle

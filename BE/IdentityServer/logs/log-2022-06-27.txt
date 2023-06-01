@@ -1,0 +1,142 @@
+2022-06-27 14:45:12.687 +07:00 [Information] (IdentityServer4.Startup.) Starting IdentityServer4 version "4.1.2+997a6cdd643e46cd5762b710c4ddc43574cbec2e"
+2022-06-27 14:45:13.192 +07:00 [Information] (IdentityServer4.Startup.) Using the default authentication scheme "Identity.Application" for IdentityServer
+2022-06-27 14:45:13.194 +07:00 [Debug] (IdentityServer4.Startup.) Using "Identity.Application" as default ASP.NET Core scheme for authentication
+2022-06-27 14:45:13.194 +07:00 [Debug] (IdentityServer4.Startup.) Using "Identity.External" as default ASP.NET Core scheme for sign-in
+2022-06-27 14:45:13.194 +07:00 [Debug] (IdentityServer4.Startup.) Using "Identity.External" as default ASP.NET Core scheme for sign-out
+2022-06-27 14:45:13.194 +07:00 [Debug] (IdentityServer4.Startup.) Using "Identity.Application" as default ASP.NET Core scheme for challenge
+2022-06-27 14:45:13.194 +07:00 [Debug] (IdentityServer4.Startup.) Using "Identity.Application" as default ASP.NET Core scheme for forbid
+2022-06-27 14:45:14.083 +07:00 [Debug] (IdentityServer4.Startup.) Login Url: "/Account/Login"
+2022-06-27 14:45:14.085 +07:00 [Debug] (IdentityServer4.Startup.) Login Return Url Parameter: "ReturnUrl"
+2022-06-27 14:45:14.085 +07:00 [Debug] (IdentityServer4.Startup.) Logout Url: "/Account/Logout"
+2022-06-27 14:45:14.086 +07:00 [Debug] (IdentityServer4.Startup.) ConsentUrl Url: "/consent"
+2022-06-27 14:45:14.086 +07:00 [Debug] (IdentityServer4.Startup.) Consent Return Url Parameter: "returnUrl"
+2022-06-27 14:45:14.086 +07:00 [Debug] (IdentityServer4.Startup.) Error Url: "/home/error"
+2022-06-27 14:45:14.087 +07:00 [Debug] (IdentityServer4.Startup.) Error Id Parameter: "errorId"
+2022-06-27 14:45:33.307 +07:00 [Information] (Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler.) AuthenticationScheme: "Identity.Application" signed out.
+2022-06-27 14:45:33.310 +07:00 [Information] (Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler.) AuthenticationScheme: "Identity.External" signed out.
+2022-06-27 14:45:33.311 +07:00 [Information] (Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler.) AuthenticationScheme: "Identity.TwoFactorUserId" signed out.
+2022-06-27 14:45:33.315 +07:00 [Information] (Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler.) "Identity.Application" was not authenticated. Failure message: "No principal."
+2022-06-27 14:45:33.316 +07:00 [Information] (Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler.) "Identity.Application" was not authenticated. Failure message: "No principal."
+2022-06-27 14:45:34.474 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"NonRefundedFee"' on entity type '"Booking"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-06-27 14:45:34.477 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalEstimateFee"' on entity type '"Booking"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-06-27 14:45:34.479 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"NonRefundedFee"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-06-27 14:45:34.480 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalMoney"' on entity type '"BookingTransactionPayment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-06-27 14:45:34.481 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Charge_Amt"' on entity type '"InTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-06-27 14:45:34.481 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Total_Amt"' on entity type '"InTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-06-27 14:45:34.481 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Trans_Amt"' on entity type '"InTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-06-27 14:45:34.482 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Charge_Amt"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-06-27 14:45:34.483 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Total_Amt"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-06-27 14:45:34.483 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Trans_Amt"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-06-27 14:45:40.142 +07:00 [Debug] (IdentityServer4.Hosting.IdentityServerAuthenticationService.) Augmenting SignInContext
+2022-06-27 14:45:40.143 +07:00 [Debug] (IdentityServer4.Hosting.IdentityServerAuthenticationService.) Adding idp claim with value: "local"
+2022-06-27 14:45:40.143 +07:00 [Debug] (IdentityServer4.Hosting.IdentityServerAuthenticationService.) Adding amr claim with value: "pwd"
+2022-06-27 14:45:40.144 +07:00 [Debug] (IdentityServer4.Hosting.IdentityServerAuthenticationService.) Adding auth_time claim with value: "1656315940"
+2022-06-27 14:45:40.146 +07:00 [Information] (Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler.) "Identity.Application" was not authenticated. Failure message: "No principal."
+2022-06-27 14:45:40.149 +07:00 [Information] (Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler.) AuthenticationScheme: "Identity.Application" signed in.
+2022-06-27 14:45:40.246 +07:00 [Debug] (IdentityServer4.Hosting.EndpointRouter.) Request path "/connect/token" matched to endpoint type "Token"
+2022-06-27 14:45:40.251 +07:00 [Debug] (IdentityServer4.Hosting.EndpointRouter.) Endpoint enabled: "Token", successfully created handler: "IdentityServer4.Endpoints.TokenEndpoint"
+2022-06-27 14:45:40.251 +07:00 [Information] (IdentityServer4.Hosting.IdentityServerMiddleware.) Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.TokenEndpoint" for "/connect/token"
+2022-06-27 14:45:40.254 +07:00 [Debug] (IdentityServer4.Endpoints.TokenEndpoint.) Start token request.
+2022-06-27 14:45:40.255 +07:00 [Debug] (IdentityServer4.Validation.ClientSecretValidator.) Start client validation
+2022-06-27 14:45:40.257 +07:00 [Debug] (IdentityServer4.Validation.BasicAuthenticationSecretParser.) Start parsing Basic Authentication secret
+2022-06-27 14:45:40.258 +07:00 [Debug] (IdentityServer4.Validation.PostBodySecretParser.) Start parsing for secret in post body
+2022-06-27 14:45:40.261 +07:00 [Debug] (IdentityServer4.Validation.PostBodySecretParser.) client id without secret found
+2022-06-27 14:45:40.263 +07:00 [Debug] (IdentityServer4.Validation.ISecretsListParser.) Parser found secret: "PostBodySecretParser"
+2022-06-27 14:45:40.263 +07:00 [Debug] (IdentityServer4.Validation.ISecretsListParser.) Secret id found: "clientApp"
+2022-06-27 14:45:40.269 +07:00 [Debug] (IdentityServer4.Stores.ValidatingClientStore.) client configuration validation for client "clientApp" succeeded.
+2022-06-27 14:45:40.269 +07:00 [Debug] (IdentityServer4.Validation.ClientSecretValidator.) Public Client - skipping secret validation success
+2022-06-27 14:45:40.269 +07:00 [Debug] (IdentityServer4.Validation.ClientSecretValidator.) Client validation success
+2022-06-27 14:45:40.273 +07:00 [Debug] (IdentityServer4.Validation.TokenRequestValidator.) Start token request validation
+2022-06-27 14:45:40.277 +07:00 [Debug] (IdentityServer4.Validation.TokenRequestValidator.) Start resource owner password token request validation
+2022-06-27 14:45:40.495 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Query.) Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'
+2022-06-27 14:45:40.532 +07:00 [Debug] (IdentityServer4.EntityFramework.Stores.ResourceStore.) Found ["profile", "openid"] identity scopes in database
+2022-06-27 14:45:40.698 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Query.) Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'
+2022-06-27 14:45:40.755 +07:00 [Debug] (IdentityServer4.EntityFramework.Stores.ResourceStore.) Found ["postman_api"] API resources in database
+2022-06-27 14:45:40.760 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Query.) Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'
+2022-06-27 14:45:40.774 +07:00 [Debug] (IdentityServer4.EntityFramework.Stores.ResourceStore.) Found ["api1"] scopes in database
+2022-06-27 14:45:40.818 +07:00 [Information] (IdentityServer.ResourceOwnerPasswordValidator.) Credentials validated for username: "GA22000443"
+2022-06-27 14:45:40.823 +07:00 [Debug] (IdentityServer4.Validation.TokenRequestValidator.) Resource owner password token request validation success.
+2022-06-27 14:45:40.830 +07:00 [Information] (IdentityServer4.Validation.TokenRequestValidator.) Token request validation success, TokenRequestValidationLog { ClientId: "clientApp", ClientName: null, GrantType: "password", Scopes: "api1 offline_access openid profile", AuthorizationCode: "********", RefreshToken: "********", UserName: "GA22000443", AuthenticationContextReferenceClasses: null, Tenant: null, IdP: null, Raw: [("grant_type": "password"), ("username": "GA22000443"), ("password": "***REDACTED***"), ("scope": "openid profile api1 offline_access"), ("client_id": "clientApp")] }
+2022-06-27 14:45:40.847 +07:00 [Debug] (IdentityServer4.Services.DefaultClaimsService.) Getting claims for access token for client: "clientApp"
+2022-06-27 14:45:40.847 +07:00 [Debug] (IdentityServer4.Services.DefaultClaimsService.) Getting claims for access token for subject: "38b1c9dc-a019-48dd-9ee1-80cf6d3ba394"
+2022-06-27 14:45:41.023 +07:00 [Debug] (IdentityServer4.Services.DefaultRefreshTokenService.) Creating refresh token
+2022-06-27 14:45:41.023 +07:00 [Debug] (IdentityServer4.Services.DefaultRefreshTokenService.) Setting an absolute lifetime: 2592000
+2022-06-27 14:45:41.061 +07:00 [Debug] (IdentityServer4.EntityFramework.Stores.PersistedGrantStore.) "mFJON6hURUfHuzmaAXnHYeJ6xHoReEUxugFz3pI7EAY=" not found in database
+2022-06-27 14:45:41.193 +07:00 [Debug] (IdentityServer4.Endpoints.TokenEndpoint.) Token request success.
+2022-06-27 14:45:41.242 +07:00 [Debug] (IdentityServer4.Hosting.IdentityServerMiddleware.) SignOutCalled set; processing post-signout session cleanup.
+2022-06-27 14:47:38.462 +07:00 [Debug] (IdentityServer4.Hosting.EndpointRouter.) Request path "/.well-known/openid-configuration" matched to endpoint type "Discovery"
+2022-06-27 14:47:38.464 +07:00 [Debug] (IdentityServer4.Hosting.EndpointRouter.) Endpoint enabled: "Discovery", successfully created handler: "IdentityServer4.Endpoints.DiscoveryEndpoint"
+2022-06-27 14:47:38.464 +07:00 [Information] (IdentityServer4.Hosting.IdentityServerMiddleware.) Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.DiscoveryEndpoint" for "/.well-known/openid-configuration"
+2022-06-27 14:47:38.466 +07:00 [Debug] (IdentityServer4.Endpoints.DiscoveryEndpoint.) Start discovery request
+2022-06-27 14:47:38.480 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Query.) Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'
+2022-06-27 14:47:38.524 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Query.) Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'
+2022-06-27 14:47:38.559 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Query.) Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'
+2022-06-27 14:47:38.572 +07:00 [Debug] (IdentityServer4.EntityFramework.Stores.ResourceStore.) Found ["email", "profile", "openid", "api1", "postman_api", "identityserverapi", "delete", "write", "read"] as all scopes, and ["postman_api"] as API resources
+2022-06-27 14:47:38.705 +07:00 [Debug] (IdentityServer4.Hosting.EndpointRouter.) Request path "/.well-known/openid-configuration/jwks" matched to endpoint type "Discovery"
+2022-06-27 14:47:38.706 +07:00 [Debug] (IdentityServer4.Hosting.EndpointRouter.) Endpoint enabled: "Discovery", successfully created handler: "IdentityServer4.Endpoints.DiscoveryKeyEndpoint"
+2022-06-27 14:47:38.707 +07:00 [Information] (IdentityServer4.Hosting.IdentityServerMiddleware.) Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.DiscoveryKeyEndpoint" for "/.well-known/openid-configuration/jwks"
+2022-06-27 14:47:38.708 +07:00 [Debug] (IdentityServer4.Endpoints.DiscoveryKeyEndpoint.) Start key discovery request
+2022-06-27 14:49:05.211 +07:00 [Debug] (IdentityServer4.Hosting.IdentityServerAuthenticationService.) Augmenting SignInContext
+2022-06-27 14:49:05.212 +07:00 [Debug] (IdentityServer4.Hosting.IdentityServerAuthenticationService.) Adding idp claim with value: "local"
+2022-06-27 14:49:05.213 +07:00 [Debug] (IdentityServer4.Hosting.IdentityServerAuthenticationService.) Adding amr claim with value: "pwd"
+2022-06-27 14:49:05.213 +07:00 [Debug] (IdentityServer4.Hosting.IdentityServerAuthenticationService.) Adding auth_time claim with value: "1656316145"
+2022-06-27 14:49:05.215 +07:00 [Information] (Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler.) AuthenticationScheme: "Identity.Application" signed in.
+2022-06-27 14:49:05.227 +07:00 [Debug] (IdentityServer4.Hosting.EndpointRouter.) Request path "/connect/token" matched to endpoint type "Token"
+2022-06-27 14:49:05.228 +07:00 [Debug] (IdentityServer4.Hosting.EndpointRouter.) Endpoint enabled: "Token", successfully created handler: "IdentityServer4.Endpoints.TokenEndpoint"
+2022-06-27 14:49:05.228 +07:00 [Information] (IdentityServer4.Hosting.IdentityServerMiddleware.) Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.TokenEndpoint" for "/connect/token"
+2022-06-27 14:49:05.229 +07:00 [Debug] (IdentityServer4.Endpoints.TokenEndpoint.) Start token request.
+2022-06-27 14:49:05.230 +07:00 [Debug] (IdentityServer4.Validation.ClientSecretValidator.) Start client validation
+2022-06-27 14:49:05.230 +07:00 [Debug] (IdentityServer4.Validation.BasicAuthenticationSecretParser.) Start parsing Basic Authentication secret
+2022-06-27 14:49:05.231 +07:00 [Debug] (IdentityServer4.Validation.PostBodySecretParser.) Start parsing for secret in post body
+2022-06-27 14:49:05.231 +07:00 [Debug] (IdentityServer4.Validation.PostBodySecretParser.) client id without secret found
+2022-06-27 14:49:05.231 +07:00 [Debug] (IdentityServer4.Validation.ISecretsListParser.) Parser found secret: "PostBodySecretParser"
+2022-06-27 14:49:05.231 +07:00 [Debug] (IdentityServer4.Validation.ISecretsListParser.) Secret id found: "clientApp"
+2022-06-27 14:49:05.232 +07:00 [Debug] (IdentityServer4.Stores.ValidatingClientStore.) client configuration validation for client "clientApp" succeeded.
+2022-06-27 14:49:05.232 +07:00 [Debug] (IdentityServer4.Validation.ClientSecretValidator.) Public Client - skipping secret validation success
+2022-06-27 14:49:05.232 +07:00 [Debug] (IdentityServer4.Validation.ClientSecretValidator.) Client validation success
+2022-06-27 14:49:05.232 +07:00 [Debug] (IdentityServer4.Validation.TokenRequestValidator.) Start token request validation
+2022-06-27 14:49:05.233 +07:00 [Debug] (IdentityServer4.Validation.TokenRequestValidator.) Start resource owner password token request validation
+2022-06-27 14:49:05.237 +07:00 [Debug] (IdentityServer4.EntityFramework.Stores.ResourceStore.) Found ["profile", "openid"] identity scopes in database
+2022-06-27 14:49:05.242 +07:00 [Debug] (IdentityServer4.EntityFramework.Stores.ResourceStore.) Found ["postman_api"] API resources in database
+2022-06-27 14:49:05.245 +07:00 [Debug] (IdentityServer4.EntityFramework.Stores.ResourceStore.) Found ["api1"] scopes in database
+2022-06-27 14:49:05.255 +07:00 [Information] (IdentityServer.ResourceOwnerPasswordValidator.) Credentials validated for username: "ki-Cashier"
+2022-06-27 14:49:05.256 +07:00 [Debug] (IdentityServer4.Validation.TokenRequestValidator.) Resource owner password token request validation success.
+2022-06-27 14:49:05.256 +07:00 [Information] (IdentityServer4.Validation.TokenRequestValidator.) Token request validation success, TokenRequestValidationLog { ClientId: "clientApp", ClientName: null, GrantType: "password", Scopes: "api1 offline_access openid profile", AuthorizationCode: "********", RefreshToken: "********", UserName: "ki-Cashier", AuthenticationContextReferenceClasses: null, Tenant: null, IdP: null, Raw: [("grant_type": "password"), ("username": "ki-Cashier"), ("password": "***REDACTED***"), ("scope": "openid profile api1 offline_access"), ("client_id": "clientApp")] }
+2022-06-27 14:49:05.257 +07:00 [Debug] (IdentityServer4.Services.DefaultClaimsService.) Getting claims for access token for client: "clientApp"
+2022-06-27 14:49:05.257 +07:00 [Debug] (IdentityServer4.Services.DefaultClaimsService.) Getting claims for access token for subject: "76d2e611-f004-492d-9d88-bffedce6f4a3"
+2022-06-27 14:49:05.270 +07:00 [Debug] (IdentityServer4.Services.DefaultRefreshTokenService.) Creating refresh token
+2022-06-27 14:49:05.270 +07:00 [Debug] (IdentityServer4.Services.DefaultRefreshTokenService.) Setting an absolute lifetime: 2592000
+2022-06-27 14:49:05.280 +07:00 [Debug] (IdentityServer4.EntityFramework.Stores.PersistedGrantStore.) "+CgyWMUw54f4llfHp1kY9Q0cSZ0lyDHZSBJWISqx8w0=" not found in database
+2022-06-27 14:49:05.316 +07:00 [Debug] (IdentityServer4.Endpoints.TokenEndpoint.) Token request success.
+2022-06-27 14:50:16.225 +07:00 [Debug] (IdentityServer4.Hosting.IdentityServerAuthenticationService.) Augmenting SignInContext
+2022-06-27 14:50:16.226 +07:00 [Debug] (IdentityServer4.Hosting.IdentityServerAuthenticationService.) Adding idp claim with value: "local"
+2022-06-27 14:50:16.227 +07:00 [Debug] (IdentityServer4.Hosting.IdentityServerAuthenticationService.) Adding amr claim with value: "pwd"
+2022-06-27 14:50:16.227 +07:00 [Debug] (IdentityServer4.Hosting.IdentityServerAuthenticationService.) Adding auth_time claim with value: "1656316216"
+2022-06-27 14:50:16.228 +07:00 [Information] (Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler.) AuthenticationScheme: "Identity.Application" signed in.
+2022-06-27 14:50:16.243 +07:00 [Debug] (IdentityServer4.Hosting.EndpointRouter.) Request path "/connect/token" matched to endpoint type "Token"
+2022-06-27 14:50:16.251 +07:00 [Debug] (IdentityServer4.Hosting.EndpointRouter.) Endpoint enabled: "Token", successfully created handler: "IdentityServer4.Endpoints.TokenEndpoint"
+2022-06-27 14:50:16.252 +07:00 [Information] (IdentityServer4.Hosting.IdentityServerMiddleware.) Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.TokenEndpoint" for "/connect/token"
+2022-06-27 14:50:16.253 +07:00 [Debug] (IdentityServer4.Endpoints.TokenEndpoint.) Start token request.
+2022-06-27 14:50:16.253 +07:00 [Debug] (IdentityServer4.Validation.ClientSecretValidator.) Start client validation
+2022-06-27 14:50:16.253 +07:00 [Debug] (IdentityServer4.Validation.BasicAuthenticationSecretParser.) Start parsing Basic Authentication secret
+2022-06-27 14:50:16.254 +07:00 [Debug] (IdentityServer4.Validation.PostBodySecretParser.) Start parsing for secret in post body
+2022-06-27 14:50:16.254 +07:00 [Debug] (IdentityServer4.Validation.PostBodySecretParser.) client id without secret found
+2022-06-27 14:50:16.254 +07:00 [Debug] (IdentityServer4.Validation.ISecretsListParser.) Parser found secret: "PostBodySecretParser"
+2022-06-27 14:50:16.255 +07:00 [Debug] (IdentityServer4.Validation.ISecretsListParser.) Secret id found: "clientApp"
+2022-06-27 14:50:16.255 +07:00 [Debug] (IdentityServer4.Stores.ValidatingClientStore.) client configuration validation for client "clientApp" succeeded.
+2022-06-27 14:50:16.256 +07:00 [Debug] (IdentityServer4.Validation.ClientSecretValidator.) Public Client - skipping secret validation success
+2022-06-27 14:50:16.256 +07:00 [Debug] (IdentityServer4.Validation.ClientSecretValidator.) Client validation success
+2022-06-27 14:50:16.256 +07:00 [Debug] (IdentityServer4.Validation.TokenRequestValidator.) Start token request validation
+2022-06-27 14:50:16.256 +07:00 [Debug] (IdentityServer4.Validation.TokenRequestValidator.) Start resource owner password token request validation
+2022-06-27 14:50:16.262 +07:00 [Debug] (IdentityServer4.EntityFramework.Stores.ResourceStore.) Found ["profile", "openid"] identity scopes in database
+2022-06-27 14:50:16.267 +07:00 [Debug] (IdentityServer4.EntityFramework.Stores.ResourceStore.) Found ["postman_api"] API resources in database
+2022-06-27 14:50:16.270 +07:00 [Debug] (IdentityServer4.EntityFramework.Stores.ResourceStore.) Found ["api1"] scopes in database
+2022-06-27 14:50:16.280 +07:00 [Information] (IdentityServer.ResourceOwnerPasswordValidator.) Credentials validated for username: "lh-Cashier"
+2022-06-27 14:50:16.281 +07:00 [Debug] (IdentityServer4.Validation.TokenRequestValidator.) Resource owner password token request validation success.
+2022-06-27 14:50:16.281 +07:00 [Information] (IdentityServer4.Validation.TokenRequestValidator.) Token request validation success, TokenRequestValidationLog { ClientId: "clientApp", ClientName: null, GrantType: "password", Scopes: "api1 offline_access openid profile", AuthorizationCode: "********", RefreshToken: "********", UserName: "lh-Cashier", AuthenticationContextReferenceClasses: null, Tenant: null, IdP: null, Raw: [("grant_type": "password"), ("username": "lh-Cashier"), ("password": "***REDACTED***"), ("scope": "openid profile api1 offline_access"), ("client_id": "clientApp")] }
+2022-06-27 14:50:16.282 +07:00 [Debug] (IdentityServer4.Services.DefaultClaimsService.) Getting claims for access token for client: "clientApp"
+2022-06-27 14:50:16.282 +07:00 [Debug] (IdentityServer4.Services.DefaultClaimsService.) Getting claims for access token for subject: "171a8359-0a77-4bce-babb-dad4ad216f32"
+2022-06-27 14:50:16.301 +07:00 [Debug] (IdentityServer4.Services.DefaultRefreshTokenService.) Creating refresh token
+2022-06-27 14:50:16.301 +07:00 [Debug] (IdentityServer4.Services.DefaultRefreshTokenService.) Setting an absolute lifetime: 2592000
+2022-06-27 14:50:16.313 +07:00 [Debug] (IdentityServer4.EntityFramework.Stores.PersistedGrantStore.) "Jt0xiivV5CYKBJ7XE18shsnijUw7/Zrd97h5RUQaclw=" not found in database
+2022-06-27 14:50:16.375 +07:00 [Debug] (IdentityServer4.Endpoints.TokenEndpoint.) Token request success.

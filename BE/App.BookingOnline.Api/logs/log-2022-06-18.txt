@@ -1,0 +1,1182 @@
+2022-06-18 10:05:25.192 +07:00 [Information] (Hangfire.SqlServer.SqlServerObjectsInstaller.) Start installing Hangfire SQL objects...
+2022-06-18 10:05:25.794 +07:00 [Information] (Hangfire.SqlServer.SqlServerObjectsInstaller.) Hangfire SQL objects installed.
+2022-06-18 10:05:25.942 +07:00 [Information] (Hangfire.BackgroundJobServer.) Starting Hangfire Server using job storage: 'SQL Server: 192.168.87.23@BO_GOLF'
+2022-06-18 10:05:25.943 +07:00 [Information] (Hangfire.BackgroundJobServer.) Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+2022-06-18 10:05:25.943 +07:00 [Information] (Hangfire.BackgroundJobServer.) Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2022-06-18 10:05:25.968 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop BackgroundServerProcess:b1e781d3 has started in 18.7503 ms
+2022-06-18 10:05:26.940 +07:00 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:23624:6de6ce09 successfully announced in 969.1809 ms
+2022-06-18 10:05:26.983 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerHeartbeatProcess:345c4bc1 has started in 41.8396 ms
+2022-06-18 10:05:26.984 +07:00 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:23624:6de6ce09 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2022-06-18 10:05:27.026 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerWatchdog:c59f890a has started in 41.4016 ms
+2022-06-18 10:05:27.026 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerJobCancellationWatcher:a2b20080 has started in 37.9064 ms
+2022-06-18 10:05:27.042 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ExpirationManager:c9e507e3 has started in 15.7663 ms
+2022-06-18 10:05:27.045 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'AggregatedCounter' table...
+2022-06-18 10:05:27.063 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop CountersAggregator:ac0e15a2 has started in 27.6696 ms
+2022-06-18 10:05:27.068 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop SqlServerHeartbeatProcess:aa438ca7 has started in 24.3518 ms
+2022-06-18 10:05:27.068 +07:00 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2022-06-18 10:05:27.102 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:ebd4b58f has started in 41.8685 ms
+2022-06-18 10:05:27.102 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:56b61b57 has started in 41.8685 ms
+2022-06-18 10:05:27.109 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:ebcb9e71 has started in 48.4238 ms
+2022-06-18 10:05:27.113 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:dfb3601f has started in 52.2701 ms
+2022-06-18 10:05:27.118 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:2da8e927 has started in 57.7791 ms
+2022-06-18 10:05:27.148 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:8e8a86c2 has started in 88.2554 ms
+2022-06-18 10:05:27.149 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:5d0db2db has started in 88.5754 ms
+2022-06-18 10:05:27.154 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:1919038f has started in 93.5408 ms
+2022-06-18 10:05:27.159 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:bae6bbc2 has started in 98.5457 ms
+2022-06-18 10:05:27.196 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:78a5dc6b has started in 135.5626 ms
+2022-06-18 10:05:27.196 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:304be8e9 has started in 135.5626 ms
+2022-06-18 10:05:27.202 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:ed412144 has started in 141.9782 ms
+2022-06-18 10:05:27.205 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:6e30c0c6 has started in 144.9741 ms
+2022-06-18 10:05:27.211 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:8327325c has started in 151.0398 ms
+2022-06-18 10:05:27.214 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:beece950 has started in 153.9354 ms
+2022-06-18 10:05:27.221 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:cfecbf67 has started in 160.5142 ms
+2022-06-18 10:05:27.223 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:a0dd5fd0 has started in 163.1341 ms
+2022-06-18 10:05:27.234 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:7a7582c0 has started in 171.9777 ms
+2022-06-18 10:05:27.272 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:478f1d2e has started in 212.0543 ms
+2022-06-18 10:05:27.272 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:b63ef8f3 has started in 212.0727 ms
+2022-06-18 10:05:27.278 +07:00 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:23624:6de6ce09 all the dispatchers started
+2022-06-18 10:05:27.279 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop DelayedJobScheduler:2945af1d has started in 6.7819 ms
+2022-06-18 10:05:27.281 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop RecurringJobScheduler:6ba5cb03 has started in 7.438 ms
+2022-06-18 10:05:27.341 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Job' table...
+2022-06-18 10:05:27.414 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'List' table...
+2022-06-18 10:05:27.525 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Set' table...
+2022-06-18 10:05:27.601 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Hash' table...
+2022-06-18 10:05:57.074 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:23624:6de6ce09 heartbeat successfully sent
+2022-06-18 10:06:27.097 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:23624:6de6ce09 heartbeat successfully sent
+2022-06-18 10:08:51.297 +07:00 [Information] (Hangfire.SqlServer.SqlServerObjectsInstaller.) Start installing Hangfire SQL objects...
+2022-06-18 10:08:51.776 +07:00 [Information] (Hangfire.SqlServer.SqlServerObjectsInstaller.) Hangfire SQL objects installed.
+2022-06-18 10:08:51.890 +07:00 [Information] (Hangfire.BackgroundJobServer.) Starting Hangfire Server using job storage: 'SQL Server: 192.168.87.23@BO_GOLF'
+2022-06-18 10:08:51.891 +07:00 [Information] (Hangfire.BackgroundJobServer.) Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+2022-06-18 10:08:51.891 +07:00 [Information] (Hangfire.BackgroundJobServer.) Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2022-06-18 10:08:51.910 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop BackgroundServerProcess:cba6ec48 has started in 9.5066 ms
+2022-06-18 10:08:52.282 +07:00 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:8724:4a8ff05d successfully announced in 370.0372 ms
+2022-06-18 10:08:52.287 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerHeartbeatProcess:8289259d has started in 4.1687 ms
+2022-06-18 10:08:52.288 +07:00 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:8724:4a8ff05d is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2022-06-18 10:08:52.291 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerWatchdog:55270261 has started in 2.8848 ms
+2022-06-18 10:08:52.317 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerJobCancellationWatcher:1e269c0a has started in 28.2647 ms
+2022-06-18 10:08:52.320 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ExpirationManager:4604d2e5 has started in 3.0596 ms
+2022-06-18 10:08:52.322 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop CountersAggregator:7635d80b has started in 4.4255 ms
+2022-06-18 10:08:52.324 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop SqlServerHeartbeatProcess:41e210fe has started in 4.5663 ms
+2022-06-18 10:08:52.325 +07:00 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2022-06-18 10:08:52.329 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:baabb843 has started in 6.5084 ms
+2022-06-18 10:08:52.331 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:54a54bd5 has started in 9.0888 ms
+2022-06-18 10:08:52.335 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:b4f3cd31 has started in 12.7662 ms
+2022-06-18 10:08:52.365 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:5706b7f9 has started in 43.1985 ms
+2022-06-18 10:08:52.365 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'AggregatedCounter' table...
+2022-06-18 10:08:52.366 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:f9e84ead has started in 43.509 ms
+2022-06-18 10:08:52.374 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:6e6fc263 has started in 52.0325 ms
+2022-06-18 10:08:52.437 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:c4e1ea32 has started in 115.4471 ms
+2022-06-18 10:08:52.438 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:46d4a9ae has started in 115.5077 ms
+2022-06-18 10:08:52.437 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:3930c818 has started in 115.4472 ms
+2022-06-18 10:08:52.480 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:a4865ef0 has started in 158.2356 ms
+2022-06-18 10:08:52.482 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:3cbbac92 has started in 160.0251 ms
+2022-06-18 10:08:52.500 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:0783f9aa has started in 178.2472 ms
+2022-06-18 10:08:52.507 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:412df4da has started in 185.3956 ms
+2022-06-18 10:08:52.511 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:250f6592 has started in 188.4423 ms
+2022-06-18 10:08:52.516 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:8749c191 has started in 193.5682 ms
+2022-06-18 10:08:52.522 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:da8fbbdb has started in 199.6419 ms
+2022-06-18 10:08:52.566 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:00e15ffd has started in 243.4756 ms
+2022-06-18 10:08:52.568 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:b30538f5 has started in 245.7216 ms
+2022-06-18 10:08:52.624 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Job' table...
+2022-06-18 10:08:52.624 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:d4a48cce has started in 301.5461 ms
+2022-06-18 10:08:52.624 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:a83b0ade has started in 302.2726 ms
+2022-06-18 10:08:52.634 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop DelayedJobScheduler:c1c1ae69 has started in 10.2779 ms
+2022-06-18 10:08:52.634 +07:00 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:8724:4a8ff05d all the dispatchers started
+2022-06-18 10:08:52.638 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop RecurringJobScheduler:c707d822 has started in 10.5664 ms
+2022-06-18 10:08:52.674 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'List' table...
+2022-06-18 10:08:52.722 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Set' table...
+2022-06-18 10:08:52.760 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Hash' table...
+2022-06-18 10:09:22.340 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8724:4a8ff05d heartbeat successfully sent
+2022-06-18 10:09:52.344 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8724:4a8ff05d heartbeat successfully sent
+2022-06-18 10:10:22.361 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8724:4a8ff05d heartbeat successfully sent
+2022-06-18 10:10:52.386 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8724:4a8ff05d heartbeat successfully sent
+2022-06-18 10:11:22.410 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8724:4a8ff05d heartbeat successfully sent
+2022-06-18 10:11:52.432 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8724:4a8ff05d heartbeat successfully sent
+2022-06-18 10:12:22.454 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8724:4a8ff05d heartbeat successfully sent
+2022-06-18 10:12:52.479 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8724:4a8ff05d heartbeat successfully sent
+2022-06-18 10:13:22.510 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8724:4a8ff05d heartbeat successfully sent
+2022-06-18 10:13:52.347 +07:00 [Information] (Hangfire.Server.ServerWatchdog.) 1 servers were removed due to timeout
+2022-06-18 10:13:52.503 +07:00 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2022-06-18 10:13:52.524 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8724:4a8ff05d heartbeat successfully sent
+2022-06-18 10:14:22.544 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8724:4a8ff05d heartbeat successfully sent
+2022-06-18 10:14:52.555 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8724:4a8ff05d heartbeat successfully sent
+2022-06-18 10:23:15.907 +07:00 [Information] (Hangfire.SqlServer.SqlServerObjectsInstaller.) Start installing Hangfire SQL objects...
+2022-06-18 10:23:16.233 +07:00 [Information] (Hangfire.SqlServer.SqlServerObjectsInstaller.) Hangfire SQL objects installed.
+2022-06-18 10:23:16.319 +07:00 [Information] (Hangfire.BackgroundJobServer.) Starting Hangfire Server using job storage: 'SQL Server: 192.168.87.23@BO_GOLF'
+2022-06-18 10:23:16.319 +07:00 [Information] (Hangfire.BackgroundJobServer.) Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+2022-06-18 10:23:16.319 +07:00 [Information] (Hangfire.BackgroundJobServer.) Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2022-06-18 10:23:16.340 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop BackgroundServerProcess:15035d2f has started in 13.4137 ms
+2022-06-18 10:23:16.654 +07:00 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:4056:9ea9a68a successfully announced in 310.1014 ms
+2022-06-18 10:23:16.663 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerHeartbeatProcess:6f5c17a3 has started in 8.4547 ms
+2022-06-18 10:23:16.664 +07:00 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:4056:9ea9a68a is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2022-06-18 10:23:16.669 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerWatchdog:3ff628e2 has started in 4.2971 ms
+2022-06-18 10:23:16.712 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerJobCancellationWatcher:2dc5b826 has started in 47.7137 ms
+2022-06-18 10:23:16.716 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ExpirationManager:e6960bdb has started in 4.2736 ms
+2022-06-18 10:23:16.720 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop CountersAggregator:242695eb has started in 6.145 ms
+2022-06-18 10:23:16.724 +07:00 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2022-06-18 10:23:16.725 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop SqlServerHeartbeatProcess:1ada007a has started in 8.8935 ms
+2022-06-18 10:23:16.726 +07:00 [Information] (Hangfire.Server.ServerWatchdog.) 1 servers were removed due to timeout
+2022-06-18 10:23:16.726 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'AggregatedCounter' table...
+2022-06-18 10:23:16.732 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:46117553 has started in 11.0486 ms
+2022-06-18 10:23:16.736 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:40b6399d has started in 16.4432 ms
+2022-06-18 10:23:16.740 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:86fa2cf7 has started in 20.4503 ms
+2022-06-18 10:23:16.768 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:9e0c4575 has started in 49.1156 ms
+2022-06-18 10:23:16.768 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:c36db1a5 has started in 49.1643 ms
+2022-06-18 10:23:16.775 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:580d1846 has started in 55.8395 ms
+2022-06-18 10:23:16.779 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:2fa769fb has started in 59.8371 ms
+2022-06-18 10:23:16.799 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:d83612ed has started in 80.265 ms
+2022-06-18 10:23:16.802 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:8ce9c5df has started in 83.0928 ms
+2022-06-18 10:23:16.809 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:6cb9e249 has started in 89.5371 ms
+2022-06-18 10:23:16.814 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:05fb09da has started in 94.9009 ms
+2022-06-18 10:23:16.819 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:e2e3e9a6 has started in 100.373 ms
+2022-06-18 10:23:16.823 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:511a3771 has started in 103.815 ms
+2022-06-18 10:23:16.828 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:56cb2e7e has started in 108.9883 ms
+2022-06-18 10:23:16.832 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:ea6c9961 has started in 112.7612 ms
+2022-06-18 10:23:16.836 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:fed4a06a has started in 117.1154 ms
+2022-06-18 10:23:16.839 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:57e75242 has started in 120.2006 ms
+2022-06-18 10:23:16.845 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:b13857b2 has started in 125.4608 ms
+2022-06-18 10:23:16.875 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:270a1d30 has started in 156.1182 ms
+2022-06-18 10:23:16.875 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:165285a2 has started in 156.1182 ms
+2022-06-18 10:23:16.881 +07:00 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:4056:9ea9a68a all the dispatchers started
+2022-06-18 10:23:16.883 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop DelayedJobScheduler:f523d52f has started in 7.5085 ms
+2022-06-18 10:23:16.887 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop RecurringJobScheduler:41fb0b85 has started in 9.1799 ms
+2022-06-18 10:23:16.919 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Job' table...
+2022-06-18 10:23:16.963 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'List' table...
+2022-06-18 10:23:16.986 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Set' table...
+2022-06-18 10:23:17.006 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Hash' table...
+2022-06-18 10:23:46.723 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:4056:9ea9a68a heartbeat successfully sent
+2022-06-18 10:24:16.753 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:4056:9ea9a68a heartbeat successfully sent
+2022-06-18 10:24:46.775 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:4056:9ea9a68a heartbeat successfully sent
+2022-06-18 10:25:20.290 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:4056:9ea9a68a heartbeat successfully sent
+2022-06-18 10:25:50.326 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:4056:9ea9a68a heartbeat successfully sent
+2022-06-18 10:26:34.557 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:4056:9ea9a68a heartbeat successfully sent
+2022-06-18 10:28:01.821 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:4056:9ea9a68a heartbeat successfully sent
+2022-06-18 10:28:16.807 +07:00 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2022-06-18 10:28:31.873 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:4056:9ea9a68a heartbeat successfully sent
+2022-06-18 10:29:01.904 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:4056:9ea9a68a heartbeat successfully sent
+2022-06-18 10:30:25.472 +07:00 [Information] (Hangfire.SqlServer.SqlServerObjectsInstaller.) Start installing Hangfire SQL objects...
+2022-06-18 10:30:25.828 +07:00 [Information] (Hangfire.SqlServer.SqlServerObjectsInstaller.) Hangfire SQL objects installed.
+2022-06-18 10:30:25.917 +07:00 [Information] (Hangfire.BackgroundJobServer.) Starting Hangfire Server using job storage: 'SQL Server: 192.168.87.23@BO_GOLF'
+2022-06-18 10:30:25.917 +07:00 [Information] (Hangfire.BackgroundJobServer.) Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+2022-06-18 10:30:25.917 +07:00 [Information] (Hangfire.BackgroundJobServer.) Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2022-06-18 10:30:25.937 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop BackgroundServerProcess:bab06c82 has started in 14.2716 ms
+2022-06-18 10:30:26.316 +07:00 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:8264:f039fc86 successfully announced in 375.2915 ms
+2022-06-18 10:30:26.321 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerHeartbeatProcess:984c6cb4 has started in 4.4382 ms
+2022-06-18 10:30:26.322 +07:00 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:8264:f039fc86 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2022-06-18 10:30:26.351 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerJobCancellationWatcher:0d034ecc has started in 26.387 ms
+2022-06-18 10:30:26.351 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerWatchdog:b41bf524 has started in 29.0805 ms
+2022-06-18 10:30:26.356 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ExpirationManager:06d19de0 has started in 3.7484 ms
+2022-06-18 10:30:26.358 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop CountersAggregator:604c6f50 has started in 5.2168 ms
+2022-06-18 10:30:26.360 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop SqlServerHeartbeatProcess:ac763138 has started in 4.8949 ms
+2022-06-18 10:30:26.360 +07:00 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2022-06-18 10:30:26.361 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'AggregatedCounter' table...
+2022-06-18 10:30:26.364 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:8b183922 has started in 6.4411 ms
+2022-06-18 10:30:26.367 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:623453ea has started in 9.4765 ms
+2022-06-18 10:30:26.371 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:4342bf37 has started in 13.1333 ms
+2022-06-18 10:30:26.376 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:c18be10f has started in 18.7846 ms
+2022-06-18 10:30:26.380 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:28a3ea86 has started in 21.8823 ms
+2022-06-18 10:30:26.384 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:605b2a07 has started in 26.6513 ms
+2022-06-18 10:30:26.392 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:f5c9de52 has started in 34.0554 ms
+2022-06-18 10:30:26.395 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:2cd78771 has started in 36.889 ms
+2022-06-18 10:30:26.399 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:bbd55114 has started in 41.5326 ms
+2022-06-18 10:30:26.408 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:9b64871d has started in 50.1929 ms
+2022-06-18 10:30:26.410 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:2d92dfe5 has started in 52.3826 ms
+2022-06-18 10:30:26.415 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:aaf1e57f has started in 57.7661 ms
+2022-06-18 10:30:26.424 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:224f3f09 has started in 66.3187 ms
+2022-06-18 10:30:26.432 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:f1b2debc has started in 74.6082 ms
+2022-06-18 10:30:26.434 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:544094ff has started in 76.4271 ms
+2022-06-18 10:30:26.445 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:2b40319a has started in 83.6248 ms
+2022-06-18 10:30:26.452 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:282f8d34 has started in 92.8458 ms
+2022-06-18 10:30:26.454 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:477cb594 has started in 96.612 ms
+2022-06-18 10:30:26.460 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:82fab9ec has started in 101.0149 ms
+2022-06-18 10:30:26.462 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:c432ff32 has started in 104.5671 ms
+2022-06-18 10:30:26.465 +07:00 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:8264:f039fc86 all the dispatchers started
+2022-06-18 10:30:26.466 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop DelayedJobScheduler:a884eefe has started in 6.8167 ms
+2022-06-18 10:30:26.469 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop RecurringJobScheduler:a57b95e9 has started in 7.1526 ms
+2022-06-18 10:30:26.479 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Job' table...
+2022-06-18 10:30:26.535 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'List' table...
+2022-06-18 10:30:26.565 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Set' table...
+2022-06-18 10:30:26.581 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Hash' table...
+2022-06-18 10:30:56.387 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8264:f039fc86 heartbeat successfully sent
+2022-06-18 10:31:29.488 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8264:f039fc86 heartbeat successfully sent
+2022-06-18 10:32:03.116 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8264:f039fc86 heartbeat successfully sent
+2022-06-18 10:33:44.194 +07:00 [Information] (Hangfire.SqlServer.SqlServerObjectsInstaller.) Start installing Hangfire SQL objects...
+2022-06-18 10:33:44.660 +07:00 [Information] (Hangfire.SqlServer.SqlServerObjectsInstaller.) Hangfire SQL objects installed.
+2022-06-18 10:33:44.757 +07:00 [Information] (Hangfire.BackgroundJobServer.) Starting Hangfire Server using job storage: 'SQL Server: 192.168.87.23@BO_GOLF'
+2022-06-18 10:33:44.757 +07:00 [Information] (Hangfire.BackgroundJobServer.) Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+2022-06-18 10:33:44.758 +07:00 [Information] (Hangfire.BackgroundJobServer.) Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2022-06-18 10:33:44.785 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop BackgroundServerProcess:e5beeb91 has started in 20.9222 ms
+2022-06-18 10:33:45.166 +07:00 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:11216:65702b22 successfully announced in 377.9495 ms
+2022-06-18 10:33:45.175 +07:00 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:11216:65702b22 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2022-06-18 10:33:45.182 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerHeartbeatProcess:3dd496a4 has started in 14.5399 ms
+2022-06-18 10:33:45.188 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerWatchdog:8efe91e9 has started in 12.87 ms
+2022-06-18 10:33:45.191 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerJobCancellationWatcher:f182564a has started in 6.712 ms
+2022-06-18 10:33:45.196 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ExpirationManager:2685bcec has started in 4.9149 ms
+2022-06-18 10:33:45.199 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop CountersAggregator:42ba5eac has started in 5.1997 ms
+2022-06-18 10:33:45.226 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop SqlServerHeartbeatProcess:366332d9 has started in 30.0556 ms
+2022-06-18 10:33:45.227 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:038d2058 has started in 27.7648 ms
+2022-06-18 10:33:45.227 +07:00 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2022-06-18 10:33:45.227 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'AggregatedCounter' table...
+2022-06-18 10:33:45.232 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:047336a7 has started in 33.0915 ms
+2022-06-18 10:33:45.238 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:028ba448 has started in 38.8707 ms
+2022-06-18 10:33:45.273 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:f0e7664f has started in 73.5625 ms
+2022-06-18 10:33:45.273 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:31540bd6 has started in 74.2385 ms
+2022-06-18 10:33:45.293 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:9d6aecb1 has started in 94.1414 ms
+2022-06-18 10:33:45.300 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:0cd44815 has started in 101.2222 ms
+2022-06-18 10:33:45.334 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:67738b9d has started in 134.6563 ms
+2022-06-18 10:33:45.334 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:f2e93a11 has started in 134.9356 ms
+2022-06-18 10:33:45.344 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:b27b78b0 has started in 145.2649 ms
+2022-06-18 10:33:45.399 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:6ced331a has started in 200.2053 ms
+2022-06-18 10:33:45.400 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:0ee6fd08 has started in 201.4456 ms
+2022-06-18 10:33:45.420 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:969d8242 has started in 220.7204 ms
+2022-06-18 10:33:45.425 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:b48c3317 has started in 226.2971 ms
+2022-06-18 10:33:45.436 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:a1ab595b has started in 233.6708 ms
+2022-06-18 10:33:45.443 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:062fa500 has started in 244.3497 ms
+2022-06-18 10:33:45.449 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:ef58f467 has started in 249.8371 ms
+2022-06-18 10:33:45.457 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:e417f9cb has started in 258.0114 ms
+2022-06-18 10:33:45.465 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:aac13b29 has started in 265.7335 ms
+2022-06-18 10:33:45.503 +07:00 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:11216:65702b22 all the dispatchers started
+2022-06-18 10:33:45.503 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:ed0b6ac9 has started in 304.0548 ms
+2022-06-18 10:33:45.503 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop DelayedJobScheduler:1b310b0e has started in 38.7301 ms
+2022-06-18 10:33:45.503 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop RecurringJobScheduler:c78ecdda has started in 34.0579 ms
+2022-06-18 10:33:45.515 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Job' table...
+2022-06-18 10:33:45.578 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'List' table...
+2022-06-18 10:33:45.611 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Set' table...
+2022-06-18 10:33:45.691 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Hash' table...
+2022-06-18 10:34:20.057 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:11216:65702b22 heartbeat successfully sent
+2022-06-18 10:34:50.065 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:11216:65702b22 heartbeat successfully sent
+2022-06-18 10:35:20.084 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:11216:65702b22 heartbeat successfully sent
+2022-06-18 10:35:50.113 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:11216:65702b22 heartbeat successfully sent
+2022-06-18 10:36:20.143 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:11216:65702b22 heartbeat successfully sent
+2022-06-18 10:36:50.170 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:11216:65702b22 heartbeat successfully sent
+2022-06-18 10:37:20.192 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:11216:65702b22 heartbeat successfully sent
+2022-06-18 10:37:50.216 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:11216:65702b22 heartbeat successfully sent
+2022-06-18 10:38:20.234 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:11216:65702b22 heartbeat successfully sent
+2022-06-18 10:38:45.251 +07:00 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2022-06-18 10:38:45.266 +07:00 [Information] (Hangfire.Server.ServerWatchdog.) 2 servers were removed due to timeout
+2022-06-18 10:38:50.245 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:11216:65702b22 heartbeat successfully sent
+2022-06-18 10:39:20.259 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:11216:65702b22 heartbeat successfully sent
+2022-06-18 10:42:11.831 +07:00 [Information] (Hangfire.SqlServer.SqlServerObjectsInstaller.) Start installing Hangfire SQL objects...
+2022-06-18 10:42:12.315 +07:00 [Information] (Hangfire.SqlServer.SqlServerObjectsInstaller.) Hangfire SQL objects installed.
+2022-06-18 10:42:12.433 +07:00 [Information] (Hangfire.BackgroundJobServer.) Starting Hangfire Server using job storage: 'SQL Server: 192.168.87.23@BO_GOLF'
+2022-06-18 10:42:12.433 +07:00 [Information] (Hangfire.BackgroundJobServer.) Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+2022-06-18 10:42:12.433 +07:00 [Information] (Hangfire.BackgroundJobServer.) Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2022-06-18 10:42:12.463 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop BackgroundServerProcess:8c9a21ae has started in 23.2622 ms
+2022-06-18 10:42:13.098 +07:00 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:22716:65f57b04 successfully announced in 632.0086 ms
+2022-06-18 10:42:13.109 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerHeartbeatProcess:386556a8 has started in 10.1121 ms
+2022-06-18 10:42:13.110 +07:00 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:22716:65f57b04 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2022-06-18 10:42:13.117 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerWatchdog:314dd22f has started in 6.6901 ms
+2022-06-18 10:42:13.121 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerJobCancellationWatcher:4a95c404 has started in 9.1493 ms
+2022-06-18 10:42:13.132 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ExpirationManager:7c0e5dd9 has started in 13.5171 ms
+2022-06-18 10:42:13.136 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop CountersAggregator:06673ae3 has started in 8.3921 ms
+2022-06-18 10:42:13.137 +07:00 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2022-06-18 10:42:13.137 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'AggregatedCounter' table...
+2022-06-18 10:42:13.143 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop SqlServerHeartbeatProcess:e710eef5 has started in 11.4153 ms
+2022-06-18 10:42:13.149 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:312b04e0 has started in 11.026 ms
+2022-06-18 10:42:13.153 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:379d2ff2 has started in 14.6927 ms
+2022-06-18 10:42:13.157 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:cbaa6f1f has started in 18.9962 ms
+2022-06-18 10:42:13.161 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:a7b14752 has started in 22.9157 ms
+2022-06-18 10:42:13.166 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:0a5684b3 has started in 28.0117 ms
+2022-06-18 10:42:13.168 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:b05075c0 has started in 29.4928 ms
+2022-06-18 10:42:13.171 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:3070b2a1 has started in 32.5856 ms
+2022-06-18 10:42:13.175 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:8e693791 has started in 36.862 ms
+2022-06-18 10:42:13.179 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:c7bce1ef has started in 40.2402 ms
+2022-06-18 10:42:13.181 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:632bdf1a has started in 42.9863 ms
+2022-06-18 10:42:13.185 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:c58fdc5e has started in 46.4645 ms
+2022-06-18 10:42:13.191 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:cb532a02 has started in 51.2747 ms
+2022-06-18 10:42:13.195 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:9276ab9e has started in 56.9825 ms
+2022-06-18 10:42:13.199 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:130e847c has started in 60.9447 ms
+2022-06-18 10:42:13.202 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:1a4e020c has started in 64.4048 ms
+2022-06-18 10:42:13.207 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:d1ce6a2a has started in 69.2376 ms
+2022-06-18 10:42:13.209 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:6283f41e has started in 71.4486 ms
+2022-06-18 10:42:13.213 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:8d05826e has started in 74.8135 ms
+2022-06-18 10:42:13.216 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:3a797fc0 has started in 78.125 ms
+2022-06-18 10:42:13.221 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:5db392d4 has started in 82.8781 ms
+2022-06-18 10:42:13.226 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop DelayedJobScheduler:fcfaec37 has started in 9.5596 ms
+2022-06-18 10:42:13.229 +07:00 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:22716:65f57b04 all the dispatchers started
+2022-06-18 10:42:13.233 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop RecurringJobScheduler:b9a37279 has started in 11.9489 ms
+2022-06-18 10:42:13.245 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Job' table...
+2022-06-18 10:42:13.330 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'List' table...
+2022-06-18 10:42:13.352 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Set' table...
+2022-06-18 10:42:13.405 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Hash' table...
+2022-06-18 10:42:43.153 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:22716:65f57b04 heartbeat successfully sent
+2022-06-18 10:43:19.326 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:22716:65f57b04 heartbeat successfully sent
+2022-06-18 10:43:49.354 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:22716:65f57b04 heartbeat successfully sent
+2022-06-18 10:44:24.790 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:22716:65f57b04 heartbeat successfully sent
+2022-06-18 10:45:12.400 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:22716:65f57b04 heartbeat successfully sent
+2022-06-18 10:45:51.316 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:22716:65f57b04 heartbeat successfully sent
+2022-06-18 10:46:42.521 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:22716:65f57b04 heartbeat successfully sent
+2022-06-18 10:47:34.149 +07:00 [Information] (Hangfire.SqlServer.SqlServerObjectsInstaller.) Start installing Hangfire SQL objects...
+2022-06-18 10:47:34.551 +07:00 [Information] (Hangfire.SqlServer.SqlServerObjectsInstaller.) Hangfire SQL objects installed.
+2022-06-18 10:47:34.635 +07:00 [Information] (Hangfire.BackgroundJobServer.) Starting Hangfire Server using job storage: 'SQL Server: 192.168.87.23@BO_GOLF'
+2022-06-18 10:47:34.635 +07:00 [Information] (Hangfire.BackgroundJobServer.) Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+2022-06-18 10:47:34.636 +07:00 [Information] (Hangfire.BackgroundJobServer.) Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2022-06-18 10:47:34.697 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop BackgroundServerProcess:41039048 has started in 49.5869 ms
+2022-06-18 10:47:35.062 +07:00 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:25628:99aa54e7 successfully announced in 362.5941 ms
+2022-06-18 10:47:35.076 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerHeartbeatProcess:d8e56bd4 has started in 13.3058 ms
+2022-06-18 10:47:35.077 +07:00 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:25628:99aa54e7 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2022-06-18 10:47:35.125 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerJobCancellationWatcher:609dd6bd has started in 45.5211 ms
+2022-06-18 10:47:35.130 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerWatchdog:5a20bde5 has started in 52.4899 ms
+2022-06-18 10:47:35.146 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ExpirationManager:0c604235 has started in 21.0515 ms
+2022-06-18 10:47:35.148 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'AggregatedCounter' table...
+2022-06-18 10:47:35.158 +07:00 [Information] (Hangfire.Server.ServerWatchdog.) 1 servers were removed due to timeout
+2022-06-18 10:47:35.209 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop SqlServerHeartbeatProcess:37dacba1 has started in 43.7913 ms
+2022-06-18 10:47:35.216 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop CountersAggregator:2e0e787e has started in 84.7837 ms
+2022-06-18 10:47:35.217 +07:00 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2022-06-18 10:47:35.279 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:1ff1298e has started in 78.4282 ms
+2022-06-18 10:47:35.279 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:999c141f has started in 78.7149 ms
+2022-06-18 10:47:35.297 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:60e40830 has started in 93.8431 ms
+2022-06-18 10:47:35.338 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:57c70475 has started in 138.1098 ms
+2022-06-18 10:47:35.340 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:ee7ed37b has started in 139.4203 ms
+2022-06-18 10:47:35.353 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:1a5be673 has started in 152.1777 ms
+2022-06-18 10:47:35.371 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:33edd2cb has started in 170.1812 ms
+2022-06-18 10:47:35.382 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:02d3f567 has started in 181.4692 ms
+2022-06-18 10:47:35.382 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Job' table...
+2022-06-18 10:47:35.397 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:747b3b6f has started in 196.4635 ms
+2022-06-18 10:47:35.433 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:002a6cd4 has started in 232.8327 ms
+2022-06-18 10:47:35.434 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:2f35b6e3 has started in 233.2414 ms
+2022-06-18 10:47:35.468 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:c91a06b3 has started in 267.57 ms
+2022-06-18 10:47:35.477 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:8460c7d1 has started in 273.7104 ms
+2022-06-18 10:47:35.485 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:06926d7e has started in 284.6289 ms
+2022-06-18 10:47:35.489 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'List' table...
+2022-06-18 10:47:35.503 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:e6a5698b has started in 303.0991 ms
+2022-06-18 10:47:35.510 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:2547736b has started in 309.7091 ms
+2022-06-18 10:47:35.550 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:df01c5a0 has started in 350.1746 ms
+2022-06-18 10:47:35.550 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:9402e401 has started in 350.1744 ms
+2022-06-18 10:47:35.556 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:d9c9bf12 has started in 355.7293 ms
+2022-06-18 10:47:35.562 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:31c5de4e has started in 360.3001 ms
+2022-06-18 10:47:35.565 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop DelayedJobScheduler:bd391a40 has started in 8.5239 ms
+2022-06-18 10:47:35.565 +07:00 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:25628:99aa54e7 all the dispatchers started
+2022-06-18 10:47:35.569 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop RecurringJobScheduler:ca4e3ef5 has started in 8.2492 ms
+2022-06-18 10:47:35.592 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Set' table...
+2022-06-18 10:47:35.653 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Hash' table...
+2022-06-18 10:48:07.440 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:25628:99aa54e7 heartbeat successfully sent
+2022-06-18 10:48:51.366 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:25628:99aa54e7 heartbeat successfully sent
+2022-06-18 10:49:46.079 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:25628:99aa54e7 heartbeat successfully sent
+2022-06-18 10:53:50.002 +07:00 [Information] (Hangfire.SqlServer.SqlServerObjectsInstaller.) Start installing Hangfire SQL objects...
+2022-06-18 10:53:50.474 +07:00 [Information] (Hangfire.SqlServer.SqlServerObjectsInstaller.) Hangfire SQL objects installed.
+2022-06-18 10:53:50.597 +07:00 [Information] (Hangfire.BackgroundJobServer.) Starting Hangfire Server using job storage: 'SQL Server: 192.168.87.23@BO_GOLF'
+2022-06-18 10:53:50.597 +07:00 [Information] (Hangfire.BackgroundJobServer.) Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+2022-06-18 10:53:50.598 +07:00 [Information] (Hangfire.BackgroundJobServer.) Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2022-06-18 10:53:50.708 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop BackgroundServerProcess:cb36b4c0 has started in 104.1149 ms
+2022-06-18 10:53:51.070 +07:00 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:19296:445fb88a successfully announced in 359.3899 ms
+2022-06-18 10:53:51.077 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerHeartbeatProcess:c1b6809e has started in 5.5306 ms
+2022-06-18 10:53:51.077 +07:00 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:19296:445fb88a is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2022-06-18 10:53:51.083 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerWatchdog:6120086e has started in 5.7659 ms
+2022-06-18 10:53:51.087 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerJobCancellationWatcher:3ff0c527 has started in 8.6682 ms
+2022-06-18 10:53:51.092 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ExpirationManager:8f20c9a2 has started in 6.8857 ms
+2022-06-18 10:53:51.095 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'AggregatedCounter' table...
+2022-06-18 10:53:51.099 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop CountersAggregator:0bfaea6a has started in 9.9393 ms
+2022-06-18 10:53:51.105 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop SqlServerHeartbeatProcess:7e44bbb7 has started in 12.1744 ms
+2022-06-18 10:53:51.105 +07:00 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2022-06-18 10:53:51.109 +07:00 [Information] (Hangfire.Server.ServerWatchdog.) 1 servers were removed due to timeout
+2022-06-18 10:53:51.128 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:0a48a09e has started in 23.4508 ms
+2022-06-18 10:53:51.138 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:2df2145e has started in 33.1337 ms
+2022-06-18 10:53:51.141 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:b0597705 has started in 36.6302 ms
+2022-06-18 10:53:51.146 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:158ae039 has started in 41.1914 ms
+2022-06-18 10:53:51.152 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:ca0a499c has started in 47.7332 ms
+2022-06-18 10:53:51.181 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:a610851d has started in 76.4746 ms
+2022-06-18 10:53:51.181 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:5af008a7 has started in 76.981 ms
+2022-06-18 10:53:51.187 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:ab6a6b6d has started in 82.7243 ms
+2022-06-18 10:53:51.195 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:39c93141 has started in 90.672 ms
+2022-06-18 10:53:51.225 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:19cf5884 has started in 120.6043 ms
+2022-06-18 10:53:51.225 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:aadd5b29 has started in 120.5949 ms
+2022-06-18 10:53:51.231 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:cb5a6dbc has started in 126.5485 ms
+2022-06-18 10:53:51.234 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:5dd0ab6e has started in 130.0853 ms
+2022-06-18 10:53:51.238 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:69c0d789 has started in 134.1412 ms
+2022-06-18 10:53:51.271 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:361ef997 has started in 166.4572 ms
+2022-06-18 10:53:51.271 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:786f3d74 has started in 166.4635 ms
+2022-06-18 10:53:51.276 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:13e5bec2 has started in 170.7598 ms
+2022-06-18 10:53:51.277 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:4e3195da has started in 172.946 ms
+2022-06-18 10:53:51.282 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:d5e64d78 has started in 177.4058 ms
+2022-06-18 10:53:51.285 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:0850ad1e has started in 180.882 ms
+2022-06-18 10:53:51.288 +07:00 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:19296:445fb88a all the dispatchers started
+2022-06-18 10:53:51.288 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop DelayedJobScheduler:3dc2b2da has started in 6.5669 ms
+2022-06-18 10:53:51.291 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop RecurringJobScheduler:ed65dc4c has started in 5.7252 ms
+2022-06-18 10:53:51.293 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Job' table...
+2022-06-18 10:53:51.364 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'List' table...
+2022-06-18 10:53:51.380 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Set' table...
+2022-06-18 10:53:51.415 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Hash' table...
+2022-06-18 10:54:21.120 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:19296:445fb88a heartbeat successfully sent
+2022-06-18 10:54:51.426 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:19296:445fb88a heartbeat successfully sent
+2022-06-18 10:55:23.995 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:19296:445fb88a heartbeat successfully sent
+2022-06-18 10:56:14.811 +07:00 [Information] (Hangfire.SqlServer.SqlServerObjectsInstaller.) Start installing Hangfire SQL objects...
+2022-06-18 10:56:15.525 +07:00 [Information] (Hangfire.SqlServer.SqlServerObjectsInstaller.) Hangfire SQL objects installed.
+2022-06-18 10:56:15.645 +07:00 [Information] (Hangfire.BackgroundJobServer.) Starting Hangfire Server using job storage: 'SQL Server: 192.168.87.23@BO_GOLF'
+2022-06-18 10:56:15.646 +07:00 [Information] (Hangfire.BackgroundJobServer.) Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+2022-06-18 10:56:15.646 +07:00 [Information] (Hangfire.BackgroundJobServer.) Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2022-06-18 10:56:15.684 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop BackgroundServerProcess:6e489d77 has started in 29.9277 ms
+2022-06-18 10:56:16.143 +07:00 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:3328:bd115dab successfully announced in 456.0662 ms
+2022-06-18 10:56:16.150 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerHeartbeatProcess:48884247 has started in 6.7543 ms
+2022-06-18 10:56:16.151 +07:00 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:3328:bd115dab is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2022-06-18 10:56:16.156 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerWatchdog:e94090a2 has started in 4.496 ms
+2022-06-18 10:56:16.188 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerJobCancellationWatcher:e070d1ad has started in 35.743 ms
+2022-06-18 10:56:16.218 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ExpirationManager:3d33d83d has started in 30.7122 ms
+2022-06-18 10:56:16.220 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'AggregatedCounter' table...
+2022-06-18 10:56:16.248 +07:00 [Information] (Hangfire.Server.ServerWatchdog.) 1 servers were removed due to timeout
+2022-06-18 10:56:16.248 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop CountersAggregator:17029b19 has started in 54.5317 ms
+2022-06-18 10:56:16.248 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop SqlServerHeartbeatProcess:61f54fbd has started in 27.5824 ms
+2022-06-18 10:56:16.249 +07:00 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2022-06-18 10:56:16.253 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:bf6b6897 has started in 4.462 ms
+2022-06-18 10:56:16.279 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:c9d3a3d9 has started in 30.5623 ms
+2022-06-18 10:56:16.279 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:af87ffb6 has started in 30.5622 ms
+2022-06-18 10:56:16.282 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:b1ce6b6d has started in 34.4043 ms
+2022-06-18 10:56:16.285 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:34c8ef01 has started in 36.7828 ms
+2022-06-18 10:56:16.287 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:6a5c900b has started in 39.2436 ms
+2022-06-18 10:56:16.291 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:392f3a8c has started in 42.908 ms
+2022-06-18 10:56:16.296 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:b08e5a93 has started in 47.5653 ms
+2022-06-18 10:56:16.301 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:b4c67c05 has started in 52.5874 ms
+2022-06-18 10:56:16.303 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:4abcd90d has started in 55.2695 ms
+2022-06-18 10:56:16.307 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:42aa2bfa has started in 59.2716 ms
+2022-06-18 10:56:16.311 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:2c67ef5c has started in 62.8965 ms
+2022-06-18 10:56:16.315 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:ed0ffcd2 has started in 66.8648 ms
+2022-06-18 10:56:16.316 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:9f93fd71 has started in 68.3868 ms
+2022-06-18 10:56:16.319 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:7c03427a has started in 71.2527 ms
+2022-06-18 10:56:16.322 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:b7efabe6 has started in 73.8502 ms
+2022-06-18 10:56:16.326 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:ba1313fb has started in 77.7166 ms
+2022-06-18 10:56:16.330 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:4be82eb1 has started in 81.8197 ms
+2022-06-18 10:56:16.332 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:c1e63ae4 has started in 83.6689 ms
+2022-06-18 10:56:16.336 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:7d765f65 has started in 86.8444 ms
+2022-06-18 10:56:16.338 +07:00 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:3328:bd115dab all the dispatchers started
+2022-06-18 10:56:16.338 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop DelayedJobScheduler:d05a8c4c has started in 6.1705 ms
+2022-06-18 10:56:16.342 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop RecurringJobScheduler:fbd697dc has started in 7.3517 ms
+2022-06-18 10:56:16.361 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Job' table...
+2022-06-18 10:56:16.450 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'List' table...
+2022-06-18 10:56:16.481 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Set' table...
+2022-06-18 10:56:16.498 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Hash' table...
+2022-06-18 10:56:46.219 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:3328:bd115dab heartbeat successfully sent
+2022-06-18 10:57:16.541 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:3328:bd115dab heartbeat successfully sent
+2022-06-18 10:57:46.571 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:3328:bd115dab heartbeat successfully sent
+2022-06-18 10:58:16.583 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:3328:bd115dab heartbeat successfully sent
+2022-06-18 11:03:12.332 +07:00 [Information] (Hangfire.SqlServer.SqlServerObjectsInstaller.) Start installing Hangfire SQL objects...
+2022-06-18 11:03:13.485 +07:00 [Information] (Hangfire.SqlServer.SqlServerObjectsInstaller.) Hangfire SQL objects installed.
+2022-06-18 11:03:13.941 +07:00 [Information] (Hangfire.BackgroundJobServer.) Starting Hangfire Server using job storage: 'SQL Server: 192.168.87.23@BO_GOLF'
+2022-06-18 11:03:13.941 +07:00 [Information] (Hangfire.BackgroundJobServer.) Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+2022-06-18 11:03:13.942 +07:00 [Information] (Hangfire.BackgroundJobServer.) Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2022-06-18 11:03:13.970 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop BackgroundServerProcess:45ac41ce has started in 20.3014 ms
+2022-06-18 11:03:14.602 +07:00 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:17736:4f56ef42 successfully announced in 627.8103 ms
+2022-06-18 11:03:14.608 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerHeartbeatProcess:6b56827f has started in 6.0113 ms
+2022-06-18 11:03:14.609 +07:00 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:17736:4f56ef42 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2022-06-18 11:03:14.615 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerWatchdog:a25edcc2 has started in 5.9781 ms
+2022-06-18 11:03:14.621 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerJobCancellationWatcher:77199da8 has started in 9.2627 ms
+2022-06-18 11:03:14.628 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ExpirationManager:3a925290 has started in 7.8416 ms
+2022-06-18 11:03:14.636 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop CountersAggregator:ca1ec5a5 has started in 13.3837 ms
+2022-06-18 11:03:14.636 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'AggregatedCounter' table...
+2022-06-18 11:03:14.639 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop SqlServerHeartbeatProcess:6e457d5d has started in 9.5006 ms
+2022-06-18 11:03:14.640 +07:00 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2022-06-18 11:03:14.645 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:f54ded86 has started in 10.9943 ms
+2022-06-18 11:03:14.651 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:7b296edd has started in 17.2537 ms
+2022-06-18 11:03:14.682 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:9f6431e5 has started in 47.8194 ms
+2022-06-18 11:03:14.682 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:3adb30ce has started in 47.8195 ms
+2022-06-18 11:03:14.687 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:3290abb3 has started in 53.0462 ms
+2022-06-18 11:03:14.714 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:07616903 has started in 80.2884 ms
+2022-06-18 11:03:14.714 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:9f17b195 has started in 80.4023 ms
+2022-06-18 11:03:14.720 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:2ad0e559 has started in 86.3275 ms
+2022-06-18 11:03:14.724 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:d5d3b764 has started in 90.2025 ms
+2022-06-18 11:03:14.730 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:9078ec66 has started in 96.2534 ms
+2022-06-18 11:03:14.733 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:7c5c179c has started in 98.9813 ms
+2022-06-18 11:03:14.736 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:93ff3b36 has started in 101.7055 ms
+2022-06-18 11:03:14.738 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:09078d13 has started in 104.3547 ms
+2022-06-18 11:03:14.741 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:703703ad has started in 107.0308 ms
+2022-06-18 11:03:14.747 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:ff0fae67 has started in 112.8876 ms
+2022-06-18 11:03:14.749 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:f06debc7 has started in 114.7797 ms
+2022-06-18 11:03:14.753 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:0378c927 has started in 118.1232 ms
+2022-06-18 11:03:14.755 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:d4d65474 has started in 120.8487 ms
+2022-06-18 11:03:14.762 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:475a9a19 has started in 128.1456 ms
+2022-06-18 11:03:14.766 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:599b78f7 has started in 132.2248 ms
+2022-06-18 11:03:14.770 +07:00 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:17736:4f56ef42 all the dispatchers started
+2022-06-18 11:03:14.772 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop DelayedJobScheduler:72d70a81 has started in 12.2346 ms
+2022-06-18 11:03:14.780 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop RecurringJobScheduler:67ed1aab has started in 13.522 ms
+2022-06-18 11:03:14.936 +07:00 [Information] (Hangfire.Server.ServerWatchdog.) 1 servers were removed due to timeout
+2022-06-18 11:03:15.653 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Job' table...
+2022-06-18 11:03:16.962 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'List' table...
+2022-06-18 11:03:17.646 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Set' table...
+2022-06-18 11:03:17.666 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Hash' table...
+2022-06-18 11:03:44.725 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:17736:4f56ef42 heartbeat successfully sent
+2022-06-18 11:04:14.798 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:17736:4f56ef42 heartbeat successfully sent
+2022-06-18 11:04:44.830 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:17736:4f56ef42 heartbeat successfully sent
+2022-06-18 11:28:35.670 +07:00 [Information] (Hangfire.SqlServer.SqlServerObjectsInstaller.) Start installing Hangfire SQL objects...
+2022-06-18 11:28:36.261 +07:00 [Warning] (Hangfire.SqlServer.SqlServerObjectsInstaller.) An exception occurred while trying to perform the migration. Retrying...
+System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'BRGGROUP\install'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerStorage.Initialize()
+ClientConnectionId:1121e2a5-083d-4780-8fca-e429c3613640
+Error Number:18456,State:1,Class:14
+2022-06-18 11:28:36.504 +07:00 [Warning] (Hangfire.SqlServer.SqlServerObjectsInstaller.) An exception occurred while trying to perform the migration. Retrying...
+System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'BRGGROUP\install'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerStorage.Initialize()
+ClientConnectionId:1121e2a5-083d-4780-8fca-e429c3613640
+Error Number:18456,State:1,Class:14
+2022-06-18 11:28:36.505 +07:00 [Warning] (Hangfire.SqlServer.SqlServerObjectsInstaller.) An exception occurred while trying to perform the migration.
+System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'BRGGROUP\install'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerStorage.Initialize()
+ClientConnectionId:1121e2a5-083d-4780-8fca-e429c3613640
+Error Number:18456,State:1,Class:14
+2022-06-18 11:28:36.505 +07:00 [Warning] (Hangfire.SqlServer.SqlServerObjectsInstaller.) Was unable to perform the Hangfire schema migration due to an exception. Ignore this message unless you've just installed or upgraded Hangfire.
+System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'BRGGROUP\install'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerStorage.Initialize()
+ClientConnectionId:1121e2a5-083d-4780-8fca-e429c3613640
+Error Number:18456,State:1,Class:14
+2022-06-18 11:28:36.659 +07:00 [Information] (Hangfire.BackgroundJobServer.) Starting Hangfire Server using job storage: 'SQL Server: 192.168.87.23@BO_GOLF'
+2022-06-18 11:28:36.659 +07:00 [Information] (Hangfire.BackgroundJobServer.) Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+2022-06-18 11:28:36.659 +07:00 [Information] (Hangfire.BackgroundJobServer.) Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2022-06-18 11:28:36.678 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop BackgroundServerProcess:b48ecccd has started in 12.8085 ms
+2022-06-18 11:28:36.683 +07:00 [Error] (Hangfire.Processing.BackgroundExecution.) Execution BackgroundServerProcess is in the Failed state now due to an exception, execution will be retried no more than in 00:00:15
+System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'BRGGROUP\install'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:1121e2a5-083d-4780-8fca-e429c3613640
+Error Number:18456,State:1,Class:14
+2022-06-18 11:28:36.684 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop BackgroundServerProcess:b48ecccd caught an exception and will be retried in 00:00:15
+System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'BRGGROUP\install'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:1121e2a5-083d-4780-8fca-e429c3613640
+Error Number:18456,State:1,Class:14
+2022-06-18 11:28:36.685 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop BackgroundServerProcess:b48ecccd will be retried in 00:00:15...
+2022-06-18 11:28:51.709 +07:00 [Error] (Hangfire.Processing.BackgroundExecution.) Execution BackgroundServerProcess is still in the Failed state for 00:00:15.0248171 due to an exception, will be retried no more than in 00:00:15
+System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'BRGGROUP\install'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:2b40bc5c-02a0-4897-86d3-108c5aa250e4
+Error Number:18456,State:1,Class:14
+2022-06-18 11:28:51.710 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop BackgroundServerProcess:b48ecccd caught an exception and will be retried in 00:00:15
+System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'BRGGROUP\install'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:2b40bc5c-02a0-4897-86d3-108c5aa250e4
+Error Number:18456,State:1,Class:14
+2022-06-18 11:28:51.711 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop BackgroundServerProcess:b48ecccd will be retried in 00:00:15...
+2022-06-18 11:29:06.735 +07:00 [Error] (Hangfire.Processing.BackgroundExecution.) Execution BackgroundServerProcess is still in the Failed state for 00:00:30.0510185 due to an exception, will be retried no more than in 00:00:15
+System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'BRGGROUP\install'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:140aaaca-5ae7-4394-b88d-745b966722e6
+Error Number:18456,State:1,Class:14
+2022-06-18 11:29:06.737 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop BackgroundServerProcess:b48ecccd caught an exception and will be retried in 00:00:15
+System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'BRGGROUP\install'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:140aaaca-5ae7-4394-b88d-745b966722e6
+Error Number:18456,State:1,Class:14
+2022-06-18 11:29:06.737 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop BackgroundServerProcess:b48ecccd will be retried in 00:00:15...
+2022-06-18 11:29:21.746 +07:00 [Error] (Hangfire.Processing.BackgroundExecution.) Execution BackgroundServerProcess is still in the Failed state for 00:00:45.0615827 due to an exception, will be retried no more than in 00:00:15
+System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'BRGGROUP\install'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:140aaaca-5ae7-4394-b88d-745b966722e6
+Error Number:18456,State:1,Class:14
+2022-06-18 11:29:21.747 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop BackgroundServerProcess:b48ecccd caught an exception and will be retried in 00:00:15
+System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'BRGGROUP\install'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:140aaaca-5ae7-4394-b88d-745b966722e6
+Error Number:18456,State:1,Class:14
+2022-06-18 11:29:21.747 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop BackgroundServerProcess:b48ecccd will be retried in 00:00:15...
+2022-06-18 11:29:36.765 +07:00 [Error] (Hangfire.Processing.BackgroundExecution.) Execution BackgroundServerProcess is still in the Failed state for 00:01:00.0815203 due to an exception, will be retried no more than in 00:00:15
+System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'BRGGROUP\install'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:1238e363-6b23-4e4e-bfb9-a0c2bcddedf0
+Error Number:18456,State:1,Class:14
+2022-06-18 11:29:36.766 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop BackgroundServerProcess:b48ecccd caught an exception and will be retried in 00:00:15
+System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'BRGGROUP\install'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:1238e363-6b23-4e4e-bfb9-a0c2bcddedf0
+Error Number:18456,State:1,Class:14
+2022-06-18 11:29:36.767 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop BackgroundServerProcess:b48ecccd will be retried in 00:00:15...
+2022-06-18 11:29:51.776 +07:00 [Error] (Hangfire.Processing.BackgroundExecution.) Execution BackgroundServerProcess is still in the Failed state for 00:01:15.0922170 due to an exception, will be retried no more than in 00:00:15
+System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'BRGGROUP\install'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:1238e363-6b23-4e4e-bfb9-a0c2bcddedf0
+Error Number:18456,State:1,Class:14
+2022-06-18 11:29:51.776 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop BackgroundServerProcess:b48ecccd caught an exception and will be retried in 00:00:15
+System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'BRGGROUP\install'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:1238e363-6b23-4e4e-bfb9-a0c2bcddedf0
+Error Number:18456,State:1,Class:14
+2022-06-18 11:29:51.777 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop BackgroundServerProcess:b48ecccd will be retried in 00:00:15...
+2022-06-18 11:30:06.785 +07:00 [Error] (Hangfire.Processing.BackgroundExecution.) Execution BackgroundServerProcess is still in the Failed state for 00:01:30.1014913 due to an exception, will be retried no more than in 00:00:15
+System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'BRGGROUP\install'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:1238e363-6b23-4e4e-bfb9-a0c2bcddedf0
+Error Number:18456,State:1,Class:14
+2022-06-18 11:30:06.785 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop BackgroundServerProcess:b48ecccd caught an exception and will be retried in 00:00:15
+System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'BRGGROUP\install'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:1238e363-6b23-4e4e-bfb9-a0c2bcddedf0
+Error Number:18456,State:1,Class:14
+2022-06-18 11:30:06.786 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop BackgroundServerProcess:b48ecccd will be retried in 00:00:15...
+2022-06-18 11:30:21.817 +07:00 [Error] (Hangfire.Processing.BackgroundExecution.) Execution BackgroundServerProcess is still in the Failed state for 00:01:45.1343705 due to an exception, will be retried no more than in 00:00:15
+System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'BRGGROUP\install'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:4a1fbd62-fa8a-48e1-879e-d15d37bdbd41
+Error Number:18456,State:1,Class:14
+2022-06-18 11:30:21.818 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop BackgroundServerProcess:b48ecccd caught an exception and will be retried in 00:00:15
+System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'BRGGROUP\install'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:4a1fbd62-fa8a-48e1-879e-d15d37bdbd41
+Error Number:18456,State:1,Class:14
+2022-06-18 11:30:21.818 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop BackgroundServerProcess:b48ecccd will be retried in 00:00:15...
+2022-06-18 11:30:36.833 +07:00 [Error] (Hangfire.Processing.BackgroundExecution.) Execution BackgroundServerProcess is still in the Failed state for 00:02:00.1501047 due to an exception, will be retried no more than in 00:00:15
+System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'BRGGROUP\install'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:4a1fbd62-fa8a-48e1-879e-d15d37bdbd41
+Error Number:18456,State:1,Class:14
+2022-06-18 11:30:36.833 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop BackgroundServerProcess:b48ecccd caught an exception and will be retried in 00:00:15
+System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'BRGGROUP\install'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:4a1fbd62-fa8a-48e1-879e-d15d37bdbd41
+Error Number:18456,State:1,Class:14
+2022-06-18 11:30:36.834 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop BackgroundServerProcess:b48ecccd will be retried in 00:00:15...
+2022-06-18 11:30:51.840 +07:00 [Error] (Hangfire.Processing.BackgroundExecution.) Execution BackgroundServerProcess is still in the Failed state for 00:02:15.1571049 due to an exception, will be retried no more than in 00:00:15
+System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'BRGGROUP\install'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:4a1fbd62-fa8a-48e1-879e-d15d37bdbd41
+Error Number:18456,State:1,Class:14
+2022-06-18 11:30:51.840 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop BackgroundServerProcess:b48ecccd caught an exception and will be retried in 00:00:15
+System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'BRGGROUP\install'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:4a1fbd62-fa8a-48e1-879e-d15d37bdbd41
+Error Number:18456,State:1,Class:14
+2022-06-18 11:30:51.841 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop BackgroundServerProcess:b48ecccd will be retried in 00:00:15...
+2022-06-18 11:31:06.854 +07:00 [Error] (Hangfire.Processing.BackgroundExecution.) Execution BackgroundServerProcess is still in the Failed state for 00:02:30.1721771 due to an exception, will be retried no more than in 00:00:15
+System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'BRGGROUP\install'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:4a1fbd62-fa8a-48e1-879e-d15d37bdbd41
+Error Number:18456,State:1,Class:14
+2022-06-18 11:31:06.855 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop BackgroundServerProcess:b48ecccd caught an exception and will be retried in 00:00:15
+System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'BRGGROUP\install'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:4a1fbd62-fa8a-48e1-879e-d15d37bdbd41
+Error Number:18456,State:1,Class:14
+2022-06-18 11:31:06.856 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop BackgroundServerProcess:b48ecccd will be retried in 00:00:15...
+2022-06-18 11:31:21.881 +07:00 [Error] (Hangfire.Processing.BackgroundExecution.) Execution BackgroundServerProcess is still in the Failed state for 00:02:45.1995092 due to an exception, will be retried no more than in 00:00:15
+System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'BRGGROUP\install'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:6697c24a-e02b-4fe9-bff4-0be46b1b3236
+Error Number:18456,State:1,Class:14
+2022-06-18 11:31:21.882 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop BackgroundServerProcess:b48ecccd caught an exception and will be retried in 00:00:15
+System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'BRGGROUP\install'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:6697c24a-e02b-4fe9-bff4-0be46b1b3236
+Error Number:18456,State:1,Class:14
+2022-06-18 11:31:21.883 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop BackgroundServerProcess:b48ecccd will be retried in 00:00:15...
+2022-06-18 11:33:36.798 +07:00 [Information] (Hangfire.SqlServer.SqlServerObjectsInstaller.) Start installing Hangfire SQL objects...
+2022-06-18 11:33:37.218 +07:00 [Information] (Hangfire.SqlServer.SqlServerObjectsInstaller.) Hangfire SQL objects installed.
+2022-06-18 11:33:37.283 +07:00 [Information] (Hangfire.BackgroundJobServer.) Starting Hangfire Server using job storage: 'SQL Server: 192.168.87.23@BO_GOLF'
+2022-06-18 11:33:37.283 +07:00 [Information] (Hangfire.BackgroundJobServer.) Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+2022-06-18 11:33:37.283 +07:00 [Information] (Hangfire.BackgroundJobServer.) Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2022-06-18 11:33:37.299 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop BackgroundServerProcess:128a38f6 has started in 12.2794 ms
+2022-06-18 11:33:37.551 +07:00 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:8892:3d518afe successfully announced in 250.0906 ms
+2022-06-18 11:33:37.557 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerHeartbeatProcess:6fd1b067 has started in 5.4135 ms
+2022-06-18 11:33:37.558 +07:00 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:8892:3d518afe is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2022-06-18 11:33:37.561 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerWatchdog:61890b42 has started in 3.6162 ms
+2022-06-18 11:33:37.563 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerJobCancellationWatcher:8f7e45d8 has started in 4.641 ms
+2022-06-18 11:33:37.596 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop CountersAggregator:44ee8b5a has started in 31.7995 ms
+2022-06-18 11:33:37.596 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ExpirationManager:dbc00e25 has started in 33.9477 ms
+2022-06-18 11:33:37.597 +07:00 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2022-06-18 11:33:37.599 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'AggregatedCounter' table...
+2022-06-18 11:33:37.601 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop SqlServerHeartbeatProcess:1fa34559 has started in 4.8519 ms
+2022-06-18 11:33:37.605 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:163a55d2 has started in 7.6261 ms
+2022-06-18 11:33:37.610 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:425f2bdf has started in 12.3739 ms
+2022-06-18 11:33:37.613 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:2478d83a has started in 15.3541 ms
+2022-06-18 11:33:37.615 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:d8f4dea2 has started in 18.223 ms
+2022-06-18 11:33:37.618 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:c43fe487 has started in 20.6778 ms
+2022-06-18 11:33:37.621 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:83e6c43e has started in 23.327 ms
+2022-06-18 11:33:37.624 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:a1fe6d9d has started in 27.1401 ms
+2022-06-18 11:33:37.627 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:533c4318 has started in 29.5294 ms
+2022-06-18 11:33:37.629 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:f9009638 has started in 32.0632 ms
+2022-06-18 11:33:37.633 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:723f0158 has started in 35.9665 ms
+2022-06-18 11:33:37.635 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:4eb42663 has started in 37.3595 ms
+2022-06-18 11:33:37.638 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:64164e7d has started in 40.6578 ms
+2022-06-18 11:33:37.642 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:82f0381f has started in 44.7527 ms
+2022-06-18 11:33:37.648 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:78d12afe has started in 50.6724 ms
+2022-06-18 11:33:37.684 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:9a8459b1 has started in 86.9744 ms
+2022-06-18 11:33:37.684 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:6515f994 has started in 86.9745 ms
+2022-06-18 11:33:37.688 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:22db7af4 has started in 91.2807 ms
+2022-06-18 11:33:37.691 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:84b4fabc has started in 94.0164 ms
+2022-06-18 11:33:37.695 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:877ed207 has started in 96.6031 ms
+2022-06-18 11:33:37.697 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:45e5439a has started in 99.5351 ms
+2022-06-18 11:33:37.701 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop DelayedJobScheduler:121781f2 has started in 6.6221 ms
+2022-06-18 11:33:37.701 +07:00 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:8892:3d518afe all the dispatchers started
+2022-06-18 11:33:37.703 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop RecurringJobScheduler:e1c91b3b has started in 6.7252 ms
+2022-06-18 11:33:37.718 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Job' table...
+2022-06-18 11:33:37.928 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'List' table...
+2022-06-18 11:33:37.992 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Set' table...
+2022-06-18 11:33:38.025 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Hash' table...
+2022-06-18 11:34:07.610 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8892:3d518afe heartbeat successfully sent
+2022-06-18 11:34:37.628 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8892:3d518afe heartbeat successfully sent
+2022-06-18 11:35:07.665 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8892:3d518afe heartbeat successfully sent
+2022-06-18 11:35:37.677 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8892:3d518afe heartbeat successfully sent
+2022-06-18 11:36:07.697 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8892:3d518afe heartbeat successfully sent
+2022-06-18 11:36:37.743 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8892:3d518afe heartbeat successfully sent

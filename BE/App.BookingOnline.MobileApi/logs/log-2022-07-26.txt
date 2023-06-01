@@ -1,0 +1,184 @@
+2022-07-26 15:46:28.687 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] Started timer
+2022-07-26 15:47:28.689 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 15:47:31.012 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"NonRefundedFee"' on entity type '"Booking"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-07-26 15:47:31.015 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalEstimateFee"' on entity type '"Booking"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-07-26 15:47:31.016 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"EstimatedPrice"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-07-26 15:47:31.016 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"NonRefundedFee"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-07-26 15:47:31.016 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"SeagolfPrice"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-07-26 15:47:31.016 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalMoney"' on entity type '"BookingTransactionPayment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-07-26 15:47:31.016 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Charge_Amt"' on entity type '"InTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-07-26 15:47:31.016 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Total_Amt"' on entity type '"InTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-07-26 15:47:31.016 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Trans_Amt"' on entity type '"InTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-07-26 15:47:31.016 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Charge_Amt"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-07-26 15:47:31.016 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Total_Amt"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-07-26 15:47:31.016 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Trans_Amt"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-07-26 15:47:47.654 +07:00 [Error] (Microsoft.EntityFrameworkCore.Database.Connection.) An error occurred using the connection to database '"BO_GOLF"' on server '"192.168.87.23"'.
+2022-07-26 15:47:47.725 +07:00 [Error] (Microsoft.EntityFrameworkCore.Query.) An exception occurred while iterating over the results of a query for context type '"App.BookingOnline.Data.BookingOnlineDbContext"'."
+""Microsoft.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.)
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.ConsumePreLoginHandshake(Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean& marsCapable, Boolean& fedAuthRequired)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover, SqlAuthenticationMethod authType)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:b3affea4-6fd8-4531-b91e-671ce8461042
+Error Number:258,State:0,Class:20"
+Microsoft.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.)
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.ConsumePreLoginHandshake(Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean& marsCapable, Boolean& fedAuthRequired)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover, SqlAuthenticationMethod authType)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:b3affea4-6fd8-4531-b91e-671ce8461042
+Error Number:258,State:0,Class:20
+2022-07-26 15:48:28.699 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 15:48:33.447 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 15:49:28.690 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 15:49:28.717 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 15:50:28.687 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 15:50:28.693 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 15:51:28.697 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 15:51:28.705 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 15:52:28.679 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 15:52:28.686 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 15:53:28.682 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 15:53:28.715 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 15:54:28.701 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 15:54:28.712 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 15:55:28.691 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 15:55:28.696 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 15:56:28.692 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 15:56:28.708 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 15:57:28.677 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 15:57:28.683 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 15:58:28.691 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 15:58:28.702 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 15:59:28.683 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 15:59:28.688 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 16:00:28.693 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 16:00:28.699 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 16:01:28.678 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 16:01:28.683 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 16:02:28.678 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 16:02:28.686 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 16:03:28.673 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 16:03:28.901 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 16:04:28.679 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 16:04:28.686 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 16:05:28.681 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 16:05:28.760 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 16:06:28.696 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 16:06:28.704 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 16:07:28.678 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 16:07:28.681 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 16:08:28.692 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 16:08:28.703 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 16:09:28.680 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 16:09:28.685 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 16:10:28.693 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 16:10:28.706 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 16:11:28.677 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 16:11:28.682 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 16:12:28.693 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 16:12:28.707 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 16:13:28.671 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 16:13:28.676 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 16:14:28.692 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 16:14:28.726 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 16:15:28.679 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 16:15:28.683 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 16:16:28.677 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 16:16:28.684 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 16:17:28.677 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 16:17:28.682 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 16:18:28.678 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 16:18:28.684 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 16:19:28.680 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 16:19:28.690 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 16:20:28.689 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 16:20:28.695 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 16:21:28.688 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 16:21:28.692 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 16:22:28.696 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 16:22:28.706 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 16:23:28.685 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 16:23:28.690 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 16:24:28.679 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 16:24:28.685 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 16:25:28.699 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 16:25:28.710 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 16:26:28.688 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 16:26:28.692 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 16:27:28.680 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 16:27:28.692 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 16:28:28.692 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 16:28:28.696 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 16:29:28.673 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 16:29:28.678 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 16:30:28.678 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 16:30:28.683 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 16:31:28.686 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 16:31:28.690 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 16:32:28.675 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 16:32:28.679 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 16:33:28.688 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 16:33:28.694 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 16:34:28.685 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 16:34:28.688 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 16:35:28.688 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 16:35:28.718 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 16:36:28.687 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 16:36:28.691 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 16:37:28.678 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 16:37:28.684 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 16:38:28.698 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 16:38:28.703 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 16:39:28.672 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 16:39:28.677 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle
+2022-07-26 16:40:28.677 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No task is running, check for new job
+2022-07-26 16:40:28.683 +07:00 [Information] (App.BookingOnline.MobileApi.BackgroudService.TimedHostedService.) [BackgroundService] No new job found, wait for next cycle

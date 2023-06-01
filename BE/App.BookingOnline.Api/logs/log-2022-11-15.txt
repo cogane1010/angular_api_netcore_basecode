@@ -1,0 +1,621 @@
+2022-11-15 09:18:14.690 +07:00 [Information] (Hangfire.SqlServer.SqlServerObjectsInstaller.) Start installing Hangfire SQL objects...
+2022-11-15 09:18:14.722 +07:00 [Information] (Hangfire.SqlServer.SqlServerObjectsInstaller.) Hangfire SQL objects installed.
+2022-11-15 09:18:14.799 +07:00 [Information] (Hangfire.BackgroundJobServer.) Starting Hangfire Server using job storage: 'SQL Server: 192.168.85.14@BO_GOLF'
+2022-11-15 09:18:14.799 +07:00 [Information] (Hangfire.BackgroundJobServer.) Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+2022-11-15 09:18:14.799 +07:00 [Information] (Hangfire.BackgroundJobServer.) Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2022-11-15 09:18:14.822 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop BackgroundServerProcess:cf643bc6 has started in 17.519 ms
+2022-11-15 09:18:14.847 +07:00 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:9432:1360fe1c successfully announced in 22.5358 ms
+2022-11-15 09:18:14.859 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerHeartbeatProcess:5e1c9a46 has started in 5.8638 ms
+2022-11-15 09:18:14.860 +07:00 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:9432:1360fe1c is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2022-11-15 09:18:14.865 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerWatchdog:a071a4d3 has started in 4.0535 ms
+2022-11-15 09:18:14.868 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerJobCancellationWatcher:da6a037d has started in 5.6662 ms
+2022-11-15 09:18:14.875 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ExpirationManager:6a9dcd73 has started in 7.2548 ms
+2022-11-15 09:18:14.876 +07:00 [Information] (Hangfire.Server.ServerWatchdog.) 2 servers were removed due to timeout
+2022-11-15 09:18:14.877 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'AggregatedCounter' table...
+2022-11-15 09:18:14.918 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop CountersAggregator:aae592dd has started in 46.7248 ms
+2022-11-15 09:18:14.918 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop SqlServerHeartbeatProcess:80cd4914 has started in 36.8551 ms
+2022-11-15 09:18:14.926 +07:00 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2022-11-15 09:18:14.934 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Job' table...
+2022-11-15 09:18:14.954 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:a5688c49 has started in 34.1637 ms
+2022-11-15 09:18:14.970 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'List' table...
+2022-11-15 09:18:14.977 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:96b3d2c5 has started in 58.1794 ms
+2022-11-15 09:18:14.982 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:c9d39782 has started in 64.4724 ms
+2022-11-15 09:18:14.986 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Set' table...
+2022-11-15 09:18:14.987 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:464e8031 has started in 69.2065 ms
+2022-11-15 09:18:15.028 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:4ed0e820 has started in 110.9721 ms
+2022-11-15 09:18:15.031 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:ea6788f9 has started in 113.9102 ms
+2022-11-15 09:18:15.056 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Hash' table...
+2022-11-15 09:18:15.057 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:32986f30 has started in 139.1433 ms
+2022-11-15 09:18:15.065 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:7ccdee11 has started in 147.2038 ms
+2022-11-15 09:18:15.074 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:eb28ddff has started in 155.1791 ms
+2022-11-15 09:18:15.080 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:c96e3313 has started in 161.882 ms
+2022-11-15 09:18:15.116 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:8d3b33b5 has started in 199.0369 ms
+2022-11-15 09:18:15.117 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:c72423e1 has started in 199.3015 ms
+2022-11-15 09:18:15.122 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:4382aa88 has started in 204.6245 ms
+2022-11-15 09:18:15.128 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:bb159742 has started in 210.5129 ms
+2022-11-15 09:18:15.134 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:6989622b has started in 216.2652 ms
+2022-11-15 09:18:15.163 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:fe0d76ef has started in 245.6876 ms
+2022-11-15 09:18:15.164 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:c309c869 has started in 246.0034 ms
+2022-11-15 09:18:15.183 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:b33f0974 has started in 264.9765 ms
+2022-11-15 09:18:15.187 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:0029ba50 has started in 269.9771 ms
+2022-11-15 09:18:15.198 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:ed595f7d has started in 279.6522 ms
+2022-11-15 09:18:15.202 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop DelayedJobScheduler:7ac755bb has started in 13.0734 ms
+2022-11-15 09:18:15.208 +07:00 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:9432:1360fe1c all the dispatchers started
+2022-11-15 09:18:15.219 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop RecurringJobScheduler:8bd44980 has started in 20.1953 ms
+2022-11-15 09:18:15.447 +07:00 [Debug] (Hangfire.Server.RecurringJobScheduler.) 1 recurring job(s) processed by scheduler.
+2022-11-15 09:18:17.960 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2022-11-15 09:18:18.106 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"NonRefundedFee"' on entity type '"Booking"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 09:18:18.107 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalEstimateFee"' on entity type '"Booking"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 09:18:18.107 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"BuggyFee"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 09:18:18.108 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"EstimatedPrice"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 09:18:18.108 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"NonRefundedFee"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 09:18:18.108 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"SeagolfPrice"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 09:18:18.108 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalMoney"' on entity type '"BookingTransactionPayment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 09:18:18.108 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalMoneyAcc"' on entity type '"BookingTransactionPayment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 09:18:18.108 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Charge_Amt"' on entity type '"InTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 09:18:18.108 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Total_Amt"' on entity type '"InTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 09:18:18.108 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Trans_Amt"' on entity type '"InTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 09:18:18.110 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Charge_Amt"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 09:18:18.110 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalMoneyAcc"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 09:18:18.110 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Total_Amt"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 09:18:18.110 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Trans_Amt"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 09:18:19.717 +07:00 [Error] (App.BookingOnline.WebApi.Jobs.SendEmailJobs.MoveNext) logAccountCustomer
+2022-11-15 09:18:44.887 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:9432:1360fe1c heartbeat successfully sent
+2022-11-15 09:19:14.903 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:9432:1360fe1c heartbeat successfully sent
+2022-11-15 09:19:44.925 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:9432:1360fe1c heartbeat successfully sent
+2022-11-15 09:20:14.936 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:9432:1360fe1c heartbeat successfully sent
+2022-11-15 09:20:44.958 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:9432:1360fe1c heartbeat successfully sent
+2022-11-15 09:21:14.976 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:9432:1360fe1c heartbeat successfully sent
+2022-11-15 09:21:45.000 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:9432:1360fe1c heartbeat successfully sent
+2022-11-15 09:22:15.024 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:9432:1360fe1c heartbeat successfully sent
+2022-11-15 09:22:45.042 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:9432:1360fe1c heartbeat successfully sent
+2022-11-15 09:23:14.989 +07:00 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2022-11-15 09:23:15.060 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:9432:1360fe1c heartbeat successfully sent
+2022-11-15 09:23:45.079 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:9432:1360fe1c heartbeat successfully sent
+2022-11-15 09:24:15.109 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:9432:1360fe1c heartbeat successfully sent
+2022-11-15 09:24:45.138 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:9432:1360fe1c heartbeat successfully sent
+2022-11-15 09:25:15.179 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:9432:1360fe1c heartbeat successfully sent
+2022-11-15 09:25:54.135 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:9432:1360fe1c heartbeat successfully sent
+2022-11-15 09:26:46.956 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:9432:1360fe1c heartbeat successfully sent
+2022-11-15 09:27:18.303 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:9432:1360fe1c heartbeat successfully sent
+2022-11-15 09:27:49.776 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:9432:1360fe1c heartbeat successfully sent
+2022-11-15 09:28:15.030 +07:00 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2022-11-15 09:28:19.804 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:9432:1360fe1c heartbeat successfully sent
+2022-11-15 09:28:49.828 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:9432:1360fe1c heartbeat successfully sent
+2022-11-15 09:29:19.844 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:9432:1360fe1c heartbeat successfully sent
+2022-11-15 09:29:49.862 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:9432:1360fe1c heartbeat successfully sent
+2022-11-15 09:30:19.884 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:9432:1360fe1c heartbeat successfully sent
+2022-11-15 09:30:49.903 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:9432:1360fe1c heartbeat successfully sent
+2022-11-15 09:31:19.924 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:9432:1360fe1c heartbeat successfully sent
+2022-11-15 09:31:49.940 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:9432:1360fe1c heartbeat successfully sent
+2022-11-15 09:32:19.956 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:9432:1360fe1c heartbeat successfully sent
+2022-11-15 09:32:49.979 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:9432:1360fe1c heartbeat successfully sent
+2022-11-15 09:33:15.057 +07:00 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2022-11-15 09:33:19.990 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:9432:1360fe1c heartbeat successfully sent
+2022-11-15 09:33:50.007 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:9432:1360fe1c heartbeat successfully sent
+2022-11-15 09:34:20.024 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:9432:1360fe1c heartbeat successfully sent
+2022-11-15 09:34:50.052 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:9432:1360fe1c heartbeat successfully sent
+2022-11-15 09:35:20.069 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:9432:1360fe1c heartbeat successfully sent
+2022-11-15 09:35:50.120 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:9432:1360fe1c heartbeat successfully sent
+2022-11-15 09:36:20.136 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:9432:1360fe1c heartbeat successfully sent
+2022-11-15 09:36:50.158 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:9432:1360fe1c heartbeat successfully sent
+2022-11-15 09:37:20.169 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:9432:1360fe1c heartbeat successfully sent
+2022-11-15 09:37:50.191 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:9432:1360fe1c heartbeat successfully sent
+2022-11-15 09:38:15.090 +07:00 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2022-11-15 09:38:20.215 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:9432:1360fe1c heartbeat successfully sent
+2022-11-15 09:38:50.227 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:9432:1360fe1c heartbeat successfully sent
+2022-11-15 09:39:20.251 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:9432:1360fe1c heartbeat successfully sent
+2022-11-15 09:39:49.536 +07:00 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2022-11-15 09:39:50.265 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:9432:1360fe1c heartbeat successfully sent
+2022-11-15 09:39:54.280 +07:00 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2022-11-15 09:39:54.282 +07:00 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2022-11-15 09:39:56.597 +07:00 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2022-11-15 09:39:57.721 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Query.) Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'
+2022-11-15 09:40:20.288 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:9432:1360fe1c heartbeat successfully sent
+2022-11-15 09:45:31.162 +07:00 [Information] (Hangfire.SqlServer.SqlServerObjectsInstaller.) Start installing Hangfire SQL objects...
+2022-11-15 09:45:31.191 +07:00 [Information] (Hangfire.SqlServer.SqlServerObjectsInstaller.) Hangfire SQL objects installed.
+2022-11-15 09:45:31.263 +07:00 [Information] (Hangfire.BackgroundJobServer.) Starting Hangfire Server using job storage: 'SQL Server: 192.168.85.14@BO_GOLF'
+2022-11-15 09:45:31.263 +07:00 [Information] (Hangfire.BackgroundJobServer.) Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+2022-11-15 09:45:31.263 +07:00 [Information] (Hangfire.BackgroundJobServer.) Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2022-11-15 09:45:31.335 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop BackgroundServerProcess:41ee3189 has started in 68.177 ms
+2022-11-15 09:45:31.374 +07:00 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:8452:d7658840 successfully announced in 33.5079 ms
+2022-11-15 09:45:31.390 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerHeartbeatProcess:46840336 has started in 8.6376 ms
+2022-11-15 09:45:31.390 +07:00 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:8452:d7658840 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2022-11-15 09:45:31.394 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerWatchdog:4a3af32c has started in 3.6695 ms
+2022-11-15 09:45:31.395 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerJobCancellationWatcher:8038f9d2 has started in 4.1107 ms
+2022-11-15 09:45:31.400 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ExpirationManager:b99561b3 has started in 4.9559 ms
+2022-11-15 09:45:31.404 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop CountersAggregator:6bfe0316 has started in 5.5028 ms
+2022-11-15 09:45:31.407 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop SqlServerHeartbeatProcess:c18b2c7b has started in 6.9285 ms
+2022-11-15 09:45:31.407 +07:00 [Information] (Hangfire.Server.ServerWatchdog.) 1 servers were removed due to timeout
+2022-11-15 09:45:31.408 +07:00 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2022-11-15 09:45:31.409 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'AggregatedCounter' table...
+2022-11-15 09:45:31.414 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:b711abe4 has started in 11.5984 ms
+2022-11-15 09:45:31.416 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:d9baf751 has started in 13.3499 ms
+2022-11-15 09:45:31.418 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:fcebe957 has started in 15.9162 ms
+2022-11-15 09:45:31.421 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:95212b27 has started in 18.7746 ms
+2022-11-15 09:45:31.459 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:02268185 has started in 56.444 ms
+2022-11-15 09:45:31.459 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:9eac13fd has started in 56.444 ms
+2022-11-15 09:45:31.462 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:6d79344c has started in 59.7852 ms
+2022-11-15 09:45:31.466 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:cd432a9b has started in 62.1364 ms
+2022-11-15 09:45:31.469 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:f7c33b86 has started in 65.5772 ms
+2022-11-15 09:45:31.472 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:34d83ab6 has started in 69.9664 ms
+2022-11-15 09:45:31.475 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:618116ff has started in 72.7818 ms
+2022-11-15 09:45:31.479 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:8a91dfe3 has started in 76.2885 ms
+2022-11-15 09:45:31.483 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:d740a94c has started in 80.6814 ms
+2022-11-15 09:45:31.485 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:59dc0f20 has started in 82.4809 ms
+2022-11-15 09:45:31.488 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:d48eb4c2 has started in 85.7394 ms
+2022-11-15 09:45:31.491 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:c18b6302 has started in 88.8621 ms
+2022-11-15 09:45:31.493 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Job' table...
+2022-11-15 09:45:31.496 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:bcf7608e has started in 93.2913 ms
+2022-11-15 09:45:31.502 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:6744689b has started in 99.1192 ms
+2022-11-15 09:45:31.504 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:23d66c61 has started in 101.8181 ms
+2022-11-15 09:45:31.506 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:87ccb1ea has started in 103.7098 ms
+2022-11-15 09:45:31.511 +07:00 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:8452:d7658840 all the dispatchers started
+2022-11-15 09:45:31.512 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop DelayedJobScheduler:b1d714c4 has started in 7.4162 ms
+2022-11-15 09:45:31.514 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop RecurringJobScheduler:5a1cbffe has started in 6.4356 ms
+2022-11-15 09:45:31.525 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'List' table...
+2022-11-15 09:45:31.532 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Set' table...
+2022-11-15 09:45:31.545 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Hash' table...
+2022-11-15 09:46:01.425 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 09:46:31.447 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 09:47:01.464 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 09:47:31.488 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 09:48:01.505 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 09:48:31.521 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 09:49:01.551 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 09:49:31.567 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 09:50:01.588 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 09:50:31.432 +07:00 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2022-11-15 09:50:31.611 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 09:51:01.628 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 09:51:31.644 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 09:52:01.661 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 09:52:31.684 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 09:53:01.700 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 09:53:31.720 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 09:54:01.745 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 09:54:31.762 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 09:55:01.775 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 09:55:31.455 +07:00 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2022-11-15 09:55:31.792 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 09:56:01.815 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 09:56:31.839 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 09:57:01.871 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 09:57:31.899 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 09:58:01.930 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 09:58:31.946 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 09:59:01.971 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 09:59:31.989 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 10:00:02.013 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 10:00:31.479 +07:00 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2022-11-15 10:00:32.034 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 10:01:02.058 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 10:01:32.075 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 10:02:02.098 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 10:02:32.121 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 10:03:02.143 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 10:03:32.155 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 10:04:02.173 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 10:04:32.195 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 10:05:02.214 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 10:05:31.495 +07:00 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2022-11-15 10:05:32.235 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 10:06:02.263 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 10:06:32.285 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 10:07:02.308 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 10:07:32.319 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 10:08:02.341 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 10:08:32.371 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 10:09:02.392 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 10:09:26.455 +07:00 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2022-11-15 10:09:26.455 +07:00 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2022-11-15 10:09:26.455 +07:00 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2022-11-15 10:09:27.478 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2022-11-15 10:09:27.578 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"NonRefundedFee"' on entity type '"Booking"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 10:09:27.579 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalEstimateFee"' on entity type '"Booking"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 10:09:27.579 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"BuggyFee"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 10:09:27.579 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"EstimatedPrice"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 10:09:27.579 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"NonRefundedFee"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 10:09:27.579 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"SeagolfPrice"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 10:09:27.579 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalMoney"' on entity type '"BookingTransactionPayment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 10:09:27.579 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalMoneyAcc"' on entity type '"BookingTransactionPayment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 10:09:27.579 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Charge_Amt"' on entity type '"InTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 10:09:27.579 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Total_Amt"' on entity type '"InTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 10:09:27.579 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Trans_Amt"' on entity type '"InTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 10:09:27.580 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Charge_Amt"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 10:09:27.580 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalMoneyAcc"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 10:09:27.583 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Total_Amt"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 10:09:27.583 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Trans_Amt"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 10:09:30.275 +07:00 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2022-11-15 10:09:31.004 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Query.) Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'
+2022-11-15 10:09:32.420 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 10:10:02.436 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 10:10:31.511 +07:00 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2022-11-15 10:10:32.453 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 10:11:02.481 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:8452:d7658840 heartbeat successfully sent
+2022-11-15 10:27:57.239 +07:00 [Information] (Hangfire.SqlServer.SqlServerObjectsInstaller.) Start installing Hangfire SQL objects...
+2022-11-15 10:27:57.281 +07:00 [Information] (Hangfire.SqlServer.SqlServerObjectsInstaller.) Hangfire SQL objects installed.
+2022-11-15 10:27:57.342 +07:00 [Information] (Hangfire.BackgroundJobServer.) Starting Hangfire Server using job storage: 'SQL Server: 192.168.85.14@BO_GOLF'
+2022-11-15 10:27:57.342 +07:00 [Information] (Hangfire.BackgroundJobServer.) Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+2022-11-15 10:27:57.342 +07:00 [Information] (Hangfire.BackgroundJobServer.) Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2022-11-15 10:27:57.359 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop BackgroundServerProcess:88669930 has started in 12.9802 ms
+2022-11-15 10:27:57.388 +07:00 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:10728:031fe143 successfully announced in 26.1671 ms
+2022-11-15 10:27:57.463 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerHeartbeatProcess:9fbbd1f9 has started in 69.7243 ms
+2022-11-15 10:27:57.464 +07:00 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:10728:031fe143 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2022-11-15 10:27:57.476 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerWatchdog:172f55cf has started in 12.0577 ms
+2022-11-15 10:27:57.478 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerJobCancellationWatcher:89a5b6e6 has started in 6.6113 ms
+2022-11-15 10:27:57.520 +07:00 [Information] (Hangfire.Server.ServerWatchdog.) 1 servers were removed due to timeout
+2022-11-15 10:27:57.520 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ExpirationManager:42faa307 has started in 41.3192 ms
+2022-11-15 10:27:57.520 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop CountersAggregator:6a025c68 has started in 38.1184 ms
+2022-11-15 10:27:57.521 +07:00 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2022-11-15 10:27:57.526 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop SqlServerHeartbeatProcess:6f830dd8 has started in 6.0451 ms
+2022-11-15 10:27:57.526 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'AggregatedCounter' table...
+2022-11-15 10:27:57.565 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:fbece391 has started in 43.6562 ms
+2022-11-15 10:27:57.565 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:cf4c74a5 has started in 43.8647 ms
+2022-11-15 10:27:57.577 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:02ad0c53 has started in 55.8363 ms
+2022-11-15 10:27:57.584 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:087decf7 has started in 62.2795 ms
+2022-11-15 10:27:57.589 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:e3c3c01f has started in 67.8156 ms
+2022-11-15 10:27:57.592 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:d7e493a6 has started in 70.2599 ms
+2022-11-15 10:27:57.598 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:7c5b687d has started in 76.5544 ms
+2022-11-15 10:27:57.627 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:52ed5441 has started in 105.5089 ms
+2022-11-15 10:27:57.627 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:f6ad9ae5 has started in 105.8993 ms
+2022-11-15 10:27:57.634 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Job' table...
+2022-11-15 10:27:57.671 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:0fdbf24d has started in 150.2538 ms
+2022-11-15 10:27:57.673 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:f4fd99c5 has started in 152.051 ms
+2022-11-15 10:27:57.721 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:ee7d3aa3 has started in 199.6405 ms
+2022-11-15 10:27:57.744 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:d2a08bc6 has started in 222.6018 ms
+2022-11-15 10:27:57.752 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:b9b6c230 has started in 231.0372 ms
+2022-11-15 10:27:57.761 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:3d2e3108 has started in 240.091 ms
+2022-11-15 10:27:57.768 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:23f79e6e has started in 244.1219 ms
+2022-11-15 10:27:57.772 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:2483a861 has started in 250.3186 ms
+2022-11-15 10:27:57.774 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'List' table...
+2022-11-15 10:27:57.887 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:79c94080 has started in 365.2787 ms
+2022-11-15 10:27:57.915 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:2c3173d9 has started in 393.4182 ms
+2022-11-15 10:27:57.915 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:77aff29d has started in 393.5163 ms
+2022-11-15 10:27:57.923 +07:00 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:10728:031fe143 all the dispatchers started
+2022-11-15 10:27:57.923 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop DelayedJobScheduler:ff26f949 has started in 9.114 ms
+2022-11-15 10:27:57.926 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop RecurringJobScheduler:3bcd314c has started in 7.3846 ms
+2022-11-15 10:27:57.935 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Set' table...
+2022-11-15 10:27:57.944 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Hash' table...
+2022-11-15 10:28:27.480 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:10728:031fe143 heartbeat successfully sent
+2022-11-15 10:28:57.502 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:10728:031fe143 heartbeat successfully sent
+2022-11-15 10:28:58.503 +07:00 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2022-11-15 10:28:58.503 +07:00 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2022-11-15 10:28:58.503 +07:00 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2022-11-15 10:28:59.544 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2022-11-15 10:28:59.641 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"NonRefundedFee"' on entity type '"Booking"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 10:28:59.642 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalEstimateFee"' on entity type '"Booking"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 10:28:59.642 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"BuggyFee"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 10:28:59.642 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"EstimatedPrice"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 10:28:59.642 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"NonRefundedFee"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 10:28:59.643 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"SeagolfPrice"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 10:28:59.643 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalMoney"' on entity type '"BookingTransactionPayment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 10:28:59.643 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalMoneyAcc"' on entity type '"BookingTransactionPayment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 10:28:59.643 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Charge_Amt"' on entity type '"InTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 10:28:59.643 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Total_Amt"' on entity type '"InTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 10:28:59.643 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Trans_Amt"' on entity type '"InTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 10:28:59.643 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Charge_Amt"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 10:28:59.643 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalMoneyAcc"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 10:28:59.646 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Total_Amt"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 10:28:59.646 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Trans_Amt"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 10:29:02.408 +07:00 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2022-11-15 10:29:03.303 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Query.) Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'
+2022-11-15 10:31:45.726 +07:00 [Information] (Hangfire.SqlServer.SqlServerObjectsInstaller.) Start installing Hangfire SQL objects...
+2022-11-15 10:31:45.755 +07:00 [Information] (Hangfire.SqlServer.SqlServerObjectsInstaller.) Hangfire SQL objects installed.
+2022-11-15 10:31:45.794 +07:00 [Information] (Hangfire.BackgroundJobServer.) Starting Hangfire Server using job storage: 'SQL Server: 192.168.85.14@BO_GOLF'
+2022-11-15 10:31:45.794 +07:00 [Information] (Hangfire.BackgroundJobServer.) Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+2022-11-15 10:31:45.794 +07:00 [Information] (Hangfire.BackgroundJobServer.) Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2022-11-15 10:31:45.801 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop BackgroundServerProcess:82f545ad has started in 3.5412 ms
+2022-11-15 10:31:45.817 +07:00 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:25212:0abb1ae7 successfully announced in 13.1911 ms
+2022-11-15 10:31:45.819 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerHeartbeatProcess:263e7c96 has started in 1.8412 ms
+2022-11-15 10:31:45.820 +07:00 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:25212:0abb1ae7 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2022-11-15 10:31:45.821 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerWatchdog:493692f4 has started in 0.6753 ms
+2022-11-15 10:31:45.821 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerJobCancellationWatcher:292f5ea1 has started in 0.4619 ms
+2022-11-15 10:31:45.822 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ExpirationManager:f5144f28 has started in 0.5351 ms
+2022-11-15 10:31:45.822 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop CountersAggregator:b82a4327 has started in 0.4536 ms
+2022-11-15 10:31:45.823 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop SqlServerHeartbeatProcess:cf93485c has started in 0.4905 ms
+2022-11-15 10:31:45.823 +07:00 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2022-11-15 10:31:45.823 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'AggregatedCounter' table...
+2022-11-15 10:31:45.823 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:fb44dd19 has started in 0.5936 ms
+2022-11-15 10:31:45.824 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:3afdee21 has started in 1.1167 ms
+2022-11-15 10:31:45.824 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:fa275754 has started in 1.5322 ms
+2022-11-15 10:31:45.825 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:67d5ac26 has started in 1.9212 ms
+2022-11-15 10:31:45.825 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:880468c9 has started in 2.423 ms
+2022-11-15 10:31:45.825 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:3084536c has started in 2.8094 ms
+2022-11-15 10:31:45.826 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:a62eff51 has started in 3.2046 ms
+2022-11-15 10:31:45.826 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:f68a357e has started in 3.5785 ms
+2022-11-15 10:31:45.827 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:b0b043b1 has started in 3.9781 ms
+2022-11-15 10:31:45.827 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:82c6cf22 has started in 4.4156 ms
+2022-11-15 10:31:45.828 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:df1b6d3c has started in 4.8437 ms
+2022-11-15 10:31:45.828 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:1b38dc31 has started in 5.3021 ms
+2022-11-15 10:31:45.828 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:11677c95 has started in 5.7224 ms
+2022-11-15 10:31:45.829 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:2aea7b63 has started in 6.182 ms
+2022-11-15 10:31:45.829 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:f414d15c has started in 6.6107 ms
+2022-11-15 10:31:45.830 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Job' table...
+2022-11-15 10:31:45.830 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:847113d0 has started in 6.9583 ms
+2022-11-15 10:31:45.830 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:d652cbec has started in 7.3392 ms
+2022-11-15 10:31:45.830 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:84547b68 has started in 7.6826 ms
+2022-11-15 10:31:45.831 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:cb562287 has started in 8.0665 ms
+2022-11-15 10:31:45.831 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:c0a053ae has started in 8.501 ms
+2022-11-15 10:31:45.832 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop DelayedJobScheduler:6db085fb has started in 0.4241 ms
+2022-11-15 10:31:45.832 +07:00 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:25212:0abb1ae7 all the dispatchers started
+2022-11-15 10:31:45.832 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop RecurringJobScheduler:1f716ffa has started in 0.3732 ms
+2022-11-15 10:31:45.870 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'List' table...
+2022-11-15 10:31:45.877 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Set' table...
+2022-11-15 10:31:45.881 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Hash' table...
+2022-11-15 10:31:50.169 +07:00 [Error] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Exception occurred while processing message.
+System.InvalidOperationException: IDX20803: Unable to obtain configuration from: 'https://localhost:5001/.well-known/openid-configuration'.
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.GetConfigurationAsync(CancellationToken cancel)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2022-11-15 10:31:50.169 +07:00 [Error] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Exception occurred while processing message.
+System.InvalidOperationException: IDX20803: Unable to obtain configuration from: 'https://localhost:5001/.well-known/openid-configuration'.
+ ---> System.IO.IOException: IDX20804: Unable to retrieve document from: 'https://localhost:5001/.well-known/openid-configuration'.
+ ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it.
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Microsoft.IdentityModel.Protocols.HttpDocumentRetriever.GetDocumentAsync(String address, CancellationToken cancel)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.Protocols.HttpDocumentRetriever.GetDocumentAsync(String address, CancellationToken cancel)
+   at Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfigurationRetriever.GetAsync(String address, IDocumentRetriever retriever, CancellationToken cancel)
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.GetConfigurationAsync(CancellationToken cancel)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.GetConfigurationAsync(CancellationToken cancel)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2022-11-15 10:31:50.219 +07:00 [Error] (Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.) An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: IDX20803: Unable to obtain configuration from: 'https://localhost:5001/.well-known/openid-configuration'.
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.GetConfigurationAsync(CancellationToken cancel)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-11-15 10:31:50.235 +07:00 [Error] (Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.) An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: IDX20803: Unable to obtain configuration from: 'https://localhost:5001/.well-known/openid-configuration'.
+ ---> System.IO.IOException: IDX20804: Unable to retrieve document from: 'https://localhost:5001/.well-known/openid-configuration'.
+ ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it.
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Microsoft.IdentityModel.Protocols.HttpDocumentRetriever.GetDocumentAsync(String address, CancellationToken cancel)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.Protocols.HttpDocumentRetriever.GetDocumentAsync(String address, CancellationToken cancel)
+   at Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfigurationRetriever.GetAsync(String address, IDocumentRetriever retriever, CancellationToken cancel)
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.GetConfigurationAsync(CancellationToken cancel)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.GetConfigurationAsync(CancellationToken cancel)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-11-15 10:31:53.030 +07:00 [Error] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Exception occurred while processing message.
+System.InvalidOperationException: IDX20803: Unable to obtain configuration from: 'https://localhost:5001/.well-known/openid-configuration'.
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.GetConfigurationAsync(CancellationToken cancel)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2022-11-15 10:31:53.033 +07:00 [Error] (Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.) An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: IDX20803: Unable to obtain configuration from: 'https://localhost:5001/.well-known/openid-configuration'.
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.GetConfigurationAsync(CancellationToken cancel)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-11-15 10:32:15.848 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:25212:0abb1ae7 heartbeat successfully sent
+2022-11-15 10:32:45.871 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:25212:0abb1ae7 heartbeat successfully sent
+2022-11-15 10:33:15.894 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:25212:0abb1ae7 heartbeat successfully sent
+2022-11-15 10:33:30.692 +07:00 [Error] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Exception occurred while processing message.
+System.InvalidOperationException: IDX20803: Unable to obtain configuration from: 'https://localhost:5001/.well-known/openid-configuration'.
+ ---> System.IO.IOException: IDX20804: Unable to retrieve document from: 'https://localhost:5001/.well-known/openid-configuration'.
+ ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it.
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Microsoft.IdentityModel.Protocols.HttpDocumentRetriever.GetDocumentAsync(String address, CancellationToken cancel)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.Protocols.HttpDocumentRetriever.GetDocumentAsync(String address, CancellationToken cancel)
+   at Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfigurationRetriever.GetAsync(String address, IDocumentRetriever retriever, CancellationToken cancel)
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.GetConfigurationAsync(CancellationToken cancel)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.GetConfigurationAsync(CancellationToken cancel)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2022-11-15 10:33:30.692 +07:00 [Error] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Exception occurred while processing message.
+System.InvalidOperationException: IDX20803: Unable to obtain configuration from: 'https://localhost:5001/.well-known/openid-configuration'.
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.GetConfigurationAsync(CancellationToken cancel)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2022-11-15 10:33:30.694 +07:00 [Error] (Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.) An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: IDX20803: Unable to obtain configuration from: 'https://localhost:5001/.well-known/openid-configuration'.
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.GetConfigurationAsync(CancellationToken cancel)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-11-15 10:33:30.694 +07:00 [Error] (Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.) An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: IDX20803: Unable to obtain configuration from: 'https://localhost:5001/.well-known/openid-configuration'.
+ ---> System.IO.IOException: IDX20804: Unable to retrieve document from: 'https://localhost:5001/.well-known/openid-configuration'.
+ ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it.
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Microsoft.IdentityModel.Protocols.HttpDocumentRetriever.GetDocumentAsync(String address, CancellationToken cancel)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.Protocols.HttpDocumentRetriever.GetDocumentAsync(String address, CancellationToken cancel)
+   at Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfigurationRetriever.GetAsync(String address, IDocumentRetriever retriever, CancellationToken cancel)
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.GetConfigurationAsync(CancellationToken cancel)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.GetConfigurationAsync(CancellationToken cancel)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-11-15 10:33:45.913 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:25212:0abb1ae7 heartbeat successfully sent
+2022-11-15 10:34:15.931 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:25212:0abb1ae7 heartbeat successfully sent
+2022-11-15 10:34:45.947 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:25212:0abb1ae7 heartbeat successfully sent
+2022-11-15 10:35:15.965 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:25212:0abb1ae7 heartbeat successfully sent
+2022-11-15 10:35:45.978 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:25212:0abb1ae7 heartbeat successfully sent
+2022-11-15 10:36:16.007 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:25212:0abb1ae7 heartbeat successfully sent
+2022-11-15 10:36:45.876 +07:00 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2022-11-15 10:36:45.925 +07:00 [Information] (Hangfire.Server.ServerWatchdog.) 1 servers were removed due to timeout
+2022-11-15 10:36:46.025 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:25212:0abb1ae7 heartbeat successfully sent
+2022-11-15 10:36:53.495 +07:00 [Information] (Hangfire.SqlServer.SqlServerObjectsInstaller.) Start installing Hangfire SQL objects...
+2022-11-15 10:36:53.669 +07:00 [Information] (Hangfire.SqlServer.SqlServerObjectsInstaller.) Hangfire SQL objects installed.
+2022-11-15 10:36:53.746 +07:00 [Information] (Hangfire.BackgroundJobServer.) Starting Hangfire Server using job storage: 'SQL Server: 192.168.85.14@BO_GOLF'
+2022-11-15 10:36:53.746 +07:00 [Information] (Hangfire.BackgroundJobServer.) Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+2022-11-15 10:36:53.746 +07:00 [Information] (Hangfire.BackgroundJobServer.) Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2022-11-15 10:36:53.763 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop BackgroundServerProcess:ae03a3bf has started in 12.2734 ms
+2022-11-15 10:36:53.794 +07:00 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:6080:e02376c0 successfully announced in 28.6842 ms
+2022-11-15 10:36:53.836 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerHeartbeatProcess:999212f0 has started in 37.8833 ms
+2022-11-15 10:36:53.836 +07:00 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:6080:e02376c0 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2022-11-15 10:36:53.844 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerWatchdog:86d7d9d2 has started in 6.8198 ms
+2022-11-15 10:36:53.847 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ServerJobCancellationWatcher:37904ad2 has started in 6.2285 ms
+2022-11-15 10:36:53.858 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop ExpirationManager:bf2e0a46 has started in 10.0665 ms
+2022-11-15 10:36:53.893 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop CountersAggregator:2931a255 has started in 38.9504 ms
+2022-11-15 10:36:53.893 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop SqlServerHeartbeatProcess:4bec6d0f has started in 35.7258 ms
+2022-11-15 10:36:53.894 +07:00 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2022-11-15 10:36:53.926 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:0a01066c has started in 33.7254 ms
+2022-11-15 10:36:53.926 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'AggregatedCounter' table...
+2022-11-15 10:36:53.969 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:395370ae has started in 76.4037 ms
+2022-11-15 10:36:53.969 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:ccd5edcf has started in 76.3835 ms
+2022-11-15 10:36:53.976 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:4ec73882 has started in 82.4956 ms
+2022-11-15 10:36:53.980 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:11417152 has started in 87.0648 ms
+2022-11-15 10:36:53.985 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:a28f13a0 has started in 92.2351 ms
+2022-11-15 10:36:53.990 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:09ac688e has started in 96.7637 ms
+2022-11-15 10:36:54.028 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:55ebcc2c has started in 135.4472 ms
+2022-11-15 10:36:54.028 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:1614b00a has started in 135.4513 ms
+2022-11-15 10:36:54.035 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:19fc6864 has started in 141.9477 ms
+2022-11-15 10:36:54.037 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Job' table...
+2022-11-15 10:36:54.037 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:dd55a56d has started in 144.5795 ms
+2022-11-15 10:36:54.076 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:5ff87f19 has started in 182.8943 ms
+2022-11-15 10:36:54.078 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:f8d1f94f has started in 185.9014 ms
+2022-11-15 10:36:54.119 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:563bc2ef has started in 226.8733 ms
+2022-11-15 10:36:54.121 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:15f4440b has started in 228.6215 ms
+2022-11-15 10:36:54.140 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:42a5ef01 has started in 247.8324 ms
+2022-11-15 10:36:54.142 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:17e70ee3 has started in 249.168 ms
+2022-11-15 10:36:54.180 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'List' table...
+2022-11-15 10:36:54.180 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:de88af49 has started in 287.1689 ms
+2022-11-15 10:36:54.180 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:2d5d6e08 has started in 287.2853 ms
+2022-11-15 10:36:54.188 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop Worker:79715ea3 has started in 295.4933 ms
+2022-11-15 10:36:54.192 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop DelayedJobScheduler:3c727c54 has started in 9.0544 ms
+2022-11-15 10:36:54.192 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Set' table...
+2022-11-15 10:36:54.192 +07:00 [Information] (Hangfire.Server.BackgroundServerProcess.) Server hoangnt:6080:e02376c0 all the dispatchers started
+2022-11-15 10:36:54.198 +07:00 [Debug] (Hangfire.Processing.BackgroundExecution.) Execution loop RecurringJobScheduler:0a50ff67 has started in 11.566 ms
+2022-11-15 10:36:54.203 +07:00 [Debug] (Hangfire.SqlServer.ExpirationManager.) Removing outdated records from the 'Hash' table...
+2022-11-15 10:37:23.856 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6080:e02376c0 heartbeat successfully sent
+2022-11-15 10:37:53.873 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6080:e02376c0 heartbeat successfully sent
+2022-11-15 10:38:23.896 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6080:e02376c0 heartbeat successfully sent
+2022-11-15 10:38:53.920 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6080:e02376c0 heartbeat successfully sent
+2022-11-15 10:39:23.942 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6080:e02376c0 heartbeat successfully sent
+2022-11-15 10:39:53.958 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6080:e02376c0 heartbeat successfully sent
+2022-11-15 10:40:23.970 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6080:e02376c0 heartbeat successfully sent
+2022-11-15 10:40:53.986 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6080:e02376c0 heartbeat successfully sent
+2022-11-15 10:41:00.001 +07:00 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2022-11-15 10:41:00.001 +07:00 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2022-11-15 10:41:01.033 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2022-11-15 10:41:01.149 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"NonRefundedFee"' on entity type '"Booking"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 10:41:01.149 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalEstimateFee"' on entity type '"Booking"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 10:41:01.149 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"BuggyFee"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 10:41:01.149 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"EstimatedPrice"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 10:41:01.150 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"NonRefundedFee"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 10:41:01.150 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"SeagolfPrice"' on entity type '"BookingLine"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 10:41:01.150 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalMoney"' on entity type '"BookingTransactionPayment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 10:41:01.150 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalMoneyAcc"' on entity type '"BookingTransactionPayment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 10:41:01.150 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Charge_Amt"' on entity type '"InTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 10:41:01.150 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Total_Amt"' on entity type '"InTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 10:41:01.150 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Trans_Amt"' on entity type '"InTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 10:41:01.150 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Charge_Amt"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 10:41:01.150 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"TotalMoneyAcc"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 10:41:01.152 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Total_Amt"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 10:41:01.152 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Model.Validation.) No type was specified for the decimal property '"Trans_Amt"' on entity type '"OutTransactionDetails"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-11-15 10:41:04.904 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Query.) Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'
+2022-11-15 10:41:24.009 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6080:e02376c0 heartbeat successfully sent
+2022-11-15 10:41:48.742 +07:00 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2022-11-15 10:41:48.742 +07:00 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2022-11-15 10:41:48.742 +07:00 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2022-11-15 10:41:53.877 +07:00 [Information] (Hangfire.Server.ServerWatchdog.) 1 servers were removed due to timeout
+2022-11-15 10:41:53.987 +07:00 [Debug] (Hangfire.SqlServer.CountersAggregator.) Aggregating records in 'Counter' table...
+2022-11-15 10:41:54.026 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6080:e02376c0 heartbeat successfully sent
+2022-11-15 10:42:24.048 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6080:e02376c0 heartbeat successfully sent
+2022-11-15 10:42:25.557 +07:00 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2022-11-15 10:42:25.557 +07:00 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2022-11-15 10:42:25.557 +07:00 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2022-11-15 10:42:35.862 +07:00 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2022-11-15 10:42:37.541 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Query.) Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'
+2022-11-15 10:42:43.016 +07:00 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2022-11-15 10:42:44.530 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Query.) Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'
+2022-11-15 10:42:54.066 +07:00 [Debug] (Hangfire.Server.ServerHeartbeatProcess.) Server hoangnt:6080:e02376c0 heartbeat successfully sent
+2022-11-15 10:43:03.361 +07:00 [Information] (Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.) Successfully validated the token.
+2022-11-15 10:43:05.508 +07:00 [Warning] (Microsoft.EntityFrameworkCore.Query.) Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'

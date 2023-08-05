@@ -1,0 +1,45 @@
+table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(0, 0, 0, 0.12);
+}
+
+th {
+    padding: 0;
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+tr {
+    height: 48px;
+}
+
+td{
+    padding: 0 5px;
+}
+
+.scroll {
+    position: relative;
+    height: 75vh;
+    overflow: auto;
+}
+
+.result-table tr:first-child th {
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.result-table tr:nth-child(2) th {
+    background: white;
+    position: sticky;
+    top: 48px;
+    z-index: 1;
+}

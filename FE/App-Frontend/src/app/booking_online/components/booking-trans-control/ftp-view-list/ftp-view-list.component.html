@@ -1,0 +1,65 @@
+<div fxLayout="column" fxLayoutGap="5px" class="page-wrapper mat-elevation-z2">
+    <div fxLayout="row" class="page-header" fxLayoutAlign="start center">
+        <mat-icon color="primary">label_important</mat-icon><span class="page-title">Danh sách các job chạy ftp</span>
+    </div>
+    <mat-divider></mat-divider>
+    <div fxLayout="column" class="page-filter" (keyup.enter)="search()">
+        <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">
+            <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px" fxFlex="50">
+                <mat-form-field fxFlex="30">
+                    <mat-label>Ngày</mat-label>
+                    <input matInput [matDatepicker]="pickerFindDate" [(ngModel)]="filter.FindDate" required name="date"
+                        (dateChange)="search()">
+                    <mat-datepicker-toggle matSuffix [for]="pickerFindDate"></mat-datepicker-toggle>
+                    <mat-datepicker #pickerFindDate></mat-datepicker>
+                </mat-form-field>
+                <button mat-mini-fab color="primary" (click)="search()">
+                    <mat-icon class="mat-18">refresh</mat-icon>
+                </button>
+            </div>            
+        </div>
+    </div>
+    <div fxLayout="column" class="page-content">
+        <table mat-table [dataSource]="dataSource">
+            <ng-container matColumnDef="STT">
+                <th mat-header-cell *matHeaderCellDef style="width: 50px;">#</th>
+                <td mat-cell *matCellDef="let i = index;">
+                    {{i + 1 + filter.pageIndex * filter.pageSize}}
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="filename">
+                <th mat-header-cell *matHeaderCellDef>Tên file</th>
+                <td mat-cell *matCellDef="let item">{{item.fileName}}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="datetrans">
+                <th mat-header-cell *matHeaderCellDef>FilePath</th>
+                <td mat-cell *matCellDef="let item">{{item.filePath}}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="isFtp">
+                <th mat-header-cell *matHeaderCellDef>isFtpFile</th>
+                <td mat-cell *matCellDef="let item">{{item.isFtpFile}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="isInsert">
+                <th mat-header-cell *matHeaderCellDef>isInsert</th>
+                <td mat-cell *matCellDef="let item"> {{item.isInsertData}} </td>
+            </ng-container>
+            <ng-container matColumnDef="status">
+                <th mat-header-cell *matHeaderCellDef>Status</th>
+                <td mat-cell *matCellDef="let item"> {{item.status}} </td>
+            </ng-container>
+            <ng-container matColumnDef="CreatedDate">
+                <th mat-header-cell *matHeaderCellDef>Ngày chạy</th>
+                <td mat-cell *matCellDef="let item"> {{item.dateRun | date:'dd/MM/yyyy HH:mm:ss'}} </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+        <mat-paginator (page)="pageIndexChange($event)"></mat-paginator>
+    </div>
+    <div fxLayout="column" class="page-footer"></div>
+</div>

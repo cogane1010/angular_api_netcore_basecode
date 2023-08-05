@@ -1,0 +1,113 @@
+<div fxLayout="column" fxLayoutGap="5px" class="page-wrapper mat-elevation-z2">
+    <div fxLayout="row" class="page-header" fxLayoutAlign="start center">
+        <mat-icon color="primary">label_important</mat-icon><span class="page-title">Test App</span>
+    </div>
+    <mat-divider></mat-divider>
+    <div fxLayout="column" class="page-content">
+        <div fxLayout="row" fxLayoutGap="20px">
+            <div fxFlex="50" fxLayout="column">
+                <mat-form-field>
+                    <mat-label>From</mat-label>
+                    <input matInput [(ngModel)]="mailMessage.from">
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Password</mat-label>
+                    <input matInput type="password" [(ngModel)]="mailMessage.password">
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>To</mat-label>
+                    <input matInput [(ngModel)]="mailMessage.to">
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Cc</mat-label>
+                    <input matInput [(ngModel)]="mailMessage.cc">
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Bcc</mat-label>
+                    <input matInput [(ngModel)]="mailMessage.bcc">
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Subject</mat-label>
+                    <input matInput [(ngModel)]="mailMessage.subject">
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Content</mat-label>
+                    <textarea matInput rows="5" [(ngModel)]="mailMessage.content"></textarea>
+                </mat-form-field>
+                <mat-checkbox [(ngModel)]="mailMessage.useAsync" color="primary" style="height: 50px;">Use Async</mat-checkbox>
+                <mat-checkbox [(ngModel)]="mailMessage.isDefault" color="primary" style="height: 50px;">Sử dụng Mail mặc định</mat-checkbox>
+                <div fxFlex="row" style="margin-top: 30px;">
+                    <button mat-raised-button color="primary" (click)="sendmail()">Send Mail</button>
+                </div>
+            </div>
+            <div fxFlex="50" fxLayout="column" >
+                <div fxLayout="row" fxLayoutGap="20px">
+                    <mat-form-field fxFlex="50">
+                        <mat-label>Time Frontend</mat-label>
+                        <input matInput [value]="frontNow | date: 'dd/MM/yyyy HH:mm:ss'">
+                    </mat-form-field>
+                    <mat-form-field fxFlex="50">
+                        <mat-label>Time Frontend UTC</mat-label>
+                        <input matInput [value]="frontNow | date: 'dd/MM/yyyy HH:mm:ss' : 'UTC'">
+                    </mat-form-field>
+                </div>
+                <div fxLayout="row" fxLayoutGap="20px">
+                    <mat-form-field fxFlex="50">
+                        <mat-label>Time Backend</mat-label>
+                        <input matInput [value]="backNow | date: 'dd/MM/yyyy HH:mm:ss'">
+                    </mat-form-field>
+                    <mat-form-field fxFlex="50">
+                        <mat-label>Time Backend UTC</mat-label>
+                        <input matInput [value]="backNow | date: 'dd/MM/yyyy HH:mm:ss' : 'UTC'">
+                    </mat-form-field>
+                </div>
+                <div fxLayout="row">
+                    <button mat-raised-button color="primary" (click)="getServerTime()">Get time now</button>
+                </div>
+
+                <div fxLayout="row" fxLayoutGap="20px">
+                    <mat-form-field fxFlex="50">
+                        <mat-label>Time Frontend</mat-label>
+                        <input matInput [value]="frontNow1 | date: 'dd/MM/yyyy HH:mm:ss'">
+                    </mat-form-field>
+                    <mat-form-field fxFlex="50">
+                        <mat-label>Time Frontend UTC</mat-label>
+                        <input matInput [value]="frontNow1 | date: 'dd/MM/yyyy HH:mm:ss' : 'UTC'">
+                    </mat-form-field>
+                </div>
+                <div fxLayout="row" fxLayoutGap="20px">
+                    <mat-form-field fxFlex="50">
+                        <mat-label>Time Frontend return</mat-label>
+                        <input matInput [value]="frontNowReturn| date: 'dd/MM/yyyy HH:mm:ss'">
+                    </mat-form-field>
+                    <mat-form-field fxFlex="50">
+                        <mat-label>Time Frontend return UTC</mat-label>
+                        <input matInput [value]="frontNowReturn | date: 'dd/MM/yyyy HH:mm:ss' : 'UTC'">
+                    </mat-form-field>
+                </div>
+                <div fxLayout="row">
+                    <button mat-raised-button color="primary" (click)="getTimeReturn()">Test time return</button>
+                </div>
+                
+                <div fxLayout="row" fxLayoutGap="20px">
+                    <mat-form-field fxFlex="50">
+                        <mat-label>Choose a date</mat-label>
+                        <input matInput [matDatepicker]="picker" [(ngModel)]="datePicker" disabled>
+                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                    </mat-form-field>
+                    <mat-form-field fxFlex="50">
+                        <mat-label>Choose a date</mat-label>
+                        <input matInput [matDatepicker]="picker1" [(ngModel)]="datePicker1">
+                        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                        <mat-datepicker #picker1></mat-datepicker>
+                    </mat-form-field>
+                </div>
+                <div fxLayout="row">
+                    <button mat-raised-button color="primary" (click)="conSoleDate()">Console Date</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div fxLayout="column" class="page-footer"></div>
+</div>

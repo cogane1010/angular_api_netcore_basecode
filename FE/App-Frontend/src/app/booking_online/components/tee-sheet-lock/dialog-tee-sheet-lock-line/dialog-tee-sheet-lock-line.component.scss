@@ -1,0 +1,32 @@
+.mt-30 {
+    margin-top: 30px;
+}
+
+
+::ng-deep app-dialog-tee-sheet-lock-line {
+    .mat-checkbox-inner-container {
+        order: 100!important;
+        margin-left: 10px!important;
+    }
+    .mw-60  .mat-checkbox-label {
+        min-width: 60px;
+    }
+
+    .mw-30  .mat-checkbox-label {
+        min-width: 30px;
+    }
+}
+
+.label {
+    border-bottom: solid 1px;
+    border-bottom-color: rgb(224 224 224);
+    &.time {
+        vertical-align: middle;
+        line-height: 40px;
+    }
+   
+}
+
+.dialog-content{
+    min-height: 50vh;
+}

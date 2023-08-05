@@ -1,0 +1,208 @@
+.info-container {
+    padding: 10px;
+    border: 1px solid rgba($color: #000000, $alpha: 0.12);
+    border-radius: 5px;
+}
+.section-label {
+    margin-top: 10px 0 0 10px;
+    font-size: larger;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    overflow: hidden;
+    box-shadow: 0 0 45px rgb(0 0 0 / 20%);
+}
+
+
+.download-file {
+    cursor: pointer;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.download-file:hover {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.file-input {
+    display: none;
+    width: 0.1px;
+}
+
+.browse-button {
+    /* TODO: styles */
+    border: 1px solid chocolate;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: bold;
+    width: 90px;
+    height: 25px;
+    color: chocolate;
+}
+
+.fileSelected {
+    width: 100%;
+    word-break: break-all;
+}
+
+.scroll {
+    height: 25vh;
+    
+}
+
+.result-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.result-table,
+.result-table th,
+.result-table td {
+    border: 1px solid black;
+}
+
+.result-table th {
+    text-align: center;
+    padding: 3px 5px;
+}
+
+.result-table td {
+    padding: 3px 5px;
+}
+
+.table-button .mat-icon-button {
+    width: 24px;
+    height: 24px;
+}
+
+.table-button .mat-icon {
+    vertical-align: baseline !important;
+}
+/* end result table */
+
+.colStt {
+    width: 30px;
+    text-align: center;
+}
+.colString {
+    width: 150px;
+}
+.colDate {
+    width: 100px;
+}
+.colStatus {
+    width: 150px;
+}
+.colNumber {
+    width: 100px;
+}
+.colAction {
+    width: 50px;
+}
+.colCheck {
+    width: 50px;
+    text-align: center;
+}
+
+.check-green {
+    color: green;
+}
+
+
+::ng-deep .mat-option.warning {
+    color: rgb(255, 8, 0);
+}
+
+.avatar-upload {
+    position: relative;
+    // max-width: 205px;
+    margin: 10px auto 30px;
+  }
+  
+  .avatar-upload .avatar-edit {
+    position: absolute;
+    right: 19px;
+    z-index: 1;
+    top: 13px;
+  }
+  
+  .avatar-upload .avatar-edit input {
+    display: none;
+  }
+  
+  .avatar-upload .avatar-edit .custom-label {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    margin-bottom: 0;
+    border-radius: 100%;
+    background: #3efc78;
+    border: 1px solid transparent;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .avatar-upload .avatar-edit .upload-image {
+    background: #3efc78;
+  }
+  
+  .avatar-upload .avatar-edit .remove-image {
+    background: #E91E63;
+  }
+  
+  .avatar-upload .avatar-edit .custom-label:hover {
+    opacity: 1;
+  }
+  
+  .avatar-upload .avatar-edit .custom-label:after {
+    position: absolute;
+    text-align: center;
+    margin: auto;
+    top: 8px;
+    right: 0;
+    left: 2px;
+    width: 18px;
+  }
+  
+  .avatar-upload .avatar-edit .upload-image:after {
+    content: url('/assets/edit.svg');
+  }
+  
+  .avatar-upload .avatar-edit .remove-image:after {
+    content: url('/assets/close.svg');
+    left: 0px !important;
+  }
+  
+  .avatar-upload .avatar-preview {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    // border-radius: 100%;
+    overflow: hidden;
+    -webkit-box-shadow: 0 0 45px rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0 0 45px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 45px rgba(0, 0, 0, .2);
+  }
+  
+  .avatar-upload .avatar-preview>div {
+    width: 100%;
+    height: 100%;
+    // border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .imagebtn{
+    width: 40%;
+    display: block;
+    float: left;
+  }

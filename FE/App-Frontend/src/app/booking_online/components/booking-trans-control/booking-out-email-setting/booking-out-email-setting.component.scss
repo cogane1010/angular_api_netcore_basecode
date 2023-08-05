@@ -1,0 +1,28 @@
+.checkbox {
+    margin-right: 20px;
+}
+
+::ng-deep .mat-checkbox-checked .mat-checkbox-background,
+.mat-checkbox-indeterminate .mat-checkbox-background {
+    background-color: red !important;
+}
+
+::ng-deep .mat-checkbox-checkmark-path {
+    stroke: white !important;
+}
+
+.mat-standard-chip .mat-chip-remove {
+    border: none;
+    padding: 0;
+    background: none;
+}
+
+.mat-standard-chip .mat-chip-remove .mat-icon {
+    width: 18px;
+    height: 18px;
+    font-size: 18px;
+}
+
+.mat-tab-body {
+    height: 150px !important;
+}

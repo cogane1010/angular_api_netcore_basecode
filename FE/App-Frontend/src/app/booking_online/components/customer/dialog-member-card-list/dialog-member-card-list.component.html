@@ -1,0 +1,108 @@
+<div fxLayout="column" fxLayoutGap="5px" class="dialog-wrapper">
+  <div fxLayout="row" class="dialog-header" fxLayoutAlign="start center">
+    <mat-icon color="primary">label_important</mat-icon><span class="dialog-title">{{'MemberCard'| translate}}</span>
+  </div>
+  <mat-divider></mat-divider>
+  
+  <div fxLayout="row" fxLayoutGap="10px" (keyup.enter)="search()"  fxLayoutAlign="start center">
+    <mat-form-field fxFlex="25">
+      <mat-label>{{'memberCardNo' | translate}}</mat-label>
+      <input matInput [(ngModel)]="filter.golf_CardNo">
+    </mat-form-field>
+    <mat-form-field fxFlex="25">
+      <mat-label>{{'fullName' | translate}}</mat-label>
+      <input matInput [(ngModel)]="filter.golf_FullName" readonly>
+    </mat-form-field>
+    <mat-form-field fxFlex="35">
+      <mat-label>{{'organization' | translate}}</mat-label>
+      <input matInput [formControl]="organizationSelectControl" [matAutocomplete]="autoOrganization" (ngModelChange)="changeOrganizationText()"> 
+      <mat-autocomplete autoActiveFirstOption #autoOrganization="matAutocomplete" [displayWith]="displayOrganization" 
+        (optionSelected)="onSelectedOrganization($event)">
+        <mat-option *ngFor="let u of  organizationFilteredOptions | async" [value]="u">
+          {{u.name}}
+        </mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="search()">{{'search' | translate}}</button>
+  </div>
+
+  <div fxLayout="column" class="dialog-content"> 
+      <table mat-table [dataSource]="listMemberCard" style="margin-top: 20px;">
+        <ng-container matColumnDef="STT">
+          <th mat-header-cell *matHeaderCellDef style="width: 50px;">#</th>
+          <td mat-cell *matCellDef="let i = index;">
+            {{i + 1 + filter.pageIndex * filter.pageSize}}
+          </td>
+        </ng-container>    
+        <ng-container matColumnDef="golf_CardNo">
+          <th mat-header-cell *matHeaderCellDef >{{'memberCardNo' | translate}}</th>
+          <td mat-cell *matCellDef="let item"> {{item.golf_CardNo}} </td>
+        </ng-container>
+        <ng-container matColumnDef="golf_FullName">
+          <th mat-header-cell *matHeaderCellDef >{{'fullName' | translate}} </th>
+          <td mat-cell *matCellDef='let item' >{{item.golf_FullName}}</td>
+        </ng-container>         
+        <ng-container matColumnDef="organizationName">
+          <th mat-header-cell *matHeaderCellDef >{{'organization' | translate}} </th>
+          <td mat-cell *matCellDef='let item' >{{item.orgName}}</td>
+        </ng-container>        
+        <ng-container matColumnDef="golf_IDNo">
+          <th mat-header-cell *matHeaderCellDef >{{'CustomerIdNo' | translate}} </th>
+          <td mat-cell *matCellDef='let item' >{{item.golf_IDNo}}</td>
+        </ng-container>
+        <ng-container matColumnDef="golf_Mobilephone">
+          <th mat-header-cell *matHeaderCellDef >{{'mobilePhone' | translate}} </th>
+          <td mat-cell *matCellDef='let item' >{{item.golf_Mobilephone}}</td>
+        </ng-container>
+        <ng-container matColumnDef="golf_Email">
+          <th mat-header-cell *matHeaderCellDef >{{'email' | translate}} </th>
+          <td mat-cell *matCellDef='let item' >{{item.golf_Email}}</td>
+        </ng-container>
+        <ng-container matColumnDef="golf_Effective_Date">
+          <th mat-header-cell *matHeaderCellDef >{{'EffectiveDate' | translate}} </th>
+          <td mat-cell *matCellDef='let item' >{{item.golf_Effective_Date | date: 'dd/MM/YYYY'}}</td>
+        </ng-container>
+        <ng-container matColumnDef="golf_Expire_Date">
+          <th mat-header-cell *matHeaderCellDef >{{'ExpireDate' | translate}} </th>
+          <td mat-cell *matCellDef='let item' >{{item.golf_Expire_Date | date: 'dd/MM/YYYY'}}</td>
+        </ng-container>
+        <ng-container matColumnDef="golf_IsActive">
+          <th mat-header-cell *matHeaderCellDef >{{'Active' | translate}} </th>
+          <td mat-cell *matCellDef="let item">
+            <mat-icon *ngIf="item.golf_IsActive" color="primary">check_circle_outline</mat-icon>
+          </td>
+        </ng-container>  
+        <ng-container matColumnDef="golf_IsLock">
+          <th mat-header-cell *matHeaderCellDef >{{'Lock' | translate}} </th>
+          <td mat-cell *matCellDef="let item">            
+            <span *ngIf="item.golf_IsLock"> 
+              <mat-icon style="cursor: pointer;" >lock</mat-icon>
+            </span>
+            <span *ngIf="!item.golf_IsLock">
+              <mat-icon style="cursor: pointer;" >lock_open</mat-icon>
+            </span>
+          </td>
+        </ng-container>
+  
+        <ng-container matColumnDef="isSummary">
+          <th mat-header-cell *matHeaderCellDef >{{'isSummary' | translate}} </th>
+          <td mat-cell *matCellDef="let item">
+            <mat-icon *ngIf="item.isSummary" color="primary">check_circle_outline</mat-icon>
+          </td>
+        </ng-container>
+        
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;" (click)="chooseMemberCard(row)"
+          [ngClass]="{'choosen-row': row.golf_IDNo === memberCard?.golf_IDNo && row.orgName === memberCard?.orgName}">
+        </tr>
+        
+      </table>
+      <!-- <mat-paginator (page)="pageIndexChange($event)"></mat-paginator> -->
+  </div>
+  <div fxLayout="column" class="dialog-footer">
+    <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="end">
+      <button mat-raised-button color="primary" (click)="addMemberCard()">{{'save'| translate}}</button>
+      <button mat-raised-button [mat-dialog-close]>{{'close'| translate}}</button>
+    </div>
+  </div>
+</div>

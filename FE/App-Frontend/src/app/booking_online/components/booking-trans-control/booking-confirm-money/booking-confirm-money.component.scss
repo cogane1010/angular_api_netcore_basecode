@@ -1,0 +1,166 @@
+.colStrShort {
+    width: 5%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    position: relative;
+}
+
+th,
+td {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(0, 0, 0, 0.12);
+}
+
+th {
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+tr {
+    height: 48px;
+}
+
+td,
+th {
+    padding: 0 5px;
+}
+
+/* begin columns */
+// SeaBank
+.col-sb-trans-id {
+    max-width: 120px;
+}
+
+.col-sb-org-code {
+    max-width: 50px;
+}
+
+.col-sb-trans-date {
+    max-width: 150px;
+}
+
+.col-sb-cus-name {
+    max-width: 150px;
+}
+
+.col-sb-trans-amt {
+    max-width: 110px;
+}
+
+// .col-sb-desc {
+//     max-width: 50px;
+// }
+
+// BRG
+.col-brg-bk-code {
+    max-width: 120px;
+}
+
+.col-brg-pay-date {
+    max-width: 150px;
+}
+
+.col-brg-cus-name {
+    max-width: 150px;
+}
+
+.col-brg-bk-date {
+    max-width: 90px !important;
+}
+.col-status{
+    max-width: 20px;
+}
+.colCheckbox{
+    max-width: 20px;
+}
+.col-course{
+    max-width: 40px;
+}
+.col-brg-pay-amt {
+    max-width: 80px;
+}
+
+// System
+.col-sys-rc-code {
+    max-width: 50px;
+}
+
+.col-sys-user-rc-code {
+    max-width: 360px;
+}
+
+/* end columns */
+
+.not-valid {
+    background-color: khaki;
+}
+
+.scroll {
+    width: 100%;
+    position: relative;
+    height: 75vh;
+    overflow: auto;
+}
+
+.border-right {
+    border-right: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.result-table tr:first-child th {
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.result-table tr:nth-child(2) th {
+    background: white;
+    position: sticky;
+    top: 48px;
+    z-index: 1;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+input[name="moneyAtAcc"],input[name="totalMoneyAcc"] {
+    background-color: white !important;    
+}
+
+.textlink{
+    text-decoration: underline;
+}
+
+.mat-raised-button.mat-success,
+.mat-flat-button.mat-success,
+.mat-fab.mat-success,
+.mat-mini-fab.mat-success {
+  color: #f0fff3;
+  background-color: #155724;
+}
+
+.mat-raised-button.mat-success.mat-button-disabled,
+.mat-flat-button.mat-success.mat-button-disabled,
+.mat-fab.mat-success.mat-button-disabled,
+.mat-mini-fab.mat-success.mat-button-disabled {
+  color: rgba(0, 0, 0, 0.26);
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
+.mat-raised-button.mat-report,
+.mat-flat-button.mat-report,
+.mat-fab.mat-report,
+.mat-mini-fab.mat-report {
+  color: #f0fff3;
+  background-color: blue;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+  }

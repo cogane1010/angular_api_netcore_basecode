@@ -1,0 +1,162 @@
+.colStrShort {
+    width: 5%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    position: relative;
+}
+
+th,
+td {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(0, 0, 0, 0.12);
+}
+
+th {
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+tr {
+    height: 48px;
+}
+
+td,
+th {
+    padding: 0 5px;
+}
+
+/* begin columns */
+// SeaBank
+.col-sb-trans-id {
+    max-width: 120px;
+}
+
+.col-sb-org-code {
+    width: 10px;
+    border-right: 1px solid black;
+}
+
+.col-sb-cus-name {
+    width: 20px;
+    border-right: 1px solid black;
+}
+.col-sb-trans-date {
+    width: 10px;
+    border-right: 1px solid black;
+}
+.col-sb-trans-amt {
+    width: 10px;
+    border-right: 1px solid black;
+}
+
+.col-sb-trans-type{
+    width: 10px;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+.col-sb-org-code{
+    width: 10px;
+    border-right: 1px solid black;
+}
+.col-sb-trans-code{
+    width: 10px;
+    border-right: 1px solid black;
+}
+
+.col-sb-desc {
+    width: 10px;
+    border-right: 1px solid black;
+}
+// System
+.col-sys-rc-code {
+    width: 10px;
+    border-right: 1px solid black;
+}
+
+.col-sys-user-rc-code {
+    width: 10px;
+    border-right: 1px solid black;
+}
+
+.border-cell{
+    border: 1px solid black;
+}
+.greenbackGround{
+    background-color: #71b7bf !important;
+}
+.orangeGround{
+    background-color: #d1c88e !important;
+}
+.statusCompareTrans{
+    border: 1px solid;
+    height: 20px;
+    padding: 5px;
+}
+
+// BRG
+.col-brg-bk-code {
+    max-width: 120px;
+}
+
+.col-brg-pay-date {
+    max-width: 150px;
+}
+
+.col-brg-cus-name {
+    max-width: 150px;
+}
+
+.col-brg-bk-date {
+    max-width: 150px;
+}
+
+.col-brg-pay-amt {
+    max-width: 110px;
+}
+
+
+
+/* end columns */
+
+.not-valid {
+    background-color: khaki;
+}
+
+.scroll {
+    width: 100%;
+    position: relative;
+    height: 75vh;
+    overflow: auto;
+}
+
+.border-right {
+    border-right: 2px solid black;
+}
+
+.result-table tr:first-child th {
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.result-table tr:nth-child(2) th {
+    background: white;
+    position: sticky;
+    top: 48px;
+    z-index: 1;
+}
+
+.mt-10 {
+    margin-top: 10px;
+    width: 100%;
+}
+.sumaryRow{
+    font-weight: 800;
+    border-top: 2px solid black;
+}

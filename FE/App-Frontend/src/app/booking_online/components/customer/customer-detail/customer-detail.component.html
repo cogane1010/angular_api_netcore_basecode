@@ -1,0 +1,245 @@
+<div fxLayout="column" fxLayoutGap="5px" class="page-wrapper mat-elevation-z2">
+    <div fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="space-between center" class="page-header">
+      <div>
+        <mat-icon color="primary">label_important</mat-icon><span class="page-title">{{'Account' | translate}}</span>
+     </div>
+      <div>
+          <button mat-raised-button color="ascent" (click)="update()" style="margin-left: 10px;" [disabled]="isReadonly || form.invalid">
+              {{"Update" | translate}}
+          </button>
+          <button mat-raised-button color="primary" (click)="back()" style="margin-left: 10px;">
+              {{"Back" | translate}}
+          </button>
+      </div>
+    </div>
+    <mat-divider></mat-divider>
+    <div fxLayout="row" fxLayoutGap="10px">
+
+        <div fxFlex="20">
+          <div class="avatar-upload">
+            <div class="avatar-edit">
+              <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" #fileAvaInput (change)="uploadAvaFile($event)" />
+            </div>
+            <div class="avatar-preview">
+             <div id="imagePreview" [style.background-image]="imageUrl"></div>
+            </div>       
+          </div>
+          <div style="margin: 0 0 0 20%;">
+            <button type="button" class="btn btn-light imagebtn" (click)="fileAvaInput.click()">Tải ảnh</button>
+            <button type="button" class="btn btn-light imagebtn" (click)="removeUploadedAvaFile()">Xóa</button>
+          </div>
+            <!-- <div fxLayout="row" fxLayoutAlign="center center" style="padding: 5px;"><img [src]="avatarUrl" alt=""
+                    class="avatar"></div>
+            <div fxLayout="row" fxLayoutAlign="center center">
+                <input type="file" class="file-input" name="" id="avatarFile" (change)="fileProgressAvatar($event)" accept=".png, .jpg, .jpeg">
+                <button type="button" class="browse-button" (click)="fileInputClick('avatarFile')" *ngIf="!isReadonly">
+                  {{"ChooseFile" | translate}} 
+                </button>
+                <button class="browse-button" (click)="uploadAvatar()" style="margin-left: 10px;" *ngIf="!isReadonly && avatarUrl != avatarDefault && !isUploaded">
+                  {{"Upload" | translate}}
+                </button>
+                <button  class="browse-button"  (click)="removeAvatar()" style="margin-left: 10px;" *ngIf="!isReadonly && avatarUrl != avatarDefault ">
+                  {{"Delete" | translate}} 
+                </button>
+                <div *ngIf="avatarProgress">
+                  {{"UploadProgress" | translate}}  {{ avatarProgress }}
+                </div>
+                <div *ngIf="avatarProgress">
+                  {{"UploadProgress" | translate}}  {{ avatarProgress }}
+                </div>
+            </div> -->
+        </div>
+        <div fxFlex="70" class="info-container">
+          <form #form="ngForm">          
+            <div fxLayout="row" fxLayoutGap="20px" class="section-label">
+              {{"AccountInfo" | translate}}
+            </div>
+            <div fxLayout="row" fxLayoutGap="20px"> 
+              <mat-form-field fxFlex="50">
+                <mat-label>{{'customerCode' | translate}}</mat-label>
+                <input matInput [(ngModel)]="customer.customerCode" disabled name="code">
+              </mat-form-field>       
+            </div>
+            <div fxLayout="row" fxLayoutGap="20px">
+              <mat-form-field fxFlex="50">
+                <mat-label>{{'fullName' | translate}}</mat-label>
+                <input matInput [(ngModel)]="customer.fullName" required [disabled]="isReadonly" name="name"  #name="ngModel">
+                <mat-error *ngIf="name.invalid && (name.dirty || name.touched)">
+                  <div *ngIf="name.errors?.required">{{ 'Name is required'| translate}} </div>
+                </mat-error>
+              </mat-form-field>
+            </div>
+            <div fxLayout="row" fxLayoutGap="20px">
+                <mat-form-field fxFlex="50">
+                    <mat-label>{{'dob' | translate}}</mat-label>
+                    <input matInput [matDatepicker]="pickerDob" [(ngModel)]="customer.dob" [disabled]="isReadonly" 
+                       [min]="minDate" [max]="maxDate"name="dob" #dob="ngModel">
+                    <mat-datepicker-toggle matSuffix [for]="pickerDob"></mat-datepicker-toggle>
+                    <mat-datepicker #pickerDob></mat-datepicker>
+                    <mat-error *ngIf="dob.invalid && (dob.dirty || dob.touched)"> 
+                        {{'dobValidStr'| translate}} 
+                    </mat-error>
+                </mat-form-field>
+                <mat-form-field fxFlex="50">
+                    <mat-label>{{'gender' | translate}}</mat-label>
+                    <mat-select [(ngModel)]="customer.gender" [disabled]="isReadonly" name="gender">
+                        <mat-option [value]="1">{{'Male'| translate}} </mat-option>
+                        <mat-option [value]="0">{{'Female'| translate}}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div fxLayout="row" fxLayoutGap="20px">
+              <mat-form-field fxFlex="50">
+                <mat-label>{{'mobilePhone' | translate}} </mat-label>
+                <input matInput [(ngModel)]="customer.mobilePhone" required [disabled]="isReadonly" 
+                    [pattern]="phonePattern" name="phone"  #phone="ngModel">
+                <mat-error *ngIf="phone.invalid && (phone.dirty || phone.touched)">
+                  <div *ngIf="phone.errors?.required">{{'requireStr'| translate}} </div>
+                  <div *ngIf="phone.errors?.pattern">{{'phoneValidStr'| translate}} </div>
+                </mat-error>
+               
+              </mat-form-field>
+              <mat-form-field fxFlex="50">
+                <mat-label>{{'email'| translate}} </mat-label>
+                <input matInput [(ngModel)]="customer.email" required 
+                    [disabled]="isReadonly" name="email" [pattern]="emailPattern" #email="ngModel">
+                <mat-error *ngIf="email.invalid">
+                  <div *ngIf="email.errors?.required">{{'requireStr'| translate}} </div>
+                  <div *ngIf="email.errors?.pattern">{{'emailValidStr'| translate}} </div>
+                </mat-error>
+              </mat-form-field>
+            </div>
+            <div fxLayout="row" fxLayoutGap="20px"  fxLayoutAlign="space-between center">
+              <mat-form-field fxFlex="50">
+                <mat-label>{{'status' | translate}}</mat-label>
+                <mat-select [(ngModel)]="customer.stausInt" [disabled]="isReadonly" name="status" #status="ngModel">
+                    <mat-option [value]=1>Đang Hoạt động</mat-option>
+                    <mat-option [value]=3>Bị Khóa</mat-option>
+                </mat-select>
+                <mat-error *ngIf="status.invalid && (status.dirty || status.touched)">
+                  <div *ngIf="status.errors?.required">{{ 'requireStr'| translate}} </div>
+                </mat-error>
+              </mat-form-field>
+              <div>
+                <button mat-raised-button color="warn" (click)="resetPassword()" style="margin-left: 10px;" [disabled]="isReadonly" *ngIf="!isNewCustomer">
+                    {{"ResetPassword" | translate}}
+                </button>
+                
+              </div>
+            </div>
+         
+         </form>
+        </div>
+        
+        
+    </div>
+    <div fxLayout="row" fxLayoutGap="10px" style="margin-top: 20px;" class="info-container" > 
+      <div fxFlex ="100">
+        <mat-tab-group> 
+          <mat-tab label="{{'MemberCardList'| translate}}">
+            <div style="margin-top:10px;" class="scroll">
+              
+              <table class="result-table">
+                  <thead>
+                      <tr>
+                          <th>{{"No." | translate}}</th>
+                          <th>{{"memberCardNo" | translate}}</th>
+                          <th>{{"organization" | translate}} </th>
+                          <th>{{"Course" | translate}}</th>
+                          <th>{{"EffectiveDate" | translate}}</th>
+                          <th>{{"ExpireDate" | translate }}</th>
+                          <th>{{"memberGroupCode" | translate}}</th>
+                          <th>{{"Active" | translate}}</th>
+                          <th>{{"Lock" | translate}}</th>
+                          <th>{{"Operation" | translate}}</th>
+                      </tr>
+                  </thead>
+                    <tbody *ngFor="let row of customer.memberCards; let i=index;">
+                      <tr *ngFor="let course of row.coursesMemberCard; let j=index;">
+                        <td class="colStt" [attr.rowspan]="row.coursesMemberCard?.length" *ngIf="j==0">{{i+1}}</td>
+                        <td class="colString" [attr.rowspan]="row.coursesMemberCard?.length" *ngIf="j==0">{{row.golf_CardNo}}</td>
+                        <td class="colString"> {{row.orgName}} </td>
+                        
+                        <td class="colString"> {{course.courseName}}</td>
+                        <td class="colDate">{{course.validFrom | date: "dd/MM/yyyy"}}</td>
+                        <td class="colDate">{{course.validTo | date: "dd/MM/yyyy"}}</td>
+                        <td class="colString"> 
+                          {{course.customerGroupName}}
+                        </td>
+                        <td class="colCheck" [attr.rowspan]="row.coursesMemberCard?.length" *ngIf="j==0">  
+                          
+                            <mat-icon *ngIf="row.golf_IsActive" class="check-green">check_circle</mat-icon>
+                        </td>
+                        <td class="colCheck" [attr.rowspan]="row.coursesMemberCard?.length" *ngIf="j==0">  
+                            <span *ngIf="row.golf_IsLock"> 
+                              <mat-icon style="cursor: pointer;" >lock</mat-icon>
+                            </span>
+                            <span *ngIf="!row.golf_IsLock">
+                              <mat-icon style="cursor: pointer;" >lock_open</mat-icon>
+                            </span>
+                        </td>
+                        <td class="table-button colAction" *ngIf="!isReadonly && j==0" [attr.rowspan]="row.coursesMemberCard?.length" >
+                            <div>
+                                <div fxFlex="row" fxLayoutAlign="center row">
+                                    <button mat-icon-button (click)="refreshMemberCard(row)" title="{{'Refresh' | translate}}">
+                                        <mat-icon style="color: rgb(39, 39, 252);">sync</mat-icon>
+                                    </button>
+                                    <button mat-icon-button color="warn" (click)="reassignMemberCard(row)" title="{{'ReassignMemberCard' | translate}}">
+                                        <mat-icon style="color: chocolate;">cancel</mat-icon>
+                                    </button>
+                                </div>
+                            </div>
+                        </td>
+                      </tr>
+                    </tbody>
+
+              </table>
+
+             
+            </div>
+            <div style="margin-top:10px;" style="text-align: center;">
+              <button mat-button mat-raised-button color="warn" (click)="openPopupMemberCard(null)">
+                <mat-icon>add</mat-icon> {{"AddMemberCard" | translate}}
+               </button>
+            </div>
+            
+
+          </mat-tab>
+          <mat-tab label="{{'CardOwnerInfo'| translate}}">
+            <div style="margin-top:10px;" class="scroll">
+              <table class="result-table">
+                  <thead>
+                      <tr>
+                          <th>{{"No." | translate}}</th>
+                          <th>{{"memberCardNo" | translate}}</th>
+                          <th>{{"organization" | translate}} </th>
+                          <th>{{"fullName" | translate}}</th>
+                          <th>{{"dob" | translate}}</th>
+                          <th>{{"mobilePhone" | translate}}</th>
+                          <th>{{"CustomerIdNo" | translate}}</th>
+                          <th>{{"Address" | translate}}</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let row of customer.memberCards; let i=index;">
+                      <td class="colStt">{{i+1}}</td>
+                      <td class="colString">{{row.golf_CardNo}}</td>
+                      <td class="colString"> {{row.orgName}} </td>
+                      
+                      <td class="colString"> {{row.golf_FullName}}</td>
+                      <td class="colDate"> {{row.golf_DOB | date: "dd/MM/yyyy"}}</td>
+                      <td class="colString">{{row.golf_Mobilephone}}</td>
+                      <td class="colString">{{row.golf_IDNo}} </td>    
+                      <td class="colString"> {{row.golf_Address}}
+                      </td>
+                    </tr>
+                  </tbody>
+              </table>
+            </div>
+          </mat-tab>
+        </mat-tab-group>
+      </div>
+    </div>
+    
+</div>
+

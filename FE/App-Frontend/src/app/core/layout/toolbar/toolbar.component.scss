@@ -1,0 +1,14 @@
+@mixin toolbar() {
+    mat-toolbar {
+        height: $toolbar-height !important;
+    }
+}
+
+mat-toolbar {
+    //background-image: url("/assets/image/logo1.png");
+    //background-repeat: no-repeat;
+    //background-position: center;
+    //background-position-y: 0px;
+    position: relative;
+    z-index: 1;
+}

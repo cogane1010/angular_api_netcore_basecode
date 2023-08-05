@@ -1,0 +1,104 @@
+<p><div fxLayout="column" fxLayoutGap="5px" class="page-wrapper mat-elevation-z2">
+  <div fxLayout="row" class="page-header" fxLayoutAlign="start center">
+    <mat-icon color="primary">label_important</mat-icon><span class="page-title">{{'MemberRequestList'| translate}}</span>
+  </div>
+  <mat-divider></mat-divider>
+  <div fxLayout="column" class="page-filter" (keyup.enter)="search()">
+    <div fxLayout="row" fxLayoutAlign=" center" fxLayoutGap="10px">
+      <mat-form-field fxFlex="20"> 
+        <mat-label>{{'fullNameRegister' | translate}}</mat-label>
+        <input matInput [(ngModel)]="filter.fullName">
+      </mat-form-field>
+      <mat-form-field fxFlex="20">
+        <mat-label>{{'mobilePhoneRegister' | translate}}</mat-label>
+        <input matInput [(ngModel)]="filter.mobilePhone">
+      </mat-form-field>
+      <mat-form-field fxFlex="20">
+        <mat-label>{{'emailRegister' | translate}}</mat-label>
+        <input matInput [(ngModel)]="filter.email">
+      </mat-form-field>
+      <mat-form-field fxFlex="25">
+        <mat-label>{{'organization'| translate}}</mat-label>
+        <input matInput [formControl]="organizationSelectControl" [matAutocomplete]="autoOrganization" [readonly]="orgDisable" (ngModelChange)="changeOrganizationText()">
+        <mat-autocomplete autoActiveFirstOption #autoOrganization="matAutocomplete"  [displayWith]="displayOrganization" 
+          (optionSelected)="onSelectedOrganization($event)">
+          <mat-option *ngFor="let u of  organizationFilteredOptions | async" [value]="u">
+            {{u.name}}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+      <mat-form-field fxFlex="10">
+        <mat-label>{{'requestDate' | translate}}</mat-label>
+        <input matInput [matDatepicker]="pickerDate"  name="requestDate" [(ngModel)]="filter.request_Date">
+        <mat-datepicker-toggle matSuffix [for]="pickerDate"></mat-datepicker-toggle>
+        <mat-datepicker #pickerDate></mat-datepicker>
+      </mat-form-field>
+      
+    </div>
+    <div fxLayout="row" fxLayoutAlign=" center" fxLayoutGap="10px"> 
+      <mat-form-field fxFlex="20"> 
+        <mat-label>{{'fullNameRequest' | translate}}</mat-label>
+        <input matInput [(ngModel)]="filter.request_FullName">
+      </mat-form-field>
+      <mat-form-field fxFlex="20">
+        <mat-label>{{'mobilePhoneRequest' | translate}}</mat-label>
+        <input matInput [(ngModel)]="filter.request_MobilePhone">
+      </mat-form-field>
+      <button mat-raised-button color="primary" (click)="search()">{{'search' | translate}}</button>
+    </div>
+  </div>
+  <div fxLayout="column" class="page-content">
+    <table mat-table [dataSource]="listMemberRequest">
+
+      <ng-container matColumnDef="STT">
+        <th mat-header-cell *matHeaderCellDef style="width: 50px;">#</th>
+        <td mat-cell *matCellDef="let i = index;">
+          {{i + 1 + filter.pageIndex * filter.pageSize}}
+        </td>
+      </ng-container>
+  
+      <ng-container matColumnDef="fullName">
+        <th mat-header-cell *matHeaderCellDef >{{'fullNameRegister' | translate}}</th>
+        <td mat-cell *matCellDef="let item"> {{item.fullName}} </td>
+      </ng-container>
+      <ng-container matColumnDef="mobilePhone">
+        <th mat-header-cell *matHeaderCellDef >{{'mobilePhone' | translate}} </th>
+        <td mat-cell *matCellDef='let item' >{{item.mobilePhone}}</td>
+      </ng-container>
+      <ng-container matColumnDef="email">
+        <th mat-header-cell *matHeaderCellDef >{{'email' | translate}} </th>
+        <td mat-cell *matCellDef='let item' >{{item.email}}</td>
+      </ng-container>
+      <ng-container matColumnDef="organizationName">
+        <th mat-header-cell *matHeaderCellDef >{{'organizationName' | translate}} </th>
+        <td mat-cell *matCellDef='let item' >{{item.organizationName}}</td>
+      </ng-container>
+      <ng-container matColumnDef="request_Date">
+        <th mat-header-cell *matHeaderCellDef >{{'requestTime' | translate}} </th>
+        <td mat-cell *matCellDef='let item' >{{item.request_Date | date: "dd/MM/YYYY HH:mm:ss"}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="request_user">
+        <th mat-header-cell *matHeaderCellDef >{{'requestUser' | translate}} </th>
+        <td mat-cell *matCellDef='let item' >
+            <p>{{item.request_FullName}}</p>
+            <p>{{item.request_MobilePhone}}</p>
+        </td>
+      </ng-container>
+      
+      <ng-container matColumnDef="description">
+        <th mat-header-cell *matHeaderCellDef >{{'Note' | translate}} </th>
+        <td mat-cell *matCellDef='let item' >
+          <mat-form-field>
+            <input matInput [(ngModel)]="item.description" (keyup.enter)="saveNote(item)">
+          </mat-form-field>
+        </td>
+      </ng-container>   
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      
+    </table>
+    <mat-paginator (page)="pageIndexChange($event)"></mat-paginator>
+  </div>
+  <div fxLayout="column" class="page-footer"></div>
+</div>

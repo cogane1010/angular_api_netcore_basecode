@@ -1,0 +1,71 @@
+<div fxLayout="column" fxLayoutGap="10px" class="page-wrapper mat-elevation-z2">
+    <div fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="space-between center" class="page-header">
+      <div fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="space-between center" style="width: 100% !important;" class="page-header">
+        <div>
+            <mat-icon color="primary">label_important</mat-icon><span class="page-title">Thông báo</span>
+        </div>
+        <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="end" style="margin-left: 10px;">
+            <button mat-raised-button color="warn" style="margin-left: 10px;" [disabled]="this.id == 'add'" (click)="sendNotification(model)"><mat-icon class="mat-18">alarm_add</mat-icon>Gửi thông báo</button>
+            <button mat-raised-button color="primary" style="margin-left: 10px;" [disabled]="!form.valid" (click)="addOrEdit(model)"><mat-icon class="mat-18">add</mat-icon>{{'save'| translate}}</button>
+            <button mat-raised-button style="margin-left: 10px;" (click)="back()">{{'close'| translate}}</button>
+        </div>
+    </div>
+    </div>
+    <mat-divider></mat-divider>
+    <div fxLayout="column" fxFlex="100" >
+      <form #form="ngForm">
+        <div fxLayout="column" fxFlex="50" >
+          <div fxLayout="row" fxLayoutGap= "20px">
+            <mat-form-field fxFlex="50">
+              <mat-label>Mã thông báo</mat-label>
+              <input matInput [(ngModel)]="model.code" required maxlength="50" name="code" >
+            </mat-form-field>
+            <mat-form-field fxFlex="50">
+              <mat-label>Tên thông báo</mat-label>
+              <input matInput [(ngModel)]="model.message_Title" required maxlength="1000" name="message_Title">
+            </mat-form-field>
+          </div>  
+          <div fxLayout="row" fxLayoutGap= "20px">
+            <mat-form-field fxFlex="100">
+                <mat-label>Nội dung</mat-label>
+                <textarea matInput [(ngModel)]="model.message_Content" required rows="10" maxlength="4000" name="message_Content" ></textarea>
+            </mat-form-field>
+          </div>
+          <div fxLayout="row" fxLayoutGap= "20px">
+            <mat-form-field fxFlex="50">
+              <mat-label>Tên tiếng anh</mat-label>
+              <input matInput [(ngModel)]="model.message_TitleEn" maxlength="1000" name="message_TitleEn" >
+            </mat-form-field>
+          </div>  
+          <div fxLayout="row" fxLayoutGap= "20px">
+            <mat-form-field fxFlex="100">
+                <mat-label>Nội dung tiếng anh</mat-label>
+                <textarea matInput [(ngModel)]="model.message_ContentEn" rows="10" maxlength="4000" name="message_ContentEn" ></textarea>
+            </mat-form-field>
+          </div>
+        </div>  
+        
+        <div fxLayout="column" fxFlex="50" >
+            <div class="avatar-upload">
+              <div class="avatar-edit">
+                <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" #fileAvaInput (change)="uploadAvaFile($event)" />
+              </div>
+              <div class="avatar-preview">
+               <div id="imagePreview" [style.background-image]="imageUrl"></div>
+              </div>       
+            </div>
+            <div style="margin: 0 0 0 20%;">
+              <button type="button" class="btn btn-light imagebtn" (click)="fileAvaInput.click()">Tải ảnh</button>
+              <button type="button" class="btn btn-light imagebtn" (click)="removeUploadedAvaFile()">Xóa</button>
+            </div>
+        </div>        
+      </form>
+    </div>  
+    
+    <div fxLayout="column" class="dialog-footer">
+      <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="end">
+        <button mat-raised-button color="primary" [disabled]="!form.valid" (click)="addOrEdit(model)"><mat-icon class="mat-18">add</mat-icon>{{'save'| translate}}</button>
+        <button mat-raised-button (click)="back()">{{'close'| translate}}</button>
+      </div>
+    </div>
+  </div>

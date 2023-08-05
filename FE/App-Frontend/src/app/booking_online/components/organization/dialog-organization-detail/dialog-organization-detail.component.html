@@ -1,0 +1,119 @@
+<div fxLayout="column" fxLayoutGap="5px" class="dialog-wrapper">
+  <div fxLayout="row" class="dialog-header" fxLayoutAlign="start center">
+    <mat-icon color="primary">label_important</mat-icon><span class="dialog-title">{{'Organization'| translate}}</span>
+  </div>
+  <mat-divider></mat-divider>
+  <div fxLayout="column" class="dialog-content">
+    <form #form="ngForm">
+      <div fxLayout="row" fxLayoutGap= "20px">
+        <mat-form-field fxFlex="50">
+          <mat-label> {{'code' | translate}}</mat-label>
+          <input matInput [(ngModel)]="organization.code" required maxlength="50" name="code">
+        </mat-form-field>
+        <mat-form-field fxFlex="50">
+            <mat-label> {{'name' | translate}}</mat-label>
+            <input matInput [(ngModel)]="organization.name" required maxlength="250" name="name">
+        </mat-form-field>
+      </div>
+      <div fxLayout="row" fxLayoutGap= "20px">
+        <mat-form-field fxFlex="50">
+          <mat-label> Email</mat-label>
+          <input matInput [(ngModel)]="organization.emailSupport" required maxlength="50" name="emailSupport">
+        </mat-form-field>
+        <mat-form-field fxFlex="50">
+            <mat-label> Số điện thoại</mat-label>
+            <input matInput [(ngModel)]="organization.phoneSupport" required maxlength="250" name="phoneSupport">
+        </mat-form-field>
+      </div>
+      <div fxLayout="row" fxLayoutGap= "20px">
+        <mat-form-field fxFlex="50">
+          <mat-label> Ghi chú</mat-label>
+          <input matInput [(ngModel)]="organization.noteSupport" required maxlength="2000" name="noteSupport">
+        </mat-form-field>      
+      </div>
+      <div fxLayout="row" fxLayoutGap= "20px">
+        <mat-form-field fxFlex="50">
+          <mat-label>OrganizationType</mat-label>
+          <input matInput [formControl]="organizationTypeSelectControl" required [matAutocomplete]="autoOrganizationType" (ngModelChange)= "changeOrganizationTypeText()">
+          <input matInput name="organizationTypeId" required [hidden]="true" [(ngModel)]="organization.c_OrgType_Id"> 
+          <mat-autocomplete autoActiveFirstOption #autoOrganizationType="matAutocomplete" [displayWith]="displayOrganizationType" 
+            (optionSelected)="onSelectedOrganizationType($event)">
+            <mat-option *ngFor="let u of  organizationTypeFilteredOptions | async" [value]="u">
+              {{u.name}}
+            </mat-option>
+          </mat-autocomplete>
+        </mat-form-field>
+      </div>
+      <div fxLayoutGap= "5px">
+        <mat-checkbox name="isActive" color="primary" [(ngModel)]="organization.isActive">Active</mat-checkbox>
+        <mat-checkbox name="isSummary" color="primary" [(ngModel)]="organization.isSummary">Summary</mat-checkbox>
+      </div>
+      <mat-divider></mat-divider>
+      <div fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="start center" style="padding: 10px 0;">
+        <div class="section-label">Information</div>
+      </div>
+      <div fxLayout="row" fxLayoutGap= "20px">
+        <mat-form-field fxFlex="33">
+          <mat-label> {{'taxCode' | translate}}</mat-label>
+          <input matInput [(ngModel)]="organization.organizationInfo.taxCode" maxlength="50" name="taxcode">
+        </mat-form-field>
+        <mat-form-field fxFlex="33">
+          <mat-label> {{'telephone' | translate}}</mat-label>
+          <input matInput [(ngModel)]="organization.organizationInfo.telephone" maxlength="50" name="telephone">
+        </mat-form-field>
+        <mat-form-field fxFlex="33">
+          <mat-label> {{'fax' | translate}}</mat-label>
+          <input matInput [(ngModel)]="organization.organizationInfo.fax" maxlength="50" name="fax">
+        </mat-form-field>
+      </div>
+      <div fxLayout="row" fxLayoutGap= "20px">
+        
+        <mat-form-field fxFlex="50">
+          <mat-label> {{'website' | translate}}</mat-label>
+          <input matInput [(ngModel)]="organization.organizationInfo.website" maxlength="250" name="website">
+        </mat-form-field>
+        <mat-form-field fxFlex="50">
+          <mat-label> {{'email' | translate}}</mat-label>
+          <input matInput [(ngModel)]="organization.organizationInfo.email" maxlength="250" name="email">
+        </mat-form-field>
+      </div>
+      <div fxLayout="row" fxLayoutGap= "20px">
+        <mat-form-field fxFlex="50">
+          <mat-label> {{'invoiceName' | translate}}</mat-label>
+          <input matInput [(ngModel)]="organization.organizationInfo.invoiceName" maxlength="500" name="invoiceName">
+        </mat-form-field>
+        <mat-form-field fxFlex="50">
+          <mat-label> {{'invoiceAddress' | translate}}</mat-label>
+          <input matInput [(ngModel)]="organization.organizationInfo.invoiceAddress" maxlength="500" name="invoiceAddress">
+        </mat-form-field>
+      </div>
+      <div fxLayout="row" fxLayoutGap= "20px">
+        <mat-form-field fxFlex="50">
+          <mat-label> {{'invoiceBankAccount' | translate}}</mat-label>
+          <input matInput [(ngModel)]="organization.organizationInfo.invoiceBankAccount" maxlength="50" name="invoiceBankAccount">
+        </mat-form-field>
+        <mat-form-field fxFlex="50">
+          <mat-label> {{'invoiceBankName' | translate}}</mat-label>
+          <input matInput [(ngModel)]="organization.organizationInfo.invoiceBankName" maxlength="250" name="invoiceBankName">
+        </mat-form-field>
+      </div>
+      <div fxLayout="row" fxLayoutGap= "20px">
+        <mat-form-field fxFlex="50">
+          <mat-label> {{'logoUrl' | translate}}</mat-label>
+          <input matInput [(ngModel)]="organization.organizationInfo.logoUrl" maxlength="250" name="logoUrl">
+        </mat-form-field>
+        <mat-form-field fxFlex="50">
+          <mat-label> {{'shortAddress' | translate}}</mat-label>
+          <input matInput [(ngModel)]="organization.organizationInfo.shortAddress" maxlength="250" name="shortAddress">
+        </mat-form-field>
+      </div>
+
+    </form>
+  </div>
+  <div fxLayout="column" class="dialog-footer">
+    <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="end">
+      <button mat-raised-button color="primary" [disabled]="!form.valid" (click)="addOrEdit(organization)">{{'save'| translate}}</button>
+      <button mat-raised-button [mat-dialog-close]>{{'close'| translate}}</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,129 @@
+
+.box-container {
+    padding: 10px;
+    border: 1px solid rgba($color: #000000, $alpha: 0.12);
+    border-radius: 5px;
+}
+
+.label-text-header {
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.result-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.result-table,
+.result-table th,
+.result-table td {
+    border: 1px solid black;
+}
+
+.result-table th {
+    text-align: center;
+    padding: 3px 5px;
+}
+
+.result-table td {
+    padding: 3px 5px;
+}
+
+.table-button .mat-icon-button {
+    width: 24px;
+    height: 24px;
+}
+
+.table-button .mat-icon {
+    vertical-align: baseline !important;
+}
+/* end result table */
+
+.colTime {
+    width: 50px;
+}
+.colNo {
+    width: 50px;
+    mat-form-field {
+        width: 50px;
+    }
+}
+.colString {
+    width: 200px;
+}
+.colStrShort{
+    width: 100px;
+    mat-form-field {
+        width: 100px;
+    }
+    
+}
+.colDate {
+    width: 100px;
+}
+.colStatus {
+    width: 150px;
+}
+.colNumber {
+    width: 100px;
+}
+.colAction {
+    width: 50px;
+}
+.colCheckbox {
+    width: 70px;
+    mat-checkbox {
+        top:0px
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.w100 {
+   width: 100%;
+}
+
+.check-green {
+    color: green;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.sp-table {
+    min-width: 80%;
+    ::ng-deep .mat-checkbox-disabled.mat-checkbox-checked .mat-checkbox-background, .mat-checkbox-disabled.mat-checkbox-indeterminate .mat-checkbox-background {
+        background-color: blue!important;
+    }
+    td {
+        padding: 3px 15px;
+    }
+    .special-note {
+
+        border-bottom: solid 1px;
+        border-bottom-color: rgb(224 224 224);
+    }    
+}
+
+.value {
+    border-bottom: solid 1px;
+    border-bottom-color: rgb(224 224 224);
+    padding : 0 0 0 10px 
+}
+
+.label {
+    padding : 0 0 0 10px 
+}
+
+.mat-raised-button.mat-report,
+.mat-flat-button.mat-report,
+.mat-fab.mat-report,
+.mat-mini-fab.mat-report {
+  color: #f0fff3;
+  background-color: blue;
+}

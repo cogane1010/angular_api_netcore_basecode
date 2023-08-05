@@ -1,0 +1,118 @@
+<div fxLayout="column" fxLayoutGap="5px" class="page-wrapper mat-elevation-z2">
+  <div fxLayout="row" class="page-header" fxLayoutAlign="start center">
+    <mat-icon color="primary">label_important</mat-icon><span class="page-title">{{'BookingManage'| translate}}</span>
+  </div>
+  <mat-divider></mat-divider>
+  <div fxLayout="column" class="page-filter">
+    <div fxLayout="row" fxLayoutAlign=" center" fxLayoutGap="10px">
+      <mat-form-field fxFlex="8">
+        <mat-label>Ngày</mat-label>
+        <input matInput [matDatepicker]="pickerDate"  name="dateId" [(ngModel)]="filter.dateId">
+        <mat-datepicker-toggle matSuffix [for]="pickerDate"></mat-datepicker-toggle>
+        <mat-datepicker #pickerDate></mat-datepicker>
+      </mat-form-field>
+      
+      <div fxFlex="5">
+        <button mat-icon-button style="width:20px" (click)="searchPrevDay()"> <mat-icon>navigate_before</mat-icon> </button>
+        <button mat-icon-button style="width:20px" (click)="searchNextDay()"> <mat-icon>navigate_next</mat-icon></button>
+       
+      </div>
+      <mat-form-field fxFlex="15">
+        <mat-label>{{'Organization' | translate}}</mat-label>
+        <input matInput [formControl]="organizationSelectControl" [matAutocomplete]="autoOrganization" [readonly]="disabledOrgFilter" (ngModelChange)="changeOrganizationText()">
+        <mat-icon matSuffix>keyboard_arrow_down</mat-icon>
+        <mat-autocomplete autoActiveFirstOption #autoOrganization="matAutocomplete" [displayWith]="displayOrganization" 
+          (optionSelected)="onSelectedOrganization($event)">
+          <mat-option *ngFor="let u of  organizationFilteredOptions | async" [value]="u">
+            {{u.name}}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+      <mat-form-field fxFlex="15">
+        <mat-label>{{'Course' | translate}}</mat-label>
+        <input matInput [formControl]="courseSelectControl" [matAutocomplete]="autocourse" [readonly]="disabledCourseFilter"  (ngModelChange)="changeCourseText()">
+        <mat-icon matSuffix>keyboard_arrow_down</mat-icon>
+        <mat-autocomplete autoActiveFirstOption #autocourse="matAutocomplete" [displayWith]="displayCourse" 
+          (optionSelected)="onSelectedCourse($event)">
+          <mat-option *ngFor="let u of  courseFilteredOptions | async" [value]="u">
+            {{u.name}}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+      <mat-form-field fxFlex="10">
+        <mat-label>{{'Part' | translate}}</mat-label>
+        <mat-select name="part" [(ngModel)]="filter.part">
+          <mat-option *ngFor="let part of listPart" [value]="part.value">{{ (part.translateKey | translate) || part.name}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+     
+      <button mat-raised-button color="primary" [disabled]="!filter.part || !this.filter.c_Org_Id || !this.filter.c_Course_Id || !this.filter.dateId" (click)="search()"><mat-icon>search</mat-icon></button>     
+      <!-- <button mat-raised-button color="primary" (click)="report()">{{'Report' | translate}}</button> -->
+      <button mat-raised-button color="warn" (click)="goToSearch()">{{'search' | translate}}</button>
+      <button mat-raised-button color="success" (click)="goToStat()">{{'Statistic' | translate}}</button>
+      <button mat-raised-button color="report" [useExistingCss]="true" [printStyle]="{colAction : {'visibility': 'hidden'}}" printSectionId="demo" ngxPrint>{{'Report' | translate}}</button>
+    </div>
+    <mat-divider></mat-divider>
+     <div fxLayout="row" fxLayoutGap="10px" id="demo">
+        <table class="result-table mt-20">
+          <thead>
+              <tr>
+                  <th colspan="2">Time</th>
+                  <th colspan="9">1st Tee</th>                  
+              </tr>
+              <tr>
+                  <th>Time</th>
+                  <th>Turn</th>
+                  <th>No</th>
+                  <th>Player</th>
+                  <th>MC</th>
+                  <th>Cd</th>
+                  <th>Holes</th>
+                  <th>Note</th>
+                  <th>Input</th>
+                  <th>Show Up</th>
+                  <th class="hideReport"></th>
+              </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let row of listBooking; let i=index;">
+                <td class="text-center colTime">{{row.tee_Time | date: "HH:mm"}}</td>
+                <td class="text-center colTime">{{row.teeTimeEnd | date: "HH:mm"}}</td>
+                <td class="text-center colNo">{{row.flightSeq}}</td>
+                <td class="colString">{{row.customerFullName}}</td>
+                <td class="text-center colStrShort">{{row.cardNo}}</td>
+                <td class="text-center colStrShort">
+                  <mat-form-field>
+                    <input matInput (keyup.enter)="saveNotes(row)" [(ngModel)]="row.caddie_No">
+                  </mat-form-field>
+                </td>
+                <td class="text-center colNo">
+                  <mat-form-field>
+                    <input matInput type="number" min="0" (keyup.enter)="saveNotes(row)" [(ngModel)]="row.hole">
+                  </mat-form-field>
+                </td>
+                <td class="text-center">
+                  <mat-form-field class="w100">
+                    <input matInput (keyup.enter)="saveNotes(row)"  [(ngModel)]="row.description">
+                   </mat-form-field>
+                </td>
+                <td class="text-center colStrShort">{{row.telephone}}</td>
+                <td class="text-center colCheckbox">
+                  <mat-checkbox name="noShow" color="primary" [(ngModel)]="row.is_NoShow" (change)="saveNotes(row, true)"></mat-checkbox> 
+                </td>
+                <td class="text-center colAction hideReport" >
+                  <button mat-icon-button (click)="detailBooking(row)">
+                    <mat-icon color="primary">visibility</mat-icon>
+                   </button>
+                </td>
+            </tr>
+          </tbody>
+        </table>
+     </div>
+  </div>
+
+
+
+
+
+</div>

@@ -1,0 +1,97 @@
+<div fxLayout="column" fxLayoutGap="5px" class="page-wrapper mat-elevation-z2">
+    <div fxLayout="row" class="page-header" fxLayoutAlign="start center">
+        <mat-icon color="primary">label_important</mat-icon><span class="page-title">Thiết lập thời gian lấy và gửi file IN/OUT</span>
+    </div>
+    <mat-divider></mat-divider>
+    <div fxLayout="column" class="page-filter">
+        <div fxLayout="row" fxLayoutAlign="start start" fxLayoutGap="10px">
+            <button mat-raised-button color="primary" (click)="save()">Lưu</button>
+            <!-- <button mat-raised-button color="primary" (click)="testSendMail()">Test</button> -->
+        </div>
+    </div>
+    <div fxLayout="column" class="page-content" fxLayoutAlign="center start" >
+        <!-- <mat-tab-group style="width:90%; height:inherit;">
+            <mat-tab label="Cấu hình email" >
+                <div fxLayout="row" fxLayoutGap="10px" >
+                    <mat-form-field fxFlex="90">
+                        <mat-label>To</mat-label>
+                        <mat-chip-list #chipListTo>
+                          <mat-chip *ngFor="let mailTo of mailTos" (removed)="removeMailTo(mailTo)">
+                            {{mailTo}}
+                            <button matChipRemove>
+                              <mat-icon>cancel</mat-icon>
+                            </button>
+                          </mat-chip>
+                          <input placeholder="New address..."
+                                 [matChipInputFor]="chipListTo"
+                                 [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+                                 [matChipInputAddOnBlur]="addOnBlur"
+                                 (matChipInputTokenEnd)="addMailTo($event)">
+                        </mat-chip-list>
+                    </mat-form-field>               
+                </div>
+    
+                <div fxLayout="row" fxLayoutGap="10px">
+                    <mat-form-field fxFlex="45">
+                        <mat-label>Cc</mat-label>
+                        <mat-chip-list #chipListCc>
+                            <mat-chip *ngFor="let mailCc of mailCcs" (removed)="removeMailCc(mailCc)">
+                              {{mailCc}}
+                              <button matChipRemove>
+                                <mat-icon>cancel</mat-icon>
+                              </button>
+                            </mat-chip>
+                            <input placeholder="New address..."
+                                   [matChipInputFor]="chipListCc"
+                                   [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+                                   [matChipInputAddOnBlur]="addOnBlur"
+                                   (matChipInputTokenEnd)="addMailCc($event)">
+                          </mat-chip-list>
+                    </mat-form-field>
+                    <mat-form-field fxFlex="45">
+                        <mat-label>Bcc</mat-label>                    
+                        <mat-chip-list #chipListBcc>
+                            <mat-chip *ngFor="let mailBcc of mailBccs" (removed)="removeMailBcc(mailBcc)">
+                              {{mailBcc}}
+                              <button matChipRemove>
+                                <mat-icon>cancel</mat-icon>
+                              </button>
+                            </mat-chip>
+                            <input placeholder="New address..."
+                                   [matChipInputFor]="chipListBcc"
+                                   [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+                                   [matChipInputAddOnBlur]="addOnBlur"
+                                   (matChipInputTokenEnd)="addMailBcc($event)">
+                          </mat-chip-list>
+                    </mat-form-field>                    
+                </div>
+            </mat-tab>          
+          </mat-tab-group> -->
+          <mat-tab-group style="width:90%; ">
+            <mat-tab label="Cấu hình chạy jobs seabank" >
+                <div style="height: 300px !important;">
+                    <div fxLayout="row" fxLayoutGap="30px" >
+                        <div fxFlex="45" fxLayout="row">
+                            <mat-label>Giờ lấy file từ seabank</mat-label>
+                            <ngx-timepicker-field [format]="24" [(ngModel)]="item.hourGetFileIn">
+                            </ngx-timepicker-field>
+                        </div>
+                        <div fxFlex="45" fxLayout="row">
+                            <mat-label>Giờ gửi file out sang seabank</mat-label>
+                            <ngx-timepicker-field [format]="24" [(ngModel)]="item.transaction_out_email_hour">
+                            </ngx-timepicker-field>
+                        </div>
+                    </div>
+                    <div fxLayout="row" fxLayoutGap="10px" style="height: 100px !important;"></div>
+                    <div fxLayout="row" fxLayoutGap="10px" style="height: 100px !important;">
+                        <mat-label fxFlex="20">Ngày trong tuần</mat-label>                        
+                            <mat-checkbox *ngFor="let dow of dows" [(ngModel)]="dow.check" class="checkbox">
+                                {{dow.name}}
+                            </mat-checkbox>
+                       
+                    </div>
+                </div>                
+            </mat-tab>
+          </mat-tab-group>       
+    </div>
+</div>

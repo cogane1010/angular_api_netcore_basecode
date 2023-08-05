@@ -1,0 +1,108 @@
+<div fxLayout="column" fxLayoutGap="5px" class="page-wrapper mat-elevation-z2">
+  <div fxLayout="row" class="page-header" fxLayoutAlign="start center">
+    <mat-icon color="primary">label_important</mat-icon><span class="page-title">Báo cáo chi tiết giao dịch</span>
+  </div>
+  <mat-divider></mat-divider>
+  <div fxLayout="column" class="page-filter" (keyup.enter)="search()">
+    <div fxLayout="row" fxLayoutAlign=" center" fxLayoutGap="10px">
+      <mat-form-field fxFlex="30">
+        <mat-label>Từ ngày</mat-label>
+        <input matInput [matDatepicker]="timeFrom" [(ngModel)]="filter.fromDate" [ngModelOptions]="{standalone: true}"
+          required>
+        <mat-datepicker-toggle matSuffix [for]="timeFrom"></mat-datepicker-toggle>
+        <mat-datepicker #timeFrom></mat-datepicker>
+      </mat-form-field>
+      <mat-form-field fxFlex="30">
+        <mat-label>Đến ngày</mat-label>
+        <input matInput [matDatepicker]="timeTo" [(ngModel)]="filter.toDate" [ngModelOptions]="{standalone: true}"
+          required>
+        <mat-datepicker-toggle matSuffix [for]="timeTo"></mat-datepicker-toggle>
+        <mat-datepicker #timeTo></mat-datepicker>
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" (click)="search()">{{'search' | translate}}</button>
+      <button mat-raised-button color="primary" (click)="exportExcel()">{{'Export Excel' | translate}}</button>
+    </div>
+  </div>
+  <div class="page-content">
+    <table mat-table [dataSource]="dataSource">
+      <ng-container matColumnDef="STT">
+        <th mat-header-cell *matHeaderCellDef style="width: 50px;">STT</th>
+        <td mat-cell *matCellDef="let i = index;">
+          {{i + 1 + filter.pageIndex * filter.pageSize}}
+        </td>
+        <td mat-footer-cell *matFooterCellDef colspan="10"><div style="text-align: center;">Tổng</div></td>
+      </ng-container>
+      <ng-container matColumnDef="seaBankCustomerCode">
+        <th mat-header-cell *matHeaderCellDef>Mã KH SB</th>
+        <td mat-cell *matCellDef='let item'>{{item.seaBankCustomerCode}}</td>
+      </ng-container>
+      <ng-container matColumnDef="seaBankCustomerName">
+        <th mat-header-cell *matHeaderCellDef>Tên KH SB</th>
+        <td mat-cell *matCellDef="let item"> {{item.seaBankCustomerName}} </td>
+      </ng-container>
+      <ng-container matColumnDef="bookingCode">
+        <th mat-header-cell *matHeaderCellDef>Mã đặt chỗ</th>
+        <td mat-cell *matCellDef='let item'>{{item.bookingCode}}</td>
+      </ng-container>
+      <ng-container matColumnDef="golfOrgCode">
+        <th mat-header-cell *matHeaderCellDef>Sân Golf</th>
+        <td mat-cell *matCellDef='let item'>{{item.golfCourseCode}}</td>
+      </ng-container>
+      <ng-container matColumnDef="bookingDate">
+        <th mat-header-cell *matHeaderCellDef>Ngày đặt</th>
+        <td mat-cell *matCellDef='let item'>{{item.bookingDate | date: 'dd/MM/yyyy'}}</td>
+      </ng-container>
+      <ng-container matColumnDef="creditAccount">
+        <th mat-header-cell *matHeaderCellDef>TK ghi co</th>
+        <td mat-cell *matCellDef='let item'>{{item.creditAccount}}</td>
+      </ng-container>
+      <ng-container matColumnDef="card_type">
+        <th mat-header-cell *matHeaderCellDef>CARD.type</th>
+        <td mat-cell *matCellDef='let item'>{{item.card_type}}</td>
+      </ng-container>
+      <ng-container matColumnDef="CardMaskingNo">
+        <th mat-header-cell *matHeaderCellDef>số card masking</th>
+        <td mat-cell *matCellDef='let item'>{{item.CardMaskingNo}}</td>
+      </ng-container>
+      <ng-container matColumnDef="debitAccountNo">
+        <th mat-header-cell *matHeaderCellDef>Số TK debit</th>
+        <td mat-cell *matCellDef='let item'>{{item.debitAccountNo}}</td>
+      </ng-container>
+      <ng-container matColumnDef="transDesciption">
+        <th mat-header-cell *matHeaderCellDef>Nội dung giao dịch</th>
+        <td mat-cell *matCellDef='let item'>{{item.transDesciption}}</td>
+        <td mat-footer-cell *matFooterCellDef></td>
+      </ng-container>
+      <ng-container matColumnDef="transDate">
+        <th mat-header-cell *matHeaderCellDef>Ngày giao dịch</th>
+        <td mat-cell *matCellDef='let item'>{{item.transDate | date: 'dd/MM/yyyy HH:mm:ss'}}</td>
+        <td mat-footer-cell *matFooterCellDef></td>
+      </ng-container>
+      <ng-container matColumnDef="transAmt">
+        <th mat-header-cell *matHeaderCellDef>Số tiền phát sinh</th>
+        <td mat-cell *matCellDef='let item'>{{item.transAmt | number:'0.0-0'}}</td>
+        <td mat-footer-cell *matFooterCellDef>{{reportResult.transAmt | number:'0.0-0'}}</td>
+      </ng-container>
+      <ng-container matColumnDef="cusCancelReturnBf24HAmt">
+        <th mat-header-cell *matHeaderCellDef>Hoàn tiền do khách hủy GD trước 24h</th>
+        <td mat-cell *matCellDef='let item'>{{item.cusCancelReturnBf24HAmt | number:'0.0-0'}}</td>
+        <td mat-footer-cell *matFooterCellDef>{{reportResult.cusCancelReturnBf24HAmt | number:'0.0-0'}}</td>
+      </ng-container>
+      <ng-container matColumnDef="notReceivedAmt">
+        <th mat-header-cell *matHeaderCellDef>Số tiền chưa về</th>
+        <td mat-cell *matCellDef='let item'>{{item.notReceivedAmt | number:'0.0-0'}}</td>
+        <td mat-footer-cell *matFooterCellDef>{{reportResult.notReceivedAmt | number:'0.0-0'}}</td>
+      </ng-container>
+      <ng-container matColumnDef="totalReceived">
+        <th mat-header-cell *matHeaderCellDef>Tổng số tiền đã về</th>
+        <td mat-cell *matCellDef='let item'>{{item.totalReceived | number:'0.0-0'}}</td>
+        <td mat-footer-cell *matFooterCellDef>{{reportResult.totalReceived | number:'0.0-0'}}</td>
+      </ng-container>
+      <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true;"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      <tr mat-footer-row *matFooterRowDef="displayedFooterColumns; sticky: true;"></tr>
+    </table>
+  </div>
+  <mat-paginator (page)="pageIndexChange($event)"></mat-paginator>
+</div>

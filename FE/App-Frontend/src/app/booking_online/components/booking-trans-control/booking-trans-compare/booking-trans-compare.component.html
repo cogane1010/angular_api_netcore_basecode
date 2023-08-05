@@ -1,0 +1,157 @@
+<div fxLayout="column" fxLayoutGap="5px" class="page-wrapper mat-elevation-z2">
+    <div fxLayout="row" class="page-header" fxLayoutAlign="start center">
+        <mat-icon color="primary">label_important</mat-icon><span class="page-title">Đối soát theo ngày</span>
+    </div>
+    <mat-divider></mat-divider>
+    <div fxLayout="column" class="page-filter">
+        <div fxLayout="row" fxLayoutAlign=" center" fxLayoutGap="10px">
+            <mat-form-field fxFlex="15">
+                <mat-label>Ngày</mat-label>
+                <input matInput [matDatepicker]="pickerDate" name="dateId" [(ngModel)]="filter.FindDate"
+                    (keyup.enter)="search()">
+                <mat-datepicker-toggle matSuffix [for]="pickerDate"></mat-datepicker-toggle>
+                <mat-datepicker #pickerDate></mat-datepicker>
+            </mat-form-field>
+
+            <button mat-raised-button color="primary" (click)="search()">
+                <mat-icon>search</mat-icon>
+            </button>
+            <button mat-raised-button color="primary" (click)="save()" [disabled]="!enableSave">Xác nhận</button>
+            <button mat-raised-button color="primary" (click)="selectDate()">Danh sách ngày chưa đối soát  {{numOfDayNotCompare}} ngày</button>
+            <div class="statusCompareTrans" [ngClass]="{'greenbackGround': statusCompareInt == 'created','orangeGround': statusCompareInt == 'outApprove'}">
+                <label>Trạng thái: {{statusComparetrans}}</label>
+            </div>
+        </div>
+        <mat-divider class="mt-10"></mat-divider>
+        <div fxLayout="column" fxLayoutGap="10px">
+            <div class="mt-10 scroll">
+                <table *ngIf="paymentCompare" class="result-table">
+                    <thead>
+                        <tr>
+                            <th rowspan="2" class="text-center col-sb-trans-type border-cell">Loại TT(1 thanh toán, 0 hoàn tiền)</th>
+                            <th rowspan="2" class="text-center col-sb-org-code border-cell">Địa điểm Sân</th>
+                            <th colspan="6" class="border-cell greenbackGround border-right">SeAbank</th>
+                            <th colspan="7" class="border-cell orangeGround border-right">BRG</th>
+                            <th colspan="2" class="border-cell">Đối xoát</th>
+                        </tr>
+                        <tr>
+                            <!-- Seabank -->                            
+                            <th class="text-center col-sb-trans-code border-cell greenbackGround">Mã đặt chỗ</th>                            
+                            <th class="text-center col-sb-trans-date border-cell greenbackGround">Ngày giao dịch</th>
+                            <th class="text-center col-sb-cus-name border-cell greenbackGround">Tên Khách hàng</th>
+                            <th class="text-center col-sb-trans-amt border-cell greenbackGround">Thanh toán</th>
+                            <th class="text-center col-sb-trans-amt border-cell greenbackGround">Tiền hoàn</th>
+                            <th class="text-center col-sb-desc border-cell greenbackGround border-right">Nội dung GD</th>
+                            <!-- BRG -->
+                            <th class="text-center col-sb-trans-code border-cell orangeGround">Mã đặt chỗ</th>
+                            <th class="text-center col-sb-trans-date border-cell orangeGround">Ngày giao dịch</th>
+                            <th class="text-center col-sb-cus-name border-cell orangeGround">Tên Khách hàng</th>
+                            <th class="text-center col-sb-trans-date border-cell orangeGround">Ngày đặt chỗ(lên sân chơi)</th>
+                            <th class="text-center col-sb-trans-amt border-cell orangeGround">Tiền đặt cọc</th>
+                            <th class="text-center col-sb-trans-amt border-cell orangeGround">Thanh toán</th>                            
+                            <th class="text-center col-sb-trans-amt border-cell orangeGround border-right">Tiền hoàn</th>
+                            <!-- He thong -->
+                            <th class="text-center col-sys-rc-code border-cell">Hệ thống</th>
+                            <th class="text-center col-sys-user-rc-code border-cell">Sửa</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let row of paymentCompare; let i=index;"
+                            [ngClass]="{'not-valid':(row.userRc_code || row.rc_code) && row.userRc_code != '0'}">
+                            <td class="text-center col-sb-trans-type" [ngClass]="{'sumaryRow': i == total}">
+                                <ng-template [ngIf]="row.inTransactionDetails" >{{row.inTransactionDetails.trans_type }}
+                                </ng-template>
+                            </td>
+                            <td class="text-center col-sb-org-code" [ngClass]="{'sumaryRow': i == total}">
+                                <ng-template [ngIf]="row.inTransactionDetails">{{row.inTransactionDetails.orgCode}}
+                                </ng-template>
+                            </td>
+                            <td class="text-center col-sb-trans-code" [ngClass]="{'sumaryRow': i == total}">
+                                <ng-template [ngIf]="row.inTransactionDetails">{{row.inTransactionDetails.traceId }}
+                                </ng-template>
+                            </td>                            
+                            <td class="text-center col-sb-trans-date" [ngClass]="{'sumaryRow': i == total}">
+                                <ng-template [ngIf]="row.inTransactionDetails && row.inTransactionDetails.trans_type == '1'">
+                                    {{row.inTransactionDetails.trans_Time|date:'dd/MM/yyyy HH:mm:ss' }}
+                                </ng-template>
+                                <ng-template [ngIf]="row.inTransactionDetails && row.inTransactionDetails.trans_type == '0'">
+                                    {{row.inTransactionDetails.refund_Trans_Date|date:'dd/MM/yyyy HH:mm:ss' }}
+                                </ng-template>
+                            </td>
+                            <td class="text-cente col-sb-cus-name" [ngClass]="{'sumaryRow': i == total}">
+                                <ng-template [ngIf]="row.inTransactionDetails">{{row.inTransactionDetails.customerName}}
+                                </ng-template>
+                            </td>                       
+                            <td class="text-center col-sb-trans-amt" [ngClass]="{'sumaryRow': i == total}">
+                                <ng-template [ngIf]="row.inTransactionDetails && row.inTransactionDetails.trans_type == '1' && row.isSummary == false" >
+                                    {{row.inTransactionDetails.trans_Amt|number:'1.0-0'}}
+                                </ng-template>
+                                <ng-template [ngIf]="row.inTransactionDetails && row.isSummary == true" >
+                                    {{row.inTransactionDetails.trans_Amt|number:'1.0-0'}}
+                                </ng-template>
+                            </td>
+                            <td class="text-center col-sb-trans-amt" [ngClass]="{'sumaryRow': i == total}">
+                                <ng-template [ngIf]="row.inTransactionDetails.tien_hoan > 0 && row.isSummary == false" >
+                                    {{row.inTransactionDetails.tien_hoan|number:'1.0-0'}}
+                                </ng-template>
+                                <ng-template [ngIf]="row.inTransactionDetails && row.isSummary == true" >
+                                    {{row.inTransactionDetails.tien_hoan|number:'1.0-0'}}
+                                </ng-template>
+                            </td>
+                            <td class="text-center col-sb-desc border-right" [ngClass]="{'sumaryRow': i == total}">
+                                <ng-template [ngIf]="row.inTransactionDetails">{{row.inTransactionDetails.payment_Detail}}</ng-template>
+                            </td>
+                            <!-- BRG -->
+                            <td class="text-center col-sb-trans-code" [ngClass]="{'sumaryRow': i == total}">
+                                <ng-template [ngIf]="row.bookingDTO">{{row.bookingDTO.bookingCode}}</ng-template>
+                            </td>
+                            <td class="text-center col-sb-trans-date" [ngClass]="{'sumaryRow': i == total}">
+                                <ng-template [ngIf]="row.bookingDTO && row.inTransactionDetails.trans_type == '1'">{{row.bookingDTO.payment_Time|date:'dd/MM/yyyy HH:mm:ss'}}</ng-template>
+                                <ng-template [ngIf]="row.bookingDTO && row.inTransactionDetails.trans_type == '0'">{{row.bookingDTO.cancel_Time|date:'dd/MM/yyyy HH:mm:ss'}}</ng-template>
+                            </td>
+                            <td class="text-center col-sb-cus-name" [ngClass]="{'sumaryRow': i == total}">
+                                <ng-template [ngIf]="row.bookingDTO">{{row.bookingDTO.cardFullName}}</ng-template>
+                            </td>
+                            <td class="text-center col-sb-trans-date" [ngClass]="{'sumaryRow': i == total}">
+                                <ng-template [ngIf]="row.bookingDTO && i != total">{{row.bookingDTO.dateId|date:'dd/MM/yyyy'}} {{row.bookingDTO.totalTeetimeDisplay}}
+                                </ng-template>
+                            </td>
+                            <td class="text-center col-sb-trans-amt" [ngClass]="{'sumaryRow': i == total}">
+                                <ng-template [ngIf]="row.bookingDTO && row.isSummary == false" >{{row.bookingDTO.nonRefundedFee|number:'1.0-0'}}
+                                </ng-template>                               
+                            </td>
+                            <td class="text-center col-sb-trans-amt" [ngClass]="{'sumaryRow': i == total}">
+                                <ng-template [ngIf]="row.bookingDTO && row.inTransactionDetails.trans_type == '1' && row.isSummary == false" >{{row.bookingDTO.nonRefundedFee|number:'1.0-0'}}
+                                </ng-template>
+                                <ng-template [ngIf]="row.bookingDTO && row.isSummary == true" >{{row.bookingDTO.nonRefundedFee|number:'1.0-0'}}
+                                </ng-template>
+                            </td>                       
+                            <td class="text-center col-sb-trans-amt border-right" [ngClass]="{'sumaryRow': i == total}">
+                                <ng-template [ngIf]="row.bookingDTO && row.inTransactionDetails.trans_type == '0' && row.isSummary == false">{{row.bookingDTO.tien_hoan|number:'1.0-0'}}
+                                </ng-template>
+                                <ng-template [ngIf]="row.bookingDTO && row.isSummary == true">{{row.bookingDTO.tien_hoan|number:'1.0-0'}}
+                                </ng-template>
+                            </td>
+                            <!-- He thong -->
+                            <td class="text-center col-sys-rc-code" [ngClass]="{'sumaryRow': i == total}">
+                                {{row.rc_code}}
+                            </td>
+                            <td class="text-center col-sys-user-rc-code" [ngClass]="{'sumaryRow': i == total}">
+                                <ng-template [ngIf]="row.isSummary == false">
+                                    <mat-form-field  style="width:100%;" >
+                                        <mat-label>Chọn mã</mat-label>
+                                        <mat-select  name="'user_rc_code'+i" [(ngModel)]="row.userRc_code">
+                                            <mat-option *ngFor="let rcCode of rcCodes" [value]="rcCode.value">
+                                                {{rcCode.value}} - {{rcCode.viewValue}}
+                                            </mat-option>
+                                        </mat-select>
+                                    </mat-form-field>
+                                </ng-template>                                
+                            </td>
+                        </tr>                       
+                    </tbody>
+                </table>                         
+            </div>           
+        </div>
+    </div>
+</div>

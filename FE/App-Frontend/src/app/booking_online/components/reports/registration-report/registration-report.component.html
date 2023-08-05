@@ -1,0 +1,102 @@
+<div fxLayout="column" fxLayoutGap="5px" class="page-wrapper mat-elevation-z2">
+    <div fxLayout="row" class="page-header" fxLayoutAlign="start center">
+      <mat-icon color="primary">label_important</mat-icon><span class="page-title">Báo cáo tạo tài khoản app</span>
+    </div>
+    <mat-divider></mat-divider>
+    <div fxLayout="column" class="page-filter" (keyup.enter)="search()">
+      <div fxLayout="row" fxLayoutAlign=" center" fxLayoutGap="10px">
+        <mat-form-field fxFlex="15">
+          <mat-label>Ngày đăng ký từ</mat-label>
+          <input matInput [matDatepicker]="timeFrom" [(ngModel)]="filter.timeFrom" [ngModelOptions]="{standalone: true}" required>
+          <mat-datepicker-toggle matSuffix [for]="timeFrom"></mat-datepicker-toggle>
+          <mat-datepicker #timeFrom></mat-datepicker>
+        </mat-form-field>
+        <mat-form-field fxFlex="15">
+          <mat-label>Ngày đăng ký đến</mat-label>
+          <input matInput [matDatepicker]="timeTo" [(ngModel)]="filter.timeTo" [ngModelOptions]="{standalone: true}" required>
+          <mat-datepicker-toggle matSuffix [for]="timeTo"></mat-datepicker-toggle>
+          <mat-datepicker #timeTo></mat-datepicker>
+        </mat-form-field> 
+        <mat-form-field fxFlex="30">
+          <mat-label>Sân áp dụng</mat-label>
+          <mat-select placeholder="Select" [(ngModel)]="filter.c_Org_Id" name="element.c_Org_Id" #element.c_Org_Id="ngModel" >
+            <mat-option [value]=""></mat-option>
+            <mat-option [value]="itm.id" *ngFor="let itm of listOrganization" width ="inherit">{{itm.name}}</mat-option>
+          </mat-select>
+        </mat-form-field>      
+        <button mat-raised-button color="primary" (click)="search()">{{'search' | translate}}</button>        
+        <button mat-raised-button color="primary" (click)="excelExport()">Excel</button>     
+      </div>
+      <div fxLayout="row" fxLayoutAlign=" center" fxLayoutGap="10px">    
+        <mat-form-field fxFlex="18">
+          <mat-label>Mã tài khoản</mat-label>
+          <input matInput [(ngModel)]="filter.customerCode">
+        </mat-form-field>       
+        <mat-form-field fxFlex="18">
+          <mat-label>{{'fullName' | translate}}</mat-label>
+          <input matInput [(ngModel)]="filter.fullName">
+        </mat-form-field>      
+        <mat-form-field fxFlex="18">
+          <mat-label>{{'mobilePhone' | translate}}</mat-label>
+          <input matInput [(ngModel)]="filter.mobilephone">
+        </mat-form-field>
+        <mat-form-field fxFlex="18">
+          <mat-label>{{'email' | translate}}</mat-label>
+          <input matInput [(ngModel)]="filter.email">
+        </mat-form-field>  
+        <mat-form-field fxFlex="18">
+          <mat-label>{{'memberCardNo' | translate}}</mat-label>
+          <input matInput [(ngModel)]="filter.cardNo">
+        </mat-form-field> 
+      </div>
+    </div>
+    <div fxLayout="column" class="page-content">
+      <table mat-table [dataSource]="customer">  
+        <ng-container matColumnDef="STT">
+          <th mat-header-cell *matHeaderCellDef style="width: 5px;">#</th>
+          <td mat-cell *matCellDef="let i = index;">
+            {{i + 1 + filter.pageIndex * filter.pageSize}}
+          </td>
+        </ng-container>
+        <ng-container matColumnDef="customerCode">
+          <th mat-header-cell *matHeaderCellDef style="width: 10%;">Mã tài khoản</th>
+          <td mat-cell *matCellDef='let item' >{{item.customerCode}}</td>
+        </ng-container>
+        <ng-container matColumnDef="fullName">
+          <th mat-header-cell *matHeaderCellDef style="width: 20%;">Chủ tài khoản</th>
+          <td mat-cell *matCellDef="let item"> {{item.fullName}} </td>
+        </ng-container>
+        <ng-container matColumnDef="createDate">
+          <th mat-header-cell *matHeaderCellDef style="width: 8%;">Ngày đăng ký app</th>
+          <td mat-cell *matCellDef='let item' >{{item.createdDate | date: 'dd/MM/yyyy'}}</td>
+        </ng-container>  
+        <ng-container matColumnDef="org">
+          <th mat-header-cell *matHeaderCellDef style="width: 10%;">Đơn vị</th>
+          <td mat-cell *matCellDef='let item' >{{item.total_Org}}</td>
+        </ng-container>
+        <ng-container matColumnDef="course">
+          <th mat-header-cell *matHeaderCellDef style="width: 15%;">Sân chơi</th>
+          <td mat-cell *matCellDef='let item' >{{item.total_Course}}</td>
+        </ng-container>
+        <ng-container matColumnDef="cardNo">
+          <th mat-header-cell *matHeaderCellDef style="width: 15%;">Số thẻ hội viên</th>
+          <td mat-cell *matCellDef='let item' >{{item.total_Golf_CardNo}}</td>
+        </ng-container>
+        <ng-container matColumnDef="phone">
+          <th mat-header-cell *matHeaderCellDef style="width: 10%;">SDT</th>
+          <td mat-cell *matCellDef='let item' >{{item.mobilePhone}}</td>
+        </ng-container>
+        <ng-container matColumnDef="email">
+          <th mat-header-cell *matHeaderCellDef style="width: 15%;">Email</th>
+          <td mat-cell *matCellDef='let item' >{{item.email}}</td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        
+      </table>
+      <mat-paginator (page)="pageIndexChange($event)"></mat-paginator>
+    </div>
+    <div fxLayout="column" class="page-footer"></div>
+  </div>
+  

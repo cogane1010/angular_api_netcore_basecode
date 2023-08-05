@@ -1,0 +1,154 @@
+<div fxLayout="column" fxLayoutGap="5px" class="page-wrapper mat-elevation-z2">
+  <div fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="space-between center" class="page-header">
+    <div>
+      <mat-icon color="primary">label_important</mat-icon><span class="page-title">{{'TeeSheetLock' | translate}}</span>
+   </div>
+    <div>
+        <button mat-raised-button color="ascent" (click)="update()" style="margin-left: 10px;" [disabled]="form.invalid">
+            {{'Update' | translate}}
+        </button>
+        <button mat-raised-button color="primary" (click)="back()" style="margin-left: 10px;">
+           {{'Back' | translate}}
+        </button>
+    </div>
+  </div>
+  <mat-divider></mat-divider>
+  <form #form="ngForm">
+    <div fxLayout="row" fxLayoutGap="10px">
+      <mat-form-field fxFlex="50">
+        <mat-label> {{'Reason' | translate}}</mat-label>
+        <mat-select matInput [formControl]="lockReasonSelectControl" [(ngModel)]="teeSheetLock.c_LockReason_Id" required>
+          <mat-option *ngFor="let u of  listLockReason " [value]="u.id">
+            {{u.name}}
+          </mat-option>
+        </mat-select>
+        <!-- <input matInput [formControl]="lockReasonSelectControl" required [matAutocomplete]="autolockReason" (ngModelChange)="changelockReasonText()" >
+        <input matInput name="lockReasonId" required [hidden]="true" [(ngModel)]="teeSheetLock.c_LockReason_Id" > 
+        <mat-autocomplete autoActiveFirstOption #autolockReason="matAutocomplete" [displayWith]="displaylockReason" 
+          (optionSelected)="onSelectedlockReason($event)">
+          <mat-option *ngFor="let u of  lockReasonFilteredOptions | async" [value]="u">
+            {{u.name}}
+          </mat-option>
+        </mat-autocomplete> -->
+        <mat-error *ngIf="lockReasonSelectControl.invalid && (lockReasonSelectControl.dirty || lockReasonSelectControl.touched)">
+          <div *ngIf="lockReasonSelectControl.errors?.required">{{ 'requireStr'| translate}} </div>
+        </mat-error>
+      </mat-form-field>
+    </div>
+    <div fxLayout="row" fxLayoutGap="10px">
+      <mat-form-field fxFlex="50">
+        <mat-label>{{'Note' | translate}}</mat-label>      
+        <input matInput name="description" [(ngModel)]="teeSheetLock.description" #description="ngModel">        
+      </mat-form-field>
+    </div>
+    <div fxLayout="row" fxLayoutGap="10px">
+        <mat-form-field fxFlex="50">
+          <mat-label>{{'organization' | translate}}</mat-label>
+          <mat-select matInput [formControl]="organizationSelectControl" [(ngModel)]="teeSheetLock.c_Org_Id"  required>
+            <mat-option *ngFor="let u of  listOrganization " [value]="u.id">
+              {{u.name}}
+            </mat-option>
+          </mat-select>
+          <!-- <input matInput [formControl]="organizationSelectControl" required [matAutocomplete]="autoOrganization" (ngModelChange)="changeOrganizationText()">
+          <input matInput name="organizationId" required [hidden]="true" [(ngModel)]="teeSheetLock.c_Org_Id"> 
+          <mat-autocomplete autoActiveFirstOption #autoOrganization="matAutocomplete" [displayWith]="displayOrganization" 
+            (optionSelected)="onSelectedOrganization($event)">
+            <mat-option *ngFor="let u of  organizationFilteredOptions | async" [value]="u">
+              {{u.name}}
+            </mat-option>
+          </mat-autocomplete> -->
+          <mat-error *ngIf="organizationSelectControl.invalid && (organizationSelectControl.dirty || organizationSelectControl.touched)">
+            <div *ngIf="organizationSelectControl.errors?.required">{{'requireStr'| translate}} </div>
+          </mat-error>
+        </mat-form-field>
+    </div>
+    <div fxLayout="row" fxLayoutGap="10px">
+      <mat-form-field fxFlex="50">
+        <mat-label>{{'startDate'| translate}} - {{'endDate'| translate}}</mat-label>
+        <mat-date-range-input [formGroup]="range" [rangePicker]="picker" required>
+          <input matStartDate formControlName="start" placeholder="{{'startDate'| translate}}" required (dateChange)="dateChange()">
+          <input matEndDate formControlName="end" placeholder="{{'endDate'| translate}}" required (dateChange)="dateChange()">
+          
+        </mat-date-range-input>
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-date-range-picker #picker></mat-date-range-picker>
+        <mat-error *ngIf="range.invalid && (range.dirty || range.touched)">
+          <div>{{ 'requireStr'| translate}} </div>
+        </mat-error>
+        <input matInput name="startDate" required [hidden]="true" [(ngModel)]="teeSheetLock.startDate"> 
+        <input matInput name="endDate" required [hidden]="true" [(ngModel)]="teeSheetLock.endDate"> 
+      </mat-form-field>
+      <!-- <mat-form-field fxFlex="25">
+        <mat-label>Ngày bắt đầu</mat-label>
+        <input matInput [matDatepicker]="pickerDateStart" required [(ngModel)]="teeSheetLock.startDate" name="start" #startDate="ngModel">
+        <mat-datepicker-toggle matSuffix [for]="pickerDateStart"></mat-datepicker-toggle>
+        <mat-datepicker #pickerDateStart></mat-datepicker>
+        <mat-error *ngIf="startDate.invalid && (startDate.dirty || startDate.touched)" >
+          <div *ngIf="startDate.errors?.required">{{ 'Start date is required'| translate}} </div>
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field fxFlex="25">
+        <mat-label>Ngày kết thúc</mat-label>
+        <input matInput [matDatepicker]="pickerDateEnd" required [(ngModel)]="teeSheetLock.endDate" name="end" #endDate="ngModel">
+        <mat-datepicker-toggle matSuffix [for]="pickerDateEnd"></mat-datepicker-toggle>
+        <mat-datepicker #pickerDateEnd></mat-datepicker>
+        <mat-error *ngIf="endDate.invalid && (endDate.dirty || endDate.touched)" >
+          <div *ngIf="endDate.errors?.required">{{ 'End date is required'| translate}} </div>
+        </mat-error>
+      </mat-form-field> -->
+
+
+    </div>
+    <div fxLayout="row" fxLayoutGap="10px" style="margin-bottom: 10px;">
+      <div fxLayoutGap= "5px">
+        <mat-checkbox name="isActive" color="primary" [(ngModel)]="teeSheetLock.isActive"> Active </mat-checkbox>
+      </div>
+    </div>
+ </form>
+ <mat-divider></mat-divider>
+ <div fxLayout="row" fxLayoutGap="10px">
+  <table class="result-table">
+    <thead>
+        <tr>
+            <th>{{'No.'| translate}}</th>
+            <th>{{'Course.'| translate}}</th>
+            <th>{{'DOW'| translate}} </th>
+            <th>{{'Tee'| translate}}</th>
+            <th>{{'StartTime'| translate}}</th>
+            <th>{{'EndTime'| translate}}</th>
+            <th>{{'Flight'| translate}}</th>
+            <th class="table-button" *ngIf="!isReadonly">
+              <button mat-icon-button color="warn" (click)="addOrEditLine(null)">
+                  <mat-icon>add</mat-icon>
+              </button>
+          </th>
+        </tr>
+    </thead>
+      <tbody>
+        <tr *ngFor="let row of teeSheetLock.teeSheetLockLines; let i=index;">
+          <td class="colStt" >{{i+1}}</td>
+          <td class="colString">{{row.courseName}}</td>
+          <td class="colString"> {{row.dow}} </td>
+          
+          <td class="colString"> {{row.startTee}}</td>
+          <td class="colString"> {{row.startTime}}</td>
+          <td class="colString"> {{row.endTime}}</td>
+          <td class="colString"> {{row.flightSeq}}</td>
+
+          <td class="table-button colAction" >
+              <div>
+                  <div fxFlex="row" fxLayoutAlign="center row">       
+                      <button mat-icon-button color="warn" (click)="deleteLine(row, i)">
+                          <mat-icon style="color: chocolate;">delete</mat-icon>
+                      </button>
+                  </div>
+              </div>
+          </td>
+        </tr>
+      </tbody>
+
+</table>
+
+
+ </div>
+</div>

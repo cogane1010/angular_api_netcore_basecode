@@ -1,0 +1,102 @@
+<div fxLayout="column" fxLayoutGap="5px" class="page-wrapper mat-elevation-z2">
+  <div fxLayout="row" class="page-header" fxLayoutAlign="start center">
+    <mat-icon color="primary">label_important</mat-icon><span class="page-title">Báo cáo chi tiết giao dịch</span>
+  </div>
+  <mat-divider></mat-divider>
+  <div fxLayout="column" class="page-filter" (keyup.enter)="search()">
+    <div fxLayout="row" fxLayoutAlign=" center" fxLayoutGap="10px">
+      <mat-form-field fxFlex="15">
+        <mat-label>Từ ngày</mat-label>
+        <input matInput [matDatepicker]="timeFrom" [(ngModel)]="filter.fromDate" [ngModelOptions]="{standalone: true}"
+          required>
+        <mat-datepicker-toggle matSuffix [for]="timeFrom"></mat-datepicker-toggle>
+        <mat-datepicker #timeFrom></mat-datepicker>
+      </mat-form-field>
+      <mat-form-field fxFlex="15">
+        <mat-label>Đến ngày</mat-label>
+        <input matInput [matDatepicker]="timeTo" [(ngModel)]="filter.toDate" [ngModelOptions]="{standalone: true}"
+          required>
+        <mat-datepicker-toggle matSuffix [for]="timeTo"></mat-datepicker-toggle>
+        <mat-datepicker #timeTo></mat-datepicker>
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" (click)="search()">{{'search' | translate}}</button>
+      <button mat-raised-button color="primary" (click)="exportExcel()">{{'Export Excel' | translate}}</button>
+    </div>
+  </div>
+  <div class="page-content">
+    <table mat-table [dataSource]="dataSource">
+      <ng-container matColumnDef="STT">
+        <th mat-header-cell *matHeaderCellDef style="width: 50px;" [attr.rowspan]="2">STT</th>
+      </ng-container>
+      <ng-container matColumnDef="seaBankCustomerCode">
+        <th mat-header-cell *matHeaderCellDef [attr.rowspan]="2">Mã KH SB</th>
+      </ng-container>
+      <ng-container matColumnDef="customerName">
+        <th mat-header-cell *matHeaderCellDef [attr.rowspan]="2">Tên KH SB</th>
+      </ng-container>
+      <ng-container matColumnDef="monthAmount">
+        <th mat-header-cell *matHeaderCellDef [attr.colspan]="3" [ngStyle]="{'text-align': 'center'}">Tổng số tiền giao
+          dịch trong Tháng
+          (Trong đó)</th>
+      </ng-container>
+      <ng-container matColumnDef="totalAmount">
+        <th mat-header-cell *matHeaderCellDef [attr.colspan]="3" [ngStyle]="{'text-align': 'center'}">Lũy kế đến hiện
+          tại</th>
+      </ng-container>
+
+      <ng-container matColumnDef="STT1">
+        <th mat-header-cell *matHeaderCellDef [ngStyle]="{'display': 'none'}"></th>
+        <td mat-cell *matCellDef="let i = index;">
+          {{i + 1 + filter.pageIndex * filter.pageSize}}
+        </td>
+        <td mat-footer-cell *matFooterCellDef [attr.colspan]="3">
+          <div style="text-align: center;">Tổng</div>
+        </td>
+      </ng-container>
+      <ng-container matColumnDef="seaBankCustomerCode1">
+        <th mat-header-cell *matHeaderCellDef [ngStyle]="{'display': 'none'}"></th>
+        <td mat-cell *matCellDef='let item'>{{item.seaBankCustomerCode}}</td>
+      </ng-container>
+      <ng-container matColumnDef="customerName1">
+        <th mat-header-cell *matHeaderCellDef [ngStyle]="{'display': 'none'}"></th>
+        <td mat-cell *matCellDef="let item"> {{item.customerName}} </td>
+      </ng-container>
+      <ng-container matColumnDef="monthReceivedAmt">
+        <th mat-header-cell *matHeaderCellDef>Số tiền giao dịch thành công</th>
+        <td mat-cell *matCellDef='let item'>{{item.monthReceivedAmt}}</td>
+        <td mat-footer-cell *matFooterCellDef>{{reportResult.monthReceivedAmt | number:'0.0-0'}}</td>
+      </ng-container>
+      <ng-container matColumnDef="monthNotReceivedAmt">
+        <th mat-header-cell *matHeaderCellDef>Số tiền giao dịch chưa về TK</th>
+        <td mat-cell *matCellDef='let item'>{{item.monthNotReceivedAmt}}</td>
+        <td mat-footer-cell *matFooterCellDef>{{reportResult.monthNotReceivedAmt | number:'0.0-0'}}</td>
+      </ng-container>
+      <ng-container matColumnDef="monthTotalAmt">
+        <th mat-header-cell *matHeaderCellDef>Tổng số tiền giao dịch</th>
+        <td mat-cell *matCellDef='let item'>{{item.monthTotalAmt}}</td>
+        <td mat-footer-cell *matFooterCellDef>{{reportResult.monthTotalAmt | number:'0.0-0'}}</td>
+      </ng-container>
+      <ng-container matColumnDef="receivedAmt">
+        <th mat-header-cell *matHeaderCellDef>Số tiền giao dịch thành công</th>
+        <td mat-cell *matCellDef='let item'>{{item.receivedAmt}}</td>
+        <td mat-footer-cell *matFooterCellDef>{{reportResult.receivedAmt | number:'0.0-0'}}</td>
+      </ng-container>
+      <ng-container matColumnDef="notReceivedAmt">
+        <th mat-header-cell *matHeaderCellDef>Số tiền giao dịch chưa về TK</th>
+        <td mat-cell *matCellDef='let item'>{{item.notReceivedAmt}}</td>
+        <td mat-footer-cell *matFooterCellDef>{{reportResult.notReceivedAmt | number:'0.0-0'}}</td>
+      </ng-container>
+      <ng-container matColumnDef="totalAmt">
+        <th mat-header-cell *matHeaderCellDef>Tổng số tiền giao dịch</th>
+        <td mat-cell *matCellDef='let item'>{{item.totalAmt}}</td>
+        <td mat-footer-cell *matFooterCellDef>{{reportResult.totalAmt | number:'0.0-0'}}</td>
+      </ng-container>
+      <tr mat-header-row *matHeaderRowDef="displayedColumns1; sticky: true;"></tr>
+      <tr mat-header-row *matHeaderRowDef="displayedColumns2; sticky: true;"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns2;"></tr>
+      <tr mat-footer-row *matFooterRowDef="displayedFooterColumns; sticky: true;"></tr>
+    </table>
+  </div>
+  <mat-paginator (page)="pageIndexChange($event)"></mat-paginator>
+</div>

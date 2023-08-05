@@ -1,0 +1,68 @@
+<div fxLayout="column" fxLayoutGap="10px" class="dialog-wrapper">
+    <div fxLayout="row" class="dialog-header" fxLayoutAlign="start center">
+        <mat-icon color="primary">label_important</mat-icon><span class="dialog-title">Role detail</span>
+    </div>
+    <mat-divider></mat-divider>
+    <div fxLayout="column" class="dialog-content">
+        <form #form=ngForm>
+            <div fxLayout="row" fxLayoutGap="20px">
+                <div fxFlex="50">
+                    <div fxLayout="column" fxLayoutGap="5px">
+                        <mat-form-field fxFlex>
+                            <mat-label>Role</mat-label>
+                            <input matInput name="name" [(ngModel)]="role.name" required [disabled]="role.protected">
+                        </mat-form-field>
+                        <mat-form-field fxFlex>
+                            <mat-label>Name</mat-label>
+                            <input matInput name="displayname" [(ngModel)]="role.displayName" required>
+                        </mat-form-field>
+                        <mat-form-field fxFlex>
+                            <mat-label>Description</mat-label>
+                            <input matInput name="icon" [(ngModel)]="role.description">
+                        </mat-form-field>
+                        <mat-checkbox fxFlex name="isActive" color="primary" [(ngModel)]="role.isActive">Active</mat-checkbox>
+                    </div>
+                </div>
+                <div fxFlex="50">
+                    <mat-label>Phân quyền Menu</mat-label>
+                    <mat-divider></mat-divider>
+                    <mat-tree [dataSource]="dataSource" [treeControl]="treeControl" class="permision-tree">
+                        <mat-tree-node *matTreeNodeDef="let node" matTreeNodeToggle>
+                            <mat-checkbox color="primary" class="menu-permistion-checkbox" 
+                                [checked]="node.hasMenu"
+                                (change)="changeNode($event.checked, node)"
+                            >
+                                {{node.name}}
+                            </mat-checkbox>
+                        </mat-tree-node>
+                        <mat-nested-tree-node *matTreeNodeDef="let node; when: hasChild">
+                            <div class="mat-tree-node">
+                                <button mat-icon-button matTreeNodeToggle [attr.aria-label]="'Toggle ' + node.name">
+                                    <mat-icon class="mat-icon-rtl-mirror">
+                                        {{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
+                                    </mat-icon>
+                                </button>
+                                <mat-checkbox color="primary" class="menu-permistion-checkbox group"
+                                    [checked]="node.allSubHasMenu"
+                                    [indeterminate]="node.someSubHasMenu"
+                                    (change)="changeNode($event.checked, node)"
+                                >
+                                    {{node.name}}
+                                </mat-checkbox>
+                            </div>
+                            <div [class.example-tree-invisible]="!treeControl.isExpanded(node)" role="group">
+                                <ng-container matTreeNodeOutlet></ng-container>
+                            </div>
+                        </mat-nested-tree-node>
+                    </mat-tree>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div fxLayout="column" class="dialog-footer">
+        <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="end">
+            <button mat-raised-button color="primary" (click)="addOrEdit(role)" [disabled]="!form.valid">Save</button>
+            <button mat-raised-button [mat-dialog-close]>Close</button>
+        </div>
+    </div>
+</div>

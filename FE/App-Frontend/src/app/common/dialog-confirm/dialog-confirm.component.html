@@ -1,0 +1,17 @@
+<div fxLayout="column" fxLayoutGap="5px" class="dialog-wrapper">
+    <div fxLayout="row" class="dialog-header" fxLayoutAlign="start center">
+        <span class="dialog-title">{{'confirm' | translate}}</span>
+    </div>
+    <mat-divider></mat-divider>
+    <div fxLayout="column" class="dialog-content">
+        <div fxLayout="row" fxLayoutGap="10px">
+            {{msg | translate}}
+        </div>
+    </div>
+    <div fxLayout="column" class="dialog-footer">
+        <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="end">
+            <button mat-raised-button color="primary" [mat-dialog-close]="true">Ok</button>
+            <button mat-raised-button [mat-dialog-close]>Cancel</button>
+        </div>
+    </div>
+</div>

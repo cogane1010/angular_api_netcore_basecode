@@ -1,0 +1,83 @@
+<div fxLayout="column" fxLayoutGap="5px" class="dialog-wrapper">
+  <div fxLayout="column" class="dialog-content"> 
+      <div fxLayout="row" fxLayoutGap="10px" (keyup.enter)="search()"  fxLayoutAlign="start center">
+        <mat-form-field fxFlex="15">
+          <mat-label>Ngày</mat-label>
+          <input matInput [matDatepicker]="pickerDate" [(ngModel)]="filter.dateId" name="dateId">
+          <mat-datepicker-toggle matSuffix [for]="pickerDate"></mat-datepicker-toggle>
+          <mat-datepicker #pickerDate></mat-datepicker>
+        </mat-form-field>
+        <mat-form-field fxFlex="25">
+          <mat-label>Organization</mat-label>
+          <input matInput [formControl]="organizationSelectControl" [matAutocomplete]="autoOrganization" [readonly]="disabledOrgFilter" (ngModelChange)="changeOrganizationText()">
+          <mat-autocomplete autoActiveFirstOption #autoOrganization="matAutocomplete" [displayWith]="displayOrganization" 
+            (optionSelected)="onSelectedOrganization($event)">
+            <mat-option *ngFor="let u of  organizationFilteredOptions | async" [value]="u">
+              {{u.name}}
+            </mat-option>
+          </mat-autocomplete>
+        </mat-form-field>
+        <button mat-raised-button color="primary" [disabled]="!enableSearch" (click)="search()">{{'search' | translate}}</button>
+      </div> 
+      <mat-divider></mat-divider>
+      <div class="result-view">
+        <table class="result-table mt-20">
+          <thead>
+              <tr>
+                  <th rowspan="2">Đơn vị</th>
+                  <th rowspan="2">Sân chơi</th>
+                  <th rowspan="1" colspan="2">Thống kê</th>
+                  <th rowspan="2">Part</th>
+                  <th rowspan="1" colspan="2">Thống kê</th>
+              </tr>
+              <tr>
+                <th>Booking</th>
+                <th>Thực tế</th>
+                <th>Booking</th>
+                <th>Thực tế</th>
+              </tr>
+          </thead>
+          <tbody >
+            <ng-container *ngFor="let org of listBookingLineStats; let i=index;">
+              <ng-container *ngFor="let course of org.bookByCourse; let j= index">
+                <tr *ngFor="let part of course.bookStatByParts; let k=index;">
+                  <td [attr.rowspan]="org.numRows" *ngIf="j==0 && k==0"> {{org.organizationName}}</td>
+                  <td [attr.rowspan]="course.numRows" *ngIf="k==0"> {{course.courseName}}</td>
+                  <td [attr.rowspan]="course.numRows" *ngIf="k==0" class="colNumber text-center"> {{course.noBooking}}</td>
+                  <td [attr.rowspan]="course.numRows" *ngIf="k==0" class="colNumber text-center"> {{course.noReality}}</td>
+                  <td> {{part.partName }}</td>
+                  <td class="colNumber text-center"> {{part.noBooking}}</td>
+                  <td class="colNumber text-center"> {{part.noReality}}</td>
+                </tr>
+              </ng-container>
+            </ng-container>
+            
+          </tbody>
+          <tfoot>
+            <tr>
+              <th colspan="2">Tổng cộng</th>
+              <th colspan="1">
+                 {{totalBooking}}
+              </th>
+              <th colspan="1"> 
+                 {{totalReality}}
+                </th>
+              <th colspan="1">Tổng cộng</th>
+              <th colspan="1">
+                {{totalBooking}}
+              </th>
+              <th colspan="1">
+                {{totalReality}}
+              </th>
+            </tr>             
+        </tfoot>
+        </table>
+      </div>
+   </div>
+     
+  <div fxLayout="column" class="dialog-footer">
+    <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="end">
+      <button mat-raised-button [mat-dialog-close]>{{'close'| translate}}</button>
+    </div>
+  </div>
+</div>

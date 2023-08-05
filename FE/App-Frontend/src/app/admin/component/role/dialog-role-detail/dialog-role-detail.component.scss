@@ -1,0 +1,43 @@
+.example-tree-invisible {
+    display: none;
+}
+
+.permision-tree ul,
+.permision-tree li {
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+}
+
+/*
+   * This padding sets alignment of the nested nodes.
+   */
+.permision-tree .mat-nested-tree-node div[role="group"] {
+    padding-left: 40px;
+}
+
+/*
+   * Padding for leaf nodes.
+   * Leaf nodes need to have padding so as to align with other non-leaf nodes
+   * under the same parent.
+   */
+.permision-tree div[role="group"] > .mat-tree-node {
+    padding-left: 40px;
+    min-height: 25px;
+}
+
+.permision-tree {
+    overflow: auto;
+    max-height: calc(100vh - 200px);
+    min-height: 180px;
+
+    button {
+        position: relative;
+        top: 10px;
+    }
+}
+
+.menu-permistion-checkbox {
+    // margin-bottom: 24px;
+    margin-right: 10px;
+}

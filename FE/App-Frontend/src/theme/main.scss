@@ -1,0 +1,138 @@
+@import "~@angular/material/theming";
+@import "~material-icons/iconfont/material-icons.css";
+@import "../app/core/layout/sidemenu-item/sidemenu-item.component.scss";
+@import "../app/core/layout/layout.component.scss";
+@import "../app/core/layout/toolbar/toolbar.component.scss";
+@import "../app/core/layout/sidemenu/sidemenu.component.scss";
+
+@include mat-core();
+
+$primary: $mat-blue;
+$accent: $mat-orange;
+$warn: $mat-red;
+
+$gray: $mat-gray;
+
+$primary-app-primary: mat-palette($primary);
+$primary-app-accent: mat-palette($accent);
+$primary-app-warn: mat-palette($warn);
+
+$theme: mat-light-theme(mat-palette($primary, 900), mat-palette($accent, 000), mat-palette($warn, 900));
+
+$white-text: #d5d5d5;
+$toolbar-height: 40px;
+
+@include angular-material-theme($theme);
+
+app-layout {
+    @include layout();
+    app-sidemenu {
+        @include sidemenu();
+        app-sidemenu-item {
+            @include sidemenu-item();
+        }
+    }
+    app-toolbar {
+        @include toolbar();
+    }
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.no-border {
+    border: 0px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.float-right {
+    float: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.page-wrapper {
+    background-color: white;
+    min-height: calc(100vh - #{$toolbar-height} - 10px);
+    position: relative;
+    margin: 5px;
+    padding: 10px;
+
+    .page-header {
+        margin: 5px;
+        .page-title {
+            color: mat-color($primary, 900);
+            font-size: 26px;
+        }
+    }
+
+    .page-filter {
+        .mat-form-field-wrapper {
+            padding-bottom: 0.25em;
+
+            .mat-form-field-underline {
+                bottom: 0.25em;
+            }
+        }
+    }
+}
+
+.mat-dialog-container {
+    padding: 15px 15px 10px 15px !important;
+    .dialog-wrapper {
+        .dialog-header {
+            .dialog-title {
+                color: mat-color($primary, 900);
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+tr:hover {
+    background-color: mat-color($gray, 100);
+}
+
+div[fxlayout="row"] {
+    mat-checkbox {
+        position: relative;
+        top: 12px;
+    }
+}
+
+.dialog-content {
+    overflow: auto;
+    max-height: calc(100vh - 150px);
+
+    &.min-height-35vh {
+        min-height: 35vh;
+    }
+}
+
+.table-with-border {
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-collapse: collapse;
+    width: 100%;
+
+    th, td {
+    padding: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+}
+}
+
+
+

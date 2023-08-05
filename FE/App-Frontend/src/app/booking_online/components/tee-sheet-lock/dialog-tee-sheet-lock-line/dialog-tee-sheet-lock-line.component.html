@@ -1,0 +1,73 @@
+<div fxLayout="column" fxLayoutGap="5px" class="dialog-wrapper">
+  <div fxLayout="column" class="dialog-content"> 
+    <form #form="ngForm">
+      <div fxLayout="row" fxLayoutGap="10px">
+        <mat-form-field fxFlex="100">
+          <mat-label>{{'Course.' | translate}}</mat-label>
+          <input matInput [formControl]="courseSelectControl" required [matAutocomplete]="autoCourse" (ngModelChange)="changeCourseText()">
+          <input matInput name="courseId" required [hidden]="true" [(ngModel)]="teeSheetLockLine.c_Course_Id" > 
+          <mat-autocomplete autoActiveFirstOption #autoCourse="matAutocomplete" [displayWith]="displayCourse" 
+            (optionSelected)="onSelectedCourse($event)">
+            <mat-option *ngFor="let u of  courseFilteredOptions | async" [value]="u">
+              {{u.name}}
+            </mat-option>
+          </mat-autocomplete>
+          <mat-error *ngIf="courseSelectControl.invalid && (courseSelectControl.dirty || courseSelectControl.touched)">
+            <div *ngIf="courseSelectControl.errors?.required">{{ 'requirestr'| translate}} </div>
+          </mat-error>
+        </mat-form-field>
+      </div> 
+
+      <!-- <div fxLayout="row" fxLayoutGap="10px">
+        <mat-form-field fxFlex="100">
+          <mat-label>{{'StartTee'| translate}}</mat-label>      
+          <input matInput type="number" name="startTee" [(ngModel)]="teeSheetLockLine.startTee">        
+        </mat-form-field>
+      </div> -->
+      <div fxLayout="row" fxLayoutGap="10px">
+        <div fxLayout="row" fxFlex="40">
+          <div class="label time">{{'StartTime'| translate}}</div>
+          <div>
+              <ngx-timepicker-field [format]="24" [(ngModel)]="teeSheetLockLine.startTime" name="startTime"></ngx-timepicker-field>
+          </div>
+         </div>
+
+         <div fxLayout="row" fxFlex="40">
+          <div class="label time">{{'EndTime'| translate}}</div>
+          <div>
+              <ngx-timepicker-field [format]="24" [(ngModel)]="teeSheetLockLine.endTime" name="endTime"></ngx-timepicker-field>
+          </div>
+         </div>
+      </div>
+      <div fxLayout="row" fxLayoutGap="10px" class="mt-30">
+        <div class="label" fxFlex="60">{{'Flight'| translate}}</div>
+      </div>
+      <div fxLayout="row" fxLayoutGap="10px">
+        <div fxLayoutGap= "5px" fxFlex="10" *ngFor="let flight of listFlight" class="mw-30">
+          <mat-checkbox [checked]="flight.checked" [name]="'flight_'+ flight.value" color="primary" [(ngModel)]="flight.checked" > {{flight.name}} </mat-checkbox>
+        </div>
+        
+      </div>
+      <div fxLayout="row" fxLayoutGap="10px" class="mt-30">
+        <div class="label" fxFlex="60">{{'AppliedDate'| translate}}</div>
+
+      </div>
+
+      <div fxLayout="row" fxLayoutGap="10px" *ngFor="let line of rangeLinedow">
+        <div fxLayoutGap="5px" fxFlex="15" *ngFor="let d of listDayOfWeek.slice(line*3, line*3+3)" class="mw-60"> 
+          <mat-checkbox [checked]="d.checked" [name]="'dow_'+ d.value" color="primary" 
+                        [(ngModel)]="d.checked"> {{d.name}} </mat-checkbox>
+        </div>
+      </div>
+      
+
+    </form>
+   </div>
+     
+  <div fxLayout="column" class="dialog-footer">
+    <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="end">
+      <button mat-raised-button color="primary" [disabled]="form.invalid" (click)="save()">{{'save'| translate}}</button>
+      <button mat-raised-button [mat-dialog-close]>{{'close'| translate}}</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,88 @@
+<div fxLayout="column" fxLayoutGap="5px" class="dialog-wrapper">
+  <div fxLayout="column" class="dialog-content"> 
+    <div fxLayout="row" fxLayoutGap="10px" (keyup.enter)="search()"  fxLayoutAlign="start center">
+      <mat-form-field fxFlex="10">
+        <mat-label>Ngày</mat-label>
+        <input matInput [matDatepicker]="pickerDate" [(ngModel)]="filter.dateId" name="dateId">
+        <mat-datepicker-toggle matSuffix [for]="pickerDate"></mat-datepicker-toggle>
+        <mat-datepicker #pickerDate></mat-datepicker>
+      </mat-form-field>
+      <mat-form-field fxFlex="25">
+        <mat-label>Organization</mat-label>
+        <input matInput [formControl]="organizationSelectControl" [matAutocomplete]="autoOrganization" [readonly]="disabledOrgFilter" (ngModelChange)="changeOrganizationText()">
+        <mat-autocomplete autoActiveFirstOption #autoOrganization="matAutocomplete" [displayWith]="displayOrganization" 
+          (optionSelected)="onSelectedOrganization($event)">
+          <mat-option *ngFor="let u of  organizationFilteredOptions | async" [value]="u">
+            {{u.name}}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+      <mat-form-field fxFlex="25">
+        <mat-label>Course</mat-label>
+        <input matInput [formControl]="courseSelectControl" [matAutocomplete]="autocourse"  [readonly]="disabledCourseFilter" (ngModelChange)="changeCourseText()">
+        <mat-autocomplete autoActiveFirstOption #autocourse="matAutocomplete" [displayWith]="displayCourse" 
+          (optionSelected)="onSelectedCourse($event)">
+          <mat-option *ngFor="let u of  courseFilteredOptions | async" [value]="u">
+            {{u.name}}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+      <mat-form-field fxFlex="25">
+          <mat-label>Search Keys</mat-label>
+          <input matInput [(ngModel)]="filter.search">
+       </mat-form-field>
+      <button mat-raised-button color="primary" [disabled]="!enableSearch" (click)="search()">{{'search' | translate}}</button>
+    </div> 
+    <mat-divider></mat-divider>
+    <div class="result-view">
+      <table class="result-table mt-20">
+        <thead>
+            <tr>
+                <th colspan="2">Time</th>
+                <th colspan="9">1st Tee</th>
+                
+            </tr>
+            <tr>
+                <th>Time</th>
+                <th>Turn</th>
+                <th>No</th>
+                <th>Player</th>
+                <th>MC</th>
+                <th>Cd</th>
+                <th>Holes</th>
+                <th>Note</th>
+                <th>Input</th>
+                <th>No Show</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let row of listBooking; let i=index;">
+            <td class="text-center colTime">{{row.tee_Time | date: "HH:mm"}}</td>
+            <td class="text-center colTime">{{row.turn | date: "HH:mm"}}</td>
+            <td class="text-center colNo">{{row.flightSeq}}</td>
+            <td class="colString">{{row.customerFullName}}</td>
+            <td class="text-center colStrShort">{{row.cardNo}}</td>
+            <td class="text-center colStrShort">{{row.caddie_No}}</td>
+            <td class="text-center colNo">{{row.hole}}</td>
+            <td class="text-center">{{row.description}}</td>
+            <td class="text-center colStrShort">{{row.telephone}}</td>
+            <td class="text-center colCheckbox">
+              <mat-icon class="check-green" *ngIf="row.is_NoShow">check_circle</mat-icon>
+            </td>
+            <td class="text-center colAction" >
+              <button mat-icon-button (click)="goToDetail(row)">
+                <mat-icon color="primary">visibility</mat-icon>
+               </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div fxLayout="column" class="dialog-footer">
+    <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="end">
+      <button mat-raised-button [mat-dialog-close]>{{'close'| translate}}</button>
+    </div>
+  </div>
+</div>

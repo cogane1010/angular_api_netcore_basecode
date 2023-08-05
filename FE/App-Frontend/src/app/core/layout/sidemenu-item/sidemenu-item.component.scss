@@ -1,0 +1,57 @@
+@mixin sidemenu-item() {
+    mat-nav-list {
+        overflow: hidden;
+        padding-top: 0px;
+    }
+
+    .is-active {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .rotate {
+        transition: transform 0.25s;
+        &.open {
+            transform: rotate(180deg);
+        }
+    }
+
+    .mat-list-base {
+        padding-top: 0 !important;
+    }
+
+    mat-icon,
+    p,
+    span {
+        color: $white-text;
+    }
+
+    .menu-leve-1 {
+        background: mat-color($primary, 800);
+        transition: max-height 0.4s cubic-bezier(0.35, 0, 0.25, 1);
+        .mat-list-item-content {
+            padding: 0 2px !important;
+        }
+    }
+
+    .menu-leve-2 {
+        background: mat-color($primary, 700);
+        transition: max-height 0.4s cubic-bezier(0.35, 0, 0.25, 1);
+        .mat-list-item-content {
+            padding: 0 2px 0 12px !important;
+        }
+    }
+
+    .menu-leve-3 {
+        background: mat-color($primary, 600);
+        transition: max-height 0.4s cubic-bezier(0.35, 0, 0.25, 1);
+        .mat-list-item-content {
+            padding: 0 2px 0 22px !important;
+        }
+    }
+
+    .mat-list-item-content {
+        .mat-list-text {
+            padding-left: 5px !important;
+        }
+    }
+}

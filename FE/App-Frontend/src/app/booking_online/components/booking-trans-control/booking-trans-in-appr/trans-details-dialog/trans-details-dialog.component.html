@@ -1,0 +1,102 @@
+<div fxLayout="column" fxLayoutGap="5px" class="dialog-wrapper">
+    <div fxLayout="row" class="dialog-header" fxLayoutAlign="start center">
+        <mat-icon color="primary">label_important</mat-icon><span class="dialog-title">Nội dung file</span>
+    </div>
+    <mat-divider></mat-divider>
+    <div fxLayout="column" class="dialog-content min-height-35vh">
+        <div class="scroll">
+            <table mat-table [dataSource]="dataSource">
+                <ng-container matColumnDef="STT">
+                    <th mat-header-cell *matHeaderCellDef style="width: 50px;">#</th>
+                    <td mat-cell *matCellDef="let i = index;">
+                        {{i + 1 + filter.pageIndex * filter.pageSize}}
+                    </td>
+                </ng-container>
+
+                <ng-container matColumnDef="trans_type">
+                    <th mat-header-cell *matHeaderCellDef>trans_type</th>
+                    <td mat-cell *matCellDef="let item">{{item.trans_type}}</td>
+                </ng-container>
+
+                <ng-container matColumnDef="trans_Id">
+                    <th mat-header-cell *matHeaderCellDef>trans_Id</th>
+                    <td mat-cell *matCellDef="let item">{{item.traceId}}</td>
+                </ng-container>
+
+                <ng-container matColumnDef="phone_Number">
+                    <th mat-header-cell *matHeaderCellDef>phone_Number</th>
+                    <td mat-cell *matCellDef="let item">{{item.phone_Number}}</td>
+                </ng-container>
+
+                <ng-container matColumnDef="orgCode">
+                    <th mat-header-cell *matHeaderCellDef>orgCode</th>
+                    <td mat-cell *matCellDef="let item">{{item.orgCode}}</td>
+                </ng-container>
+                <ng-container matColumnDef="sourceType">
+                    <th mat-header-cell *matHeaderCellDef>sourceType</th>
+                    <td mat-cell *matCellDef="let item">{{item.sourceType}}</td>
+                </ng-container>
+                <ng-container matColumnDef="pAN_NUMBER">
+                    <th mat-header-cell *matHeaderCellDef>PAN_NUMBER</th>
+                    <td mat-cell *matCellDef="let item">{{item.paN_NUMBER}}</td>
+                </ng-container>
+                <ng-container matColumnDef="customerName">
+                    <th mat-header-cell *matHeaderCellDef>customerName</th>
+                    <td mat-cell *matCellDef="let item">{{item.customerName}}</td>
+                </ng-container>
+                <ng-container matColumnDef="debitAcc">
+                    <th mat-header-cell *matHeaderCellDef>debitAcc</th>
+                    <td mat-cell *matCellDef="let item">{{item.debitAcc}}</td>
+                </ng-container>
+                <ng-container matColumnDef="creditAcc">
+                    <th mat-header-cell *matHeaderCellDef>creditAcc</th>
+                    <td mat-cell *matCellDef="let item">{{item.creditAcc}}</td>
+                </ng-container>
+                <ng-container matColumnDef="trans_Date">
+                    <th mat-header-cell *matHeaderCellDef>trans_Date</th>
+                    <td mat-cell *matCellDef="let item">{{item.trans_Date | date:'dd/MM/yyyy'}}</td>
+                </ng-container>
+                <ng-container matColumnDef="trans_Time">
+                    <th mat-header-cell *matHeaderCellDef>trans_Time</th>
+                    <td mat-cell *matCellDef="let item">{{item.trans_Time | date:'HH:mm'}}</td>
+                </ng-container>
+                <ng-container matColumnDef="trans_Amt">
+                    <th mat-header-cell *matHeaderCellDef>trans_Amt</th>
+                    <td mat-cell *matCellDef="let item">{{item.trans_Amt | number:'1.0-0'}}</td>
+                </ng-container>
+                <!-- <ng-container matColumnDef="traceId">
+                    <th mat-header-cell *matHeaderCellDef>traceId</th>
+                    <td mat-cell *matCellDef="let item">{{item.traceId}}</td>
+                </ng-container> -->
+                <ng-container matColumnDef="payment_Detail">
+                    <th mat-header-cell *matHeaderCellDef>payment_Detail</th>
+                    <td mat-cell *matCellDef="let item">{{item.payment_Detail}}</td>
+                </ng-container>
+                <ng-container matColumnDef="co_Code">
+                    <th mat-header-cell *matHeaderCellDef>co_Code</th>
+                    <td mat-cell *matCellDef="let item">{{item.co_Code}}</td>
+                </ng-container>
+                <ng-container matColumnDef="fT_Id">
+                    <th mat-header-cell *matHeaderCellDef>fT_Id</th>
+                    <td mat-cell *matCellDef="let item">{{item.fT_Id}}</td>
+                </ng-container>
+                <ng-container matColumnDef="return_Acc">
+                    <th mat-header-cell *matHeaderCellDef>return_Acc</th>
+                    <td mat-cell *matCellDef="let item">{{item.return_Acc}}</td>
+                </ng-container>              
+                <ng-container matColumnDef="hoan_tien">
+                    <th mat-header-cell *matHeaderCellDef>Hoàn tiền</th>
+                    <td mat-cell *matCellDef="let item"> {{item.tien_hoan }} </td>
+                </ng-container>
+                <tr mat-header-row *matHeaderRowDef="displayedColumns;sticky:true;"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+        </div>
+    </div>
+    <mat-paginator (page)="pageIndexChange($event)"></mat-paginator>
+    <div fxLayout="column" class="dialog-footer">
+        <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="end">
+            <button mat-raised-button [mat-dialog-close]>Close</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,233 @@
+<div fxLayout="column" fxLayoutGap="5px" class="page-wrapper mat-elevation-z2">
+  <div fxLayout="row" class="page-header" fxLayoutAlign="space-between center"> 
+    <div>
+      <mat-icon color="primary">label_important</mat-icon><span class="page-title">{{'BookingDetail'| translate}} -  {{booking.bookingCode}}
+       </span>
+   </div>
+    <div>
+      <button mat-raised-button style="margin: 0px 20px ;" color="report" [useExistingCss]="true" [printStyle]="" printSectionId="demo" ngxPrint>In xác nhận</button>
+      <button mat-raised-button style="margin: 0px 20px ;" color="primary" [mat-dialog-close]>{{'close'| translate}}</button>
+    </div>
+  </div>
+   
+  <mat-divider></mat-divider>
+  <div id="demo">
+    <div fxLayout="row" fxLayoutGap="10px" >
+      <div fxFlex="40" class="box-container">
+         <div fxLayout="row"> 
+            <span class="label-text-header">
+              Thông tin người đặt               
+            </span>             
+          </div>
+          <div fxLayout="row" class="mt-20" fxLayoutGap="10px"> 
+            <div fxFlex="25" class="label">
+              Họ Tên
+            </div>  
+            <div fxFlex="70" class="value">
+               {{booking.cardFullName}}
+            </div>
+  
+          </div>
+          <div fxLayout="row" class="mt-20" fxLayoutGap="10px"> 
+            <div fxFlex="25" class="label">
+              Số điện thoại
+            </div>  
+            <div fxFlex="70" class="value">
+              {{booking.cardMobilePhone}}
+            </div>
+  
+          </div>
+          <div fxLayout="row" class="mt-20" fxLayoutGap="10px"> 
+            <div fxFlex="25" class="label">
+              Email
+            </div>  
+            <div fxFlex="70" class="value">
+               {{booking.cardEmail}}
+            </div>
+  
+          </div>
+          <div fxLayout="row" class="mt-20" fxLayoutGap="10px"> 
+            <div fxFlex="25" class="label">
+              Số thẻ
+            </div>  
+            <div fxFlex="40" class="value">
+               {{booking.golfCardNo}}
+            </div>
+            <div fxFlex="2">-</div>
+            <div fxFlex="20" class="value">
+               {{booking.cardCourseName}}
+            </div>  
+          </div>
+      </div>
+      <div fxFlex="30"  class="box-container">
+        <div fxLayout="row"  fxLayoutGap="10px">
+          <span class="label-text-header">
+          Thông tin đặt chỗ 
+          </span>  
+        </div>
+        <div fxLayout="row" class="mt-20" fxLayoutGap="10px"> 
+          <div fxFlex="25" class="label">
+            Sân chơi
+          </div>  
+          <div fxFlex="70" class="value">
+            {{booking.courseName}}
+          </div>
+        </div>
+        <div fxLayout="row" class="mt-20" fxLayoutGap="10px"> 
+          <div fxFlex="25" class="label">
+            Ngày đặt chỗ
+          </div>  
+          <div fxFlex="70" class="value">
+            {{booking.dateId | date: "dd/MM/yyyy"}}
+          </div>
+        </div>
+        <div fxLayout="row" class="mt-20" fxLayoutGap="10px"> 
+          <div fxFlex="25" class="label">
+            Tee Time
+          </div>  
+          <div fxFlex="70" class="value">
+            {{booking.totalTeetimeDisplay }}
+          </div>
+        </div>
+       
+        <div fxLayout="row" class="mt-20" fxLayoutGap="10px"> 
+          <div fxFlex="25" class="label">
+            Số lượng đặt
+          </div>  
+          <div fxFlex="70" class="value">
+            {{booking.bookingTeetime.length}}
+          </div>
+        </div>
+        <div fxLayout="row" class="mt-20" fxLayoutGap="10px"> 
+          <div fxFlex="25" class="label">
+           Trạng thái
+          </div>  
+          <div fxFlex="70" class="value">
+            {{booking.statusName}}
+          </div>
+        </div>
+      </div>
+
+      <div *ngIf="booking.status != 'booked'"  fxFlex="30"  class="box-container">
+        <div fxLayout="row"  fxLayoutGap="10px">
+          <span class="label-text-header">
+           Thông tin hủy vé
+          </span>  
+        </div>
+        <div fxLayout="row" class="mt-20" fxLayoutGap="10px"> 
+          <div fxFlex="25" class="label">
+            Người hủy
+          </div>  
+          <div fxFlex="70" class="value">
+            {{booking.cancel_UserName}}
+          </div>
+        </div>
+        <div fxLayout="row" class="mt-20" fxLayoutGap="10px"> 
+          <div fxFlex="25" class="label">
+            Thời gian hủy
+          </div>  
+          <div fxFlex="70" class="value">
+            {{booking.cancel_Time | date: "dd/MM/yyyy HH:mm"}}
+          </div>
+        </div>
+        <div fxLayout="row" class="mt-20" fxLayoutGap="10px"> 
+          <div fxFlex="25" class="label">
+            Lý do hủy
+          </div>  
+          <div fxFlex="70" class="value">
+            {{booking.cancel_Description }}
+          </div>
+        </div> 
+      </div>
+
+  </div> 
+  <div class="box-container">
+    <div fxLayout="row">
+      <span class="label-text-header">
+         Chi tiết
+      </span>  
+    </div>
+    <div>
+      <table class="result-table mt-20">
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Tee Time</th>
+                <th>No</th>
+                <th>Họ tên</th>
+                <th>Đối tượng</th>   
+                <th>Số thẻ</th>    
+                <th>Phí golf ước tính</th>     
+                <th>Phí đặt cọc</th>        
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let row of booking.bookingTeetime; let i =index">
+              <td>{{i+1}}</td>
+              <td>{{row.tee_Time | date: "HH:mm"}}</td>
+              <td>{{row.flightSeq}}</td>
+              <td>{{row.customerFullName}}</td>
+              <td>{{row.customerGroupName}}</td>   
+              <td>{{row.cardNo}}</td>    
+              <td>{{row.estimatedPrice || 0 | number}}</td>     
+              <td>{{row.nonRefundedFee || 0 | number}}</td>   
+            </tr>
+            <tr>
+              <td colspan="6"> <b>Tổng cộng</b> </td>
+              <td>{{depositAmount | number}}</td>   
+              <td>{{totalAmount | number}}</td>   
+            </tr>
+            <tr>
+              <td colspan="7"> <b>Phương thức thanh toán</b></td>
+              <td> {{paymentType}}</td>
+             
+            </tr>
+        </tbody>       
+      </table>
+    </div>
+  </div>
+  <div class="box-container" >
+    <div fxLayout="row">
+      <span class="label-text-header">
+        Dịch vụ thêm
+      </span>  
+    </div>
+    <!-- <table class="sp-table">
+      <tbody>
+        <tr *ngFor="let spRequest of booking.bookingSpecialRequests | pairs; let i =index">         
+          <td class="colStrShort">
+            <mat-checkbox  [name]="'spRequest_'+i" color="primary" [(ngModel)]="spRequest[i].isActive" disabled> {{spRequest[i].bookingOtherTypeName}}</mat-checkbox>
+          </td>
+          <td> 
+            <div class="special-note">
+               {{spRequest[i].description}} 
+            </div>           
+          </td>         
+        </tr>
+      </tbody>
+    </table> -->
+    <table class="sp-table">
+      <tbody>
+        <tr *ngFor="let spRequest of booking.bookingSpecialRequests | pairs; let i =index">         
+          <td class="colStrShort">
+            <mat-checkbox  [name]="'spRequest_'+i" color="primary" [(ngModel)]="spRequest[0].isActive" disabled> {{spRequest[0].bookingOtherTypeName}}</mat-checkbox>
+          </td>
+          <td> 
+            <div class="special-note">
+               {{spRequest[0].description}} 
+            </div>           
+          </td>   
+          <td class="colStrShort">
+            <mat-checkbox  [name]="'spRequest_'+i" color="primary" [(ngModel)]="spRequest[1].isActive" disabled> {{spRequest[1].bookingOtherTypeName}}</mat-checkbox>
+          </td>
+          <td> 
+            <div class="special-note">
+               {{spRequest[1].description}} 
+            </div>           
+          </td>        
+        </tr>
+    </tbody>
+    </table>
+  </div>
+  </div>  
+</div>

@@ -1,0 +1,19 @@
+<mat-sidenav-container fullscreen>
+    <mat-sidenav #sidenav [mode]="sideNavMode" [opened]="true">
+        <mat-toolbar color="primary" class="mat-elevation-z4">
+            {{'booking_online' | translate}}
+        </mat-toolbar>
+        <app-sidemenu></app-sidemenu>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <mat-drawer-container>
+            <mat-drawer-content>
+                <app-toolbar [sidenav]="sidenav"></app-toolbar>
+                <perfect-scrollbar style="height: calc(100vh - 40px);">
+                    <router-outlet></router-outlet>
+                </perfect-scrollbar>
+            </mat-drawer-content>
+        </mat-drawer-container>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+<app-loading-mask></app-loading-mask>

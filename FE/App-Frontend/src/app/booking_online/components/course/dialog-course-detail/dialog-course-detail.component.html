@@ -1,0 +1,46 @@
+<div fxLayout="column" fxLayoutGap="5px" class="dialog-wrapper">
+  <div fxLayout="row" class="dialog-header" fxLayoutAlign="start center">
+    <mat-icon color="primary">label_important</mat-icon><span class="dialog-title">{{'course'| translate}}</span>
+  </div>
+  <mat-divider></mat-divider>
+  <div fxLayout="column" class="dialog-content">
+    <form #form="ngForm">
+        <div fxLayout="row" fxLayoutGap= "20px">
+          <mat-form-field fxFlex="50">
+            <mat-label> {{'code' | translate}}</mat-label>
+            <input matInput [(ngModel)]="course.code" required maxlength="50" name="code">
+          </mat-form-field>
+          <mat-form-field fxFlex="50">
+            <mat-label> {{'name' | translate}}</mat-label>
+            <input matInput [(ngModel)]="course.name" required maxlength="250" name="name">
+          </mat-form-field>
+      </div>  
+      <div fxLayout="row" fxLayoutGap= "20px">
+          <mat-form-field fxFlex="50">
+            <mat-label>Organization</mat-label>
+            <input matInput [formControl]="organizationSelectControl" required [matAutocomplete]="autoOrganization" (ngModelChange)="changeOrganizationText()">
+            <input matInput name="organizationId" required [hidden]="true" [(ngModel)]="course.c_Org_Id"> 
+            <mat-autocomplete autoActiveFirstOption #autoOrganization="matAutocomplete" [displayWith]="displayOrganization" 
+              (optionSelected)="onSelectedOrganization($event)">
+              <mat-option *ngFor="let u of  organizationFilteredOptions | async" [value]="u">
+                {{u.name}}
+              </mat-option>
+            </mat-autocomplete>
+          </mat-form-field>
+          <mat-form-field fxFlex="50">
+            <mat-label> {{'orderValue' | translate}}</mat-label>
+            <input matInput [(ngModel)]="course.orderValue" type="number" name="orderValue">
+          </mat-form-field>
+      </div>
+      <div fxLayoutGap= "5px">
+        <mat-checkbox name="isActive" color="primary" [(ngModel)]="course.isActive">Active</mat-checkbox>
+      </div>
+    </form>
+  </div>
+  <div fxLayout="column" class="dialog-footer">
+    <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="end">
+      <button mat-raised-button color="primary" [disabled]="!form.valid" (click)="addOrEdit(course)">{{'save'| translate}}</button>
+      <button mat-raised-button [mat-dialog-close]>{{'close'| translate}}</button>
+    </div>
+  </div>
+</div>

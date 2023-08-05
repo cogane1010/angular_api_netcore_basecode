@@ -1,0 +1,122 @@
+<div fxLayout="column" fxLayoutGap="5px" class="page-wrapper mat-elevation-z2">
+    <div fxLayout="row" class="page-header" fxLayoutAlign="start center">
+      <mat-icon color="primary">label_important</mat-icon><span class="page-title">Báo cáo đặt chỗ chơi trên golf app</span>
+    </div>
+    <mat-divider></mat-divider>
+    <div fxLayout="column" class="page-filter" (keyup.enter)="search()">
+      <div fxLayout="row" fxLayoutAlign=" center" fxLayoutGap="10px">
+        <mat-form-field fxFlex="8">
+          <mat-label>Ngày đặt chơi từ</mat-label>
+          <input matInput [matDatepicker]="timeFrom" [(ngModel)]="filter.timeFrom" [ngModelOptions]="{standalone: true}" required>
+          <mat-datepicker-toggle matSuffix [for]="timeFrom"></mat-datepicker-toggle>
+          <mat-datepicker #timeFrom></mat-datepicker>
+        </mat-form-field>
+        <mat-form-field fxFlex="8">
+          <mat-label>Ngày đặt chơi đến</mat-label>
+          <input matInput [matDatepicker]="timeTo" [(ngModel)]="filter.timeTo" [ngModelOptions]="{standalone: true}" required>
+          <mat-datepicker-toggle matSuffix [for]="timeTo"></mat-datepicker-toggle>
+          <mat-datepicker #timeTo></mat-datepicker>
+        </mat-form-field>    
+        <mat-form-field fxFlex="30">
+          <mat-label>Sân áp dụng</mat-label>
+          <mat-select placeholder="Select" [(ngModel)]="filter.c_Org_Id" name="element.c_Org_Id" #element.c_Org_Id="ngModel" [disabled]="disabledOrgFilter">
+            <mat-option [value]=""></mat-option>
+            <mat-option [value]="itm.id" *ngFor="let itm of listOrganization" width ="inherit">{{itm.name}}</mat-option>
+          </mat-select>
+        </mat-form-field> 
+        <mat-form-field fxFlex="15">
+          <mat-label>Họ và tên người đặt</mat-label>
+          <input matInput [(ngModel)]="filter.fullName">
+        </mat-form-field>
+        <mat-form-field fxFlex="10">
+          <mat-label>Số thẻ</mat-label>
+          <input matInput [(ngModel)]="filter.cardNo">
+        </mat-form-field>
+        <mat-form-field fxFlex="10">
+          <mat-label>Trạng thái</mat-label>
+          <mat-select placeholder="Select" [(ngModel)]="filter.status" name="element.status" #element.status="ngModel" >
+            <mat-option [value]=""></mat-option>
+            <mat-option [value]="itm.code" *ngFor="let itm of statusList" width ="inherit">{{itm.title}}</mat-option>
+          </mat-select>
+        </mat-form-field>  
+        <button mat-raised-button color="primary" (click)="search()">{{'search' | translate}}</button>    
+        <button mat-raised-button color="primary" (click)="excelExport()">Excel</button>        
+      </div>
+    </div>
+    <div fxLayout="column" class="page-content">
+      <table mat-table [dataSource]="bookings">  
+        <ng-container matColumnDef="STT">
+          <th mat-header-cell *matHeaderCellDef style="width: 3%;">#</th>
+          <td mat-cell *matCellDef="let i = index;">
+            {{i + 1 + filter.pageIndex * filter.pageSize}}
+          </td>
+          <td mat-footer-cell *matFooterCellDef> {{sum}} </td>
+        </ng-container>
+        <ng-container matColumnDef="customerCode" >
+          <th mat-header-cell *matHeaderCellDef style="width: 6%;">Mã tài khoản</th>
+          <td mat-cell *matCellDef='let item' >{{item.customerCode}}</td>
+          <td mat-footer-cell *matFooterCellDef>  </td>
+        </ng-container>
+        <ng-container matColumnDef="fullName" >
+          <th mat-header-cell *matHeaderCellDef style="width: 10%;">Chủ tài khoản</th>
+          <td mat-cell *matCellDef="let item"> {{item.cardFullName}} </td>
+          <td mat-footer-cell *matFooterCellDef>  </td>
+        </ng-container>
+        <ng-container matColumnDef="cardNo" >
+          <th mat-header-cell *matHeaderCellDef style="width: 6%;">Số thẻ <br>hội viên</th>
+          <td mat-cell *matCellDef='let item' >{{ item.golfCardNo }}</td>
+          <td mat-footer-cell *matFooterCellDef>  </td>         
+        </ng-container>  
+        <ng-container matColumnDef="createDate" >
+          <th mat-header-cell *matHeaderCellDef style="width: 6%;">Thời gian <br>đặt chỗ</th>
+          <td mat-cell *matCellDef='let item' >{{item.createdDate | date: 'dd/MM/yyyy HH:mm:ss'}}</td>
+          <td mat-footer-cell *matFooterCellDef>  </td>
+        </ng-container>
+        <ng-container matColumnDef="bookingCode" >
+          <th mat-header-cell *matHeaderCellDef style="width: 6%;">Mã đặt chỗ</th>
+          <td mat-cell *matCellDef='let item' >{{item.bookingCode}}</td>
+          <td mat-footer-cell *matFooterCellDef>  </td>
+        </ng-container>
+        <ng-container matColumnDef="org" >
+          <th mat-header-cell *matHeaderCellDef style="width: 10%;">Đơn vị đặt chỗ</th>
+          <td mat-cell *matCellDef='let item' >{{item.orgName}}</td>
+          <td mat-footer-cell *matFooterCellDef>  </td>
+        </ng-container>
+        <ng-container matColumnDef="course" >
+          <th mat-header-cell *matHeaderCellDef style="width: 8%;">Sân đặt chỗ</th>
+          <td mat-cell *matCellDef='let item' >{{item.courseName}}</td>
+          <td mat-footer-cell *matFooterCellDef>  </td>
+        </ng-container>
+        <ng-container matColumnDef="timeplay" > 
+            <th mat-header-cell *matHeaderCellDef style="width: 6%;">Ngày lên<br> chơi</th>
+            <td mat-cell *matCellDef='let item' >{{item.dateId | date: 'dd/MM/yyyy'}}</td>
+            <td mat-footer-cell *matFooterCellDef>  </td>
+          </ng-container>
+          <ng-container matColumnDef="teetime" >
+            <th mat-header-cell *matHeaderCellDef style="width: 6%;">Tee Time<br> đặt chỗ</th>
+            <td mat-cell *matCellDef='let item' >{{item.totalTeetimeDisplay}}</td>
+            <td mat-footer-cell *matFooterCellDef>  </td>
+          </ng-container>
+          <ng-container matColumnDef="players" >
+            <th mat-header-cell *matHeaderCellDef style="width: 4%;">Số lượng<br> khách đặt</th>
+            <td mat-cell *matCellDef='let item' >{{item.golfers}}</td>
+            <td mat-footer-cell *matFooterCellDef>  {{teeCount}} </td>
+          </ng-container>
+          <ng-container matColumnDef="showup" >
+            <th mat-header-cell *matHeaderCellDef style="width: 4%;">Số lượng <br>show up</th>
+            <td mat-cell *matCellDef='let item' >{{item.showUpCount}}</td>
+            <td mat-footer-cell *matFooterCellDef>  {{showUpCount}} </td>
+          </ng-container>
+          <ng-container matColumnDef="status" >
+            <th mat-header-cell *matHeaderCellDef style="width: 4%;">Trạng thái <br>đặt chỗ</th>
+            <td mat-cell *matCellDef='let item' >{{item.status}}</td>
+            <td mat-footer-cell *matFooterCellDef>  </td>
+          </ng-container>
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        <tr mat-footer-row *matFooterRowDef="displayedColumns"></tr>
+      </table>
+      <mat-paginator (page)="pageIndexChange($event)"></mat-paginator>
+    </div>    
+  </div>
+  

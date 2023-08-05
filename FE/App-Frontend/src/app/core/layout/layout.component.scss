@@ -1,0 +1,19 @@
+@mixin layout() {
+    mat-sidenav-container {
+        mat-sidenav {
+            width: 250px;
+            mat-toolbar {
+                position: relative;
+                z-index: 1;
+                height: $toolbar-height !important;
+                justify-content: center;
+                color: $white-text !important;
+            }
+        }
+    }
+
+    mat-drawer-content {
+        overflow: hidden;
+        min-height: 100vh;
+    }
+}

@@ -1,0 +1,58 @@
+<div fxLayout="column" fxLayoutGap="5px" class="dialog-wrapper">
+    <div fxLayout="row" class="dialog-header" fxLayoutAlign="start center">
+        <mat-icon color="primary">label_important</mat-icon><span class="dialog-title">Menu detail</span>
+    </div>
+    <mat-divider></mat-divider>
+    <div fxLayout="column" class="dialog-content min-height-35vh">
+        <form #form=ngForm>
+            <div fxLayout="row" fxLayoutGap="10px">
+                <mat-form-field fxFlex="50">
+                    <mat-label>Menu name</mat-label>
+                    <input matInput name="name" [(ngModel)]="menu.name" required>
+                </mat-form-field>
+                <mat-form-field fxFlex="50">
+                    <mat-label>Url</mat-label>
+                    <input matInput name="url" [(ngModel)]="menu.url">
+                </mat-form-field>
+            </div>
+
+            <div fxLayout="row" fxLayoutGap="10px">
+                <mat-form-field fxFlex="50">
+                    <mat-label>Icon</mat-label>
+                    <input matInput name="icon" [(ngModel)]="menu.icon">
+                </mat-form-field>
+                <mat-form-field fxFlex="50">
+                    <mat-label>Translate key</mat-label>
+                    <input matInput name="translateKey" [(ngModel)]="menu.translateKey">
+                </mat-form-field>
+            </div>
+
+            <div fxLayout="row" fxLayoutGap="10px">
+                <mat-form-field fxFlex="50">
+                    <mat-label>Parent</mat-label>
+                    <input matInput name="parent" [formControl]="parentSelectControl" [matAutocomplete]="auto">
+                    <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete" [displayWith]="display"
+                        (optionSelected)="onSelectedParent($event)">
+                        <mat-option *ngFor="let menu of filteredOptions | async" [value]="menu">
+                            {{menu.name}}
+                        </mat-option>
+                    </mat-autocomplete>
+                </mat-form-field>
+                <mat-form-field fxFlex="50">
+                    <mat-label>Display order</mat-label>
+                    <input matInput type="number" name="displayOrder" [(ngModel)]="menu.displayOrder">
+                </mat-form-field>
+            </div>
+
+            <div fxLayout="row" fxLayoutGap="10px">
+                <mat-checkbox fxFlex name="isActive" color="primary" [(ngModel)]="menu.isActive">Active</mat-checkbox>
+            </div>
+        </form>
+    </div>
+    <div fxLayout="column" class="dialog-footer">
+        <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="end">
+            <button mat-raised-button color="primary" (click)="addOrEdit(menu)" [disabled]="!form.valid">Save</button>
+            <button mat-raised-button [mat-dialog-close]>Close</button>
+        </div>
+    </div>
+</div>

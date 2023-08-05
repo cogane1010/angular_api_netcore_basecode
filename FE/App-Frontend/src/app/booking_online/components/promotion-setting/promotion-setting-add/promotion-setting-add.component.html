@@ -1,0 +1,163 @@
+<div fxLayout="column" fxLayoutGap="10px" class="page-wrapper mat-elevation-z2">
+    <div fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="space-between center" class="page-header">
+      <div fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="space-between center" style="width: 100% !important;" class="page-header">
+        <div>
+            <mat-icon color="primary">label_important</mat-icon><span class="page-title">{{'PromotionProgram' | translate}}</span>
+        </div>
+        <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="end" style="margin-left: 10px;">
+            <button mat-raised-button color="primary" style="margin-left: 10px;" [disabled]="!form.valid" (click)="addOrEdit(promotion)">{{'save'| translate}}</button>
+            <button mat-raised-button style="margin-left: 10px;" (click)="back()">{{'close'| translate}}</button>
+        </div>
+    </div>
+    </div>
+    <mat-divider></mat-divider>
+    <div fxLayout="column" fxFlex="100" >
+      <form #form="ngForm">
+        <div fxLayout="column" fxFlex="70" >
+          <div fxLayout="row" fxLayoutGap= "20px">
+            <mat-form-field fxFlex="50">
+              <mat-label>Mã CTKM</mat-label>
+              <input matInput [(ngModel)]="promotion.promotionCode" required maxlength="50" name="code" >
+            </mat-form-field>
+            <mat-form-field fxFlex="50">
+              <mat-label>Tên CTKM</mat-label>
+              <input matInput [(ngModel)]="promotion.name" required maxlength="250" name="name">
+            </mat-form-field>
+          </div>  
+          <div fxLayout="row" fxLayoutGap= "20px">
+            <mat-form-field fxFlex="50">
+              <mat-label>Tên CTKM tiếng anh</mat-label>
+              <input matInput [(ngModel)]="promotion.nameEn" required maxlength="250" name="nameEn" >
+            </mat-form-field>
+          </div>  
+          <div fxLayout="row" fxLayoutGap= "20px">
+              <mat-form-field fxFlex="50">
+                <mat-label>Ngày bắt đầu</mat-label>
+                <input matInput [matDatepicker]="pickerapplyTime_From" [(ngModel)]="promotion.start_Date" (ngModelChange)="onChangeToDate(1)" [ngModelOptions]="{standalone: true}" required>
+                <mat-datepicker-toggle matSuffix [for]="pickerapplyTime_From"></mat-datepicker-toggle>
+                <mat-datepicker #pickerapplyTime_From></mat-datepicker>
+              </mat-form-field>
+              <mat-form-field fxFlex="50">
+                <mat-label>Ngày kết thúc</mat-label>
+                <input matInput [matDatepicker]="pickerapplyTime_To" [(ngModel)]="promotion.end_Date" (ngModelChange)="onChangeToDate(2)" [ngModelOptions]="{standalone: true}" required>
+                <mat-datepicker-toggle matSuffix [for]="pickerapplyTime_To"></mat-datepicker-toggle>
+                <mat-datepicker #pickerapplyTime_To></mat-datepicker>
+              </mat-form-field>      
+          </div>
+          <div fxLayout="row" fxLayoutGap= "20px" fxFlex="100" >
+            <div fxFlex="50">
+              <div fxFlex="30">
+                <mat-label>Từ giờ</mat-label>
+              </div>
+              <div fxFlex="70">
+                <ngx-timepicker-field [format]="24" [(ngModel)]="promotion.applyTime_From"  (ngModelChange)="onChangeTime(1)" [ngModelOptions]="{standalone: true}"></ngx-timepicker-field>
+              </div>
+            </div>
+            <div fxFlex="50">
+              <div fxFlex="30">
+                <mat-label>Đến giờ</mat-label>
+              </div>
+              <div fxFlex="70">
+                <ngx-timepicker-field [format]="24" [(ngModel)]="promotion.applyTime_To"  (ngModelChange)="onChangeTime(2)" [ngModelOptions]="{standalone: true}"></ngx-timepicker-field>
+              </div>
+            </div>      
+          </div>
+
+          <div fxLayout="row" fxLayoutGap= "10px" fxFlex="100" style="min-height: 50px !important; margin-top: 10px !important;">
+            <label style="padding-top: 15px !important;">Ngày áp dụng</label>
+            <mat-divider></mat-divider>
+            <div fxLayout="row" fxLayoutGap= "20px" fxFlex="100" fxFlex="80">
+              <mat-checkbox name="appliedDate2" color="primary" [(ngModel)]="promotion.appliedDate2">Thứ 2</mat-checkbox>
+              <mat-checkbox name="appliedDate3" color="primary" [(ngModel)]="promotion.appliedDate3">Thứ 3</mat-checkbox>
+              <mat-checkbox name="appliedDate4" color="primary" [(ngModel)]="promotion.appliedDate4">Thứ 4</mat-checkbox>
+              <mat-checkbox name="appliedDate5" color="primary" [(ngModel)]="promotion.appliedDate5">Thứ 5</mat-checkbox>
+              <mat-checkbox name="appliedDate6" color="primary" [(ngModel)]="promotion.appliedDate6">Thứ 6</mat-checkbox>
+              <mat-checkbox name="appliedDate7" color="primary" [(ngModel)]="promotion.appliedDate7">Thứ 7</mat-checkbox>
+              <mat-checkbox name="appliedDate1" color="primary" [(ngModel)]="promotion.appliedDate1">Chủ nhật</mat-checkbox>
+              <mat-checkbox name="appliedDate0" color="primary" [(ngModel)]="promotion.appliedDate0">Ngày lễ</mat-checkbox>
+            </div>
+          </div>
+
+          <div fxLayout="row" fxLayoutGap= "10px" fxFlex="100">
+            <label>Đối tượng</label>
+              <mat-divider></mat-divider>
+              <div fxLayout="row" >
+                <ul>
+                  <li *ngFor="let roleItem of listCustomer">
+                    <mat-checkbox fxFlex color="primary" [(ngModel)]="roleItem.selected" [ngModelOptions]="{standalone: true}">{{ roleItem.name }}</mat-checkbox>
+                  </li>
+                </ul>
+              </div>
+          </div>
+          
+          <div fxLayout="row" fxLayoutGap= "10px" fxFlex="100">
+            <label >Sân áp dụng:</label>
+            <mat-divider></mat-divider>
+              <div fxLayout="column" >
+                <ul>
+                    <li *ngFor="let courseItem of listCourse">
+                      <mat-checkbox fxFlex color="primary" [(ngModel)]="courseItem.selected" [ngModelOptions]="{standalone: true}">{{ courseItem.name }} </mat-checkbox>
+                    </li>
+                  </ul>
+              </div>
+          </div>
+     
+          <div fxLayout="row" fxLayoutGap= "20px">
+            <mat-form-field fxFlex="30" fxLayout="column">
+              <mat-label>Thứ tự</mat-label>
+              <input matInput [(ngModel)]="promotion.priotity" type="number" name="priotity" [ngModelOptions]="{standalone: true}">
+            </mat-form-field>
+            <div fxLayout="column" fxFlex="30" >
+                <mat-checkbox fxFlex name="isActive" color="primary" [(ngModel)]="promotion.isActive">Hiệu lực</mat-checkbox>
+            </div>
+            <div fxLayout="column" fxFlex="30" >
+                <mat-checkbox fxFlex name="isHotPromotion" color="primary" [(ngModel)]="promotion.isHotPromotion">Nổi bật</mat-checkbox>
+            </div>
+          </div>
+        </div>  
+        <div fxLayout="column" fxFlex="30" >
+          <div fxLayout="row" >   
+            <div fxLayout="column" >
+              <div class="avatar-upload">
+                <div class="avatar-edit">
+                  <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" #fileAvaInput (change)="uploadAvaFile($event,'vn')" />
+                </div>
+                <div class="avatar-preview">
+                  <mat-label>Upload ảnh tiếng việt</mat-label>
+                 <div id="imagePreview" [style.background-image]="imageUrl"></div>
+                </div>       
+              </div>
+              <div style="margin: 0 0 0 20%;">
+                <button type="button" class="btn btn-light imagebtn" (click)="fileAvaInput.click()">Tải ảnh</button>
+                <button type="button" class="btn btn-light imagebtn" (click)="removeUploadedAvaFile('vn')">Xóa</button>
+              </div>
+            </div> 
+          </div>      
+          <div fxLayout="row">
+            <div fxLayout="column" >
+              <div class="avatar-upload">
+                <div class="avatar-edit">
+                  <input type='file' id="imageUpload1" accept=".png, .jpg, .jpeg" #fileAvaInput1 (change)="uploadAvaFile($event,'en')" />
+                </div>
+                <div class="avatar-preview">
+                  <mat-label>Upload ảnh tiếng anh</mat-label>
+                 <div id="imagePreview1" [style.background-image]="imageUrl1"></div>
+                </div>       
+              </div>
+              <div style="margin: 0 0 0 20%;">
+                <button type="button" class="btn btn-light imagebtn" (click)="fileAvaInput1.click()">Tải ảnh</button>
+                <button type="button" class="btn btn-light imagebtn" (click)="removeUploadedAvaFile('en')">Xóa</button>
+              </div>
+            </div>            
+          </div>            
+        </div>        
+      </form>
+    </div>  
+    
+    <div fxLayout="column" class="dialog-footer">
+      <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="end">
+        <button mat-raised-button color="primary" [disabled]="!form.valid" (click)="addOrEdit(promotion)">{{'save'| translate}}</button>
+        <button mat-raised-button (click)="back()">{{'close'| translate}}</button>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,86 @@
+.result-view {
+    min-height: 50vh;
+    max-height: 80vh;
+    overflow: auto;
+ }
+
+ .result-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.result-table,
+.result-table th,
+.result-table td {
+    border: 1px solid black;
+}
+
+.result-table th {
+    text-align: center;
+    padding: 3px 5px;
+}
+
+.result-table td {
+    padding: 3px 5px;
+}
+
+.table-button .mat-icon-button {
+    width: 24px;
+    height: 24px;
+}
+
+.table-button .mat-icon {
+    vertical-align: baseline !important;
+}
+/* end result table */
+
+.colTime {
+    width: 50px;
+}
+.colNo {
+    width: 50px;
+    mat-form-field {
+        width: 50px;
+    }
+}
+.colString {
+    width: 200px;
+}
+.colStrShort{
+    width: 100px;
+    mat-form-field {
+        width: 100px;
+    }
+    
+}
+.colDate {
+    width: 100px;
+}
+.colStatus {
+    width: 150px;
+}
+.colNumber {
+    width: 100px;
+}
+.colAction {
+    width: 50px;
+}
+.colCheckbox {
+    width: 70px;
+    mat-checkbox {
+        top:0px
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.w100 {
+   width: 100%;
+}
+
+.check-green {
+    color: green;
+}
+

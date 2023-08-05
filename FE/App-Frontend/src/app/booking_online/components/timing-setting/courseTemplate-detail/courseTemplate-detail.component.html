@@ -1,0 +1,199 @@
+<div fxLayout="column" fxLayoutGap="10px" class="page-wrapper mat-elevation-z2">
+  <div fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="space-between center" class="page-header">
+    <div fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="space-between center" style="width: 100% !important;" class="page-header">
+      <div>
+        <mat-icon color="primary">label_important</mat-icon><span class="page-title">{{'CourseTemplate' | translate}}</span>
+     </div>
+     <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="end" style="margin-left: 10px;">
+      <button mat-raised-button color="primary" style="margin-left: 10px;" [disabled]="!form.valid" (click)="addOrEdit(course)">{{'save'| translate}}</button>
+      <button mat-raised-button style="margin-left: 10px;" (click)="back()">{{'close'| translate}}</button>
+    </div>
+    </div>
+  </div>
+  <mat-divider></mat-divider>
+  <div fxLayout="column" >
+    <form #form="ngForm">
+        <div fxLayout="row" fxLayoutGap= "20px">
+          <mat-form-field fxFlex="40">
+            <mat-label> {{'code' | translate}}</mat-label>
+            <input matInput [(ngModel)]="course.code" required maxlength="50" name="code" [ngModelOptions]="{standalone: true}">
+          </mat-form-field>
+          <mat-form-field fxFlex="43">
+            <mat-label> {{'name' | translate}}</mat-label>
+            <input matInput [(ngModel)]="course.name" required maxlength="250" name="name" [ngModelOptions]="{standalone: true}">
+          </mat-form-field>
+      </div>  
+      <div fxLayout="row" fxLayoutGap= "20px">
+          <mat-form-field fxFlex="40">
+            <mat-label>Đơn vị</mat-label>
+            <mat-select placeholder="Select" [(ngModel)]="course.c_Org_Id" (ngModelChange)="changeOrganizationText()" name="course.c_Org_Id" #course.c_Org_Id="ngModel" required>
+              <mat-option [value]="itm.id" *ngFor="let itm of listOrganization" width ="inherit">{{itm.name}}</mat-option>
+            </mat-select>
+            <!-- <input matInput [formControl]="organizationSelectControl" required [matAutocomplete]="autoOrganization" (ngModelChange)="changeOrganizationText()">
+            <input matInput name="organizationId" required [hidden]="true" [(ngModel)]="course.c_Org_Id"> 
+            <mat-autocomplete autoActiveFirstOption #autoOrganization="matAutocomplete" [displayWith]="displayOrganization" 
+              (optionSelected)="onSelectedOrganization($event)">
+              <mat-option *ngFor="let u of  organizationFilteredOptions | async" [value]="u">
+                {{u.name}}
+              </mat-option>
+            </mat-autocomplete> -->
+          </mat-form-field>
+          <mat-form-field fxFlex="20">
+            <mat-label>Ngày bắt đầu</mat-label>
+            <input matInput [matDatepicker]="pickerStartDate" [(ngModel)]="course.startDate" [ngModelOptions]="{standalone: true}" required>
+            <mat-datepicker-toggle matSuffix [for]="pickerStartDate"></mat-datepicker-toggle>
+            <mat-datepicker #pickerStartDate></mat-datepicker>
+          </mat-form-field>
+          <mat-form-field fxFlex="20">
+            <mat-label>Ngày kết thúc</mat-label>
+            <input matInput [matDatepicker]="pickerEndDate" [(ngModel)]="course.endDate" [ngModelOptions]="{standalone: true}" required>
+            <mat-datepicker-toggle matSuffix [for]="pickerEndDate"></mat-datepicker-toggle>
+            <mat-datepicker #pickerEndDate></mat-datepicker>
+          </mat-form-field>      
+      </div>
+      
+    <div fxLayout="row" fxLayoutGap= "20px">
+      <div fxLayout="column" fxFlex="50" >
+        <label>Ngày áp dụng</label>
+        <mat-divider></mat-divider>
+        <div fxLayout="row" >
+          <mat-checkbox fxFlex name="appliedDate2" color="primary" [(ngModel)]="course.appliedDate2">Thứ 2</mat-checkbox>
+          <mat-checkbox fxFlex name="appliedDate3" color="primary" [(ngModel)]="course.appliedDate3">Thứ 3</mat-checkbox>
+          <mat-checkbox fxFlex name="appliedDate4" color="primary" [(ngModel)]="course.appliedDate4">Thứ 4</mat-checkbox>
+          <mat-checkbox fxFlex name="appliedDate5" color="primary" [(ngModel)]="course.appliedDate5">Thứ 5</mat-checkbox>
+          <mat-checkbox fxFlex name="appliedDate6" color="primary" [(ngModel)]="course.appliedDate6">Thứ 6</mat-checkbox>
+        </div>
+        <div fxLayout="row" fxLayoutGap= "5px">          
+          <mat-checkbox fxFlex name="appliedDate7" color="primary" [(ngModel)]="course.appliedDate7">Thứ 7</mat-checkbox>
+          <mat-checkbox fxFlex name="appliedDate1" color="primary" [(ngModel)]="course.appliedDate1">Chủ nhật</mat-checkbox>
+          <mat-checkbox fxFlex name="appliedDate0" color="primary" [(ngModel)]="course.appliedDate0">Ngày lễ</mat-checkbox>
+        </div>
+      </div>
+      <div fxLayout="column" fxFlex="50" fxLayoutGap= "20px" >
+        <mat-checkbox class="md-margin" name="isActive" color="primary" [(ngModel)]="course.isActive">Hiệu lực</mat-checkbox>
+      </div>      
+    </div>
+  </form>
+  </div>
+
+  <mat-divider></mat-divider>
+
+  <div fxLayout="row" fxLayoutGap="10px" style="margin-top: 20px;" class="info-container" > 
+    <div fxFlex ="100">
+      <mat-tab-group>
+        <mat-tab label="Khung giờ chi tiết">
+           <div style="margin-top:10px;" class="scroll">
+            <table #relTbl mat-table [dataSource]="course.courseTemplateLine">
+  
+              <ng-container matColumnDef="STT">
+                <th mat-header-cell *matHeaderCellDef style="width: 50px;">#</th>
+                <td mat-cell *matCellDef="let i = index;">
+                  {{i + 1 + filter.pageIndex * filter.pageSize}}
+                </td>
+              </ng-container>
+         
+              <ng-container matColumnDef="part" fxFlex ="50" >
+                <th mat-header-cell *matHeaderCellDef >Part</th>
+                <td mat-cell *matCellDef='let element' >
+                  <mat-select placeholder="Select" [(ngModel)]="element.part" name="element.part" #element.part="ngModel" required>
+                    <mat-option [value]="itm.code" *ngFor="let itm of partList" width ="inherit">{{itm.title}}</mat-option>
+                  </mat-select>
+                </td>
+              </ng-container>
+
+              <ng-container matColumnDef="course" fxFlex ="50" >
+                <th mat-header-cell *matHeaderCellDef >Sân</th>
+                <td mat-cell *matCellDef='let element' >
+                  <mat-select placeholder="Select" [(ngModel)]="element.c_Course_Id" name="element.c_Course_Id" #element.c_Course_Id="ngModel" [disabled]="courseDisable" required>
+                    <mat-option [value]="itm.id" *ngFor="let itm of listCourse" width ="inherit">{{itm.name}}</mat-option>
+                  </mat-select>
+                  <!-- <input matInput [formControl]="courseSelectControl" required [matAutocomplete]="autoCourse" (ngModelChange)="changeCourseText(element)">
+                  <input matInput name="courseId" required [hidden]="true" [(ngModel)]="element.c_Course_Id"> 
+                  <mat-autocomplete autoActiveFirstOption #autoCourse="matAutocomplete" [displayWith]="displayCourse" 
+                    (optionSelected)="onSelectedCourse(element)">
+                    <mat-option *ngFor="let u of  courseFilteredOptions | async" [value]="u">
+                      {{u.name}}
+                    </mat-option>
+                  </mat-autocomplete> -->
+                </td>
+              </ng-container>
+        
+              <!-- <ng-container matColumnDef="tee">
+                <th mat-header-cell *matHeaderCellDef >Tee</th>
+                <td mat-cell *matCellDef='let element' >
+                  <input matInput [(ngModel)]="element.startTee" type="number" class="no-scroll" [ngModelOptions]="{standalone: true}" />
+                </td>
+              </ng-container> -->
+        
+              <ng-container matColumnDef="startTime">
+                  <th mat-header-cell *matHeaderCellDef >Giờ bắt đầu</th>
+                  <td mat-cell *matCellDef='let element' >
+                    <ngx-timepicker-field [format]="24" [(ngModel)]="element.startTime"  (ngModelChange)="onChangeToDate(element,true)" required></ngx-timepicker-field>
+                  </td>
+              </ng-container>
+      
+              <ng-container matColumnDef="endTime">
+                  <th mat-header-cell *matHeaderCellDef >Giờ kết thúc </th>
+                  <td mat-cell *matCellDef='let element' >
+                    <ngx-timepicker-field [format]="24" [(ngModel)]="element.endTime"  (ngModelChange)="onChangeToDate(element,false)" required></ngx-timepicker-field>
+                  </td>
+                </ng-container>
+      
+                <ng-container matColumnDef="interval">
+                  <th mat-header-cell *matHeaderCellDef >Interval</th>
+                  <td mat-cell *matCellDef='let element' >
+                    <input matInput [(ngModel)]="element.interval" type="number" class="no-scroll" [ngModelOptions]="{standalone: true}" required/>
+                  </td>
+                </ng-container>
+      
+                <ng-container matColumnDef="turnLength">
+                  <th mat-header-cell *matHeaderCellDef >Turn Length</th>
+                  <td mat-cell *matCellDef='let element' >
+                    <input matInput [(ngModel)]="element.turnLength" type="number" class="no-scroll" [ngModelOptions]="{standalone: true}" required/>
+                  </td>
+                </ng-container>
+      
+                <ng-container matColumnDef="maxHole">
+                  <th mat-header-cell *matHeaderCellDef >Max Hole</th>
+                  <td mat-cell *matCellDef='let element' >
+                    <input matInput [(ngModel)]="element.hole" type="number" class="no-scroll" [ngModelOptions]="{standalone: true}" required/>
+                  </td>
+                </ng-container>
+
+              <ng-container matColumnDef="actions">
+                <th mat-header-cell *matHeaderCellDef style="width: 75px;">{{'action' | translate}}</th>
+                <ng-container>
+                  <td mat-cell *matCellDef="let item; let i = index;"  class="align-top" >
+                    <ng-container *ngIf="!isReadonly">
+                      <ng-template [ngIf]="isNotBufferTaskItem(i,this.course.courseTemplateLine)" [ngIfElse]="relativesbuffer">
+                        <a color="warn" mat-button (click)="deleteTask(i,this.course.courseTemplateLine,this.relTbl)">
+                          <mat-icon>remove_circle_outline</mat-icon>
+                        </a>
+                      </ng-template>
+                      <ng-template #relativesbuffer>
+                        <a color="warn" mat-button (click)="deleteTask(i,this.course.courseTemplateLine,this.relTbl)">
+                          <mat-icon>remove_circle_outline</mat-icon>
+                        </a>
+                        <a class="edit-icon" mat-button (click)="addTask(i,this.course.courseTemplateLine,this.relTbl)">
+                          <mat-icon>add_circle_outline</mat-icon>
+                        </a>
+                      </ng-template>
+                    </ng-container>
+                  </td>
+                </ng-container> 
+              </ng-container>
+              <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+              <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>              
+            </table>
+          </div>
+        </mat-tab>
+      </mat-tab-group>
+    </div>  
+  </div>
+  <div fxLayout="column" class="dialog-footer">
+    <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="end">
+      <button mat-raised-button color="primary" [disabled]="!form.valid" (click)="addOrEdit(course)">{{'save'| translate}}</button>
+      <button mat-raised-button (click)="back()">{{'close'| translate}}</button>
+    </div>
+  </div>
+</div>

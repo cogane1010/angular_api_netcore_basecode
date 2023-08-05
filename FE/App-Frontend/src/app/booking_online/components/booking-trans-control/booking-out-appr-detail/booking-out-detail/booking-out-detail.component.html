@@ -1,0 +1,71 @@
+<div fxLayout="column" fxLayoutGap="5px" class="page-wrapper mat-elevation-z2">
+    <div fxLayout="row">
+        <div fxFlex="80" class="page-header" fxLayoutAlign="start center">
+            <mat-icon color="primary">label_important</mat-icon><span class="page-title">Chi tiết file out</span>
+
+        </div>
+        <div fxFlex="20" fxLayoutGap="10px" fxLayoutAlign="right">
+            <button mat-raised-button [mat-dialog-close]>Close</button>
+        </div>
+    </div>
+
+    <mat-divider></mat-divider>
+
+    <div fxLayout="column" class="page-content">
+        <div class="scroll">
+            <table *ngIf="dataSource" class="result-table mt-20">
+                <thead>
+                    <tr>
+                        <th colspan="8">Seabank</th>
+                        <th colspan="1">Rc_code</th>
+                    </tr>
+                    <tr>
+                        <th class="text-center colStrShort">trans_type</th>
+                        <th class="text-center colStrShort">trans_Id</th>
+                        <th class="text-center colStrShort">FT.id</th>
+                        <th class="text-center colStrShort">Trans Date</th>
+                        <th class="text-center colStrShort">Địa điểm Sân</th>
+                       
+                        <th class="text-center colStrShort">Tên Khách hàng</th>
+                        <th class="text-center colStrShort">Trans.amt</th>
+                        <th class="text-center colStrShort">Tiền hoàn</th>
+                        <th class="text-center "></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let row of dataSource; let i=index;">
+                        <td>{{row.trans_type}}</td>
+                        <td>{{row.traceId}}</td>
+                        <td class="text-center colStrShort">{{row.fT_Id}}</td>
+                        <td class="text-center colStrShort">{{row.trans_Date|date:'dd/MM/yyyy HH:mm'}}</td>
+                        <td class="text-center colStrShort">{{row.orgCode }}</td>
+                       
+                        <td class="text-cente colStrShortr">{{row.customerName}}</td>
+                        <td class="text-center colStrShort">{{row.trans_Amt|number:'1.0-0'}}</td>
+                        <td class="text-center colStrShort">{{row.tien_hoan|number:'1.0-0'}}</td>
+                        <td class="text-center colCheckbox">
+                            <span *ngIf="row.userRc_code">{{row.userRc_code}}</span>
+                            <span *ngIf="!row.userRc_code">{{row.rc_code}}</span>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            <table>
+                <tr>
+                    <td>Total: {{dataSource.length}}</td>
+                    <td></td>
+                    <td></td>   
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <!-- <mat-paginator (page)="pageIndexChange($event)"></mat-paginator> -->
+    </div>
+    <div fxLayout="column" class="page-footer"></div>
+</div>

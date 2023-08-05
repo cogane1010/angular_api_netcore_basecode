@@ -1,0 +1,124 @@
+<p><div fxLayout="column" fxLayoutGap="5px" class="page-wrapper mat-elevation-z2">
+  <div fxLayout="row" class="page-header" fxLayoutAlign="start center">
+    <mat-icon color="primary">label_important</mat-icon><span class="page-title">{{'CustomerList'| translate}}</span>
+  </div>
+  <mat-divider></mat-divider>
+  <div fxLayout="column" class="page-filter" (keyup.enter)="search()">
+    <div fxLayout="row" fxLayoutAlign=" center" fxLayoutGap="10px">
+      <mat-form-field fxFlex="15">
+        <mat-label>{{'code' | translate}}</mat-label>
+        <input matInput [(ngModel)]="filter.customerCode">
+      </mat-form-field>
+      <mat-form-field fxFlex="15">
+        <mat-label>{{'fullName' | translate}}</mat-label>
+        <input matInput [(ngModel)]="filter.name">
+      </mat-form-field>
+      <mat-form-field fxFlex="15">
+          <mat-label>{{'dob' | translate}}</mat-label>
+          <input matInput [matDatepicker]="pickerdob" [(ngModel)]="filter.dob" >
+          <mat-datepicker-toggle matSuffix [for]="pickerdob"></mat-datepicker-toggle>
+          <mat-datepicker #pickerdob></mat-datepicker>
+      </mat-form-field>
+      <mat-form-field fxFlex="15">
+        <mat-label>{{'mobilePhone' | translate}}</mat-label>
+        <input matInput [(ngModel)]="filter.mobilePhone">
+      </mat-form-field>
+      <mat-form-field fxFlex="15">
+        <mat-label>{{'email' | translate}}</mat-label>
+        <input matInput [(ngModel)]="filter.email">
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>{{'memberCardNo' | translate}}</mat-label>
+        <input matInput [(ngModel)]="filter.memberCard">
+      </mat-form-field> 
+    </div>
+    <div fxLayout="row" fxLayoutAlign=" center" fxLayoutGap="10px">
+      <mat-form-field fxFlex="15">
+        <mat-label>{{'status' | translate}}</mat-label>
+        <mat-select [(ngModel)]="filter.isActive" >
+            <mat-option [value]="null"> {{'All' | translate}}</mat-option>
+            <mat-option [value]="true">Hoạt động</mat-option>
+            <mat-option [value]="false">Đã khóa</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <div class="btn-control">
+        <button mat-raised-button color="primary" (click)="search()">{{'search' | translate}}</button>
+        <button mat-raised-button color="primary" [routerLink]="['/booking/customer/add']" style="margin-left: 10px;">
+        <mat-icon class="mat-18">add</mat-icon>
+          {{'add' | translate}}
+        </button>
+      </div>
+      
+    </div>
+
+  </div>
+  <div fxLayout="column" class="page-content">
+    <table mat-table [dataSource]="listCustomer">
+
+      <ng-container matColumnDef="STT">
+        <th mat-header-cell *matHeaderCellDef style="width: 50px;">#</th>
+        <td mat-cell *matCellDef="let i = index;">
+          {{i + 1 + filter.pageIndex * filter.pageSize}}
+        </td>
+      </ng-container>
+  
+      <ng-container matColumnDef="customerCode">
+        <th mat-header-cell *matHeaderCellDef >{{'code' | translate}}</th>
+        <td mat-cell *matCellDef="let item"> 
+          <a [routerLink]="['/booking/customer', item.id]">
+            {{item.customerCode}} 
+          </a>
+        </td>
+      </ng-container>
+      <ng-container matColumnDef="fullName">
+        <th mat-header-cell *matHeaderCellDef >{{'fullName' | translate}} </th>
+        <td mat-cell *matCellDef='let item' >{{item.fullName}}</td>
+      </ng-container>
+      <ng-container matColumnDef="dob">
+        <th mat-header-cell *matHeaderCellDef >{{'dob' | translate}} </th>
+        <td mat-cell *matCellDef='let item' >{{item.dob | date: 'dd/MM/YYYY' }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="mobilePhone">
+        <th mat-header-cell *matHeaderCellDef >{{'mobilePhone' | translate}} </th>
+        <td mat-cell *matCellDef='let item' >{{item.mobilePhone}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="email">
+        <th mat-header-cell *matHeaderCellDef >{{'email' | translate}} </th>
+        <td mat-cell *matCellDef='let item' >{{item.email}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="golf_CardNo">
+        <th mat-header-cell *matHeaderCellDef >{{'memberCardNo' | translate}} </th>
+        <td mat-cell *matCellDef='let item'>{{item.golf_CardNo}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="status">
+        <th mat-header-cell *matHeaderCellDef >{{'status' | translate}} </th>
+        <td mat-cell *matCellDef='let item' >
+           <span *ngIf="item.isActive"> {{'ActiveCustomer' | translate}}</span>
+           <span *ngIf="!item.isActive"> {{'InactiveCustomer' | translate}}</span>
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="actions">
+        <th mat-header-cell *matHeaderCellDef style="width: 75px;">{{'action' | translate}}</th>
+        <td mat-cell *matCellDef="let item">
+          <span *ngIf="item.isActive"> 
+            <mat-icon style="cursor: pointer;" (click)="changeStatus(item)">lock</mat-icon>
+          </span>
+          <span *ngIf="!item.isActive">
+            <mat-icon style="cursor: pointer;" (click)="changeStatus(item)">lock_open</mat-icon>
+          </span>
+        </td>
+      </ng-container>
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      
+    </table>
+    <mat-paginator [pageSize]="20" (page)="pageIndexChange($event)"></mat-paginator>
+  </div>
+  <div fxLayout="column" class="page-footer"></div>
+</div>

@@ -1,0 +1,94 @@
+<div fxLayout="column" fxLayoutGap="5px" class="page-wrapper mat-elevation-z2">
+    <div fxLayout="row" class="page-header" fxLayoutAlign="start center">
+      <mat-icon color="primary">label_important</mat-icon><span class="page-title">Báo cáo hủy đặt vé</span>
+    </div>
+    <mat-divider></mat-divider>
+    <div fxLayout="column" class="page-filter" (keyup.enter)="search()">
+      <div fxLayout="row" fxLayoutAlign=" center" fxLayoutGap="10px">
+        <mat-form-field fxFlex="30">
+          <mat-label>Thời gian từ</mat-label>
+          <input matInput [matDatepicker]="timeFrom" [(ngModel)]="filter.timeFrom" [ngModelOptions]="{standalone: true}" required>
+          <mat-datepicker-toggle matSuffix [for]="timeFrom"></mat-datepicker-toggle>
+          <mat-datepicker #timeFrom></mat-datepicker>
+        </mat-form-field>
+        <mat-form-field fxFlex="30">
+          <mat-label>Thời gian từ</mat-label>
+          <input matInput [matDatepicker]="timeTo" [(ngModel)]="filter.timeTo" [ngModelOptions]="{standalone: true}" required>
+          <mat-datepicker-toggle matSuffix [for]="timeTo"></mat-datepicker-toggle>
+          <mat-datepicker #timeTo></mat-datepicker>
+        </mat-form-field> 
+        <mat-form-field fxFlex="30">
+            <mat-label>Số điện thoại</mat-label>
+            <input matInput [(ngModel)]="filter.mobilephone">
+          </mat-form-field>
+
+        <button mat-raised-button color="primary" (click)="search()">{{'search' | translate}}</button>        
+      </div>
+    </div>
+    <div fxLayout="column" class="page-content">
+      <table mat-table [dataSource]="listBookingLine">
+  
+        <ng-container matColumnDef="STT">
+          <th mat-header-cell *matHeaderCellDef style="width: 50px;">#</th>
+          <td mat-cell *matCellDef="let i = index;">
+            {{i + 1 + filter.pageIndex * filter.pageSize}}
+          </td>
+        </ng-container>
+        <ng-container matColumnDef="bookingCode">
+          <th mat-header-cell *matHeaderCellDef >Mã đặt vé</th>
+          <td mat-cell *matCellDef='let item' >{{item.bookingCode}}</td>
+        </ng-container>
+        <ng-container matColumnDef="date">
+          <th mat-header-cell *matHeaderCellDef >Ngày chơi</th>
+          <td mat-cell *matCellDef="let item"> {{item.tee_Time | date: 'dd/MM/yyyy'}} </td>
+        </ng-container>
+        <ng-container matColumnDef="Teetime">
+          <th mat-header-cell *matHeaderCellDef >Teetime</th>
+          <td mat-cell *matCellDef='let item' >{{item.tee_Time | date: 'HH:mm'}}</td>
+        </ng-container>
+  
+        <ng-container matColumnDef="course">
+          <th mat-header-cell *matHeaderCellDef >Sân chơi</th>
+          <td mat-cell *matCellDef='let item' >{{item.courseName}}</td>
+        </ng-container>
+        <ng-container matColumnDef="numberPlayer">
+          <th mat-header-cell *matHeaderCellDef >Số người chơi</th>
+          <td mat-cell *matCellDef='let item' >{{item.numberPlayers}}</td>
+        </ng-container>
+        <ng-container matColumnDef="nonFund">
+          <th mat-header-cell *matHeaderCellDef >Tiền đã cọc</th>
+          <td mat-cell *matCellDef='let item' >{{item.nonRefundedFee}}</td>
+        </ng-container>
+        <ng-container matColumnDef="fullName">
+          <th mat-header-cell *matHeaderCellDef >Họ và tên người đặt</th>
+          <td mat-cell *matCellDef='let item' >{{item.customerFullName}}</td>
+        </ng-container>
+        <ng-container matColumnDef="cancelDate">
+          <th mat-header-cell *matHeaderCellDef >Ngày hủy</th>
+          <td mat-cell *matCellDef='let item' >{{item.cancelDate}}</td>
+        </ng-container>
+        <ng-container matColumnDef="cancelTime">
+          <th mat-header-cell *matHeaderCellDef >Giờ hủy</th>
+          <td mat-cell *matCellDef='let item' >{{item.cancelTime}}</td>
+        </ng-container>
+        <ng-container matColumnDef="groupcode">
+          <th mat-header-cell *matHeaderCellDef >Loại hủy</th>
+          <td mat-cell *matCellDef='let item' >{{item.cancelType}}</td>
+        </ng-container>
+        <ng-container matColumnDef="note">
+          <th mat-header-cell *matHeaderCellDef >Ghi chú</th>
+          <td mat-cell *matCellDef='let item' >{{item.notes}}</td>
+        </ng-container>
+        <ng-container matColumnDef="durationPlay">
+          <th mat-header-cell *matHeaderCellDef >Thời gian hủy cách thời gian chơi(giờ)</th>
+          <td mat-cell *matCellDef='let item' >{{item.diffHour}}</td>
+        </ng-container>
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        
+      </table>
+      <mat-paginator (page)="pageIndexChange($event)"></mat-paginator>
+    </div>
+    <div fxLayout="column" class="page-footer"></div>
+  </div>
+  

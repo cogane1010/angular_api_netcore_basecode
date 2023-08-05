@@ -1,0 +1,108 @@
+<div fxLayout="column" fxLayoutGap="5px" class="">
+    <div fxLayout="row">
+        <div fxFlex="80" fxLayout="row" class="page-header" fxLayoutAlign="start center">
+            <mat-icon color="primary">label_important</mat-icon><span class="page-title">Xác nhận giao dịch - {{ bookingCode }}</span>
+        </div>
+    </div>
+    <mat-divider></mat-divider>
+    <div fxLayout="column" class="page-content">
+        <form #form="ngForm">
+            <section layout="row">
+                <div fxLayout="row" fxLayoutGap="20px">
+                    <mat-form-field fxFlex="50">
+                      <mat-label>Tên khách hàng</mat-label>
+                      <input matInput [(ngModel)]="dataSource.cardFullName" [disabled]="isReadonly" name="cardFullName"  #cardFullName="ngModel">  
+                    </mat-form-field>
+                    <mat-form-field fxFlex="50">
+                        <mat-label>Thời gian đặt</mat-label>
+                        <input matInput [(ngModel)]="dataSource.datePayment" [disabled]="isReadonly" name="datePayment"  #datePayment="ngModel"> 
+                    </mat-form-field>
+                    <mat-form-field fxFlex="50">
+                        <mat-label>Sân đặt</mat-label>
+                        <input matInput [(ngModel)]="dataSource.orgCode" [disabled]="isReadonly" name="orgCode"  #orgCode="ngModel"> 
+                    </mat-form-field>
+                </div>
+                <div fxLayout="row" fxLayoutGap="20px">
+                    <mat-form-field fxFlex="50">
+                      <mat-label>Thời gian lên chơi</mat-label>
+                      <input matInput [(ngModel)]="dataSource.totalTeetimeDisplay" [disabled]="isReadonly" name="totalTeetimeDisplay"  #totalTeetimeDisplay="ngModel">
+                    </mat-form-field>
+                    <mat-form-field fxFlex="50">
+                        <mat-label>Số lượng đặt</mat-label>
+                        <input matInput [(ngModel)]="dataSource.playerCount" [disabled]="isReadonly" name="playerCount"  #playerCount="ngModel">
+                    </mat-form-field>
+                    <mat-form-field fxFlex="50">
+                        <mat-label>Số tiền đặt</mat-label>
+                        <input matInput [(ngModel)]="dataSource.booking.nonRefundedFee " [disabled]="isReadonly" name="booking.nonRefundedFee"  #booking.nonRefundedFee="ngModel">                     
+                    </mat-form-field>
+                </div>
+            </section>
+            <section layout="row">
+                <div fxLayout="row" fxLayoutGap="20px">
+                    <mat-form-field fxFlex="50">
+                      <mat-label>Mã KH SB</mat-label>
+                      <input matInput [(ngModel)]="dataSource.customerId" required name="customerId"  #customerId="ngModel">
+                      <mat-error *ngIf="customerId.invalid && (customerId.dirty || customerId.touched)">
+                        <div *ngIf="customerId.errors?.required">Trường bắt buộc nhập</div>
+                      </mat-error>
+                    </mat-form-field>
+                    <mat-form-field fxFlex="50">
+                        <mat-label>Tên KH SB</mat-label>
+                        <input matInput [(ngModel)]="dataSource.customerName" required name="customerName"  #customerName="ngModel">
+                        <mat-error *ngIf="customerName.invalid && (customerName.dirty || customerName.touched)">
+                          <div *ngIf="customerName.errors?.required">Trường bắt buộc nhập</div>
+                        </mat-error>
+                    </mat-form-field>
+                    <mat-form-field fxFlex="50">
+                        <mat-label>Tài khoản ghi có</mat-label>
+                        <input matInput [(ngModel)]="dataSource.creditAcc" required name="creditAcc"  #creditAcc="ngModel">
+                        <mat-error *ngIf="creditAcc.invalid && (creditAcc.dirty || creditAcc.touched)">
+                            <div *ngIf="creditAcc.errors?.required">Trường bắt buộc nhập</div>
+                        </mat-error>
+                    </mat-form-field>
+                    <mat-form-field fxFlex="50">
+                        <mat-label>Nội dung giao dịch</mat-label>
+                        <input matInput [(ngModel)]="dataSource.payment_Detail" required name="payment_Detail"  #payment_Detail="ngModel">
+                        <mat-error *ngIf="payment_Detail.invalid && (payment_Detail.dirty || payment_Detail.touched)">
+                            <div *ngIf="payment_Detail.errors?.required">Trường bắt buộc nhập</div>
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div fxLayout="row" fxLayoutGap="20px">
+                    <mat-form-field fxFlex="50">
+                        <mat-label>Loại tài khoản</mat-label>
+                        <input matInput [(ngModel)]="dataSource.sourceType" required  name="sourceType"  #sourceType="ngModel">
+                        <mat-error *ngIf="sourceType.invalid && (sourceType.dirty || sourceType.touched)">
+                            <div *ngIf="sourceType.errors?.required">Trường bắt buộc nhập</div>
+                        </mat-error>
+                    </mat-form-field>
+                    <mat-form-field fxFlex="50">
+                        <mat-label>Số tiền về</mat-label>
+                        <input matInput [(ngModel)]="dataSource.totalMoneyAcc" required  name="totalMoneyAcc"  #totalMoneyAcc="ngModel">
+                        <mat-error *ngIf="totalMoneyAcc.invalid && (totalMoneyAcc.dirty || totalMoneyAcc.touched)">
+                          <div *ngIf="totalMoneyAcc.errors?.required">Trường bắt buộc nhập</div>
+                        </mat-error>
+                    </mat-form-field>
+                    <mat-form-field fxFlex="50">                       
+                            <mat-label>Ngày tiền về</mat-label>
+                            <input matInput [matDatepicker]="picker" required [(ngModel)]="dataSource.moneyAtAcc" name="moneyAtAcc"  #moneyAtAcc="ngModel">
+                            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                            <mat-datepicker #picker></mat-datepicker>
+                            <mat-error *ngIf="moneyAtAcc.invalid && (moneyAtAcc.dirty || moneyAtAcc.touched)">
+                                <div *ngIf="moneyAtAcc.errors?.required">Trường bắt buộc nhập</div>
+                              </mat-error>
+                    </mat-form-field>
+                </div>
+            </section>
+        </form>
+    </div>
+  
+</div>
+<div>
+    <div fxLayout="row" class="floatRight " >       
+        <div fxFlex="20" fxLayoutGap="10px" class="page-footer"   fxLayoutAlign="left">
+            <button mat-raised-button color="primary" (click)="save()" [disabled]="!form.valid">Chọn</button>
+            <button mat-raised-button color="primary" (click)="close()">Đóng</button>
+        </div>
+    </div>
+</div>

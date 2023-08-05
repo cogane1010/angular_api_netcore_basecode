@@ -1,0 +1,29 @@
+<div fxLayout="column" fxLayoutGap="5px" class="dialog-wrapper">
+  <div fxLayout="row" class="dialog-header" fxLayoutAlign="start center">
+    <mat-icon color="primary">label_important</mat-icon><span class="dialog-title">{{'OrganizationType'| translate}}</span>
+  </div>
+  <mat-divider></mat-divider>
+  <div fxLayout="column" class="dialog-content">
+    <form #form="ngForm">
+        <div fxLayout="row">
+        <mat-form-field fxFlex="50">
+          <mat-label> {{'code' | translate}}</mat-label>
+          <input matInput [(ngModel)]="organizationType.code" required maxlength="50" name="code">
+        </mat-form-field>
+      </div>
+      <div fxLayout="row">
+        <mat-form-field fxFlex="50">
+          <mat-label> {{'name' | translate}}</mat-label>
+          <input matInput [(ngModel)]="organizationType.name" required maxlength="250" name="name">
+        </mat-form-field>
+      </div>
+    
+    </form>
+  </div>
+  <div fxLayout="column" class="dialog-footer">
+    <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="end">
+      <button mat-raised-button color="primary" [disabled]="!form.valid" (click)="addOrEdit(organizationType)">{{'save'| translate}}</button>
+      <button mat-raised-button [mat-dialog-close]>{{'close'| translate}}</button>
+    </div>
+  </div>
+</div>

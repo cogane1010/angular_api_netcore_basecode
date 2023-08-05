@@ -1,0 +1,145 @@
+<div fxLayout="column" fxLayoutGap="5px" class="page-wrapper mat-elevation-z2">
+    <div fxLayout="row" class="page-header" fxLayoutAlign="start center">
+        <mat-icon color="primary">label_important</mat-icon><span class="page-title">Xác nhận doanh thu</span>
+    </div>
+    <mat-divider></mat-divider>
+    <div fxLayout="column" class="page-filter">
+        <div fxLayout="row" fxLayoutAlign=" center" fxLayoutGap="10px">
+            <mat-form-field fxFlex="15">
+                <mat-label>Ngày đặt chỗ</mat-label>
+                <input matInput [matDatepicker]="pickerDate" name="dateId" [(ngModel)]="filter.FindDate"
+                    (keyup.enter)="search()">
+                <mat-datepicker-toggle matSuffix [for]="pickerDate"></mat-datepicker-toggle>
+                <mat-datepicker #pickerDate></mat-datepicker>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Trạng thái</mat-label>
+                <mat-select placeholder="Select" [(ngModel)]="filter.status" name="element.status" #element.status="ngModel" >
+                  <mat-option [value]=""></mat-option>
+                  <mat-option [value]="itm.code" *ngFor="let itm of statusList" width ="inherit">{{itm.title}}</mat-option>
+                </mat-select>
+            </mat-form-field>  
+
+
+            <button mat-raised-button color="primary" (click)="search()"><mat-icon>search</mat-icon></button>
+            <button mat-raised-button color="success" (click)="confirmMoney()" [disabled]="!enableSave">Xác nhận</button>
+            <button mat-raised-button color="link" (click)="cancelConfirmMoney()" [disabled]="!enableSave">Hủy xác nhận</button>
+            <button mat-raised-button color="warn" (click)="cancelTrans()" [disabled]="!enableSave">Ghi nhận hủy</button>
+            <button mat-raised-button color="report" (click)="selectDate()">SL giao dịch chưa xác nhận {{numOfDayNotCompare}} ngày</button>
+            <button mat-raised-button color="primary" (click)="export()">Export excel</button>
+        </div>
+        <mat-divider class="mt-10"></mat-divider>
+        <div fxLayout="row" fxLayoutGap="10px">
+            <div class="mt-10 scroll">
+                <table *ngIf="paymentCompare" class="result-table">
+                    <thead>                       
+                        <tr> 
+                            <th class="text-center col-sb-trans-id border-right"><mat-checkbox [(ngModel)]="allSelected"
+                                [ngModelOptions]="{standalone: true}"
+                                (change)="toggleAllSelection($event.checked)"></mat-checkbox> </th>                          
+                            <th class="text-center col-sb-trans-id border-right">STT</th>
+                            <th class="text-center col-sb-org-code border-right">Ft_Id</th>
+                            <th class="text-center col-sb-org-code border-right">Mã KH SB</th>
+                            <th class="text-center col-sb-cus-name border-right">Tên KH SB</th>
+                            <th class="text-center col-sb-cus-name border-right">Mã đặt chỗ</th>
+                            <th class="text-center col-course border-right">Sân đặt chỗ</th>
+                            <th class="text-center col-sb-desc border-right">Ngày đặt</th>                            
+                            <th class="text-center col-brg-bk-code border-right">TK ghi có</th>
+                            <th class="text-center col-brg-pay-date border-right">Loại TK</th>
+                            <th class="text-center col-brg-cus-name border-right">Số tiền đặt</th>
+                            <th class="text-center col-brg-cus-name border-right">Ngày hủy</th>
+                            <th class="text-center col-brg-cus-name border-right">Tiền hoàn</th>
+                            <th class="text-center col-status border-right">Trạng thái</th>
+                            <th class="text-center col-brg-pay-amt border-right">Số tiền về</th>
+                            <th class="text-center col-brg-pay-amt border-right">Ngày tiền về</th>
+                            <th class="text-center col-brg-pay-amt border-right">Người cập nhật</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let row of paymentCompare; let i=index;" [ngClass]="{'not-valid':row.statusLine == 2 }">
+                            <td class="text-center colCheckbox border-right">
+                                <mat-checkbox name="isSelected" color="primary" [(ngModel)]="row.isSelected" ></mat-checkbox> 
+                            </td>
+                            <td class="text-center colCheckbox border-right"> {{i + 1 + filter.pageIndex * filter.pageSize}} </td>
+                            <td class="text-center col-sb-cus-name border-right" >
+                                <p [ngClass]="{'strikethrough':row.statusLine == 4}">{{ row.ftid }}</p> 
+                             </td>
+                           <td class="text-center col-sb-trans-id border-right">
+                              <a *ngIf="row.statusLine == 2 || row.statusLine == 5" class="textlink" (click)="manualConfirm(row)"> {{ row.customerId }} </a>  
+                              <a *ngIf="row.statusLine != 2 && row.statusLine != 5" > {{ row.customerId }} </a>                              
+                            </td>
+                            <td class="text-center col-sb-cus-name border-right" >
+                               <p [ngClass]="{'strikethrough':row.statusLine == 4 }">{{ row.customerName }}</p> 
+                            </td>
+                            <td class="text-center col-sb-trans-date border-right" [ngClass]="{'strikethrough':row.statusLine == 4}">
+                                {{ row.bookingCode }}
+                            </td>
+                            <td class="text-cente col-course border-right" [ngClass]="{'strikethrough':row.statusLine == 4}">
+                                {{ row.orgCode }} 
+                            </td>
+                            <td class="text-center col-sb-trans-amt border-right" [ngClass]="{'strikethrough':row.statusLine == 4}">
+                                {{ row.datePayment|date:'dd/MM/yyyy' }}
+                            </td>
+                           <td class="text-center col-sb-desc border-right" [ngClass]="{'strikethrough':row.statusLine == 4}">
+                                {{ row.creditAcc }}
+                            </td>                           
+                            <td class="text-center col-brg-bk-code border-right" [ngClass]="{'strikethrough':row.statusLine == 4}">
+                                {{ row.sourceType }}
+                            </td>
+                            <td class="text-center col-brg-bk-date border-right" [ngClass]="{'strikethrough':row.statusLine == 4}">
+                                {{ row.totalMoney | currency:'VND'}}
+                            </td>
+                            <td class="text-center col-brg-bk-date border-right" [ngClass]="{'strikethrough':row.statusLine == 4}">
+                                <p *ngIf="row.trans_type == '0'">{{ row.cancelTime | date:'dd/MM/yyyy'}}</p>                                
+                            </td>  
+                            <td class="text-center col-brg-bk-date border-right" [ngClass]="{'strikethrough':row.statusLine == 4}">
+                                <p *ngIf="row.trans_type == '0'">{{ row.sdkRefundMoney | currency:'VND'}}</p>
+                            </td>   
+                            <td class="text-center col-status border-right">
+                                <mat-icon *ngIf="row.statusLine == 4" style="background-color:dimgrey;color: white;border-radius: 25px;">highlight_off</mat-icon>
+                                <mat-icon *ngIf="row.statusLine == 3 || row.statusLine == 6" style="background-color: rgb(5, 19, 141);color: white;border-radius: 25px;">check_circle_outline</mat-icon>
+                                <mat-icon *ngIf="row.statusLine != 3 && row.statusLine != 6 && row.statusLine != 4" style="background-color: red;color: white;border-radius: 25px;">highlight_off</mat-icon> 
+                            </td>
+                            <td class="text-center col-brg-pay-amt border-right">                                                                
+                                <input *ngIf="row.statusLine == 1" matInput name="totalMoneyAcc" [(ngModel)]="row.totalMoneyAcc " >
+                                <p *ngIf="row.statusLine != 1" [ngClass]="{'strikethrough':row.statusLine == 4}"> {{ row.totalMoneyAcc | currency:'VND'}}</p>
+                            </td>
+                            <td class="text-center col-brg-bk-date border-right">
+                                <mat-form-field *ngIf="row.statusLine == 1" class="col-brg-bk-date">
+                                    <input matInput name="moneyAtAcc" [matDatepicker]="picker" [(ngModel)]="row.moneyAtAcc" >
+                                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                    <mat-datepicker #picker></mat-datepicker>     
+                                </mat-form-field> 
+                                <p *ngIf="row.statusLine != 1" [ngClass]="{'strikethrough':row.statusLine == 4}"> {{ row.moneyAtAcc | date: 'dd/MM/yyyy'  }}</p>                                                              
+                            </td>
+                            <td class="text-center col-brg-pay-amt border-right" [ngClass]="{'strikethrough':row.statusLine == 4}">
+                                {{ row.inMoneyUser }}
+                            </td>                             
+                        </tr>                        
+                    </tbody>
+                </table>
+                <table style="font-weight: 600;">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td > Tiền đặt cọc: {{totalMoney | currency:'VND'}} </td>
+                        <td></td>
+                        <td> Tiền hoàn: {{totalCancelMoney | currency:'VND'}} </td>
+                        <td></td>
+                        <td> Tiền về tài khoản: {{moneyGoAcc | currency:'VND'}} </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
